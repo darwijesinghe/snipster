@@ -1,0 +1,41 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*' # only stable tags like v1.0.0
+
+env:
+  NUGET_PROJECT_PATH: Snipster.Library/Snipster.Library.csproj
+  NUGET_OUTPUT_DIR: ${{ github.workspace }}\output
+  NUGET_PROD_URL: https://api.nuget.org/v3/index.json
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Pack with symbols and XML docs
+        run: dotnet pack ${{ env.NUGET_PROJECT_PATH }} `
+            --configuration Release `
+            --include-symbols `
+            --include-source `
+            --output ${{ env.NUGET_OUTPUT_DIR }}
+
+      - name: List packed files
+        run: Get-ChildItem ${{ env.NUGET_OUTPUT_DIR }} -Force
+
+      - name: Push to NuGet.org
+        run: dotnet nuget push "${{ env.NUGET_OUTPUT_DIR }}\*.nupkg" `
+            --api-key ${{ secrets.NUGET_API_KEY }} `
+            --source ${{ env.NUGET_PROD_URL }} `
+            --skip-duplicate

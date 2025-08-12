@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{830910D2-8E83-4EFB-A681-1BC548073464}"
+	ProjectSection(SolutionItems) = preProject
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
+		CONTRIBUTING.md = CONTRIBUTING.md
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+		RELEASE_NOTES.md = RELEASE_NOTES.md
+		SECURITY.md = SECURITY.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{D41A2B69-4231-4AA1-A60C-AF949C1319C0}"
+	ProjectSection(SolutionItems) = preProject
+		.github\pull_request_template.md = .github\pull_request_template.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISSUE_TEMPLATE", "ISSUE_TEMPLATE", "{C7857C26-4F8B-4885-98E2-CA895A790E32}"
+	ProjectSection(SolutionItems) = preProject
+		.github\ISSUE_TEMPLATE\bug_report.md = .github\ISSUE_TEMPLATE\bug_report.md
+		.github\ISSUE_TEMPLATE\feature_request.md = .github\ISSUE_TEMPLATE\feature_request.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{20ACA00B-4AA9-46EE-8D36-025A327E3CA1}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yml = .github\workflows\build.yml
+		.github\workflows\release.yml = .github\workflows\release.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snipster.Library", "Snipster.Library\Snipster.Library.csproj", "{EB19CD92-2138-4FC1-8A8B-8DF3CEDCBC79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snipster.Test", "Snipster.Test\Snipster.Test.csproj", "{0B94B673-65F2-4B14-85C1-88E69EBC36FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB19CD92-2138-4FC1-8A8B-8DF3CEDCBC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB19CD92-2138-4FC1-8A8B-8DF3CEDCBC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB19CD92-2138-4FC1-8A8B-8DF3CEDCBC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB19CD92-2138-4FC1-8A8B-8DF3CEDCBC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B94B673-65F2-4B14-85C1-88E69EBC36FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B94B673-65F2-4B14-85C1-88E69EBC36FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B94B673-65F2-4B14-85C1-88E69EBC36FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B94B673-65F2-4B14-85C1-88E69EBC36FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7857C26-4F8B-4885-98E2-CA895A790E32} = {D41A2B69-4231-4AA1-A60C-AF949C1319C0}
+		{20ACA00B-4AA9-46EE-8D36-025A327E3CA1} = {D41A2B69-4231-4AA1-A60C-AF949C1319C0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6386D7AD-909D-498A-9FB3-ECAABE3725F8}
+	EndGlobalSection
+EndGlobal

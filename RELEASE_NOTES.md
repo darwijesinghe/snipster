@@ -3,14 +3,14 @@
 ## [Unreleased]
 
 ### Added
-- None
+- None.
 
 ---
 
 ## [v1.0.0] - 2025-08-12
 
 ### Added
-- Initial release with core helpers and extensions
+- Initial release with core helpers and extensions.
 
 ### Fixed
-- None
+- None.

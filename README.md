@@ -13,6 +13,15 @@ Tags: `.NET`, utilities, helpers, validations, dotnet, repository, caching
 
 ---
 
+## NuGet Packages Used
+
+| Package                                                                                       | Version |
+|-----------------------------------------------------------------------------------------------|---------|
+| [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) | 3.1.32  |
+| [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)                             | 13.0.1  |
+
+---
+
 ## Installation
 
 ```bash

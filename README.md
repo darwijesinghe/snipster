@@ -88,14 +88,6 @@ dotnet add package Snipster
 
 ---
 
-### ITableLogger Interface Methods
-
-| Method Highlights   | Description                                                                                                                                                                                               |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `LogToTableAsync()` | Enqueues a log entry for storage in a database table. Logs are processed in batches by a background task. Supports cancellation via a CancellationToken. Throws ArgumentNullException if the log is null. |
-
----
-
 ## Example Usage
 
 ### String: Slugify & Case Conversion
@@ -180,6 +172,7 @@ public class MyRepository<TEntity> : IGenericRepository<TEntity> where TEntity :
     ...
 }
 ```
+
 ### IGenericRepository with DI
 
 ```csharp
@@ -268,78 +261,6 @@ public class MyService
 }
 ```
 
-### Implement ITableLogger
-
-```csharp
-using Snipster.Library.Logger;
-
-public class TableLogger<TLog> : ITableLogger<TLog> where TLog : class
-{
-    private readonly IDbContextFactory<MyDbContext> _dbContextFactory;
-
-    public TableLogger(IDbContextFactory<MyDbContext> dbContextFactory)
-    {
-        _dbContextFactory = dbContextFactory ?? throw new ArgumentNullException(nameof(dbContextFactory));
-    }
-
-    public async Task LogToTableAsync(TLog log, CancellationToken cancellationToken = default)
-    {
-        if (log == null)
-            throw new ArgumentNullException(nameof(log));
-        ...
-    }
-
-    ...
-}
-```
-
-### ITableLogger with DI
-
-```csharp
-using Snipster.Library.Logger;
-
-// Register DbContext
-services.AddDbContext<MyLogDbContext>(options =>
-    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
-);
-
-// Register ITableLogger
-services.AddScoped<ITableLogger<MyErrorLog>>(sp =>
-    new TableLogger<MyErrorLog>(() => sp.GetRequiredService<MyLogDbContext>()));
-
-// Then use it in your services
-using Snipster.Library.Logger;
-
-public class MyService
-{
-    private readonly ITableLogger<MyErrorLog> _logger;
-
-    public MyService(ITableLogger<MyErrorLog> logger)
-    {
-        _logger = logger;
-    }
-
-    public async Task DoSomething()
-    {
-        try
-        {
-            ...
-        }
-        catch (Exception ex)
-        {
-            // Log object
-            var logEntry = new TestLog
-            {
-                Message = "Test log message.",
-                StackTrace = ex.StackTrace,
-                Source = "Test source."
-            }
-
-            await _logger.LogToTableAsync(logEntry);
-        }
-    }
-}
-```
 ---
 
 ## Contributions

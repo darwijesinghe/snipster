@@ -289,7 +289,6 @@ This project is maintained by:
 
 Email	: [dar.dev.mail@gmail.com](mailto:dar.dev.mail@gmail.com)  
 LinkedIn: [darwijesinghe](https://www.linkedin.com/in/darwijesinghe/)  
-GitHub	: [darwijesinghe](https://github.com/darwijesinghe)  
 Website	: [Portfolio](https://darwijesinghe.github.io/)
 
 ---

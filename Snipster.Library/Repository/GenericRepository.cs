@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -29,7 +30,7 @@ namespace Snipster.Library.Repository
             _dbSet   = context.Set<TEntity>();
 
             // Debugging aid
-            Console.WriteLine("DbContext Hash: " + _context.GetHashCode());
+            Debug.WriteLine("DbContext Hash: " + _context.GetHashCode());
         }
 
         /// <inheritdoc/>

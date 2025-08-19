@@ -1,6 +1,12 @@
 # Release Notes
 
 ## [Unreleased]
+### Summary
+This section will contain the latest updates and changes that are not yet released.
+
+## YYYY-MM-DD
+### Added
+- New features or enhancements that have been added.
 
 ---
 

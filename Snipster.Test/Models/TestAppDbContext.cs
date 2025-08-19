@@ -8,6 +8,7 @@ namespace Snipster.Test.Models
     public class TestAppDbContext : DbContext
     {
         public DbSet<TestObject>? TestObject { get; set; }
+        public DbSet<TestLog>? TestLog       { get; set; }
 
         public TestAppDbContext(DbContextOptions<TestAppDbContext> options) : base(options)
         {

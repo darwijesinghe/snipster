@@ -9,7 +9,7 @@
   
   <PropertyGroup>
     <PackageId>Snipster</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Darshana Wijesinghe</Authors>
     <Company>Open Source Community</Company>
     <Description>A lightweight and open-source utility library for .NET developers.</Description>
@@ -19,7 +19,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>utilities;helpers;dotnet;validations;repository;caching</PackageTags>
+    <PackageTags>utilities;helpers;dotnet;validations;repository;caching;uow</PackageTags>
 	<PackageReleaseNotes>See full release notes at https://github.com/darwijesinghe/Snipster/blob/main/RELEASE_NOTES.md</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>README.md</PackageReadmeFile>

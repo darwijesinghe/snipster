@@ -40,8 +40,9 @@ dotnet add package Snipster
 | **CreditCardValEx** | `IsValidCreditCard()`                                                                                                              | Validates if a string is a valid card number          |
 | **DateTimeValEx**   | `IsToday()` `IsFuture()` `IsPast()` `IsWeekend()` `IsWeekday()` `IsValidDate(format)`                                              | Various date validation helpers                       |
 | **JsonValEx**       | `IsValidJson()`                                                                                                                    | Checks if a string is valid JSON                      |
-| **SecurityValEx**   | `IsValidEmail()` `IsStrongPassword(minLength)` `IsValidIPv4()`                                                                     | Email, password, and IPv4 validations                 |
+| **SecurityValEx**   | `IsValidEmail()` `IsStrongPassword(minLength)`                                                                                     | Email, password, and IPv4 validations                 |
 | **StringValEx**     | `IsContainsIgnoreCase()` `IsValidSriLankanPhone()` `IsValidInternationalPhone()` `IsNumeric()` `IsAlphabetic()` `IsAlphanumeric()` | String-related validations                            |
+| **NetworkValEx**    | `IsValidIPv4()`                                                                                                                    | Network-related validations                           |
 
 ---
 
@@ -61,11 +62,13 @@ dotnet add package Snipster
 
 ### Helper Methods
 
-| Category       | Method Highlights                                                            | Description                                  |
-|----------------|------------------------------------------------------------------------------|----------------------------------------------|
-| **JsonFx**     | `Minify()` `Prettify()`                                                      | Minify and format JSON strings               |
-| **SecurityFx** | `RandomString()` `GenerateSecureToken()` `PasswordHash()` `VerifyPassword()` | Security and password utilities              |
-| **StringFx**   | `FormatBytes()` `GenerateUniqueUsername()` `GenerateGuid()`                  | Friendly sizes, safe usernames, GUID control |
+| Category       | Method Highlights                                                                                                                    | Description                                            |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| **JsonFx**     | `Minify()` `Prettify()`                                                                                                              | Minify and format JSON strings                         |
+| **SecurityFx** | `RandomString()` `GenerateSecureToken()` `PasswordHash()` `VerifyPassword()`                                                         | Security and password utilities                        |
+| **StringFx**   | `FormatBytes()` `GenerateUniqueUsername()` `GenerateGuid()`                                                                          | Friendly sizes, safe usernames, GUID control           |
+| **NetworkFx**  | `IsHostAvailableAsync(host)` `BuildUrl(baseUrl, params)`                                                                             | Network & URL Utilities (with Query Parameter Support) |
+| **FileFx**     | `SafeReadText()` `SafeReadBytes()` `SafeWriteText()` `SafeWriteBytes()` `CreateTempFile()` `GetDirectorySize()` `SanitizeFileName()` | File Handling & Directory Utilities                    |
 
 ---
 
@@ -74,6 +77,14 @@ dotnet add package Snipster
 | Method Highlights                                                                                                                                                                                                         | Description                                                                                                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | `GetAllAsync()` `GetAllByConditionAsync()` `GetByConditionAsync()` `GetSelectedColumnsAsync()` `IsExistAsync()` `AddAsync()` `AddRangeAsync()` `Update()` `UpdateRange()` `Remove()` `RemoveAsync()` `SaveChangesAsync()` | Common generic CRUD operations using Entity Framework Core. Designed for asynchronous and synchronous data handling. |
+
+---
+
+### IUnitOfWork Interface Methods
+
+| Method Highlights                                                                                        | Description                                                                                           |
+|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| `Repository<TEntity>()` `BeginTransactionAsync()` `CommitAsync()` `RollbackAsync()` `SaveChangesAsync()` | Centralized transaction and repository management with EF Core, supporting async and sync operations. |
 
 ---
 
@@ -198,6 +209,49 @@ public class UserService
        {
            Console.WriteLine(user.Name);
        }
+    }
+
+    ...
+}
+```
+
+### IUnitOfWork with DI
+
+```csharp
+// Register in DI
+services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// Then use it in your services
+using Snipster.Library.UOW;
+
+public class OrderService
+{
+    private readonly IUnitOfWork _uow;
+    private readonly IGenericRepository<Order> _orderRepo;
+
+    public OrderService(IUnitOfWork uow, IGenericRepository<Order> orderRepo)
+    {
+        _uow = uow;
+        _orderRepo = orderRepo;
+    }
+
+    public async Task PlaceOrderAsync(Order order)
+    {
+        await _uow.BeginTransactionAsync();
+        try
+        {
+            await _orderRepo.AddAsync(order);
+            await _uow.SaveChangesAsync();
+
+            // ... maybe add another entity
+
+            await _uow.CommitAsync();
+        }
+        catch
+        {
+            await _uow.RollbackAsync();
+            throw;
+        }
     }
 
     ...

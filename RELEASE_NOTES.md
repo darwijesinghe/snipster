@@ -4,9 +4,11 @@
 ### Summary
 This section will contain the latest updates and changes that are not yet released.
 
-## YYYY-MM-DD
+## 2025-08-22
 ### Added
-- New features or enhancements that have been added.
+- File helper utilites.
+- Network helper utilities.
+- EF Core transaction support with `IUnitOfWork` and default `IGenericRepository`.
 
 ---
 

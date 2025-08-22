@@ -4,25 +4,27 @@ using Snipster.Test.Models;
 
 namespace Snipster.Test.Repository
 {
+#nullable disable
+
     /// <summary>
     /// Tests for the Repository class.
     /// </summary>
     [TestClass]
     public class RepositoryTest
     {
-        private readonly DbContextOptions<TestAppDbContext> _options;
-        private readonly TestAppDbContext _context;
-        private readonly IGenericRepository<TestObject> _repository;
+        private TestAppDbContext               _context;
+        private IGenericRepository<TestObject> _repository;
 
-        public RepositoryTest()
+        [TestInitialize]
+        public void Setup()
         {
             // configure the in-memory database for testing
-            _options = new DbContextOptionsBuilder<TestAppDbContext>()
+            var options = new DbContextOptionsBuilder<TestAppDbContext>()
                 .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
                 .Options;
 
             // create a new instance of the test application database context
-            _context = new TestAppDbContext(_options);
+            _context = new TestAppDbContext(options);
 
             // create a new instance of the repository using the test application database context
             _repository = new GenericRepository<TestObject>(_context);
@@ -40,7 +42,7 @@ namespace Snipster.Test.Repository
             // Act
             await _repository.AddAsync(entity);
             await _context.SaveChangesAsync();
-            var result = await _context.TestObject.FirstOrDefaultAsync(x => x.Name == "Test");
+            var result = await _context!.TestObject!.FirstOrDefaultAsync(x => x.Name == "Test");
 
             // Assert
             Assert.IsNotNull(result);

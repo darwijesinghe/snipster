@@ -1,15 +1,5 @@
 # Release Notes
 
-## [Unreleased]
-### Summary
-This section will contain the latest updates and changes that are not yet released.
-
-## YYYY-MM-DD
-### Added
-- New features or enhancements that have been added.
-
----
-
 ## [v1.0.0] - 2025-08-12
 ### Summary
 Initial release with core helper methods and extensions for common operations.
@@ -33,7 +23,16 @@ Maintenance update focusing on cleanup and reducing dependencies.
 ### Summary
 Introduced new helper utilities and EF Core transaction support to simplify development.
 
-### Changed
+### Added
 - File helper utilities.
 - Network helper utilities.
 - EF Core transaction support with `IUnitOfWork` and default `IGenericRepository`.
+
+---
+
+## Unreleased
+### Summary
+Introduced a new helper utility to handle writing data to Excel files and memory streams.
+
+### Added
+- Excel file helper utility.

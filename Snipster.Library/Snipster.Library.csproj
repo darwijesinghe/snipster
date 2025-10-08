@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-	<LangVersion>latest</LangVersion>
-	<Nullable>enable</Nullable>
-	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- Target both .NET Standard 2.0 (broad compatibility) and .NET 6 -->
+    <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+	  <LangVersion>latest</LangVersion>
+	  <Nullable>enable</Nullable>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   
   <PropertyGroup>
@@ -19,8 +20,8 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>utilities;helpers;dotnet;validations;repository;caching;uow</PackageTags>
-	<PackageReleaseNotes>See full release notes at https://github.com/darwijesinghe/Snipster/blob/main/RELEASE_NOTES.md</PackageReleaseNotes>
+    <PackageTags>utilities;helpers;dotnet;validations;repository;caching;uow;excel</PackageTags>
+	  <PackageReleaseNotes>See full release notes at https://github.com/darwijesinghe/Snipster/blob/main/RELEASE_NOTES.md</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
@@ -32,9 +33,21 @@
     </None>
   </ItemGroup>
   
+  <!-- Shared dependencies -->
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.32" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <!-- Dependencies for .NET Standard 2.0 (compatible with .NET Core 3.1) -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="ClosedXML" Version="0.95.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.32" />
+  </ItemGroup>
+
+  <!-- Dependencies for .NET 6+ -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <PackageReference Include="ClosedXML" Version="0.105.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.36" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using System;
+using System.IO;
 
 namespace Snipster.Library.Extensions.Validations
 {
@@ -19,12 +21,28 @@ namespace Snipster.Library.Extensions.Validations
             if (string.IsNullOrWhiteSpace(json)) 
                 return false;
 
+            json = json.Trim();
+
+            // quick check for JSON object or array
+            if (!(json.StartsWith("{") && json.EndsWith("}")) && !(json.StartsWith("[") && json.EndsWith("]")))
+                return false;
+
             try
             {
-                JToken.Parse(json); // parses any valid JSON (object, array, value)
+                // parse using JsonTextReader
+                using var stringReader = new StringReader(json);
+                using var jsonReader   = new JsonTextReader(stringReader);
+
+                // fully parse JSON (no conversion)
+                while (jsonReader.Read()) { }
+
                 return true;
             }
-            catch
+            catch (JsonReaderException)
+            {
+                return false;
+            }
+            catch (Exception)
             {
                 return false;
             }

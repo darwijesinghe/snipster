@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualStudio.TestPlatform.Utilities.Helpers;
-using Snipster.Library.Helpers;
+﻿using Snipster.Library.Helpers;
 
 namespace Snipster.Test.Helpers
 {
@@ -46,7 +45,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the SafeReadText method to ensure it returns file content for the valid path.
+        /// Tests the SafeWriteText method to ensure it writes content to the file.
         /// </summary>
         [TestMethod]
         public void SafeWriteText_ShouldWriteContentToTheFile()

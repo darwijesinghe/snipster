@@ -9,16 +9,18 @@ Snipster is a lightweight, open-source .NET utility library that provides a comp
 
 Available on [NuGet](https://www.nuget.org/packages/Snipster/)  
 License: MIT  
-Tags: `.NET`, utilities, helpers, validations, dotnet, repository, caching
+Tags: `.NET`, utilities, helpers, validations, dotnet, repository, caching, uow, excel
 
 ---
 
 ## NuGet Packages Used
 
-| Package                                                                                       | Version |
-|-----------------------------------------------------------------------------------------------|---------|
-| [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) | 3.1.32  |
-| [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)                             | 13.0.1  |
+| Package                                                                                       | .NET Standard 2.0 Version | .NET 6+ Version |
+|-----------------------------------------------------------------------------------------------|---------------------------|-----------------|
+| [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) | 3.1.32                    | 6.0.36          |
+| [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)                             | 13.0.1                    | 13.0.1          |
+| [ClosedXML](https://www.nuget.org/packages/ClosedXML)                                         | 0.95.4                    | 0.105.0         |
+
 
 ---
 
@@ -40,7 +42,7 @@ dotnet add package Snipster
 | **CreditCardValEx** | `IsValidCreditCard()`                                                                                                              | Validates if a string is a valid card number          |
 | **DateTimeValEx**   | `IsToday()` `IsFuture()` `IsPast()` `IsWeekend()` `IsWeekday()` `IsValidDate(format)`                                              | Various date validation helpers                       |
 | **JsonValEx**       | `IsValidJson()`                                                                                                                    | Checks if a string is valid JSON                      |
-| **SecurityValEx**   | `IsValidEmail()` `IsStrongPassword(minLength)`                                                                                     | Email, password, and IPv4 validations                 |
+| **SecurityValEx**   | `IsValidEmail()` `IsStrongPassword(minLength)`                                                                                     | Email, password validations                           |
 | **StringValEx**     | `IsContainsIgnoreCase()` `IsValidSriLankanPhone()` `IsValidInternationalPhone()` `IsNumeric()` `IsAlphabetic()` `IsAlphanumeric()` | String-related validations                            |
 | **NetworkValEx**    | `IsValidIPv4()`                                                                                                                    | Network-related validations                           |
 
@@ -69,6 +71,7 @@ dotnet add package Snipster
 | **StringFx**   | `FormatBytes()` `GenerateUniqueUsername()` `GenerateGuid()`                                                                          | Friendly sizes, safe usernames, GUID control           |
 | **NetworkFx**  | `IsHostAvailableAsync(host)` `BuildUrl(baseUrl, params)`                                                                             | Network & URL Utilities (with Query Parameter Support) |
 | **FileFx**     | `SafeReadText()` `SafeReadBytes()` `SafeWriteText()` `SafeWriteBytes()` `CreateTempFile()` `GetDirectorySize()` `SanitizeFileName()` | File Handling & Directory Utilities                    |
+| **ExcelFx**    | `WriteToExcel()` `WriteToMemory()`                                                                                                   | Write data to a file or memory stream                  |
 
 ---
 
@@ -99,7 +102,7 @@ dotnet add package Snipster
 
 ---
 
-## Example Usage
+## Example Usage for Extensions
 
 ### String: Slugify & Case Conversion
 
@@ -148,6 +151,8 @@ var ago = DateTime.UtcNow.AddMinutes(-10).ToTimeAgo();
 // Output: "10 minutes ago"
 ```
 
+## Example Usage for Helpers
+
 ### Security: Hash a password
 
 ```csharp
@@ -158,6 +163,69 @@ bool isValid = SecurityFx.VerifyPassword("myPassword", hash, salt);
 
 // Output: true/false based on verification
 ```
+
+### File: Create a temporary file with the specified extension
+
+```csharp
+using Snipster.Library.Helpers;
+
+var tempFile = FileFx.CreateTempFile(".log");
+
+// Verify if the file was created successfully
+bool exists = File.Exists(tempFile);
+Console.WriteLine($"File created: {exists} | Path: {tempFile}");
+```
+
+### Excel: Create an Excel file with data, column definitions, and export options
+
+```csharp
+using Snipster.Library.Helpers;
+using Snipster.Library.Models;
+using Snipster.Library.Enums;
+
+// Your data list object
+var data = new List<TestObject>
+{
+    new TestObject { Id = 1, Name = "John", Value = 1000, Age = 30, IsMember = true, JoinDate = new DateTime(2023, 01, 15), Salary = 5000.25, Commission = 0.075 },
+    new TestObject { Id = 2, Name = "Anika", Value = 2500, Age = 27, IsMember = false, JoinDate = new DateTime(2024, 06, 05), Salary = 7250.50, Commission = 0.10 }
+}
+
+// Column definitions
+var columns = new List<ExcelColumn>
+{
+    new ExcelColumn { Name = "Id", DataType = typeof(int), HeaderText = "ID", Format = ExcelFormats.Integer, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
+    new ExcelColumn { Name = "Name", DataType = typeof(string), HeaderText = "Full Name", Format = ExcelFormats.Text, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
+    new ExcelColumn { Name = "Value", DataType = typeof(int), HeaderText = "Value", Format = ExcelFormats.Integer, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
+    new ExcelColumn { Name = "Age", DataType = typeof(int), HeaderText = "Age", Format = ExcelFormats.Integer, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
+    new ExcelColumn { Name = "IsMember", DataType = typeof(bool), HeaderText = "Membership", TrueText = "Yes", FalseText = "No", Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
+    new ExcelColumn { Name = "JoinDate", DataType = typeof(DateTime), HeaderText = "Join Date", Format = ExcelFormats.DateTime, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
+    new ExcelColumn { Name = "Salary", DataType = typeof(double), HeaderText = "Salary", Format = ExcelFormats.Currency, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
+    new ExcelColumn { Name = "Commission", DataType = typeof(double), HeaderText = "Commission", Format = ExcelFormats.Percent, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left }
+};
+
+// Meta info
+string sheetName = "TestSheet";
+string tempFilePath = Path.GetTempPath();
+string tempFileName = $"test-{Guid.NewGuid()}.xlsx";
+
+// Write the file with export options
+ExcelFx.WriteToExcel(data, columns, tempFilePath, tempFileName, opts =>
+{
+    opts.AutoFitColumns = false;
+    opts.FreezeHeader = true;
+    opts.AlternateRowColors = true;
+    opts.HeaderBackground = Color.LightGray;
+    opts.AlternateRowColor = Color.LightYellow;
+    opts.SheetName = sheetName;
+});
+
+// Verify if the file was created successfully
+string fullPath = Path.Combine(tempFilePath, tempFileName);
+bool exists = File.Exists(fullPath);
+Console.WriteLine($"File created: {exists} | Path: {fullPath}");
+```
+
+## Repository & Unit of Work Patterns
 
 ### Implement IGenericRepository
 
@@ -257,6 +325,8 @@ public class OrderService
     ...
 }
 ```
+
+## Cache Service
 
 ### Implement ICacheService
 

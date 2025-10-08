@@ -30,9 +30,9 @@ Introduced new helper utilities and EF Core transaction support to simplify deve
 
 ---
 
-## Unreleased
+## [v1.0.3] - 2025-10-08
 ### Summary
-Introduced a new helper utility to handle writing data to Excel files and memory streams.
+Introduced a new helper utility to handle writing data to Excel files and memory streams. And enhancements to JsonValEx, CollectionEx, and fixed some typo issues.
 
 ### Added
 - Excel file helper utility.

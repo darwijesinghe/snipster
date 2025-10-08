@@ -8,23 +8,52 @@ namespace Snipster.Test.Extensions.Validations
     [TestClass]
     public class JsonValExTest
     {
-        /// <summary>
-        /// Test IsValidJson method to ensure it correctly identifies valid and invalid email formats.
+        /// <summary>s
+        /// Test IsValidJson method to ensure it correctly identifies valid JSON strings.
         /// </summary>
         [TestMethod]
-        public void IsValidJson_ShouldValidateValidEmailAddress()
+        public void IsValidJson_ShouldValidateValidJsonStrings()
         {
             // Arrange
-            string validJson = "{\"name\":\"John\", \"age\":30, \"city\":\"New York\"}";
-            string invalidJson = "{name:John, age:30, city:New York}";
+            string validJson = @"{""name"":""John"", ""age"":30, ""city"":""New York""}";
 
             // Act
             bool isValidJsonResult = validJson.IsValidJson();
-            bool isInvalidJsonResult = invalidJson.IsValidJson();
 
             // Assert
             Assert.IsTrue(isValidJsonResult);
-            Assert.IsFalse(isInvalidJsonResult);
+        }
+
+        /// <summary>s
+        /// Test IsValidJson method to ensure it correctly identifies invalid JSON strings.
+        /// </summary>
+        [TestMethod]
+        public void IsValidJson_ShouldValidateInvalidJsonStrings()
+        {
+            // Arrange
+            string invalidJson = @"{name:""John"", age:30, city:""New York""";
+
+            // Act
+            bool isValidJsonResult = invalidJson.IsValidJson();
+
+            // Assert
+            Assert.IsFalse(isValidJsonResult);
+        }
+
+        /// <summary>s
+        /// Test IsValidJson method to ensure it correctly identifies array JSON strings.
+        /// </summary>
+        [TestMethod]
+        public void IsValidJson_ShouldValidateArrayJsonStrings()
+        {
+            // Arrange
+            string arrayJson = @"[""apple"", ""banana"", ""cherry""]";
+
+            // Act
+            bool isValidJsonResult = arrayJson.IsValidJson();
+
+            // Assert
+            Assert.IsTrue(isValidJsonResult);
         }
     }
 }

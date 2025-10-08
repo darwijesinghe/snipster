@@ -71,8 +71,8 @@ namespace Snipster.Library.Extensions.Validations
         /// <summary>
         /// Validates if a given string is a valid date in a specific format.
         /// </summary>
-        /// <param name="input"> The input string to validate.</param>
-        /// <param name="format"> The date format to validate against (default is "yyyy-MM-dd").</param>
+        /// <param name="input">The input string to validate.</param>
+        /// <param name="format">The date format to validate against (default is "yyyy-MM-dd").</param>
         /// <returns>
         /// True if the string is a valid date in the specified format; otherwise, false.
         /// </returns>

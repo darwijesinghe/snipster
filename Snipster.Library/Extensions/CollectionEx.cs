@@ -66,7 +66,7 @@ namespace Snipster.Library.Extensions
         /// <exception cref="ArgumentNullException">
         /// Thrown when the <paramref name="source"/>, <paramref name="keySelector"/>, or <paramref name="valueSelector"/> is null.
         /// </exception>"
-        public static Dictionary<TKey, TValue> ToSafeDictionary<TSource, TKey, TValue>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TValue> valueSelector)
+        public static Dictionary<TKey, TValue> ToSafeDictionary<TSource, TKey, TValue>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TValue> valueSelector) where TKey : notnull
         {
             if (source == null)
                 throw new ArgumentNullException(nameof(source));
@@ -138,21 +138,27 @@ namespace Snipster.Library.Extensions
         /// <typeparam name="T">The type of elements in the collection.</typeparam>
         /// <param name="source">The collection to analyze.</param>
         /// <returns>
-        /// The most common item in the collection; otherwise, default if the collection is empty.
+        /// The most common item in the collection.
         /// </returns>
         /// <exception cref="ArgumentNullException">
         /// Thrown when the <paramref name="source"/> is null.
+        /// </exception>
+        /// <exception cref="InvalidOperationException">
+        /// Thrown when the <paramref name="source"/> contains no elements.
         /// </exception>
         public static T MostCommon<T>(this IEnumerable<T> source)
         {
             if (source == null)
                 throw new ArgumentNullException(nameof(source));
 
+            if (!source.Any())
+                throw new InvalidOperationException("Sequence contains no elements.");
+
             return source
                 .GroupBy(x => x)
                 .OrderByDescending(g => g.Count())
                 .Select(g => g.Key)
-                .FirstOrDefault();
+                .First();
         }
 
         /// <summary>
@@ -161,21 +167,27 @@ namespace Snipster.Library.Extensions
         /// <typeparam name="T">The type of elements in the collection.</typeparam>
         /// <param name="source">The collection to analyze.</param>
         /// <returns>
-        /// The least common item in the collection; otherwise, default if the collection is empty.
+        /// The least common item in the collection.
         /// </returns>
         /// <exception cref="ArgumentNullException">
         /// Thrown when the <paramref name="source"/> is null.
+        /// </exception>
+        /// <exception cref="InvalidOperationException">
+        /// Thrown when the <paramref name="source"/> contains no elements.
         /// </exception>
         public static T LeastCommon<T>(this IEnumerable<T> source)
         {
             if (source == null)
                 throw new ArgumentNullException(nameof(source));
 
+            if (!source.Any())
+                throw new InvalidOperationException("Sequence contains no elements.");
+
             return source
                 .GroupBy(x => x)
                 .OrderBy(g => g.Count())
                 .Select(g => g.Key)
-                .FirstOrDefault();
+                .First();
         }
 
         /// <summary>

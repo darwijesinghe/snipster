@@ -55,5 +55,21 @@ namespace Snipster.Test.Extensions.Validations
             // Assert
             Assert.IsTrue(isValidJsonResult);
         }
+
+        /// <summary>s
+        /// Test IsValidJson method to ensure it correctly identifies the nested JSON strings with arrays.
+        /// </summary>
+        [TestMethod]
+        public void IsValidJson_ShouldValidateNestedJsonStringsWithArray()
+        {
+            // Arrange
+            string nestedJson = @"{""name"":""John"", ""age"":30, ""cars"": [""Ford"", ""BMW"", ""Fiat""]}";
+
+            // Act
+            bool isValidJsonResult = nestedJson.IsValidJson();
+
+            // Assert
+            Assert.IsTrue(isValidJsonResult);
+        }
     }
 }

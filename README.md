@@ -39,8 +39,7 @@ Install-Package Snipster
 
 ## Documentation 
 
-Explore detailed API references, usage guides, and real-world examples in the official documentation:  
-[Docs & Examples](https://darwijesinghe.github.io/snipster/)
+Explore detailed API references, usage guides, and practical examples in the official [documentation](https://darwijesinghe.github.io/snipster/).
 
 ## Available Utilities
 
@@ -131,9 +130,7 @@ Thanks to these wonderful people for their contributions!
 
 ## Maintainers
 
-This project is maintained by:
-
-- [Darshana Wijesinghe](https://github.com/darwijesinghe)
+This project is maintained by [Darshana Wijesinghe](https://github.com/darwijesinghe).
 
 ---
 

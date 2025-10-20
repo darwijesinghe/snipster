@@ -14,10 +14,10 @@ We will respond as quickly as possible and work with you to address the issue pr
 
 We support the latest released version of the NuGet package. Please update to the most recent version before reporting a bug.
 
-| Version        | Supported          |
-|----------------|--------------------|
-| 1.x            | ✅ Yes             |
-| < 1.0          | ❌ No              |
+| Version | Supported |
+|-------- |-----------|
+| 1.x     | Yes       |
+| < 1.0   | No        |
 
 ---
 

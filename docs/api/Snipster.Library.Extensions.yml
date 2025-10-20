@@ -1,0 +1,105 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Extensions
+  commentId: N:Snipster.Library.Extensions
+  id: Snipster.Library.Extensions
+  children:
+  - Snipster.Library.Extensions.CollectionEx
+  - Snipster.Library.Extensions.CreditCardEx
+  - Snipster.Library.Extensions.DateTimeEx
+  - Snipster.Library.Extensions.JsonEx
+  - Snipster.Library.Extensions.NumberEx
+  - Snipster.Library.Extensions.ObjectEx
+  - Snipster.Library.Extensions.SecurityEx
+  - Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: Snipster.Library.Extensions
+  nameWithType: Snipster.Library.Extensions
+  fullName: Snipster.Library.Extensions
+  type: Namespace
+  assemblies:
+  - Snipster.Library
+references:
+- uid: Snipster.Library.Extensions.CollectionEx
+  commentId: T:Snipster.Library.Extensions.CollectionEx
+  href: Snipster.Library.Extensions.CollectionEx.html
+  name: CollectionEx
+  nameWithType: CollectionEx
+  fullName: Snipster.Library.Extensions.CollectionEx
+- uid: Snipster.Library.Extensions.CreditCardEx
+  commentId: T:Snipster.Library.Extensions.CreditCardEx
+  href: Snipster.Library.Extensions.CreditCardEx.html
+  name: CreditCardEx
+  nameWithType: CreditCardEx
+  fullName: Snipster.Library.Extensions.CreditCardEx
+- uid: Snipster.Library.Extensions.DateTimeEx
+  commentId: T:Snipster.Library.Extensions.DateTimeEx
+  href: Snipster.Library.Extensions.DateTimeEx.html
+  name: DateTimeEx
+  nameWithType: DateTimeEx
+  fullName: Snipster.Library.Extensions.DateTimeEx
+- uid: Snipster.Library.Extensions.JsonEx
+  commentId: T:Snipster.Library.Extensions.JsonEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.JsonEx.html
+  name: JsonEx
+  nameWithType: JsonEx
+  fullName: Snipster.Library.Extensions.JsonEx
+- uid: Snipster.Library.Extensions.NumberEx
+  commentId: T:Snipster.Library.Extensions.NumberEx
+  href: Snipster.Library.Extensions.NumberEx.html
+  name: NumberEx
+  nameWithType: NumberEx
+  fullName: Snipster.Library.Extensions.NumberEx
+- uid: Snipster.Library.Extensions.ObjectEx
+  commentId: T:Snipster.Library.Extensions.ObjectEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.ObjectEx.html
+  name: ObjectEx
+  nameWithType: ObjectEx
+  fullName: Snipster.Library.Extensions.ObjectEx
+- uid: Snipster.Library.Extensions.SecurityEx
+  commentId: T:Snipster.Library.Extensions.SecurityEx
+  href: Snipster.Library.Extensions.SecurityEx.html
+  name: SecurityEx
+  nameWithType: SecurityEx
+  fullName: Snipster.Library.Extensions.SecurityEx
+- uid: Snipster.Library.Extensions.StringEx
+  commentId: T:Snipster.Library.Extensions.StringEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.StringEx.html
+  name: StringEx
+  nameWithType: StringEx
+  fullName: Snipster.Library.Extensions.StringEx
+- uid: Snipster.Library.Extensions
+  commentId: N:Snipster.Library.Extensions
+  href: Snipster.html
+  name: Snipster.Library.Extensions
+  nameWithType: Snipster.Library.Extensions
+  fullName: Snipster.Library.Extensions
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html

@@ -12,7 +12,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <summary>
         /// Validates if a string is a valid JSON format.
         /// </summary>
-        /// <param name="json"> The JSON string to validate.</param>
+        /// <param name="json">The JSON string to validate.</param>
         /// <returns>
         /// True if the string is a valid JSON; otherwise, false.
         /// </returns>

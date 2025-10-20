@@ -36,3 +36,23 @@ Introduced a new helper utility to handle writing data to Excel files and memory
 
 ### Added
 - Excel file helper utility.
+
+## [v1.0.4] - 2025-10-20
+### Summary
+Introduces new object manipulation and validation utilities, along with 
+enhanced network helpers, and fixed typo issues.
+
+### Added
+- Network validation extensions
+    - `IsValidIPv6()`
+    - `IsValidWebAddress()`
+- object validation extensions
+    - `IsDefaultValue()`
+    - `HasProperty()`
+- Object extensions
+    - `GetPropertyValue()`
+    - `SetPropertyValue()`
+- Network helpers
+    - `HasInternetConnectionAsync()`
+- Object helpers
+    - `DeepClone<T>(T)`

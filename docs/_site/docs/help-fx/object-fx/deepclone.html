@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>DeepClone&lt;T&gt;() | Snipster </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="DeepClone&lt;T&gt;() | Snipster ">
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darwijesinghe/Snipster/blob/dev/docs/docs/help-fx/object-fx/deepclone.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="Snipster">
+            Snipster
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h2 id="description">Description</h2>
+<p>Creates a deep clone of the specified object using json serialization. Supports <code>reference types</code>, <code>collections</code>, <code>anonymous types</code>, and <code>value types</code>.</p>
+<h3 id="method-signature">Method Signature</h3>
+<pre><code class="lang-csharp">T DeepClone&lt;T&gt;(this T obj)
+</code></pre>
+<h3 id="examples">Examples</h3>
+<pre><code class="lang-csharp">using Snipster.Library.Helpers;
+
+public class Example
+{
+    // Test classes
+    public class Address
+    {
+        public string City    { get; set; } = string.Empty;
+        public string Country { get; set; } = string.Empty;
+    }
+
+    public class Person
+    {
+        public string Name     { get; set; } = string.Empty;
+        public int Age         { get; set; }
+        public Address Address { get; set; } = new Address();
+    }
+
+    public class Employee : Person
+    {
+        public string Department { get; set; } = string.Empty;
+    }
+
+    public class Circular
+    {
+        public Circular? Self { get; set; }
+    }
+
+    public static void Main()
+    {
+        // 1. Clone Simple Object
+        var person = new Person { Name = &quot;John&quot;, Age = 30 };
+        var clone  = person.DeepClone();
+
+        Console.WriteLine(clone.Name); // John
+        Console.WriteLine(ReferenceEquals(person, clone)); // False
+
+        // 2. Clone Nested Object
+        var person = new Person
+        {
+            Name = &quot;Jane&quot;,
+            Age = 25,
+            Address = new Address { City = &quot;Colombo&quot;, Country = &quot;Sri Lanka&quot; }
+        };
+
+        var clone = person.DeepClone();
+
+        Console.WriteLine(clone.Address.City); // Colombo
+        Console.WriteLine(ReferenceEquals(person.Address, clone.Address)); // False
+
+        // 3. Clone Collection
+        var list = new List&lt;Person&gt;
+        {
+            new Person { Name = &quot;A&quot;, Age = 20 },
+            new Person { Name = &quot;B&quot;, Age = 30 }
+        };
+
+        var clone = list.DeepClone();
+
+        Console.WriteLine(clone[0].Name); // A
+        Console.WriteLine(ReferenceEquals(list[0], clone[0])); // False
+
+        // 4. Preserve Derived Types
+        Person employee = new Employee
+        {
+            Name       = &quot;Sam&quot;,
+            Age        = 40,
+            Department = &quot;IT&quot;,
+            Address    = new Address { City = &quot;Kandy&quot;, Country = &quot;Sri Lanka&quot; }
+        };
+
+        var clone = employee.DeepClone();
+
+        Console.WriteLine(clone is Employee); // True
+        Console.WriteLine(((Employee)clone).Department); // IT
+
+        // 5. Handle Circular References
+        var circular = new Circular();
+        circular.Self = circular;
+
+        // Throws InvalidOperationException
+        var clone = circular.DeepClone();
+
+        // 6. Clone Anonymous Objects
+        var anon  = new { Name = &quot;Anonymous&quot;, Age = 99 };
+        var clone = anon.DeepClone();
+
+        Console.WriteLine(clone.Name); // Anonymous
+
+        // 7. Clone Value and Nullable Types
+        int? number = 123;
+        var clone = number.DeepClone(); // 123
+
+        // 8. Clone a KeyValuePair (struct with value and reference types)
+        var point = new KeyValuePair&lt;int, string&gt;(10, &quot;X&quot;);
+        var clonedPoint = point.DeepClone();
+
+        Console.WriteLine($&quot;Cloned: [{clonedPoint.Key}, {clonedPoint.Value}]&quot;);
+        // Output: Cloned: [10, X]
+    }
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darwijesinghe/Snipster/blob/dev/docs/docs/help-fx/object-fx/deepclone.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>© 2025 Snipster • Made with <a href="https://dotnet.github.io/docfx">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

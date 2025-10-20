@@ -1,0 +1,601 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Helpers.StringFx
+  commentId: T:Snipster.Library.Helpers.StringFx
+  id: StringFx
+  parent: Snipster.Library.Helpers
+  children:
+  - Snipster.Library.Helpers.StringFx.FormatBytes(System.Int64,System.Int32)
+  - Snipster.Library.Helpers.StringFx.GenerateGuid(System.Boolean)
+  - Snipster.Library.Helpers.StringFx.GenerateUniqueUsername(System.String,System.String,System.Func{System.String,System.Boolean})
+  langs:
+  - csharp
+  - vb
+  name: StringFx
+  nameWithType: StringFx
+  fullName: Snipster.Library.Helpers.StringFx
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/Helpers/StringFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: StringFx
+    path: ../Snipster.Library/Helpers/StringFx.cs
+    startLine: 7
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Provides various string manipulation and validation methods.
+  example: []
+  syntax:
+    content: public static class StringFx
+    content.vb: Public Module StringFx
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Snipster.Library.Helpers.StringFx.FormatBytes(System.Int64,System.Int32)
+  commentId: M:Snipster.Library.Helpers.StringFx.FormatBytes(System.Int64,System.Int32)
+  id: FormatBytes(System.Int64,System.Int32)
+  parent: Snipster.Library.Helpers.StringFx
+  langs:
+  - csharp
+  - vb
+  name: FormatBytes(long, int)
+  nameWithType: StringFx.FormatBytes(long, int)
+  fullName: Snipster.Library.Helpers.StringFx.FormatBytes(long, int)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/StringFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: FormatBytes
+    path: ../Snipster.Library/Helpers/StringFx.cs
+    startLine: 18
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Formats a byte size into a human-readable string (e.g. "1.5 MB", "200 KB").
+  example: []
+  syntax:
+    content: public static string FormatBytes(long bytes, int decimals = 2)
+    parameters:
+    - id: bytes
+      type: System.Int64
+      description: The size in bytes to format.
+    - id: decimals
+      type: System.Int32
+      description: The number of decimal places to include in the formatted string (default is 2).
+    return:
+      type: System.String
+      description: >-
+        A formatted string representing the byte size in a human-readable format, such as "1.5 MB" or "200 KB". If the input is 
+
+        negative, it will prepend a minus sign to the result.
+    content.vb: Public Shared Function FormatBytes(bytes As Long, decimals As Integer = 2) As String
+  overload: Snipster.Library.Helpers.StringFx.FormatBytes*
+  nameWithType.vb: StringFx.FormatBytes(Long, Integer)
+  fullName.vb: Snipster.Library.Helpers.StringFx.FormatBytes(Long, Integer)
+  name.vb: FormatBytes(Long, Integer)
+- uid: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername(System.String,System.String,System.Func{System.String,System.Boolean})
+  commentId: M:Snipster.Library.Helpers.StringFx.GenerateUniqueUsername(System.String,System.String,System.Func{System.String,System.Boolean})
+  id: GenerateUniqueUsername(System.String,System.String,System.Func{System.String,System.Boolean})
+  parent: Snipster.Library.Helpers.StringFx
+  langs:
+  - csharp
+  - vb
+  name: GenerateUniqueUsername(string, string, Func<string, bool>)
+  nameWithType: StringFx.GenerateUniqueUsername(string, string, Func<string, bool>)
+  fullName: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername(string, string, System.Func<string, bool>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/StringFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: GenerateUniqueUsername
+    path: ../Snipster.Library/Helpers/StringFx.cs
+    startLine: 52
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Generates a unique username using the first and last name. Appends a number if the base username is already taken.
+  example: []
+  syntax:
+    content: public static string GenerateUniqueUsername(string firstName, string lastName, Func<string, bool> isUsernameTaken)
+    parameters:
+    - id: firstName
+      type: System.String
+      description: The user's first name.
+    - id: lastName
+      type: System.String
+      description: The user's last name.
+    - id: isUsernameTaken
+      type: System.Func{System.String,System.Boolean}
+      description: A delegate to check if a username is already taken.
+    return:
+      type: System.String
+      description: A unique username generated from the first and last name, ensuring it is not already taken.
+    content.vb: Public Shared Function GenerateUniqueUsername(firstName As String, lastName As String, isUsernameTaken As Func(Of String, Boolean)) As String
+  overload: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when first name or last name is null or empty.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the username check function is null.
+  nameWithType.vb: StringFx.GenerateUniqueUsername(String, String, Func(Of String, Boolean))
+  fullName.vb: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername(String, String, System.Func(Of String, Boolean))
+  name.vb: GenerateUniqueUsername(String, String, Func(Of String, Boolean))
+- uid: Snipster.Library.Helpers.StringFx.GenerateGuid(System.Boolean)
+  commentId: M:Snipster.Library.Helpers.StringFx.GenerateGuid(System.Boolean)
+  id: GenerateGuid(System.Boolean)
+  parent: Snipster.Library.Helpers.StringFx
+  langs:
+  - csharp
+  - vb
+  name: GenerateGuid(bool)
+  nameWithType: StringFx.GenerateGuid(bool)
+  fullName: Snipster.Library.Helpers.StringFx.GenerateGuid(bool)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/StringFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: GenerateGuid
+    path: ../Snipster.Library/Helpers/StringFx.cs
+    startLine: 80
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Generates a new GUID as a string.
+  example: []
+  syntax:
+    content: public static string GenerateGuid(bool includeDashes)
+    parameters:
+    - id: includeDashes
+      type: System.Boolean
+      description: If true, the GUID will include dashes; otherwise, it will be a continuous string without dashes.
+    return:
+      type: System.String
+      description: A string representation of a new GUID. If includeDashes is true, the format will be "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
+    content.vb: Public Shared Function GenerateGuid(includeDashes As Boolean) As String
+  overload: Snipster.Library.Helpers.StringFx.GenerateGuid*
+  nameWithType.vb: StringFx.GenerateGuid(Boolean)
+  fullName.vb: Snipster.Library.Helpers.StringFx.GenerateGuid(Boolean)
+  name.vb: GenerateGuid(Boolean)
+references:
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  href: Snipster.html
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Snipster.Library.Helpers.StringFx.FormatBytes*
+  commentId: Overload:Snipster.Library.Helpers.StringFx.FormatBytes
+  href: Snipster.Library.Helpers.StringFx.html#Snipster_Library_Helpers_StringFx_FormatBytes_System_Int64_System_Int32_
+  name: FormatBytes
+  nameWithType: StringFx.FormatBytes
+  fullName: Snipster.Library.Helpers.StringFx.FormatBytes
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername*
+  commentId: Overload:Snipster.Library.Helpers.StringFx.GenerateUniqueUsername
+  href: Snipster.Library.Helpers.StringFx.html#Snipster_Library_Helpers_StringFx_GenerateUniqueUsername_System_String_System_String_System_Func_System_String_System_Boolean__
+  name: GenerateUniqueUsername
+  nameWithType: StringFx.GenerateUniqueUsername
+  fullName: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername
+- uid: System.Func{System.String,System.Boolean}
+  commentId: T:System.Func{System.String,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, bool>
+  nameWithType: Func<string, bool>
+  fullName: System.Func<string, bool>
+  nameWithType.vb: Func(Of String, Boolean)
+  fullName.vb: System.Func(Of String, Boolean)
+  name.vb: Func(Of String, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Snipster.Library.Helpers.StringFx.GenerateGuid*
+  commentId: Overload:Snipster.Library.Helpers.StringFx.GenerateGuid
+  href: Snipster.Library.Helpers.StringFx.html#Snipster_Library_Helpers_StringFx_GenerateGuid_System_Boolean_
+  name: GenerateGuid
+  nameWithType: StringFx.GenerateGuid
+  fullName: Snipster.Library.Helpers.StringFx.GenerateGuid
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

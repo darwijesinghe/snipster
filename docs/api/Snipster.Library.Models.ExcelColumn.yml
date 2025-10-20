@@ -1,0 +1,1369 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Models.ExcelColumn
+  commentId: T:Snipster.Library.Models.ExcelColumn
+  id: ExcelColumn
+  parent: Snipster.Library.Models
+  children:
+  - Snipster.Library.Models.ExcelColumn.Alignment
+  - Snipster.Library.Models.ExcelColumn.DataType
+  - Snipster.Library.Models.ExcelColumn.FalseText
+  - Snipster.Library.Models.ExcelColumn.Format
+  - Snipster.Library.Models.ExcelColumn.HeaderAlignment
+  - Snipster.Library.Models.ExcelColumn.HeaderText
+  - Snipster.Library.Models.ExcelColumn.Name
+  - Snipster.Library.Models.ExcelColumn.TrueText
+  - Snipster.Library.Models.ExcelColumn.Width
+  langs:
+  - csharp
+  - vb
+  name: ExcelColumn
+  nameWithType: ExcelColumn
+  fullName: Snipster.Library.Models.ExcelColumn
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/Models/ExcelColumn.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ExcelColumn
+    path: ../Snipster.Library/Models/ExcelColumn.cs
+    startLine: 11
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Models
+  summary: Defines the properties and formatting options for a column in an Excel export.
+  example: []
+  syntax:
+    content: public class ExcelColumn
+    content.vb: Public Class ExcelColumn
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Snipster.Library.Models.ExcelColumn.Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1
+  - Snipster.Library.Models.ExcelColumn.Snipster.Library.Helpers.ObjectFx.DeepClone``1
+  - System.Object.Snipster.Library.Extensions.JsonEx.ToJson(Newtonsoft.Json.Formatting)
+  - System.Object.Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.String)
+  - System.Object.Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.String,System.Object)
+  - System.Object.Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.String)
+- uid: Snipster.Library.Models.ExcelColumn.Name
+  commentId: P:Snipster.Library.Models.ExcelColumn.Name
+  id: Name
+  parent: Snipster.Library.Models.ExcelColumn
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ExcelColumn.Name
+  fullName: Snipster.Library.Models.ExcelColumn.Name
+  type: Property
+  source:
+    remote:
+      path: Snipster.Library/Models/ExcelColumn.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Name
+    path: ../Snipster.Library/Models/ExcelColumn.cs
+    startLine: 16
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Models
+  summary: Gets or sets the property name from the data source that this column represents.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Snipster.Library.Models.ExcelColumn.Name*
+- uid: Snipster.Library.Models.ExcelColumn.HeaderText
+  commentId: P:Snipster.Library.Models.ExcelColumn.HeaderText
+  id: HeaderText
+  parent: Snipster.Library.Models.ExcelColumn
+  langs:
+  - csharp
+  - vb
+  name: HeaderText
+  nameWithType: ExcelColumn.HeaderText
+  fullName: Snipster.Library.Models.ExcelColumn.HeaderText
+  type: Property
+  source:
+    remote:
+      path: Snipster.Library/Models/ExcelColumn.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: HeaderText
+    path: ../Snipster.Library/Models/ExcelColumn.cs
+    startLine: 21
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Models
+  summary: Gets or sets the header text to display for this column in the Excel sheet.
+  example: []
+  syntax:
+    content: public string HeaderText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HeaderText As String
+  overload: Snipster.Library.Models.ExcelColumn.HeaderText*
+- uid: Snipster.Library.Models.ExcelColumn.DataType
+  commentId: P:Snipster.Library.Models.ExcelColumn.DataType
+  id: DataType
+  parent: Snipster.Library.Models.ExcelColumn
+  langs:
+  - csharp
+  - vb
+  name: DataType
+  nameWithType: ExcelColumn.DataType
+  fullName: Snipster.Library.Models.ExcelColumn.DataType
+  type: Property
+  source:
+    remote:
+      path: Snipster.Library/Models/ExcelColumn.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: DataType
+    path: ../Snipster.Library/Models/ExcelColumn.cs
+    startLine: 26
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Models
+  summary: Gets or sets the data type of the column (e.g., typeof(int), typeof(string), typeof(DateTime)).
+  example: []
+  syntax:
+    content: public Type DataType { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Property DataType As Type
+  overload: Snipster.Library.Models.ExcelColumn.DataType*
+- uid: Snipster.Library.Models.ExcelColumn.Width
+  commentId: P:Snipster.Library.Models.ExcelColumn.Width
+  id: Width
+  parent: Snipster.Library.Models.ExcelColumn
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: ExcelColumn.Width
+  fullName: Snipster.Library.Models.ExcelColumn.Width
+  type: Property
+  source:
+    remote:
+      path: Snipster.Library/Models/ExcelColumn.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Width
+    path: ../Snipster.Library/Models/ExcelColumn.cs
+    startLine: 31
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Models
+  summary: Gets or sets the width of the column in characters. If the <xref href="Snipster.Library.Models.ExcelExportOptions.AutoFitColumns" data-throw-if-not-resolved="false"></xref> option is enabled, this value may be overridden.
+  example: []
+  syntax:
+    content: public double Width { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Width As Double
+  overload: Snipster.Library.Models.ExcelColumn.Width*
+- uid: Snipster.Library.Models.ExcelColumn.Format
+  commentId: P:Snipster.Library.Models.ExcelColumn.Format
+  id: Format
+  parent: Snipster.Library.Models.ExcelColumn
+  langs:
+  - csharp
+  - vb
+  name: Format
+  nameWithType: ExcelColumn.Format
+  fullName: Snipster.Library.Models.ExcelColumn.Format
+  type: Property
+  source:
+    remote:
+      path: Snipster.Library/Models/ExcelColumn.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Format
+    path: ../Snipster.Library/Models/ExcelColumn.cs
+    startLine: 36
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Models
+  summary: Gets or sets the Excel format string to apply to the column (e.g., "#,##0.00" for numbers, "yyyy-MM-dd" for dates).
+  example: []
+  syntax:
+    content: public string Format { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Format As String
+  overload: Snipster.Library.Models.ExcelColumn.Format*
+- uid: Snipster.Library.Models.ExcelColumn.TrueText
+  commentId: P:Snipster.Library.Models.ExcelColumn.TrueText
+  id: TrueText
+  parent: Snipster.Library.Models.ExcelColumn
+  langs:
+  - csharp
+  - vb
+  name: TrueText
+  nameWithType: ExcelColumn.TrueText
+  fullName: Snipster.Library.Models.ExcelColumn.TrueText
+  type: Property
+  source:
+    remote:
+      path: Snipster.Library/Models/ExcelColumn.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: TrueText
+    path: ../Snipster.Library/Models/ExcelColumn.cs
+    startLine: 41
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Models
+  summary: Gets or sets the text to display for true boolean values. If null, defaults to "True".
+  example: []
+  syntax:
+    content: public string TrueText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TrueText As String
+  overload: Snipster.Library.Models.ExcelColumn.TrueText*
+- uid: Snipster.Library.Models.ExcelColumn.FalseText
+  commentId: P:Snipster.Library.Models.ExcelColumn.FalseText
+  id: FalseText
+  parent: Snipster.Library.Models.ExcelColumn
+  langs:
+  - csharp
+  - vb
+  name: FalseText
+  nameWithType: ExcelColumn.FalseText
+  fullName: Snipster.Library.Models.ExcelColumn.FalseText
+  type: Property
+  source:
+    remote:
+      path: Snipster.Library/Models/ExcelColumn.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: FalseText
+    path: ../Snipster.Library/Models/ExcelColumn.cs
+    startLine: 46
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Models
+  summary: Gets or sets the text to display for false boolean values. If null, defaults to "False".
+  example: []
+  syntax:
+    content: public string FalseText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FalseText As String
+  overload: Snipster.Library.Models.ExcelColumn.FalseText*
+- uid: Snipster.Library.Models.ExcelColumn.Alignment
+  commentId: P:Snipster.Library.Models.ExcelColumn.Alignment
+  id: Alignment
+  parent: Snipster.Library.Models.ExcelColumn
+  langs:
+  - csharp
+  - vb
+  name: Alignment
+  nameWithType: ExcelColumn.Alignment
+  fullName: Snipster.Library.Models.ExcelColumn.Alignment
+  type: Property
+  source:
+    remote:
+      path: Snipster.Library/Models/ExcelColumn.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Alignment
+    path: ../Snipster.Library/Models/ExcelColumn.cs
+    startLine: 51
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Models
+  summary: Alignment customization for column data cells.
+  example: []
+  syntax:
+    content: public ExcelAlignment? Alignment { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Snipster.Library.Enums.ExcelAlignment}
+    content.vb: Public Property Alignment As ExcelAlignment?
+  overload: Snipster.Library.Models.ExcelColumn.Alignment*
+- uid: Snipster.Library.Models.ExcelColumn.HeaderAlignment
+  commentId: P:Snipster.Library.Models.ExcelColumn.HeaderAlignment
+  id: HeaderAlignment
+  parent: Snipster.Library.Models.ExcelColumn
+  langs:
+  - csharp
+  - vb
+  name: HeaderAlignment
+  nameWithType: ExcelColumn.HeaderAlignment
+  fullName: Snipster.Library.Models.ExcelColumn.HeaderAlignment
+  type: Property
+  source:
+    remote:
+      path: Snipster.Library/Models/ExcelColumn.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: HeaderAlignment
+    path: ../Snipster.Library/Models/ExcelColumn.cs
+    startLine: 56
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Models
+  summary: Alignment customization for header cell.
+  example: []
+  syntax:
+    content: public ExcelAlignment? HeaderAlignment { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Snipster.Library.Enums.ExcelAlignment}
+    content.vb: Public Property HeaderAlignment As ExcelAlignment?
+  overload: Snipster.Library.Models.ExcelColumn.HeaderAlignment*
+references:
+- uid: Snipster.Library.Models
+  commentId: N:Snipster.Library.Models
+  href: Snipster.html
+  name: Snipster.Library.Models
+  nameWithType: Snipster.Library.Models
+  fullName: Snipster.Library.Models
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Models
+    name: Models
+    href: Snipster.Library.Models.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Models
+    name: Models
+    href: Snipster.Library.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Snipster.Library.Models.ExcelColumn.Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  parent: Snipster.Library.Extensions.Validations.ObjectValEx
+  definition: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  name: IsDefaultValue<ExcelColumn>(ExcelColumn)
+  nameWithType: ObjectValEx.IsDefaultValue<ExcelColumn>(ExcelColumn)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<Snipster.Library.Models.ExcelColumn>(Snipster.Library.Models.ExcelColumn)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of ExcelColumn)(ExcelColumn)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of Snipster.Library.Models.ExcelColumn)(Snipster.Library.Models.ExcelColumn)
+  name.vb: IsDefaultValue(Of ExcelColumn)(ExcelColumn)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(Snipster.Library.Models.ExcelColumn)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: <
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    href: Snipster.Library.Models.ExcelColumn.html
+  - name: '>'
+  - name: (
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    href: Snipster.Library.Models.ExcelColumn.html
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(Snipster.Library.Models.ExcelColumn)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    href: Snipster.Library.Models.ExcelColumn.html
+  - name: )
+  - name: (
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    href: Snipster.Library.Models.ExcelColumn.html
+  - name: )
+- uid: Snipster.Library.Models.ExcelColumn.Snipster.Library.Helpers.ObjectFx.DeepClone``1
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  parent: Snipster.Library.Helpers.ObjectFx
+  definition: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  name: DeepClone<ExcelColumn>(ExcelColumn)
+  nameWithType: ObjectFx.DeepClone<ExcelColumn>(ExcelColumn)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<Snipster.Library.Models.ExcelColumn>(Snipster.Library.Models.ExcelColumn)
+  nameWithType.vb: ObjectFx.DeepClone(Of ExcelColumn)(ExcelColumn)
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of Snipster.Library.Models.ExcelColumn)(Snipster.Library.Models.ExcelColumn)
+  name.vb: DeepClone(Of ExcelColumn)(ExcelColumn)
+  spec.csharp:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(Snipster.Library.Models.ExcelColumn)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: <
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    href: Snipster.Library.Models.ExcelColumn.html
+  - name: '>'
+  - name: (
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    href: Snipster.Library.Models.ExcelColumn.html
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(Snipster.Library.Models.ExcelColumn)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    href: Snipster.Library.Models.ExcelColumn.html
+  - name: )
+  - name: (
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    href: Snipster.Library.Models.ExcelColumn.html
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.JsonEx.ToJson(Newtonsoft.Json.Formatting)
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  parent: Snipster.Library.Extensions.JsonEx
+  definition: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  name: ToJson(object, Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.String)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  parent: Snipster.Library.Extensions.ObjectEx
+  definition: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  name: GetPropertyValue(object, string)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  name.vb: GetPropertyValue(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.String,System.Object)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  parent: Snipster.Library.Extensions.ObjectEx
+  definition: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  name: SetPropertyValue(object, string, object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  parent: Snipster.Library.Extensions.Validations.ObjectValEx
+  definition: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  name: HasProperty(object, string)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  name.vb: HasProperty(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  name: IsDefaultValue<T>(T)
+  nameWithType: ObjectValEx.IsDefaultValue<T>(T)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<T>(T)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of T)(T)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of T)(T)
+  name.vb: IsDefaultValue(Of T)(T)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx
+  commentId: T:Snipster.Library.Extensions.Validations.ObjectValEx
+  parent: Snipster.Library.Extensions.Validations
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html
+  name: ObjectValEx
+  nameWithType: ObjectValEx
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx
+- uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  name: DeepClone<T>(T)
+  nameWithType: ObjectFx.DeepClone<T>(T)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<T>(T)
+  nameWithType.vb: ObjectFx.DeepClone(Of T)(T)
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+  spec.csharp:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Snipster.Library.Helpers.ObjectFx
+  commentId: T:Snipster.Library.Helpers.ObjectFx
+  parent: Snipster.Library.Helpers
+  href: Snipster.Library.Helpers.ObjectFx.html
+  name: ObjectFx
+  nameWithType: ObjectFx
+  fullName: Snipster.Library.Helpers.ObjectFx
+- uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  isExternal: true
+  href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  name: ToJson(object, Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+- uid: Snipster.Library.Extensions.JsonEx
+  commentId: T:Snipster.Library.Extensions.JsonEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.JsonEx.html
+  name: JsonEx
+  nameWithType: JsonEx
+  fullName: Snipster.Library.Extensions.JsonEx
+- uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  isExternal: true
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  name: GetPropertyValue(object, string)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  name.vb: GetPropertyValue(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.ObjectEx
+  commentId: T:Snipster.Library.Extensions.ObjectEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.ObjectEx.html
+  name: ObjectEx
+  nameWithType: ObjectEx
+  fullName: Snipster.Library.Extensions.ObjectEx
+- uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  isExternal: true
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  name: SetPropertyValue(object, string, object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  isExternal: true
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  name: HasProperty(object, string)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  name.vb: HasProperty(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.Validations
+  commentId: N:Snipster.Library.Extensions.Validations
+  href: Snipster.html
+  name: Snipster.Library.Extensions.Validations
+  nameWithType: Snipster.Library.Extensions.Validations
+  fullName: Snipster.Library.Extensions.Validations
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  href: Snipster.html
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+- uid: Snipster.Library.Extensions
+  commentId: N:Snipster.Library.Extensions
+  href: Snipster.html
+  name: Snipster.Library.Extensions
+  nameWithType: Snipster.Library.Extensions
+  fullName: Snipster.Library.Extensions
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+- uid: Snipster.Library.Models.ExcelColumn.Name*
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.Name
+  href: Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Name
+  name: Name
+  nameWithType: ExcelColumn.Name
+  fullName: Snipster.Library.Models.ExcelColumn.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Snipster.Library.Models.ExcelColumn.HeaderText*
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.HeaderText
+  href: Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_HeaderText
+  name: HeaderText
+  nameWithType: ExcelColumn.HeaderText
+  fullName: Snipster.Library.Models.ExcelColumn.HeaderText
+- uid: Snipster.Library.Models.ExcelColumn.DataType*
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.DataType
+  href: Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_DataType
+  name: DataType
+  nameWithType: ExcelColumn.DataType
+  fullName: Snipster.Library.Models.ExcelColumn.DataType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Snipster.Library.Models.ExcelExportOptions.AutoFitColumns
+  commentId: P:Snipster.Library.Models.ExcelExportOptions.AutoFitColumns
+  href: Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_AutoFitColumns
+  name: AutoFitColumns
+  nameWithType: ExcelExportOptions.AutoFitColumns
+  fullName: Snipster.Library.Models.ExcelExportOptions.AutoFitColumns
+- uid: Snipster.Library.Models.ExcelColumn.Width*
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.Width
+  href: Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Width
+  name: Width
+  nameWithType: ExcelColumn.Width
+  fullName: Snipster.Library.Models.ExcelColumn.Width
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Snipster.Library.Models.ExcelColumn.Format*
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.Format
+  href: Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Format
+  name: Format
+  nameWithType: ExcelColumn.Format
+  fullName: Snipster.Library.Models.ExcelColumn.Format
+- uid: Snipster.Library.Models.ExcelColumn.TrueText*
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.TrueText
+  href: Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_TrueText
+  name: TrueText
+  nameWithType: ExcelColumn.TrueText
+  fullName: Snipster.Library.Models.ExcelColumn.TrueText
+- uid: Snipster.Library.Models.ExcelColumn.FalseText*
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.FalseText
+  href: Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_FalseText
+  name: FalseText
+  nameWithType: ExcelColumn.FalseText
+  fullName: Snipster.Library.Models.ExcelColumn.FalseText
+- uid: Snipster.Library.Models.ExcelColumn.Alignment*
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.Alignment
+  href: Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Alignment
+  name: Alignment
+  nameWithType: ExcelColumn.Alignment
+  fullName: Snipster.Library.Models.ExcelColumn.Alignment
+- uid: System.Nullable{Snipster.Library.Enums.ExcelAlignment}
+  commentId: T:System.Nullable{Snipster.Library.Enums.ExcelAlignment}
+  parent: System
+  definition: System.Nullable`1
+  href: Snipster.Library.Enums.ExcelAlignment.html
+  name: ExcelAlignment?
+  nameWithType: ExcelAlignment?
+  fullName: Snipster.Library.Enums.ExcelAlignment?
+  spec.csharp:
+  - uid: Snipster.Library.Enums.ExcelAlignment
+    name: ExcelAlignment
+    href: Snipster.Library.Enums.ExcelAlignment.html
+  - name: '?'
+  spec.vb:
+  - uid: Snipster.Library.Enums.ExcelAlignment
+    name: ExcelAlignment
+    href: Snipster.Library.Enums.ExcelAlignment.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Snipster.Library.Models.ExcelColumn.HeaderAlignment*
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.HeaderAlignment
+  href: Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_HeaderAlignment
+  name: HeaderAlignment
+  nameWithType: ExcelColumn.HeaderAlignment
+  fullName: Snipster.Library.Models.ExcelColumn.HeaderAlignment

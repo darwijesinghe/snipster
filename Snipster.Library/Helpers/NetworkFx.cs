@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Net.NetworkInformation;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Web;
 
@@ -93,6 +95,34 @@ namespace Snipster.Library.Helpers
             }
 
             return uri.AbsoluteUri;
+        }
+
+        /// <summary>
+        /// Checks if the system has an active internet connection by sending a lightweight request
+        /// to a reliable host (default: https://www.google.com).
+        /// </summary>
+        /// <param name="testUrl">Optional test URL (default: https://www.google.com)</param>
+        /// <param name="timeoutSeconds">Timeout in seconds (default: 5)</param>
+        /// <returns>
+        /// True if internet connection is available; otherwise false.
+        /// </returns>
+        public static async Task<bool> HasInternetConnectionAsync(string testUrl = "http://www.google.com", int timeoutSeconds = 5)
+        {
+            try
+            {
+                using var client = new HttpClient
+                {
+                    Timeout = TimeSpan.FromSeconds(timeoutSeconds)
+                };
+
+                using var response = await client.SendAsync(new HttpRequestMessage(HttpMethod.Head, testUrl));
+                return response.IsSuccessStatusCode;
+            }
+            catch
+            {
+                // any exception (DNS failure, timeout, no network, etc.)
+                return false;
+            }
         }
     }
 }

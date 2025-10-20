@@ -1,0 +1,556 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Helpers.SecurityFx
+  commentId: T:Snipster.Library.Helpers.SecurityFx
+  id: SecurityFx
+  parent: Snipster.Library.Helpers
+  children:
+  - Snipster.Library.Helpers.SecurityFx.GenerateSecureToken(System.Int32)
+  - Snipster.Library.Helpers.SecurityFx.PasswordHash(System.String,System.Byte[]@,System.Byte[]@)
+  - Snipster.Library.Helpers.SecurityFx.RandomString(System.Int32,System.String)
+  - Snipster.Library.Helpers.SecurityFx.VerifyPassword(System.String,System.Byte[],System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: SecurityFx
+  nameWithType: SecurityFx
+  fullName: Snipster.Library.Helpers.SecurityFx
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/Helpers/SecurityFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SecurityFx
+    path: ../Snipster.Library/Helpers/SecurityFx.cs
+    startLine: 10
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Provides various security-related helper methods and functionalities.
+  example: []
+  syntax:
+    content: public static class SecurityFx
+    content.vb: Public Module SecurityFx
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Snipster.Library.Helpers.SecurityFx.RandomString(System.Int32,System.String)
+  commentId: M:Snipster.Library.Helpers.SecurityFx.RandomString(System.Int32,System.String)
+  id: RandomString(System.Int32,System.String)
+  parent: Snipster.Library.Helpers.SecurityFx
+  langs:
+  - csharp
+  - vb
+  name: RandomString(int, string)
+  nameWithType: SecurityFx.RandomString(int, string)
+  fullName: Snipster.Library.Helpers.SecurityFx.RandomString(int, string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/SecurityFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: RandomString
+    path: ../Snipster.Library/Helpers/SecurityFx.cs
+    startLine: 20
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Generates a random string of specified length using allowed characters.
+  example: []
+  syntax:
+    content: public static string RandomString(int length = 32, string allowedChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
+    parameters:
+    - id: length
+      type: System.Int32
+      description: The length of the random string to generate.
+    - id: allowedChars
+      type: System.String
+      description: A string containing characters that can be used in the random string.
+    return:
+      type: System.String
+      description: A random string of the specified <code class="paramref">length</code> composed of characters from the <code class="paramref">allowedChars</code> string.
+    content.vb: Public Shared Function RandomString(length As Integer = 32, allowedChars As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789") As String
+  overload: Snipster.Library.Helpers.SecurityFx.RandomString*
+  nameWithType.vb: SecurityFx.RandomString(Integer, String)
+  fullName.vb: Snipster.Library.Helpers.SecurityFx.RandomString(Integer, String)
+  name.vb: RandomString(Integer, String)
+- uid: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken(System.Int32)
+  commentId: M:Snipster.Library.Helpers.SecurityFx.GenerateSecureToken(System.Int32)
+  id: GenerateSecureToken(System.Int32)
+  parent: Snipster.Library.Helpers.SecurityFx
+  langs:
+  - csharp
+  - vb
+  name: GenerateSecureToken(int)
+  nameWithType: SecurityFx.GenerateSecureToken(int)
+  fullName: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken(int)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/SecurityFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: GenerateSecureToken
+    path: ../Snipster.Library/Helpers/SecurityFx.cs
+    startLine: 33
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Generates a secure random token of specified length using cryptographic random number generation.
+  example: []
+  syntax:
+    content: public static string GenerateSecureToken(int length = 32)
+    parameters:
+    - id: length
+      type: System.Int32
+      description: The length of the token to generate. Default is 32 characters.
+    return:
+      type: System.String
+      description: A secure random token as a Base64 string, with URL-safe characters and trimmed to the specified length.
+    content.vb: Public Shared Function GenerateSecureToken(length As Integer = 32) As String
+  overload: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken*
+  nameWithType.vb: SecurityFx.GenerateSecureToken(Integer)
+  fullName.vb: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken(Integer)
+  name.vb: GenerateSecureToken(Integer)
+- uid: Snipster.Library.Helpers.SecurityFx.PasswordHash(System.String,System.Byte[]@,System.Byte[]@)
+  commentId: M:Snipster.Library.Helpers.SecurityFx.PasswordHash(System.String,System.Byte[]@,System.Byte[]@)
+  id: PasswordHash(System.String,System.Byte[]@,System.Byte[]@)
+  parent: Snipster.Library.Helpers.SecurityFx
+  langs:
+  - csharp
+  - vb
+  name: PasswordHash(string, out byte[], out byte[])
+  nameWithType: SecurityFx.PasswordHash(string, out byte[], out byte[])
+  fullName: Snipster.Library.Helpers.SecurityFx.PasswordHash(string, out byte[], out byte[])
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/SecurityFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: PasswordHash
+    path: ../Snipster.Library/Helpers/SecurityFx.cs
+    startLine: 51
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Generates a hashed password and salt using HMACSHA256.
+  example: []
+  syntax:
+    content: public static void PasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
+    parameters:
+    - id: password
+      type: System.String
+      description: The plain text password to hash.
+    - id: passwordHash
+      type: System.Byte[]
+      description: The resulting hashed password as a byte array.
+    - id: passwordSalt
+      type: System.Byte[]
+      description: The generated salt used for hashing as a byte array.
+    content.vb: Public Shared Sub PasswordHash(password As String, passwordHash As Byte(), passwordSalt As Byte())
+  overload: Snipster.Library.Helpers.SecurityFx.PasswordHash*
+  nameWithType.vb: SecurityFx.PasswordHash(String, Byte(), Byte())
+  fullName.vb: Snipster.Library.Helpers.SecurityFx.PasswordHash(String, Byte(), Byte())
+  name.vb: PasswordHash(String, Byte(), Byte())
+- uid: Snipster.Library.Helpers.SecurityFx.VerifyPassword(System.String,System.Byte[],System.Byte[])
+  commentId: M:Snipster.Library.Helpers.SecurityFx.VerifyPassword(System.String,System.Byte[],System.Byte[])
+  id: VerifyPassword(System.String,System.Byte[],System.Byte[])
+  parent: Snipster.Library.Helpers.SecurityFx
+  langs:
+  - csharp
+  - vb
+  name: VerifyPassword(string, byte[], byte[])
+  nameWithType: SecurityFx.VerifyPassword(string, byte[], byte[])
+  fullName: Snipster.Library.Helpers.SecurityFx.VerifyPassword(string, byte[], byte[])
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/SecurityFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: VerifyPassword
+    path: ../Snipster.Library/Helpers/SecurityFx.cs
+    startLine: 74
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Verifies if the provided password matches the stored password hash using the provided salt.
+  example: []
+  syntax:
+    content: public static bool VerifyPassword(string password, byte[] passwordHash, byte[] passwordSalt)
+    parameters:
+    - id: password
+      type: System.String
+      description: The plain text password to verify.
+    - id: passwordHash
+      type: System.Byte[]
+      description: The stored hashed password as a byte array.
+    - id: passwordSalt
+      type: System.Byte[]
+      description: The salt used to hash the stored password.
+    return:
+      type: System.Boolean
+      description: Returns true if the password is valid; otherwise, false.
+    content.vb: Public Shared Function VerifyPassword(password As String, passwordHash As Byte(), passwordSalt As Byte()) As Boolean
+  overload: Snipster.Library.Helpers.SecurityFx.VerifyPassword*
+  nameWithType.vb: SecurityFx.VerifyPassword(String, Byte(), Byte())
+  fullName.vb: Snipster.Library.Helpers.SecurityFx.VerifyPassword(String, Byte(), Byte())
+  name.vb: VerifyPassword(String, Byte(), Byte())
+references:
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  href: Snipster.html
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Snipster.Library.Helpers.SecurityFx.RandomString*
+  commentId: Overload:Snipster.Library.Helpers.SecurityFx.RandomString
+  href: Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_RandomString_System_Int32_System_String_
+  name: RandomString
+  nameWithType: SecurityFx.RandomString
+  fullName: Snipster.Library.Helpers.SecurityFx.RandomString
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken*
+  commentId: Overload:Snipster.Library.Helpers.SecurityFx.GenerateSecureToken
+  href: Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_GenerateSecureToken_System_Int32_
+  name: GenerateSecureToken
+  nameWithType: SecurityFx.GenerateSecureToken
+  fullName: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken
+- uid: Snipster.Library.Helpers.SecurityFx.PasswordHash*
+  commentId: Overload:Snipster.Library.Helpers.SecurityFx.PasswordHash
+  href: Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_PasswordHash_System_String_System_Byte____System_Byte____
+  name: PasswordHash
+  nameWithType: SecurityFx.PasswordHash
+  fullName: Snipster.Library.Helpers.SecurityFx.PasswordHash
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Snipster.Library.Helpers.SecurityFx.VerifyPassword*
+  commentId: Overload:Snipster.Library.Helpers.SecurityFx.VerifyPassword
+  href: Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_VerifyPassword_System_String_System_Byte___System_Byte___
+  name: VerifyPassword
+  nameWithType: SecurityFx.VerifyPassword
+  fullName: Snipster.Library.Helpers.SecurityFx.VerifyPassword
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

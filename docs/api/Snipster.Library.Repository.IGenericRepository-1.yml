@@ -1,0 +1,1893 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Repository.IGenericRepository`1
+  commentId: T:Snipster.Library.Repository.IGenericRepository`1
+  id: IGenericRepository`1
+  parent: Snipster.Library.Repository
+  children:
+  - Snipster.Library.Repository.IGenericRepository`1.AddAsync(`0)
+  - Snipster.Library.Repository.IGenericRepository`1.AddRangeAsync(System.Collections.Generic.IEnumerable{`0})
+  - Snipster.Library.Repository.IGenericRepository`1.GetAllAsync(System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  - Snipster.Library.Repository.IGenericRepository`1.GetAllByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  - Snipster.Library.Repository.IGenericRepository`1.GetByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  - Snipster.Library.Repository.IGenericRepository`1.GetSelectedColumnsAsync``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  - Snipster.Library.Repository.IGenericRepository`1.IsExistAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  - Snipster.Library.Repository.IGenericRepository`1.Remove(`0)
+  - Snipster.Library.Repository.IGenericRepository`1.RemoveAsync(System.Object)
+  - Snipster.Library.Repository.IGenericRepository`1.SaveChangesAsync
+  - Snipster.Library.Repository.IGenericRepository`1.Update(`0)
+  - Snipster.Library.Repository.IGenericRepository`1.UpdateRange(System.Collections.Generic.IEnumerable{`0})
+  langs:
+  - csharp
+  - vb
+  name: IGenericRepository<TEntity>
+  nameWithType: IGenericRepository<TEntity>
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>
+  type: Interface
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: IGenericRepository
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 11
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Defines the contract for basic CRUD operations on entities of type <code class="typeparamref">TEntity</code>.
+  example: []
+  syntax:
+    content: 'public interface IGenericRepository<TEntity> where TEntity : class'
+    typeParameters:
+    - id: TEntity
+    content.vb: Public Interface IGenericRepository(Of TEntity As Class)
+  extensionMethods:
+  - Snipster.Library.Repository.IGenericRepository`1.Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1
+  - Snipster.Library.Repository.IGenericRepository`1.Snipster.Library.Helpers.ObjectFx.DeepClone``1
+  - System.Object.Snipster.Library.Extensions.JsonEx.ToJson(Newtonsoft.Json.Formatting)
+  - System.Object.Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.String)
+  - System.Object.Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.String,System.Object)
+  - System.Object.Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.String)
+  nameWithType.vb: IGenericRepository(Of TEntity)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity)
+  name.vb: IGenericRepository(Of TEntity)
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetAllAsync(System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.GetAllAsync(System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  id: GetAllAsync(System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  nameWithType: IGenericRepository<TEntity>.GetAllAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetAllAsync(System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IQueryable<TEntity>>?)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: GetAllAsync
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 17
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Retrieves all entities with optional eager loading.
+  example: []
+  syntax:
+    content: Task<IEnumerable<TEntity>> GetAllAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>>? include = null)
+    parameters:
+    - id: include
+      type: System.Func{System.Linq.IQueryable{{TEntity}},System.Linq.IQueryable{{TEntity}}}
+      description: Optional function to include related entities.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TEntity}}}
+    content.vb: Function GetAllAsync(include As Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)) = Nothing) As Task(Of IEnumerable(Of TEntity))
+  overload: Snipster.Library.Repository.IGenericRepository`1.GetAllAsync*
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAllAsync(Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetAllAsync(System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IQueryable(Of TEntity)))
+  name.vb: GetAllAsync(Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetAllByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.GetAllByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  id: GetAllByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAllByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  nameWithType: IGenericRepository<TEntity>.GetAllByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetAllByConditionAsync(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>, System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IQueryable<TEntity>>?)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: GetAllByConditionAsync
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 24
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Retrieves all entities matching a condition, with optional eager loading.
+  example: []
+  syntax:
+    content: Task<IEnumerable<TEntity>> GetAllByConditionAsync(Expression<Func<TEntity, bool>> predicate, Func<IQueryable<TEntity>, IQueryable<TEntity>>? include = null)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+      description: The filter expression.
+    - id: include
+      type: System.Func{System.Linq.IQueryable{{TEntity}},System.Linq.IQueryable{{TEntity}}}
+      description: Optional function to include related entities.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TEntity}}}
+    content.vb: Function GetAllByConditionAsync(predicate As Expression(Of Func(Of TEntity, Boolean)), include As Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)) = Nothing) As Task(Of IEnumerable(Of TEntity))
+  overload: Snipster.Library.Repository.IGenericRepository`1.GetAllByConditionAsync*
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAllByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetAllByConditionAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)), System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IQueryable(Of TEntity)))
+  name.vb: GetAllByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.GetByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  id: GetByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  nameWithType: IGenericRepository<TEntity>.GetByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetByConditionAsync(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>, System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IQueryable<TEntity>>?)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: GetByConditionAsync
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 31
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Retrieves the first entity matching a condition, with optional eager loading.
+  example: []
+  syntax:
+    content: Task<TEntity?> GetByConditionAsync(Expression<Func<TEntity, bool>> predicate, Func<IQueryable<TEntity>, IQueryable<TEntity>>? include = null)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+      description: The filter expression.
+    - id: include
+      type: System.Func{System.Linq.IQueryable{{TEntity}},System.Linq.IQueryable{{TEntity}}}
+      description: Optional function to include related entities.
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Function GetByConditionAsync(predicate As Expression(Of Func(Of TEntity, Boolean)), include As Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)) = Nothing) As Task(Of TEntity)
+  overload: Snipster.Library.Repository.IGenericRepository`1.GetByConditionAsync*
+  nameWithType.vb: IGenericRepository(Of TEntity).GetByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetByConditionAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)), System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IQueryable(Of TEntity)))
+  name.vb: GetByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetSelectedColumnsAsync``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.GetSelectedColumnsAsync``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  id: GetSelectedColumnsAsync``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetSelectedColumnsAsync<TResult>(Expression<Func<TEntity, TResult>>)
+  nameWithType: IGenericRepository<TEntity>.GetSelectedColumnsAsync<TResult>(Expression<Func<TEntity, TResult>>)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetSelectedColumnsAsync<TResult>(System.Linq.Expressions.Expression<System.Func<TEntity, TResult>>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: GetSelectedColumnsAsync
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 38
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Projects a selection of fields from entities.
+  example: []
+  syntax:
+    content: Task<IEnumerable<TResult>> GetSelectedColumnsAsync<TResult>(Expression<Func<TEntity, TResult>> selector)
+    parameters:
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},{TResult}}}
+      description: Expression defining selected fields.
+    typeParameters:
+    - id: TResult
+      description: The type of the projected result.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TResult}}}
+    content.vb: Function GetSelectedColumnsAsync(Of TResult)(selector As Expression(Of Func(Of TEntity, TResult))) As Task(Of IEnumerable(Of TResult))
+  overload: Snipster.Library.Repository.IGenericRepository`1.GetSelectedColumnsAsync*
+  nameWithType.vb: IGenericRepository(Of TEntity).GetSelectedColumnsAsync(Of TResult)(Expression(Of Func(Of TEntity, TResult)))
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetSelectedColumnsAsync(Of TResult)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TResult)))
+  name.vb: GetSelectedColumnsAsync(Of TResult)(Expression(Of Func(Of TEntity, TResult)))
+- uid: Snipster.Library.Repository.IGenericRepository`1.IsExistAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.IsExistAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  id: IsExistAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: IsExistAsync(Expression<Func<TEntity, bool>>)
+  nameWithType: IGenericRepository<TEntity>.IsExistAsync(Expression<Func<TEntity, bool>>)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.IsExistAsync(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: IsExistAsync
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 44
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Determines if any entity exists that matches a condition.
+  example: []
+  syntax:
+    content: Task<bool> IsExistAsync(Expression<Func<TEntity, bool>> predicate)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+      description: The filter expression.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function IsExistAsync(predicate As Expression(Of Func(Of TEntity, Boolean))) As Task(Of Boolean)
+  overload: Snipster.Library.Repository.IGenericRepository`1.IsExistAsync*
+  nameWithType.vb: IGenericRepository(Of TEntity).IsExistAsync(Expression(Of Func(Of TEntity, Boolean)))
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).IsExistAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)))
+  name.vb: IsExistAsync(Expression(Of Func(Of TEntity, Boolean)))
+- uid: Snipster.Library.Repository.IGenericRepository`1.AddAsync(`0)
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.AddAsync(`0)
+  id: AddAsync(`0)
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(TEntity)
+  nameWithType: IGenericRepository<TEntity>.AddAsync(TEntity)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.AddAsync(TEntity)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: AddAsync
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 50
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Adds a new entity to the database.
+  example: []
+  syntax:
+    content: Task AddAsync(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+      description: The entity to add.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddAsync(entity As TEntity) As Task
+  overload: Snipster.Library.Repository.IGenericRepository`1.AddAsync*
+  nameWithType.vb: IGenericRepository(Of TEntity).AddAsync(TEntity)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).AddAsync(TEntity)
+- uid: Snipster.Library.Repository.IGenericRepository`1.AddRangeAsync(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.AddRangeAsync(System.Collections.Generic.IEnumerable{`0})
+  id: AddRangeAsync(System.Collections.Generic.IEnumerable{`0})
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: AddRangeAsync(IEnumerable<TEntity>)
+  nameWithType: IGenericRepository<TEntity>.AddRangeAsync(IEnumerable<TEntity>)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.AddRangeAsync(System.Collections.Generic.IEnumerable<TEntity>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: AddRangeAsync
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 56
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Adds multiple entities to the database.
+  example: []
+  syntax:
+    content: Task AddRangeAsync(IEnumerable<TEntity> entities)
+    parameters:
+    - id: entities
+      type: System.Collections.Generic.IEnumerable{{TEntity}}
+      description: The list of entities to add.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddRangeAsync(entities As IEnumerable(Of TEntity)) As Task
+  overload: Snipster.Library.Repository.IGenericRepository`1.AddRangeAsync*
+  nameWithType.vb: IGenericRepository(Of TEntity).AddRangeAsync(IEnumerable(Of TEntity))
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).AddRangeAsync(System.Collections.Generic.IEnumerable(Of TEntity))
+  name.vb: AddRangeAsync(IEnumerable(Of TEntity))
+- uid: Snipster.Library.Repository.IGenericRepository`1.Update(`0)
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.Update(`0)
+  id: Update(`0)
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Update(TEntity)
+  nameWithType: IGenericRepository<TEntity>.Update(TEntity)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.Update(TEntity)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Update
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 62
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Updates an existing entity.
+  example: []
+  syntax:
+    content: void Update(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+      description: The entity to update.
+    content.vb: Sub Update(entity As TEntity)
+  overload: Snipster.Library.Repository.IGenericRepository`1.Update*
+  nameWithType.vb: IGenericRepository(Of TEntity).Update(TEntity)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).Update(TEntity)
+- uid: Snipster.Library.Repository.IGenericRepository`1.UpdateRange(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.UpdateRange(System.Collections.Generic.IEnumerable{`0})
+  id: UpdateRange(System.Collections.Generic.IEnumerable{`0})
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: UpdateRange(IEnumerable<TEntity>)
+  nameWithType: IGenericRepository<TEntity>.UpdateRange(IEnumerable<TEntity>)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.UpdateRange(System.Collections.Generic.IEnumerable<TEntity>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: UpdateRange
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 68
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Updates multiple entities.
+  example: []
+  syntax:
+    content: void UpdateRange(IEnumerable<TEntity> entities)
+    parameters:
+    - id: entities
+      type: System.Collections.Generic.IEnumerable{{TEntity}}
+      description: The list of entities to update.
+    content.vb: Sub UpdateRange(entities As IEnumerable(Of TEntity))
+  overload: Snipster.Library.Repository.IGenericRepository`1.UpdateRange*
+  nameWithType.vb: IGenericRepository(Of TEntity).UpdateRange(IEnumerable(Of TEntity))
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).UpdateRange(System.Collections.Generic.IEnumerable(Of TEntity))
+  name.vb: UpdateRange(IEnumerable(Of TEntity))
+- uid: Snipster.Library.Repository.IGenericRepository`1.Remove(`0)
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.Remove(`0)
+  id: Remove(`0)
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(TEntity)
+  nameWithType: IGenericRepository<TEntity>.Remove(TEntity)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.Remove(TEntity)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Remove
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 74
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Removes an entity from the database.
+  example: []
+  syntax:
+    content: void Remove(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+      description: The entity to remove.
+    content.vb: Sub Remove(entity As TEntity)
+  overload: Snipster.Library.Repository.IGenericRepository`1.Remove*
+  nameWithType.vb: IGenericRepository(Of TEntity).Remove(TEntity)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).Remove(TEntity)
+- uid: Snipster.Library.Repository.IGenericRepository`1.RemoveAsync(System.Object)
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.RemoveAsync(System.Object)
+  id: RemoveAsync(System.Object)
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveAsync(object)
+  nameWithType: IGenericRepository<TEntity>.RemoveAsync(object)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.RemoveAsync(object)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: RemoveAsync
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 80
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Removes an entity by its identifier.
+  example: []
+  syntax:
+    content: Task RemoveAsync(object id)
+    parameters:
+    - id: id
+      type: System.Object
+      description: The primary key of the entity to remove.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function RemoveAsync(id As Object) As Task
+  overload: Snipster.Library.Repository.IGenericRepository`1.RemoveAsync*
+  nameWithType.vb: IGenericRepository(Of TEntity).RemoveAsync(Object)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).RemoveAsync(Object)
+  name.vb: RemoveAsync(Object)
+- uid: Snipster.Library.Repository.IGenericRepository`1.SaveChangesAsync
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.SaveChangesAsync
+  id: SaveChangesAsync
+  parent: Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesAsync()
+  nameWithType: IGenericRepository<TEntity>.SaveChangesAsync()
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.SaveChangesAsync()
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Repository/IGenericRepository.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SaveChangesAsync
+    path: ../Snipster.Library/Repository/IGenericRepository.cs
+    startLine: 85
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Repository
+  summary: Saves all changes made to the database.
+  example: []
+  syntax:
+    content: Task<bool> SaveChangesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function SaveChangesAsync() As Task(Of Boolean)
+  overload: Snipster.Library.Repository.IGenericRepository`1.SaveChangesAsync*
+  nameWithType.vb: IGenericRepository(Of TEntity).SaveChangesAsync()
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).SaveChangesAsync()
+references:
+- uid: Snipster.Library.Repository
+  commentId: N:Snipster.Library.Repository
+  href: Snipster.html
+  name: Snipster.Library.Repository
+  nameWithType: Snipster.Library.Repository
+  fullName: Snipster.Library.Repository
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Repository
+    name: Repository
+    href: Snipster.Library.Repository.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Repository
+    name: Repository
+    href: Snipster.Library.Repository.html
+- uid: Snipster.Library.Repository.IGenericRepository`1.Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  parent: Snipster.Library.Extensions.Validations.ObjectValEx
+  definition: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  name: IsDefaultValue<IGenericRepository<TEntity>>(IGenericRepository<TEntity>)
+  nameWithType: ObjectValEx.IsDefaultValue<IGenericRepository<TEntity>>(IGenericRepository<TEntity>)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<Snipster.Library.Repository.IGenericRepository<TEntity>>(Snipster.Library.Repository.IGenericRepository<TEntity>)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of IGenericRepository(Of TEntity))(IGenericRepository(Of TEntity))
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of Snipster.Library.Repository.IGenericRepository(Of TEntity))(Snipster.Library.Repository.IGenericRepository(Of TEntity))
+  name.vb: IsDefaultValue(Of IGenericRepository(Of TEntity))(IGenericRepository(Of TEntity))
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(Snipster.Library.Repository.IGenericRepository{`0})
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: <
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(Snipster.Library.Repository.IGenericRepository{`0})
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+  - name: (
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+- uid: Snipster.Library.Repository.IGenericRepository`1.Snipster.Library.Helpers.ObjectFx.DeepClone``1
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  parent: Snipster.Library.Helpers.ObjectFx
+  definition: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  name: DeepClone<IGenericRepository<TEntity>>(IGenericRepository<TEntity>)
+  nameWithType: ObjectFx.DeepClone<IGenericRepository<TEntity>>(IGenericRepository<TEntity>)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<Snipster.Library.Repository.IGenericRepository<TEntity>>(Snipster.Library.Repository.IGenericRepository<TEntity>)
+  nameWithType.vb: ObjectFx.DeepClone(Of IGenericRepository(Of TEntity))(IGenericRepository(Of TEntity))
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of Snipster.Library.Repository.IGenericRepository(Of TEntity))(Snipster.Library.Repository.IGenericRepository(Of TEntity))
+  name.vb: DeepClone(Of IGenericRepository(Of TEntity))(IGenericRepository(Of TEntity))
+  spec.csharp:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(Snipster.Library.Repository.IGenericRepository{`0})
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: <
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(Snipster.Library.Repository.IGenericRepository{`0})
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+  - name: (
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.JsonEx.ToJson(Newtonsoft.Json.Formatting)
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  parent: Snipster.Library.Extensions.JsonEx
+  definition: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  name: ToJson(object, Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.String)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  parent: Snipster.Library.Extensions.ObjectEx
+  definition: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  name: GetPropertyValue(object, string)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  name.vb: GetPropertyValue(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.String,System.Object)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  parent: Snipster.Library.Extensions.ObjectEx
+  definition: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  name: SetPropertyValue(object, string, object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  parent: Snipster.Library.Extensions.Validations.ObjectValEx
+  definition: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  name: HasProperty(object, string)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  name.vb: HasProperty(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  name: IsDefaultValue<T>(T)
+  nameWithType: ObjectValEx.IsDefaultValue<T>(T)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<T>(T)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of T)(T)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of T)(T)
+  name.vb: IsDefaultValue(Of T)(T)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx
+  commentId: T:Snipster.Library.Extensions.Validations.ObjectValEx
+  parent: Snipster.Library.Extensions.Validations
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html
+  name: ObjectValEx
+  nameWithType: ObjectValEx
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx
+- uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  name: DeepClone<T>(T)
+  nameWithType: ObjectFx.DeepClone<T>(T)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<T>(T)
+  nameWithType.vb: ObjectFx.DeepClone(Of T)(T)
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+  spec.csharp:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Snipster.Library.Helpers.ObjectFx
+  commentId: T:Snipster.Library.Helpers.ObjectFx
+  parent: Snipster.Library.Helpers
+  href: Snipster.Library.Helpers.ObjectFx.html
+  name: ObjectFx
+  nameWithType: ObjectFx
+  fullName: Snipster.Library.Helpers.ObjectFx
+- uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  isExternal: true
+  href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  name: ToJson(object, Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+- uid: Snipster.Library.Extensions.JsonEx
+  commentId: T:Snipster.Library.Extensions.JsonEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.JsonEx.html
+  name: JsonEx
+  nameWithType: JsonEx
+  fullName: Snipster.Library.Extensions.JsonEx
+- uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  isExternal: true
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  name: GetPropertyValue(object, string)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  name.vb: GetPropertyValue(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.ObjectEx
+  commentId: T:Snipster.Library.Extensions.ObjectEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.ObjectEx.html
+  name: ObjectEx
+  nameWithType: ObjectEx
+  fullName: Snipster.Library.Extensions.ObjectEx
+- uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  isExternal: true
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  name: SetPropertyValue(object, string, object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  isExternal: true
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  name: HasProperty(object, string)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  name.vb: HasProperty(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.Validations
+  commentId: N:Snipster.Library.Extensions.Validations
+  href: Snipster.html
+  name: Snipster.Library.Extensions.Validations
+  nameWithType: Snipster.Library.Extensions.Validations
+  fullName: Snipster.Library.Extensions.Validations
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  href: Snipster.html
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+- uid: Snipster.Library.Extensions
+  commentId: N:Snipster.Library.Extensions
+  href: Snipster.html
+  name: Snipster.Library.Extensions
+  nameWithType: Snipster.Library.Extensions
+  fullName: Snipster.Library.Extensions
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetAllAsync*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.GetAllAsync
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetAllAsync_System_Func_System_Linq_IQueryable__0__System_Linq_IQueryable__0___
+  name: GetAllAsync
+  nameWithType: IGenericRepository<TEntity>.GetAllAsync
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetAllAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAllAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetAllAsync
+- uid: System.Func{System.Linq.IQueryable{{TEntity}},System.Linq.IQueryable{{TEntity}}}
+  commentId: T:System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<IQueryable<TEntity>, IQueryable<TEntity>>
+  nameWithType: Func<IQueryable<TEntity>, IQueryable<TEntity>>
+  fullName: System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IQueryable<TEntity>>
+  nameWithType.vb: Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity))
+  fullName.vb: System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IQueryable(Of TEntity))
+  name.vb: Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TEntity}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<TEntity>>
+  nameWithType: Task<IEnumerable<TEntity>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TEntity>>
+  nameWithType.vb: Task(Of IEnumerable(Of TEntity))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of TEntity))
+  name.vb: Task(Of IEnumerable(Of TEntity))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetAllByConditionAsync*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.GetAllByConditionAsync
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetAllByConditionAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Func_System_Linq_IQueryable__0__System_Linq_IQueryable__0___
+  name: GetAllByConditionAsync
+  nameWithType: IGenericRepository<TEntity>.GetAllByConditionAsync
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetAllByConditionAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAllByConditionAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetAllByConditionAsync
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TEntity, bool>>
+  nameWithType: Expression<Func<TEntity, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, bool>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean))
+  name.vb: Expression(Of Func(Of TEntity, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetByConditionAsync*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.GetByConditionAsync
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetByConditionAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Func_System_Linq_IQueryable__0__System_Linq_IQueryable__0___
+  name: GetByConditionAsync
+  nameWithType: IGenericRepository<TEntity>.GetByConditionAsync
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetByConditionAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).GetByConditionAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetByConditionAsync
+- uid: System.Threading.Tasks.Task{{TEntity}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TEntity>
+  nameWithType: Task<TEntity>
+  fullName: System.Threading.Tasks.Task<TEntity>
+  nameWithType.vb: Task(Of TEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of TEntity)
+  name.vb: Task(Of TEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetSelectedColumnsAsync*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.GetSelectedColumnsAsync
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetSelectedColumnsAsync__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  name: GetSelectedColumnsAsync
+  nameWithType: IGenericRepository<TEntity>.GetSelectedColumnsAsync
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetSelectedColumnsAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).GetSelectedColumnsAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetSelectedColumnsAsync
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},{TResult}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,``0}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TEntity, TResult>>
+  nameWithType: Expression<Func<TEntity, TResult>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, TResult>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, TResult))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TResult))
+  name.vb: Expression(Of Func(Of TEntity, TResult))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TResult}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<TResult>>
+  nameWithType: Task<IEnumerable<TResult>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TResult>>
+  nameWithType.vb: Task(Of IEnumerable(Of TResult))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of TResult))
+  name.vb: Task(Of IEnumerable(Of TResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: Snipster.Library.Repository.IGenericRepository`1.IsExistAsync*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.IsExistAsync
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_IsExistAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___
+  name: IsExistAsync
+  nameWithType: IGenericRepository<TEntity>.IsExistAsync
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.IsExistAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).IsExistAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).IsExistAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Snipster.Library.Repository.IGenericRepository`1.AddAsync*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.AddAsync
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_AddAsync__0_
+  name: AddAsync
+  nameWithType: IGenericRepository<TEntity>.AddAsync
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.AddAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).AddAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).AddAsync
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: Snipster.Library.Repository.IGenericRepository`1.AddRangeAsync*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.AddRangeAsync
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_AddRangeAsync_System_Collections_Generic_IEnumerable__0__
+  name: AddRangeAsync
+  nameWithType: IGenericRepository<TEntity>.AddRangeAsync
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.AddRangeAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).AddRangeAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).AddRangeAsync
+- uid: System.Collections.Generic.IEnumerable{{TEntity}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TEntity>
+  nameWithType: IEnumerable<TEntity>
+  fullName: System.Collections.Generic.IEnumerable<TEntity>
+  nameWithType.vb: IEnumerable(Of TEntity)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TEntity)
+  name.vb: IEnumerable(Of TEntity)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Snipster.Library.Repository.IGenericRepository`1.Update*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.Update
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_Update__0_
+  name: Update
+  nameWithType: IGenericRepository<TEntity>.Update
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.Update
+  nameWithType.vb: IGenericRepository(Of TEntity).Update
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).Update
+- uid: Snipster.Library.Repository.IGenericRepository`1.UpdateRange*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.UpdateRange
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_UpdateRange_System_Collections_Generic_IEnumerable__0__
+  name: UpdateRange
+  nameWithType: IGenericRepository<TEntity>.UpdateRange
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.UpdateRange
+  nameWithType.vb: IGenericRepository(Of TEntity).UpdateRange
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).UpdateRange
+- uid: Snipster.Library.Repository.IGenericRepository`1.Remove*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.Remove
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_Remove__0_
+  name: Remove
+  nameWithType: IGenericRepository<TEntity>.Remove
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.Remove
+  nameWithType.vb: IGenericRepository(Of TEntity).Remove
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).Remove
+- uid: Snipster.Library.Repository.IGenericRepository`1.RemoveAsync*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.RemoveAsync
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_RemoveAsync_System_Object_
+  name: RemoveAsync
+  nameWithType: IGenericRepository<TEntity>.RemoveAsync
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.RemoveAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).RemoveAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).RemoveAsync
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Snipster.Library.Repository.IGenericRepository`1.SaveChangesAsync*
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.SaveChangesAsync
+  href: Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_SaveChangesAsync
+  name: SaveChangesAsync
+  nameWithType: IGenericRepository<TEntity>.SaveChangesAsync
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.SaveChangesAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).SaveChangesAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).SaveChangesAsync

@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Cache
+  commentId: N:Snipster.Library.Cache
+  id: Snipster.Library.Cache
+  children:
+  - Snipster.Library.Cache.CacheService
+  - Snipster.Library.Cache.ICacheService
+  langs:
+  - csharp
+  - vb
+  name: Snipster.Library.Cache
+  nameWithType: Snipster.Library.Cache
+  fullName: Snipster.Library.Cache
+  type: Namespace
+  assemblies:
+  - Snipster.Library
+references:
+- uid: Snipster.Library.Cache.CacheService
+  commentId: T:Snipster.Library.Cache.CacheService
+  href: Snipster.Library.Cache.CacheService.html
+  name: CacheService
+  nameWithType: CacheService
+  fullName: Snipster.Library.Cache.CacheService
+- uid: Snipster.Library.Cache.ICacheService
+  commentId: T:Snipster.Library.Cache.ICacheService
+  parent: Snipster.Library.Cache
+  href: Snipster.Library.Cache.ICacheService.html
+  name: ICacheService
+  nameWithType: ICacheService
+  fullName: Snipster.Library.Cache.ICacheService
+- uid: Snipster.Library.Cache
+  commentId: N:Snipster.Library.Cache
+  href: Snipster.html
+  name: Snipster.Library.Cache
+  nameWithType: Snipster.Library.Cache
+  fullName: Snipster.Library.Cache
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Cache
+    name: Cache
+    href: Snipster.Library.Cache.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Cache
+    name: Cache
+    href: Snipster.Library.Cache.html

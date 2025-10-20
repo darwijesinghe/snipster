@@ -21,16 +21,26 @@ Tags: `.NET`, utilities, helpers, validations, dotnet, repository, caching, uow,
 | [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)                             | 13.0.1                    | 13.0.1          |
 | [ClosedXML](https://www.nuget.org/packages/ClosedXML)                                         | 0.95.4                    | 0.105.0         |
 
-
 ---
 
 ## Installation
 
+Add Snipster to your .NET project using the CLI:
+
 ```bash
 dotnet add package Snipster
 ```
+Or install via the NuGet Package Manager:
 
+```bash
+Install-Package Snipster
+```
 ---
+
+## Documentation 
+
+Explore detailed API references, usage guides, and real-world examples in the official documentation:  
+[Docs & Examples](https://darwijesinghe.github.io/snipster/)
 
 ## Available Utilities
 
@@ -44,7 +54,8 @@ dotnet add package Snipster
 | **JsonValEx**       | `IsValidJson()`                                                                                                                    | Checks if a string is valid JSON                      |
 | **SecurityValEx**   | `IsValidEmail()` `IsStrongPassword(minLength)`                                                                                     | Email, password validations                           |
 | **StringValEx**     | `IsContainsIgnoreCase()` `IsValidSriLankanPhone()` `IsValidInternationalPhone()` `IsNumeric()` `IsAlphabetic()` `IsAlphanumeric()` | String-related validations                            |
-| **NetworkValEx**    | `IsValidIPv4()`                                                                                                                    | Network-related validations                           |
+| **NetworkValEx**    | `IsValidIPv4()` `IsValidIPv6()` `IsValidWebAddress()`                                                                              | Network-related validations                           |
+| **ObjectValEx**     | `IsDefaultValue()` `HasProperty()`                                                                                                 | Object-related validations                            |
 
 ---
 
@@ -59,6 +70,7 @@ dotnet add package Snipster
 | **NumberEx**     | `ToOrdinal()` `ToIntSafe()` `ToDoubleSafe()`                                                                                                                                                                                                                                                                                     | Numeric formatting and safe conversion    |
 | **SecurityEx**   | `ToSha256()`                                                                                                                                                                                                                                                                                                                     | Secure hash generation                    |
 | **StringEx**     | `CapitalizeFirst()` `ToTitleCase()` `OnlyDigits()` `Truncate()` `Slugify()` `ToBase64()` `FromBase64()` `OrDefault()` `StripHtmlTags()` `SanitizeAlphanumeric()` `RemoveSpecialCharacters()` `ToCamelCase()` `ToPascalCase()` `ToKebabCase()` `RemoveWhitespace()` `NormalizeSpaces()` `GetDescription()` `ToCleanQueryString()` | Powerful string manipulation toolkit      |
+| **ObjectEx**     | `GetPropertyValue()` `SetPropertyValue()`                                                                                                                                                                                                                                                                                        | Get and set property values by name       |
 
 ---
 
@@ -69,9 +81,10 @@ dotnet add package Snipster
 | **JsonFx**     | `Minify()` `Prettify()`                                                                                                              | Minify and format JSON strings                         |
 | **SecurityFx** | `RandomString()` `GenerateSecureToken()` `PasswordHash()` `VerifyPassword()`                                                         | Security and password utilities                        |
 | **StringFx**   | `FormatBytes()` `GenerateUniqueUsername()` `GenerateGuid()`                                                                          | Friendly sizes, safe usernames, GUID control           |
-| **NetworkFx**  | `IsHostAvailableAsync(host)` `BuildUrl(baseUrl, params)`                                                                             | Network & URL Utilities (with Query Parameter Support) |
+| **NetworkFx**  | `IsHostAvailableAsync(host)` `BuildUrl(baseUrl, params)` `HasInternetConnectionAsync()`                                              | Network & URL Utilities (with Query Parameter Support) |
 | **FileFx**     | `SafeReadText()` `SafeReadBytes()` `SafeWriteText()` `SafeWriteBytes()` `CreateTempFile()` `GetDirectorySize()` `SanitizeFileName()` | File Handling & Directory Utilities                    |
 | **ExcelFx**    | `WriteToExcel()` `WriteToMemory()`                                                                                                   | Write data to a file or memory stream                  |
+| **ObjectFx**   | `DeepClone<T>(T)`                                                                                                                    | Deep clone an object                                   |
 
 ---
 
@@ -102,291 +115,6 @@ dotnet add package Snipster
 
 ---
 
-## Example Usage for Extensions
-
-### String: Slugify & Case Conversion
-
-```csharp
-using Snipster.Library.Extensions;
-
-var title = "Hello World!";
-var slug = title.Slugify();
-
-// Output: "hello-world"
-```
-
-### Collection: Chunk and Random Item
-
-```csharp
-using Snipster.Library.Extensions;
-
-var numbers = Enumerable.Range(1, 10);
-var chunks = numbers.ChunkBy(3);
-
-// Output: [[1,2,3],[4,5,6],[7,8,9],[10]]
-```
-
-### JSON: Safe Serialization
-
-```csharp
-using Snipster.Library.Extensions;
-
-var json = new { Name = "Dev" }.ToJson();
-
-// Output: {"Name":"Dev"}
-
-var obj = "{"Name":"Dev"}".FromJson<Dictionary<string, string>>();
-Console.WriteLine(obj["Name"]);
-
-// Output: Dev
-```
-
-### DateTime: Time Ago & Start of Day
-
-```csharp
-using Snipster.Library.Extensions;
-
-var ago = DateTime.UtcNow.AddMinutes(-10).ToTimeAgo();
-
-// Output: "10 minutes ago"
-```
-
-## Example Usage for Helpers
-
-### Security: Hash a password
-
-```csharp
-using Snipster.Library.Helpers;
-
-SecurityFx.PasswordHash("myPassword", out var hash, out var salt);
-bool isValid = SecurityFx.VerifyPassword("myPassword", hash, salt);
-
-// Output: true/false based on verification
-```
-
-### File: Create a temporary file with the specified extension
-
-```csharp
-using Snipster.Library.Helpers;
-
-var tempFile = FileFx.CreateTempFile(".log");
-
-// Verify if the file was created successfully
-bool exists = File.Exists(tempFile);
-Console.WriteLine($"File created: {exists} | Path: {tempFile}");
-```
-
-### Excel: Create an Excel file with data, column definitions, and export options
-
-```csharp
-using Snipster.Library.Helpers;
-using Snipster.Library.Models;
-using Snipster.Library.Enums;
-
-// Your data list object
-var data = new List<TestObject>
-{
-    new TestObject { Id = 1, Name = "John", Value = 1000, Age = 30, IsMember = true, JoinDate = new DateTime(2023, 01, 15), Salary = 5000.25, Commission = 0.075 },
-    new TestObject { Id = 2, Name = "Anika", Value = 2500, Age = 27, IsMember = false, JoinDate = new DateTime(2024, 06, 05), Salary = 7250.50, Commission = 0.10 }
-}
-
-// Column definitions
-var columns = new List<ExcelColumn>
-{
-    new ExcelColumn { Name = "Id", DataType = typeof(int), HeaderText = "ID", Format = ExcelFormats.Integer, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
-    new ExcelColumn { Name = "Name", DataType = typeof(string), HeaderText = "Full Name", Format = ExcelFormats.Text, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
-    new ExcelColumn { Name = "Value", DataType = typeof(int), HeaderText = "Value", Format = ExcelFormats.Integer, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
-    new ExcelColumn { Name = "Age", DataType = typeof(int), HeaderText = "Age", Format = ExcelFormats.Integer, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
-    new ExcelColumn { Name = "IsMember", DataType = typeof(bool), HeaderText = "Membership", TrueText = "Yes", FalseText = "No", Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
-    new ExcelColumn { Name = "JoinDate", DataType = typeof(DateTime), HeaderText = "Join Date", Format = ExcelFormats.DateTime, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
-    new ExcelColumn { Name = "Salary", DataType = typeof(double), HeaderText = "Salary", Format = ExcelFormats.Currency, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left },
-    new ExcelColumn { Name = "Commission", DataType = typeof(double), HeaderText = "Commission", Format = ExcelFormats.Percent, Width = 25, Alignment = ExcelAlignment.Left, HeaderAlignment = ExcelAlignment.Left }
-};
-
-// Meta info
-string sheetName = "TestSheet";
-string tempFilePath = Path.GetTempPath();
-string tempFileName = $"test-{Guid.NewGuid()}.xlsx";
-
-// Write the file with export options
-ExcelFx.WriteToExcel(data, columns, tempFilePath, tempFileName, opts =>
-{
-    opts.AutoFitColumns = false;
-    opts.FreezeHeader = true;
-    opts.AlternateRowColors = true;
-    opts.HeaderBackground = Color.LightGray;
-    opts.AlternateRowColor = Color.LightYellow;
-    opts.SheetName = sheetName;
-});
-
-// Verify if the file was created successfully
-string fullPath = Path.Combine(tempFilePath, tempFileName);
-bool exists = File.Exists(fullPath);
-Console.WriteLine($"File created: {exists} | Path: {fullPath}");
-```
-
-## Repository & Unit of Work Patterns
-
-### Implement IGenericRepository
-
-```csharp
-using Snipster.Library.Repository;
-
-public class MyRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
-{
-    private readonly DbContext _context;
-    private readonly DbSet<TEntity> _dbSet;
-
-    public MyRepository(DbContext context)
-    {
-       _context = context;
-       _dbSet = context.Set<TEntity>();
-    }
-
-    public async Task AddAsync(TEntity entity)
-    {
-       await _dbSet.AddAsync(entity);
-    }
-
-    ...
-}
-```
-
-### IGenericRepository with DI
-
-```csharp
-// Register in DI
-services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-
-// Then use it in your services
-using Snipster.Library.Repository;
-
-public class UserService
-{
-    private readonly IGenericRepository<User> _userRepository;
-
-    public UserService(IGenericRepository<User> userRepository)
-    {
-       _userRepository = userRepository;
-    }
-
-    public async Task PrintAllUsersAsync()
-    {
-       var users = await _userRepository.GetAllAsync();
-       foreach(var user in users)
-       {
-           Console.WriteLine(user.Name);
-       }
-    }
-
-    ...
-}
-```
-
-### IUnitOfWork with DI
-
-```csharp
-// Register in DI
-services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-// Then use it in your services
-using Snipster.Library.UOW;
-
-public class OrderService
-{
-    private readonly IUnitOfWork _uow;
-    private readonly IGenericRepository<Order> _orderRepo;
-
-    public OrderService(IUnitOfWork uow, IGenericRepository<Order> orderRepo)
-    {
-        _uow = uow;
-        _orderRepo = orderRepo;
-    }
-
-    public async Task PlaceOrderAsync(Order order)
-    {
-        await _uow.BeginTransactionAsync();
-        try
-        {
-            await _orderRepo.AddAsync(order);
-            await _uow.SaveChangesAsync();
-
-            // ... maybe add another entity
-
-            await _uow.CommitAsync();
-        }
-        catch
-        {
-            await _uow.RollbackAsync();
-            throw;
-        }
-    }
-
-    ...
-}
-```
-
-## Cache Service
-
-### Implement ICacheService
-
-```csharp
-using Snipster.Library.Cache;
-
-public class MyCacheService : ICacheService
-{
-    private readonly IMemoryCache _cache;
-
-    public MyCacheService(IMemoryCache cache)
-    {
-        _cache = cache;
-    }
-
-    public async Task<T?> SetCacheAsync<T>(string key, Func<Task<T>> create) where T : class
-    {
-        ...
-    }
-
-    ...
-}
-```
-
-### ICacheService with DI
-
-```csharp
-// Register in DI
-services.AddSingleton<ICacheService, CacheService>();
-
-// Then use it in your services
-using Snipster.Library.Cache;
-
-public class MyService
-{
-    private readonly ICacheService _cacheService;
-
-    public MyService(ICacheService cacheService)
-    {
-        _cacheService = cacheService;
-    }
-
-    public async Task<string?> GetDataAsync()
-    {
-        const string cacheKey = "my_data";
-
-        return await _cacheService.SetCacheAsync(cacheKey, async () =>
-        {
-            // Simulate fetching data from a database or API
-            await Task.Delay(100); 
-            return "Hello from database!";
-        });
-    }
-
-    ...
-}
-```
-
----
-
 ## Contributions
 
 Pull requests, suggestions, and feedback are welcome!  
@@ -405,7 +133,7 @@ Thanks to these wonderful people for their contributions!
 
 This project is maintained by:
 
-- [darwijesinghe](https://github.com/darwijesinghe)
+- [Darshana Wijesinghe](https://github.com/darwijesinghe)
 
 ---
 

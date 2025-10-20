@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Models
+  commentId: N:Snipster.Library.Models
+  id: Snipster.Library.Models
+  children:
+  - Snipster.Library.Models.ExcelColumn
+  - Snipster.Library.Models.ExcelExportOptions
+  - Snipster.Library.Models.ExcelFormats
+  langs:
+  - csharp
+  - vb
+  name: Snipster.Library.Models
+  nameWithType: Snipster.Library.Models
+  fullName: Snipster.Library.Models
+  type: Namespace
+  assemblies:
+  - Snipster.Library
+references:
+- uid: Snipster.Library.Models.ExcelColumn
+  commentId: T:Snipster.Library.Models.ExcelColumn
+  href: Snipster.Library.Models.ExcelColumn.html
+  name: ExcelColumn
+  nameWithType: ExcelColumn
+  fullName: Snipster.Library.Models.ExcelColumn
+- uid: Snipster.Library.Models.ExcelExportOptions
+  commentId: T:Snipster.Library.Models.ExcelExportOptions
+  href: Snipster.Library.Models.ExcelExportOptions.html
+  name: ExcelExportOptions
+  nameWithType: ExcelExportOptions
+  fullName: Snipster.Library.Models.ExcelExportOptions
+- uid: Snipster.Library.Models.ExcelFormats
+  commentId: T:Snipster.Library.Models.ExcelFormats
+  href: Snipster.Library.Models.ExcelFormats.html
+  name: ExcelFormats
+  nameWithType: ExcelFormats
+  fullName: Snipster.Library.Models.ExcelFormats

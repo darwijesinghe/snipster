@@ -1,0 +1,1606 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.UOW.UnitOfWork
+  commentId: T:Snipster.Library.UOW.UnitOfWork
+  id: UnitOfWork
+  parent: Snipster.Library.UOW
+  children:
+  - Snipster.Library.UOW.UnitOfWork.#ctor(Microsoft.EntityFrameworkCore.DbContext,System.Boolean)
+  - Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync
+  - Snipster.Library.UOW.UnitOfWork.CommitAsync
+  - Snipster.Library.UOW.UnitOfWork.Dispose
+  - Snipster.Library.UOW.UnitOfWork.Repository``1
+  - Snipster.Library.UOW.UnitOfWork.RollbackAsync
+  - Snipster.Library.UOW.UnitOfWork.SaveChangesAsync
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWork
+  nameWithType: UnitOfWork
+  fullName: Snipster.Library.UOW.UnitOfWork
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/UOW/UnitOfWork.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: UnitOfWork
+    path: ../Snipster.Library/UOW/UnitOfWork.cs
+    startLine: 12
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.UOW
+  summary: Provides an implementation of the Unit of Work pattern, managing database transactions and repositories.
+  example: []
+  syntax:
+    content: 'public sealed class UnitOfWork : IUnitOfWork, IDisposable'
+    content.vb: Public NotInheritable Class UnitOfWork Implements IUnitOfWork, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Snipster.Library.UOW.IUnitOfWork
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Snipster.Library.UOW.UnitOfWork.Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1
+  - Snipster.Library.UOW.UnitOfWork.Snipster.Library.Helpers.ObjectFx.DeepClone``1
+  - System.Object.Snipster.Library.Extensions.JsonEx.ToJson(Newtonsoft.Json.Formatting)
+  - System.Object.Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.String)
+  - System.Object.Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.String,System.Object)
+  - System.Object.Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.String)
+- uid: Snipster.Library.UOW.UnitOfWork.#ctor(Microsoft.EntityFrameworkCore.DbContext,System.Boolean)
+  commentId: M:Snipster.Library.UOW.UnitOfWork.#ctor(Microsoft.EntityFrameworkCore.DbContext,System.Boolean)
+  id: '#ctor(Microsoft.EntityFrameworkCore.DbContext,System.Boolean)'
+  parent: Snipster.Library.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWork(DbContext, bool)
+  nameWithType: UnitOfWork.UnitOfWork(DbContext, bool)
+  fullName: Snipster.Library.UOW.UnitOfWork.UnitOfWork(Microsoft.EntityFrameworkCore.DbContext, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Snipster.Library/UOW/UnitOfWork.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: .ctor
+    path: ../Snipster.Library/UOW/UnitOfWork.cs
+    startLine: 27
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.UOW
+  summary: Initializes a new instance of the <xref href="Snipster.Library.UOW.UnitOfWork" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UnitOfWork(DbContext context, bool disposeContext = true)
+    parameters:
+    - id: context
+      type: Microsoft.EntityFrameworkCore.DbContext
+      description: The database context to be used for the unit of work.
+    - id: disposeContext
+      type: System.Boolean
+      description: Whether the UnitOfWork owns the DbContext and should dispose it.
+    content.vb: Public Sub New(context As DbContext, disposeContext As Boolean = True)
+  overload: Snipster.Library.UOW.UnitOfWork.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">context</code> is null.
+  nameWithType.vb: UnitOfWork.New(DbContext, Boolean)
+  fullName.vb: Snipster.Library.UOW.UnitOfWork.New(Microsoft.EntityFrameworkCore.DbContext, Boolean)
+  name.vb: New(DbContext, Boolean)
+- uid: Snipster.Library.UOW.UnitOfWork.Repository``1
+  commentId: M:Snipster.Library.UOW.UnitOfWork.Repository``1
+  id: Repository``1
+  parent: Snipster.Library.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Repository<TEntity>()
+  nameWithType: UnitOfWork.Repository<TEntity>()
+  fullName: Snipster.Library.UOW.UnitOfWork.Repository<TEntity>()
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/UOW/UnitOfWork.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Repository
+    path: ../Snipster.Library/UOW/UnitOfWork.cs
+    startLine: 35
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.UOW
+  summary: Gets the repository instance for the specified entity type.
+  example: []
+  syntax:
+    content: 'public IGenericRepository<TEntity> Repository<TEntity>() where TEntity : class'
+    typeParameters:
+    - id: TEntity
+      description: The type of the entity.
+    return:
+      type: Snipster.Library.Repository.IGenericRepository{{TEntity}}
+      description: An <xref href="Snipster.Library.Repository.IGenericRepository%601" data-throw-if-not-resolved="false"></xref> instance for the given entity type.
+    content.vb: Public Function Repository(Of TEntity As Class)() As IGenericRepository(Of TEntity)
+  overload: Snipster.Library.UOW.UnitOfWork.Repository*
+  implements:
+  - Snipster.Library.UOW.IUnitOfWork.Repository``1
+  nameWithType.vb: UnitOfWork.Repository(Of TEntity)()
+  fullName.vb: Snipster.Library.UOW.UnitOfWork.Repository(Of TEntity)()
+  name.vb: Repository(Of TEntity)()
+- uid: Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync
+  commentId: M:Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync
+  id: BeginTransactionAsync
+  parent: Snipster.Library.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: BeginTransactionAsync()
+  nameWithType: UnitOfWork.BeginTransactionAsync()
+  fullName: Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync()
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/UOW/UnitOfWork.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: BeginTransactionAsync
+    path: ../Snipster.Library/UOW/UnitOfWork.cs
+    startLine: 47
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.UOW
+  summary: Asynchronously begins a new database transaction.
+  example: []
+  syntax:
+    content: public Task BeginTransactionAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function BeginTransactionAsync() As Task
+  overload: Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync*
+  implements:
+  - Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync
+- uid: Snipster.Library.UOW.UnitOfWork.CommitAsync
+  commentId: M:Snipster.Library.UOW.UnitOfWork.CommitAsync
+  id: CommitAsync
+  parent: Snipster.Library.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: CommitAsync()
+  nameWithType: UnitOfWork.CommitAsync()
+  fullName: Snipster.Library.UOW.UnitOfWork.CommitAsync()
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/UOW/UnitOfWork.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: CommitAsync
+    path: ../Snipster.Library/UOW/UnitOfWork.cs
+    startLine: 54
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.UOW
+  summary: Asynchronously commits the current transaction, saving all changes to the database.
+  example: []
+  syntax:
+    content: public Task CommitAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function CommitAsync() As Task
+  overload: Snipster.Library.UOW.UnitOfWork.CommitAsync*
+  implements:
+  - Snipster.Library.UOW.IUnitOfWork.CommitAsync
+- uid: Snipster.Library.UOW.UnitOfWork.RollbackAsync
+  commentId: M:Snipster.Library.UOW.UnitOfWork.RollbackAsync
+  id: RollbackAsync
+  parent: Snipster.Library.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: RollbackAsync()
+  nameWithType: UnitOfWork.RollbackAsync()
+  fullName: Snipster.Library.UOW.UnitOfWork.RollbackAsync()
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/UOW/UnitOfWork.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: RollbackAsync
+    path: ../Snipster.Library/UOW/UnitOfWork.cs
+    startLine: 66
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.UOW
+  summary: Asynchronously rolls back the current transaction, discarding all changes that were made during the transaction.
+  example: []
+  syntax:
+    content: public Task RollbackAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function RollbackAsync() As Task
+  overload: Snipster.Library.UOW.UnitOfWork.RollbackAsync*
+  implements:
+  - Snipster.Library.UOW.IUnitOfWork.RollbackAsync
+- uid: Snipster.Library.UOW.UnitOfWork.SaveChangesAsync
+  commentId: M:Snipster.Library.UOW.UnitOfWork.SaveChangesAsync
+  id: SaveChangesAsync
+  parent: Snipster.Library.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesAsync()
+  nameWithType: UnitOfWork.SaveChangesAsync()
+  fullName: Snipster.Library.UOW.UnitOfWork.SaveChangesAsync()
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/UOW/UnitOfWork.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SaveChangesAsync
+    path: ../Snipster.Library/UOW/UnitOfWork.cs
+    startLine: 77
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.UOW
+  summary: Saves all changes made to the database.
+  example: []
+  syntax:
+    content: public Task<bool> SaveChangesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function SaveChangesAsync() As Task(Of Boolean)
+  overload: Snipster.Library.UOW.UnitOfWork.SaveChangesAsync*
+  implements:
+  - Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync
+- uid: Snipster.Library.UOW.UnitOfWork.Dispose
+  commentId: M:Snipster.Library.UOW.UnitOfWork.Dispose
+  id: Dispose
+  parent: Snipster.Library.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UnitOfWork.Dispose()
+  fullName: Snipster.Library.UOW.UnitOfWork.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/UOW/UnitOfWork.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Dispose
+    path: ../Snipster.Library/UOW/UnitOfWork.cs
+    startLine: 85
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.UOW
+  summary: Disposes the transaction (if any) and the underlying DbContext resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Snipster.Library.UOW.UnitOfWork.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Snipster.Library.UOW
+  commentId: N:Snipster.Library.UOW
+  href: Snipster.html
+  name: Snipster.Library.UOW
+  nameWithType: Snipster.Library.UOW
+  fullName: Snipster.Library.UOW
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.UOW
+    name: UOW
+    href: Snipster.Library.UOW.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.UOW
+    name: UOW
+    href: Snipster.Library.UOW.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Snipster.Library.UOW.IUnitOfWork
+  commentId: T:Snipster.Library.UOW.IUnitOfWork
+  parent: Snipster.Library.UOW
+  href: Snipster.Library.UOW.IUnitOfWork.html
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: Snipster.Library.UOW.IUnitOfWork
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Snipster.Library.UOW.UnitOfWork.Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  parent: Snipster.Library.Extensions.Validations.ObjectValEx
+  definition: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  name: IsDefaultValue<UnitOfWork>(UnitOfWork)
+  nameWithType: ObjectValEx.IsDefaultValue<UnitOfWork>(UnitOfWork)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<Snipster.Library.UOW.UnitOfWork>(Snipster.Library.UOW.UnitOfWork)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of UnitOfWork)(UnitOfWork)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of Snipster.Library.UOW.UnitOfWork)(Snipster.Library.UOW.UnitOfWork)
+  name.vb: IsDefaultValue(Of UnitOfWork)(UnitOfWork)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(Snipster.Library.UOW.UnitOfWork)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: <
+  - uid: Snipster.Library.UOW.UnitOfWork
+    name: UnitOfWork
+    href: Snipster.Library.UOW.UnitOfWork.html
+  - name: '>'
+  - name: (
+  - uid: Snipster.Library.UOW.UnitOfWork
+    name: UnitOfWork
+    href: Snipster.Library.UOW.UnitOfWork.html
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(Snipster.Library.UOW.UnitOfWork)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.UOW.UnitOfWork
+    name: UnitOfWork
+    href: Snipster.Library.UOW.UnitOfWork.html
+  - name: )
+  - name: (
+  - uid: Snipster.Library.UOW.UnitOfWork
+    name: UnitOfWork
+    href: Snipster.Library.UOW.UnitOfWork.html
+  - name: )
+- uid: Snipster.Library.UOW.UnitOfWork.Snipster.Library.Helpers.ObjectFx.DeepClone``1
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  parent: Snipster.Library.Helpers.ObjectFx
+  definition: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  name: DeepClone<UnitOfWork>(UnitOfWork)
+  nameWithType: ObjectFx.DeepClone<UnitOfWork>(UnitOfWork)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<Snipster.Library.UOW.UnitOfWork>(Snipster.Library.UOW.UnitOfWork)
+  nameWithType.vb: ObjectFx.DeepClone(Of UnitOfWork)(UnitOfWork)
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of Snipster.Library.UOW.UnitOfWork)(Snipster.Library.UOW.UnitOfWork)
+  name.vb: DeepClone(Of UnitOfWork)(UnitOfWork)
+  spec.csharp:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(Snipster.Library.UOW.UnitOfWork)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: <
+  - uid: Snipster.Library.UOW.UnitOfWork
+    name: UnitOfWork
+    href: Snipster.Library.UOW.UnitOfWork.html
+  - name: '>'
+  - name: (
+  - uid: Snipster.Library.UOW.UnitOfWork
+    name: UnitOfWork
+    href: Snipster.Library.UOW.UnitOfWork.html
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(Snipster.Library.UOW.UnitOfWork)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.UOW.UnitOfWork
+    name: UnitOfWork
+    href: Snipster.Library.UOW.UnitOfWork.html
+  - name: )
+  - name: (
+  - uid: Snipster.Library.UOW.UnitOfWork
+    name: UnitOfWork
+    href: Snipster.Library.UOW.UnitOfWork.html
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.JsonEx.ToJson(Newtonsoft.Json.Formatting)
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  parent: Snipster.Library.Extensions.JsonEx
+  definition: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  name: ToJson(object, Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.String)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  parent: Snipster.Library.Extensions.ObjectEx
+  definition: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  name: GetPropertyValue(object, string)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  name.vb: GetPropertyValue(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.String,System.Object)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  parent: Snipster.Library.Extensions.ObjectEx
+  definition: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  name: SetPropertyValue(object, string, object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  parent: Snipster.Library.Extensions.Validations.ObjectValEx
+  definition: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  name: HasProperty(object, string)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  name.vb: HasProperty(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  name: IsDefaultValue<T>(T)
+  nameWithType: ObjectValEx.IsDefaultValue<T>(T)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<T>(T)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of T)(T)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of T)(T)
+  name.vb: IsDefaultValue(Of T)(T)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx
+  commentId: T:Snipster.Library.Extensions.Validations.ObjectValEx
+  parent: Snipster.Library.Extensions.Validations
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html
+  name: ObjectValEx
+  nameWithType: ObjectValEx
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx
+- uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  name: DeepClone<T>(T)
+  nameWithType: ObjectFx.DeepClone<T>(T)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<T>(T)
+  nameWithType.vb: ObjectFx.DeepClone(Of T)(T)
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+  spec.csharp:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Snipster.Library.Helpers.ObjectFx
+  commentId: T:Snipster.Library.Helpers.ObjectFx
+  parent: Snipster.Library.Helpers
+  href: Snipster.Library.Helpers.ObjectFx.html
+  name: ObjectFx
+  nameWithType: ObjectFx
+  fullName: Snipster.Library.Helpers.ObjectFx
+- uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  isExternal: true
+  href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  name: ToJson(object, Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+- uid: Snipster.Library.Extensions.JsonEx
+  commentId: T:Snipster.Library.Extensions.JsonEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.JsonEx.html
+  name: JsonEx
+  nameWithType: JsonEx
+  fullName: Snipster.Library.Extensions.JsonEx
+- uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  isExternal: true
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  name: GetPropertyValue(object, string)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  name.vb: GetPropertyValue(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.ObjectEx
+  commentId: T:Snipster.Library.Extensions.ObjectEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.ObjectEx.html
+  name: ObjectEx
+  nameWithType: ObjectEx
+  fullName: Snipster.Library.Extensions.ObjectEx
+- uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  isExternal: true
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  name: SetPropertyValue(object, string, object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  isExternal: true
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  name: HasProperty(object, string)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  name.vb: HasProperty(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.Validations
+  commentId: N:Snipster.Library.Extensions.Validations
+  href: Snipster.html
+  name: Snipster.Library.Extensions.Validations
+  nameWithType: Snipster.Library.Extensions.Validations
+  fullName: Snipster.Library.Extensions.Validations
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  href: Snipster.html
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+- uid: Snipster.Library.Extensions
+  commentId: N:Snipster.Library.Extensions
+  href: Snipster.html
+  name: Snipster.Library.Extensions
+  nameWithType: Snipster.Library.Extensions
+  fullName: Snipster.Library.Extensions
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+- uid: Snipster.Library.UOW.UnitOfWork
+  commentId: T:Snipster.Library.UOW.UnitOfWork
+  href: Snipster.Library.UOW.UnitOfWork.html
+  name: UnitOfWork
+  nameWithType: UnitOfWork
+  fullName: Snipster.Library.UOW.UnitOfWork
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Snipster.Library.UOW.UnitOfWork.#ctor*
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.#ctor
+  href: Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork__ctor_Microsoft_EntityFrameworkCore_DbContext_System_Boolean_
+  name: UnitOfWork
+  nameWithType: UnitOfWork.UnitOfWork
+  fullName: Snipster.Library.UOW.UnitOfWork.UnitOfWork
+  nameWithType.vb: UnitOfWork.New
+  fullName.vb: Snipster.Library.UOW.UnitOfWork.New
+  name.vb: New
+- uid: Microsoft.EntityFrameworkCore.DbContext
+  commentId: T:Microsoft.EntityFrameworkCore.DbContext
+  parent: Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext
+  name: DbContext
+  nameWithType: DbContext
+  fullName: Microsoft.EntityFrameworkCore.DbContext
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+- uid: Snipster.Library.Repository.IGenericRepository`1
+  commentId: T:Snipster.Library.Repository.IGenericRepository`1
+  href: Snipster.Library.Repository.IGenericRepository-1.html
+  name: IGenericRepository<TEntity>
+  nameWithType: IGenericRepository<TEntity>
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>
+  nameWithType.vb: IGenericRepository(Of TEntity)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity)
+  name.vb: IGenericRepository(Of TEntity)
+  spec.csharp:
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Snipster.Library.UOW.UnitOfWork.Repository*
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.Repository
+  href: Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_Repository__1
+  name: Repository
+  nameWithType: UnitOfWork.Repository
+  fullName: Snipster.Library.UOW.UnitOfWork.Repository
+- uid: Snipster.Library.UOW.IUnitOfWork.Repository``1
+  commentId: M:Snipster.Library.UOW.IUnitOfWork.Repository``1
+  parent: Snipster.Library.UOW.IUnitOfWork
+  href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_Repository__1
+  name: Repository<TEntity>()
+  nameWithType: IUnitOfWork.Repository<TEntity>()
+  fullName: Snipster.Library.UOW.IUnitOfWork.Repository<TEntity>()
+  nameWithType.vb: IUnitOfWork.Repository(Of TEntity)()
+  fullName.vb: Snipster.Library.UOW.IUnitOfWork.Repository(Of TEntity)()
+  name.vb: Repository(Of TEntity)()
+  spec.csharp:
+  - uid: Snipster.Library.UOW.IUnitOfWork.Repository``1
+    name: Repository
+    href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_Repository__1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.UOW.IUnitOfWork.Repository``1
+    name: Repository
+    href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_Repository__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: )
+- uid: Snipster.Library.Repository.IGenericRepository{{TEntity}}
+  commentId: T:Snipster.Library.Repository.IGenericRepository{`0}
+  parent: Snipster.Library.Repository
+  definition: Snipster.Library.Repository.IGenericRepository`1
+  href: Snipster.Library.Repository.IGenericRepository-1.html
+  name: IGenericRepository<TEntity>
+  nameWithType: IGenericRepository<TEntity>
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>
+  nameWithType.vb: IGenericRepository(Of TEntity)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity)
+  name.vb: IGenericRepository(Of TEntity)
+  spec.csharp:
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Snipster.Library.Repository
+  commentId: N:Snipster.Library.Repository
+  href: Snipster.html
+  name: Snipster.Library.Repository
+  nameWithType: Snipster.Library.Repository
+  fullName: Snipster.Library.Repository
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Repository
+    name: Repository
+    href: Snipster.Library.Repository.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Repository
+    name: Repository
+    href: Snipster.Library.Repository.html
+- uid: Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync*
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync
+  href: Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_BeginTransactionAsync
+  name: BeginTransactionAsync
+  nameWithType: UnitOfWork.BeginTransactionAsync
+  fullName: Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync
+- uid: Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync
+  commentId: M:Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync
+  parent: Snipster.Library.UOW.IUnitOfWork
+  href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_BeginTransactionAsync
+  name: BeginTransactionAsync()
+  nameWithType: IUnitOfWork.BeginTransactionAsync()
+  fullName: Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync()
+  spec.csharp:
+  - uid: Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync
+    name: BeginTransactionAsync
+    href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_BeginTransactionAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync
+    name: BeginTransactionAsync
+    href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_BeginTransactionAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Snipster.Library.UOW.UnitOfWork.CommitAsync*
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.CommitAsync
+  href: Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_CommitAsync
+  name: CommitAsync
+  nameWithType: UnitOfWork.CommitAsync
+  fullName: Snipster.Library.UOW.UnitOfWork.CommitAsync
+- uid: Snipster.Library.UOW.IUnitOfWork.CommitAsync
+  commentId: M:Snipster.Library.UOW.IUnitOfWork.CommitAsync
+  parent: Snipster.Library.UOW.IUnitOfWork
+  href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_CommitAsync
+  name: CommitAsync()
+  nameWithType: IUnitOfWork.CommitAsync()
+  fullName: Snipster.Library.UOW.IUnitOfWork.CommitAsync()
+  spec.csharp:
+  - uid: Snipster.Library.UOW.IUnitOfWork.CommitAsync
+    name: CommitAsync
+    href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_CommitAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.UOW.IUnitOfWork.CommitAsync
+    name: CommitAsync
+    href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_CommitAsync
+  - name: (
+  - name: )
+- uid: Snipster.Library.UOW.UnitOfWork.RollbackAsync*
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.RollbackAsync
+  href: Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_RollbackAsync
+  name: RollbackAsync
+  nameWithType: UnitOfWork.RollbackAsync
+  fullName: Snipster.Library.UOW.UnitOfWork.RollbackAsync
+- uid: Snipster.Library.UOW.IUnitOfWork.RollbackAsync
+  commentId: M:Snipster.Library.UOW.IUnitOfWork.RollbackAsync
+  parent: Snipster.Library.UOW.IUnitOfWork
+  href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_RollbackAsync
+  name: RollbackAsync()
+  nameWithType: IUnitOfWork.RollbackAsync()
+  fullName: Snipster.Library.UOW.IUnitOfWork.RollbackAsync()
+  spec.csharp:
+  - uid: Snipster.Library.UOW.IUnitOfWork.RollbackAsync
+    name: RollbackAsync
+    href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_RollbackAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.UOW.IUnitOfWork.RollbackAsync
+    name: RollbackAsync
+    href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_RollbackAsync
+  - name: (
+  - name: )
+- uid: Snipster.Library.UOW.UnitOfWork.SaveChangesAsync*
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.SaveChangesAsync
+  href: Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_SaveChangesAsync
+  name: SaveChangesAsync
+  nameWithType: UnitOfWork.SaveChangesAsync
+  fullName: Snipster.Library.UOW.UnitOfWork.SaveChangesAsync
+- uid: Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync
+  commentId: M:Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync
+  parent: Snipster.Library.UOW.IUnitOfWork
+  href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_SaveChangesAsync
+  name: SaveChangesAsync()
+  nameWithType: IUnitOfWork.SaveChangesAsync()
+  fullName: Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync()
+  spec.csharp:
+  - uid: Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync
+    name: SaveChangesAsync
+    href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_SaveChangesAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync
+    name: SaveChangesAsync
+    href: Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_SaveChangesAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Snipster.Library.UOW.UnitOfWork.Dispose*
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.Dispose
+  href: Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_Dispose
+  name: Dispose
+  nameWithType: UnitOfWork.Dispose
+  fullName: Snipster.Library.UOW.UnitOfWork.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

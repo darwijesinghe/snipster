@@ -9,7 +9,7 @@ namespace Snipster.Library.Helpers
     public static class JsonFx
     {
         /// <summary>
-        /// Minifies a JSON string (removes all whitespace and newlines)
+        /// Minifies a JSON string (removes all whitespace and newlines).
         /// </summary>
         /// <param name="json">The JSON string to minify.</param>
         /// <returns>
@@ -32,7 +32,7 @@ namespace Snipster.Library.Helpers
         }
 
         /// <summary>
-        /// Prettifies a JSON string (adds indentation and newlines for readability)
+        /// Prettifies a JSON string (adds indentation and newlines for readability).
         /// </summary>
         /// <param name="json">The JSON string to prettify.</param>
         /// <returns>

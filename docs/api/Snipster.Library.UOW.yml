@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.UOW
+  commentId: N:Snipster.Library.UOW
+  id: Snipster.Library.UOW
+  children:
+  - Snipster.Library.UOW.IUnitOfWork
+  - Snipster.Library.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Snipster.Library.UOW
+  nameWithType: Snipster.Library.UOW
+  fullName: Snipster.Library.UOW
+  type: Namespace
+  assemblies:
+  - Snipster.Library
+references:
+- uid: Snipster.Library.UOW.IUnitOfWork
+  commentId: T:Snipster.Library.UOW.IUnitOfWork
+  parent: Snipster.Library.UOW
+  href: Snipster.Library.UOW.IUnitOfWork.html
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: Snipster.Library.UOW.IUnitOfWork
+- uid: Snipster.Library.UOW.UnitOfWork
+  commentId: T:Snipster.Library.UOW.UnitOfWork
+  href: Snipster.Library.UOW.UnitOfWork.html
+  name: UnitOfWork
+  nameWithType: UnitOfWork
+  fullName: Snipster.Library.UOW.UnitOfWork
+- uid: Snipster.Library.UOW
+  commentId: N:Snipster.Library.UOW
+  href: Snipster.html
+  name: Snipster.Library.UOW
+  nameWithType: Snipster.Library.UOW
+  fullName: Snipster.Library.UOW
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.UOW
+    name: UOW
+    href: Snipster.Library.UOW.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.UOW
+    name: UOW
+    href: Snipster.Library.UOW.html

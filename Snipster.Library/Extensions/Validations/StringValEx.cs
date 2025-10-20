@@ -24,7 +24,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <summary>
         /// Validates whether the string is a valid Sri Lankan phone number (starting with 07, 10 digits).
         /// </summary>
-        /// <param name="input"> The input string to validate.</param>
+        /// <param name="input">The input string to validate.</param>
         /// <returns>
         /// True if the string is a valid Sri Lankan phone number; otherwise, false.
         /// </returns>
@@ -39,7 +39,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <summary>
         /// Checks if the string is a valid international phone number (starts with + and contains 10–15 digits).
         /// </summary>
-        /// <param name="input"> The input string to validate.</param>
+        /// <param name="input">The input string to validate.</param>
         /// <returns>
         /// True if the string is a valid international phone number; otherwise, false.
         /// </returns>
@@ -54,7 +54,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <summary>
         /// Validates that a string contains only digits.
         /// </summary>
-        /// <param name="input"> The input string to validate.</param>
+        /// <param name="input">The input string to validate.</param>
         /// <returns>
         /// True if the string contains only digits; otherwise, false.
         /// </returns>
@@ -66,7 +66,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <summary>
         /// Validates that a string contains only letters (no digits or symbols).
         /// </summary>
-        /// <param name="input"> The input string to validate.</param>
+        /// <param name="input">The input string to validate.</param>
         /// <returns>
         /// True if the string contains only letters; otherwise, false.
         /// </returns>
@@ -78,7 +78,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <summary>
         /// Validates that a string contains only letters or numbers.
         /// </summary>
-        /// <param name="input"> The input string to validate.</param>
+        /// <param name="input">The input string to validate.</param>
         /// <returns>
         /// True if the string contains only letters or numbers; otherwise, false.
         /// </returns>

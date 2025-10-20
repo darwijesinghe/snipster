@@ -1,0 +1,2797 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Snipster.Library.Cache
+  name: Snipster.Library.Cache
+  href: api/Snipster.Library.Cache.html
+  commentId: N:Snipster.Library.Cache
+  fullName: Snipster.Library.Cache
+  nameWithType: Snipster.Library.Cache
+- uid: Snipster.Library.Cache.CacheService
+  name: CacheService
+  href: api/Snipster.Library.Cache.CacheService.html
+  commentId: T:Snipster.Library.Cache.CacheService
+  fullName: Snipster.Library.Cache.CacheService
+  nameWithType: CacheService
+- uid: Snipster.Library.Cache.CacheService.#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Logging.ILogger{Snipster.Library.Cache.CacheService})
+  name: CacheService(IMemoryCache, ILogger<CacheService>)
+  href: api/Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService__ctor_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_Extensions_Logging_ILogger_Snipster_Library_Cache_CacheService__
+  commentId: M:Snipster.Library.Cache.CacheService.#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Logging.ILogger{Snipster.Library.Cache.CacheService})
+  name.vb: New(IMemoryCache, ILogger(Of CacheService))
+  fullName: Snipster.Library.Cache.CacheService.CacheService(Microsoft.Extensions.Caching.Memory.IMemoryCache, Microsoft.Extensions.Logging.ILogger<Snipster.Library.Cache.CacheService>)
+  fullName.vb: Snipster.Library.Cache.CacheService.New(Microsoft.Extensions.Caching.Memory.IMemoryCache, Microsoft.Extensions.Logging.ILogger(Of Snipster.Library.Cache.CacheService))
+  nameWithType: CacheService.CacheService(IMemoryCache, ILogger<CacheService>)
+  nameWithType.vb: CacheService.New(IMemoryCache, ILogger(Of CacheService))
+- uid: Snipster.Library.Cache.CacheService.#ctor*
+  name: CacheService
+  href: api/Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService__ctor_
+  commentId: Overload:Snipster.Library.Cache.CacheService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Snipster.Library.Cache.CacheService.CacheService
+  fullName.vb: Snipster.Library.Cache.CacheService.New
+  nameWithType: CacheService.CacheService
+  nameWithType.vb: CacheService.New
+- uid: Snipster.Library.Cache.CacheService.RemoveCache(System.String)
+  name: RemoveCache(string)
+  href: api/Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService_RemoveCache_System_String_
+  commentId: M:Snipster.Library.Cache.CacheService.RemoveCache(System.String)
+  name.vb: RemoveCache(String)
+  fullName: Snipster.Library.Cache.CacheService.RemoveCache(string)
+  fullName.vb: Snipster.Library.Cache.CacheService.RemoveCache(String)
+  nameWithType: CacheService.RemoveCache(string)
+  nameWithType.vb: CacheService.RemoveCache(String)
+- uid: Snipster.Library.Cache.CacheService.RemoveCache*
+  name: RemoveCache
+  href: api/Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService_RemoveCache_
+  commentId: Overload:Snipster.Library.Cache.CacheService.RemoveCache
+  isSpec: "True"
+  fullName: Snipster.Library.Cache.CacheService.RemoveCache
+  nameWithType: CacheService.RemoveCache
+- uid: Snipster.Library.Cache.CacheService.SetCacheAsync*
+  name: SetCacheAsync
+  href: api/Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService_SetCacheAsync_
+  commentId: Overload:Snipster.Library.Cache.CacheService.SetCacheAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Cache.CacheService.SetCacheAsync
+  nameWithType: CacheService.SetCacheAsync
+- uid: Snipster.Library.Cache.CacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  name: SetCacheAsync<T>(string, double, Func<Task<T>>)
+  href: api/Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService_SetCacheAsync__1_System_String_System_Double_System_Func_System_Threading_Tasks_Task___0___
+  commentId: M:Snipster.Library.Cache.CacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  name.vb: SetCacheAsync(Of T)(String, Double, Func(Of Task(Of T)))
+  fullName: Snipster.Library.Cache.CacheService.SetCacheAsync<T>(string, double, System.Func<System.Threading.Tasks.Task<T>>)
+  fullName.vb: Snipster.Library.Cache.CacheService.SetCacheAsync(Of T)(String, Double, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  nameWithType: CacheService.SetCacheAsync<T>(string, double, Func<Task<T>>)
+  nameWithType.vb: CacheService.SetCacheAsync(Of T)(String, Double, Func(Of Task(Of T)))
+- uid: Snipster.Library.Cache.CacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  name: SetCacheAsync<T>(string, Func<Task<T>>)
+  href: api/Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  commentId: M:Snipster.Library.Cache.CacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  name.vb: SetCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  fullName: Snipster.Library.Cache.CacheService.SetCacheAsync<T>(string, System.Func<System.Threading.Tasks.Task<T>>)
+  fullName.vb: Snipster.Library.Cache.CacheService.SetCacheAsync(Of T)(String, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  nameWithType: CacheService.SetCacheAsync<T>(string, Func<Task<T>>)
+  nameWithType.vb: CacheService.SetCacheAsync(Of T)(String, Func(Of Task(Of T)))
+- uid: Snipster.Library.Cache.CacheService.SetLongCacheAsync*
+  name: SetLongCacheAsync
+  href: api/Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService_SetLongCacheAsync_
+  commentId: Overload:Snipster.Library.Cache.CacheService.SetLongCacheAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Cache.CacheService.SetLongCacheAsync
+  nameWithType: CacheService.SetLongCacheAsync
+- uid: Snipster.Library.Cache.CacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  name: SetLongCacheAsync<T>(string, Func<Task<T>>)
+  href: api/Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  commentId: M:Snipster.Library.Cache.CacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  name.vb: SetLongCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  fullName: Snipster.Library.Cache.CacheService.SetLongCacheAsync<T>(string, System.Func<System.Threading.Tasks.Task<T>>)
+  fullName.vb: Snipster.Library.Cache.CacheService.SetLongCacheAsync(Of T)(String, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  nameWithType: CacheService.SetLongCacheAsync<T>(string, Func<Task<T>>)
+  nameWithType.vb: CacheService.SetLongCacheAsync(Of T)(String, Func(Of Task(Of T)))
+- uid: Snipster.Library.Cache.ICacheService
+  name: ICacheService
+  href: api/Snipster.Library.Cache.ICacheService.html
+  commentId: T:Snipster.Library.Cache.ICacheService
+  fullName: Snipster.Library.Cache.ICacheService
+  nameWithType: ICacheService
+- uid: Snipster.Library.Cache.ICacheService.RemoveCache(System.String)
+  name: RemoveCache(string)
+  href: api/Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_RemoveCache_System_String_
+  commentId: M:Snipster.Library.Cache.ICacheService.RemoveCache(System.String)
+  name.vb: RemoveCache(String)
+  fullName: Snipster.Library.Cache.ICacheService.RemoveCache(string)
+  fullName.vb: Snipster.Library.Cache.ICacheService.RemoveCache(String)
+  nameWithType: ICacheService.RemoveCache(string)
+  nameWithType.vb: ICacheService.RemoveCache(String)
+- uid: Snipster.Library.Cache.ICacheService.RemoveCache*
+  name: RemoveCache
+  href: api/Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_RemoveCache_
+  commentId: Overload:Snipster.Library.Cache.ICacheService.RemoveCache
+  isSpec: "True"
+  fullName: Snipster.Library.Cache.ICacheService.RemoveCache
+  nameWithType: ICacheService.RemoveCache
+- uid: Snipster.Library.Cache.ICacheService.SetCacheAsync*
+  name: SetCacheAsync
+  href: api/Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync_
+  commentId: Overload:Snipster.Library.Cache.ICacheService.SetCacheAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Cache.ICacheService.SetCacheAsync
+  nameWithType: ICacheService.SetCacheAsync
+- uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  name: SetCacheAsync<T>(string, double, Func<Task<T>>)
+  href: api/Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Double_System_Func_System_Threading_Tasks_Task___0___
+  commentId: M:Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  name.vb: SetCacheAsync(Of T)(String, Double, Func(Of Task(Of T)))
+  fullName: Snipster.Library.Cache.ICacheService.SetCacheAsync<T>(string, double, System.Func<System.Threading.Tasks.Task<T>>)
+  fullName.vb: Snipster.Library.Cache.ICacheService.SetCacheAsync(Of T)(String, Double, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  nameWithType: ICacheService.SetCacheAsync<T>(string, double, Func<Task<T>>)
+  nameWithType.vb: ICacheService.SetCacheAsync(Of T)(String, Double, Func(Of Task(Of T)))
+- uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  name: SetCacheAsync<T>(string, Func<Task<T>>)
+  href: api/Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  commentId: M:Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  name.vb: SetCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  fullName: Snipster.Library.Cache.ICacheService.SetCacheAsync<T>(string, System.Func<System.Threading.Tasks.Task<T>>)
+  fullName.vb: Snipster.Library.Cache.ICacheService.SetCacheAsync(Of T)(String, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  nameWithType: ICacheService.SetCacheAsync<T>(string, Func<Task<T>>)
+  nameWithType.vb: ICacheService.SetCacheAsync(Of T)(String, Func(Of Task(Of T)))
+- uid: Snipster.Library.Cache.ICacheService.SetLongCacheAsync*
+  name: SetLongCacheAsync
+  href: api/Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetLongCacheAsync_
+  commentId: Overload:Snipster.Library.Cache.ICacheService.SetLongCacheAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Cache.ICacheService.SetLongCacheAsync
+  nameWithType: ICacheService.SetLongCacheAsync
+- uid: Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  name: SetLongCacheAsync<T>(string, Func<Task<T>>)
+  href: api/Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  commentId: M:Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  name.vb: SetLongCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  fullName: Snipster.Library.Cache.ICacheService.SetLongCacheAsync<T>(string, System.Func<System.Threading.Tasks.Task<T>>)
+  fullName.vb: Snipster.Library.Cache.ICacheService.SetLongCacheAsync(Of T)(String, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  nameWithType: ICacheService.SetLongCacheAsync<T>(string, Func<Task<T>>)
+  nameWithType.vb: ICacheService.SetLongCacheAsync(Of T)(String, Func(Of Task(Of T)))
+- uid: Snipster.Library.Enums
+  name: Snipster.Library.Enums
+  href: api/Snipster.Library.Enums.html
+  commentId: N:Snipster.Library.Enums
+  fullName: Snipster.Library.Enums
+  nameWithType: Snipster.Library.Enums
+- uid: Snipster.Library.Enums.ExcelAlignment
+  name: ExcelAlignment
+  href: api/Snipster.Library.Enums.ExcelAlignment.html
+  commentId: T:Snipster.Library.Enums.ExcelAlignment
+  fullName: Snipster.Library.Enums.ExcelAlignment
+  nameWithType: ExcelAlignment
+- uid: Snipster.Library.Enums.ExcelAlignment.Center
+  name: Center
+  href: api/Snipster.Library.Enums.ExcelAlignment.html#Snipster_Library_Enums_ExcelAlignment_Center
+  commentId: F:Snipster.Library.Enums.ExcelAlignment.Center
+  fullName: Snipster.Library.Enums.ExcelAlignment.Center
+  nameWithType: ExcelAlignment.Center
+- uid: Snipster.Library.Enums.ExcelAlignment.CenterContinuous
+  name: CenterContinuous
+  href: api/Snipster.Library.Enums.ExcelAlignment.html#Snipster_Library_Enums_ExcelAlignment_CenterContinuous
+  commentId: F:Snipster.Library.Enums.ExcelAlignment.CenterContinuous
+  fullName: Snipster.Library.Enums.ExcelAlignment.CenterContinuous
+  nameWithType: ExcelAlignment.CenterContinuous
+- uid: Snipster.Library.Enums.ExcelAlignment.Distributed
+  name: Distributed
+  href: api/Snipster.Library.Enums.ExcelAlignment.html#Snipster_Library_Enums_ExcelAlignment_Distributed
+  commentId: F:Snipster.Library.Enums.ExcelAlignment.Distributed
+  fullName: Snipster.Library.Enums.ExcelAlignment.Distributed
+  nameWithType: ExcelAlignment.Distributed
+- uid: Snipster.Library.Enums.ExcelAlignment.Fill
+  name: Fill
+  href: api/Snipster.Library.Enums.ExcelAlignment.html#Snipster_Library_Enums_ExcelAlignment_Fill
+  commentId: F:Snipster.Library.Enums.ExcelAlignment.Fill
+  fullName: Snipster.Library.Enums.ExcelAlignment.Fill
+  nameWithType: ExcelAlignment.Fill
+- uid: Snipster.Library.Enums.ExcelAlignment.General
+  name: General
+  href: api/Snipster.Library.Enums.ExcelAlignment.html#Snipster_Library_Enums_ExcelAlignment_General
+  commentId: F:Snipster.Library.Enums.ExcelAlignment.General
+  fullName: Snipster.Library.Enums.ExcelAlignment.General
+  nameWithType: ExcelAlignment.General
+- uid: Snipster.Library.Enums.ExcelAlignment.Justify
+  name: Justify
+  href: api/Snipster.Library.Enums.ExcelAlignment.html#Snipster_Library_Enums_ExcelAlignment_Justify
+  commentId: F:Snipster.Library.Enums.ExcelAlignment.Justify
+  fullName: Snipster.Library.Enums.ExcelAlignment.Justify
+  nameWithType: ExcelAlignment.Justify
+- uid: Snipster.Library.Enums.ExcelAlignment.Left
+  name: Left
+  href: api/Snipster.Library.Enums.ExcelAlignment.html#Snipster_Library_Enums_ExcelAlignment_Left
+  commentId: F:Snipster.Library.Enums.ExcelAlignment.Left
+  fullName: Snipster.Library.Enums.ExcelAlignment.Left
+  nameWithType: ExcelAlignment.Left
+- uid: Snipster.Library.Enums.ExcelAlignment.Right
+  name: Right
+  href: api/Snipster.Library.Enums.ExcelAlignment.html#Snipster_Library_Enums_ExcelAlignment_Right
+  commentId: F:Snipster.Library.Enums.ExcelAlignment.Right
+  fullName: Snipster.Library.Enums.ExcelAlignment.Right
+  nameWithType: ExcelAlignment.Right
+- uid: Snipster.Library.Extensions
+  name: Snipster.Library.Extensions
+  href: api/Snipster.Library.Extensions.html
+  commentId: N:Snipster.Library.Extensions
+  fullName: Snipster.Library.Extensions
+  nameWithType: Snipster.Library.Extensions
+- uid: Snipster.Library.Extensions.CollectionEx
+  name: CollectionEx
+  href: api/Snipster.Library.Extensions.CollectionEx.html
+  commentId: T:Snipster.Library.Extensions.CollectionEx
+  fullName: Snipster.Library.Extensions.CollectionEx
+  nameWithType: CollectionEx
+- uid: Snipster.Library.Extensions.CollectionEx.ChunkBy*
+  name: ChunkBy
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ChunkBy_
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.ChunkBy
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.CollectionEx.ChunkBy
+  nameWithType: CollectionEx.ChunkBy
+- uid: Snipster.Library.Extensions.CollectionEx.ChunkBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name: ChunkBy<T>(IEnumerable<T>, int)
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ChunkBy__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  commentId: M:Snipster.Library.Extensions.CollectionEx.ChunkBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name.vb: ChunkBy(Of T)(IEnumerable(Of T), Integer)
+  fullName: Snipster.Library.Extensions.CollectionEx.ChunkBy<T>(System.Collections.Generic.IEnumerable<T>, int)
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.ChunkBy(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer)
+  nameWithType: CollectionEx.ChunkBy<T>(IEnumerable<T>, int)
+  nameWithType.vb: CollectionEx.ChunkBy(Of T)(IEnumerable(Of T), Integer)
+- uid: Snipster.Library.Extensions.CollectionEx.ExceptSafe*
+  name: ExceptSafe
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ExceptSafe_
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.ExceptSafe
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.CollectionEx.ExceptSafe
+  nameWithType: CollectionEx.ExceptSafe
+- uid: Snipster.Library.Extensions.CollectionEx.ExceptSafe``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
+  name: ExceptSafe<T>(IEnumerable<T>, IEnumerable<T>)
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ExceptSafe__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__
+  commentId: M:Snipster.Library.Extensions.CollectionEx.ExceptSafe``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
+  name.vb: ExceptSafe(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+  fullName: Snipster.Library.Extensions.CollectionEx.ExceptSafe<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.ExceptSafe(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: CollectionEx.ExceptSafe<T>(IEnumerable<T>, IEnumerable<T>)
+  nameWithType.vb: CollectionEx.ExceptSafe(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.ForEach*
+  name: ForEach
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ForEach_
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.ForEach
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.CollectionEx.ForEach
+  nameWithType: CollectionEx.ForEach
+- uid: Snipster.Library.Extensions.CollectionEx.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name: ForEach<T>(IEnumerable<T>, Action<T>)
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  commentId: M:Snipster.Library.Extensions.CollectionEx.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name.vb: ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName: Snipster.Library.Extensions.CollectionEx.ForEach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  nameWithType: CollectionEx.ForEach<T>(IEnumerable<T>, Action<T>)
+  nameWithType.vb: CollectionEx.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.LeastCommon*
+  name: LeastCommon
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_LeastCommon_
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.LeastCommon
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.CollectionEx.LeastCommon
+  nameWithType: CollectionEx.LeastCommon
+- uid: Snipster.Library.Extensions.CollectionEx.LeastCommon``1(System.Collections.Generic.IEnumerable{``0})
+  name: LeastCommon<T>(IEnumerable<T>)
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_LeastCommon__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Snipster.Library.Extensions.CollectionEx.LeastCommon``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: LeastCommon(Of T)(IEnumerable(Of T))
+  fullName: Snipster.Library.Extensions.CollectionEx.LeastCommon<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.LeastCommon(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: CollectionEx.LeastCommon<T>(IEnumerable<T>)
+  nameWithType.vb: CollectionEx.LeastCommon(Of T)(IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.MostCommon*
+  name: MostCommon
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_MostCommon_
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.MostCommon
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.CollectionEx.MostCommon
+  nameWithType: CollectionEx.MostCommon
+- uid: Snipster.Library.Extensions.CollectionEx.MostCommon``1(System.Collections.Generic.IEnumerable{``0})
+  name: MostCommon<T>(IEnumerable<T>)
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_MostCommon__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Snipster.Library.Extensions.CollectionEx.MostCommon``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: MostCommon(Of T)(IEnumerable(Of T))
+  fullName: Snipster.Library.Extensions.CollectionEx.MostCommon<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.MostCommon(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: CollectionEx.MostCommon<T>(IEnumerable<T>)
+  nameWithType.vb: CollectionEx.MostCommon(Of T)(IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.RandomItem*
+  name: RandomItem
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_RandomItem_
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.RandomItem
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.CollectionEx.RandomItem
+  nameWithType: CollectionEx.RandomItem
+- uid: Snipster.Library.Extensions.CollectionEx.RandomItem``1(System.Collections.Generic.IEnumerable{``0})
+  name: RandomItem<T>(IEnumerable<T>)
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_RandomItem__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Snipster.Library.Extensions.CollectionEx.RandomItem``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: RandomItem(Of T)(IEnumerable(Of T))
+  fullName: Snipster.Library.Extensions.CollectionEx.RandomItem<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.RandomItem(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: CollectionEx.RandomItem<T>(IEnumerable<T>)
+  nameWithType.vb: CollectionEx.RandomItem(Of T)(IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.Shuffle*
+  name: Shuffle
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_Shuffle_
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.Shuffle
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.CollectionEx.Shuffle
+  nameWithType: CollectionEx.Shuffle
+- uid: Snipster.Library.Extensions.CollectionEx.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  name: Shuffle<T>(IEnumerable<T>)
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_Shuffle__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Snipster.Library.Extensions.CollectionEx.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: Shuffle(Of T)(IEnumerable(Of T))
+  fullName: Snipster.Library.Extensions.CollectionEx.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: CollectionEx.Shuffle<T>(IEnumerable<T>)
+  nameWithType.vb: CollectionEx.Shuffle(Of T)(IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary*
+  name: ToSafeDictionary
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ToSafeDictionary_
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.ToSafeDictionary
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary
+  nameWithType: CollectionEx.ToSafeDictionary
+- uid: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})
+  name: ToSafeDictionary<TSource, TKey, TValue>(IEnumerable<TSource>, Func<TSource, TKey>, Func<TSource, TValue>)
+  href: api/Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ToSafeDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__
+  commentId: M:Snipster.Library.Extensions.CollectionEx.ToSafeDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})
+  name.vb: ToSafeDictionary(Of TSource, TKey, TValue)(IEnumerable(Of TSource), Func(Of TSource, TKey), Func(Of TSource, TValue))
+  fullName: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary<TSource, TKey, TValue>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TKey>, System.Func<TSource, TValue>)
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary(Of TSource, TKey, TValue)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, TKey), System.Func(Of TSource, TValue))
+  nameWithType: CollectionEx.ToSafeDictionary<TSource, TKey, TValue>(IEnumerable<TSource>, Func<TSource, TKey>, Func<TSource, TValue>)
+  nameWithType.vb: CollectionEx.ToSafeDictionary(Of TSource, TKey, TValue)(IEnumerable(Of TSource), Func(Of TSource, TKey), Func(Of TSource, TValue))
+- uid: Snipster.Library.Extensions.CreditCardEx
+  name: CreditCardEx
+  href: api/Snipster.Library.Extensions.CreditCardEx.html
+  commentId: T:Snipster.Library.Extensions.CreditCardEx
+  fullName: Snipster.Library.Extensions.CreditCardEx
+  nameWithType: CreditCardEx
+- uid: Snipster.Library.Extensions.CreditCardEx.GetCreditCardType(System.String)
+  name: GetCreditCardType(string)
+  href: api/Snipster.Library.Extensions.CreditCardEx.html#Snipster_Library_Extensions_CreditCardEx_GetCreditCardType_System_String_
+  commentId: M:Snipster.Library.Extensions.CreditCardEx.GetCreditCardType(System.String)
+  name.vb: GetCreditCardType(String)
+  fullName: Snipster.Library.Extensions.CreditCardEx.GetCreditCardType(string)
+  fullName.vb: Snipster.Library.Extensions.CreditCardEx.GetCreditCardType(String)
+  nameWithType: CreditCardEx.GetCreditCardType(string)
+  nameWithType.vb: CreditCardEx.GetCreditCardType(String)
+- uid: Snipster.Library.Extensions.CreditCardEx.GetCreditCardType*
+  name: GetCreditCardType
+  href: api/Snipster.Library.Extensions.CreditCardEx.html#Snipster_Library_Extensions_CreditCardEx_GetCreditCardType_
+  commentId: Overload:Snipster.Library.Extensions.CreditCardEx.GetCreditCardType
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.CreditCardEx.GetCreditCardType
+  nameWithType: CreditCardEx.GetCreditCardType
+- uid: Snipster.Library.Extensions.DateTimeEx
+  name: DateTimeEx
+  href: api/Snipster.Library.Extensions.DateTimeEx.html
+  commentId: T:Snipster.Library.Extensions.DateTimeEx
+  fullName: Snipster.Library.Extensions.DateTimeEx
+  nameWithType: DateTimeEx
+- uid: Snipster.Library.Extensions.DateTimeEx.EndOfDay(System.DateTime)
+  name: EndOfDay(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_EndOfDay_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.EndOfDay(System.DateTime)
+  name.vb: EndOfDay(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.EndOfDay(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.EndOfDay(Date)
+  nameWithType: DateTimeEx.EndOfDay(DateTime)
+  nameWithType.vb: DateTimeEx.EndOfDay(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.EndOfDay*
+  name: EndOfDay
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_EndOfDay_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.EndOfDay
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.EndOfDay
+  nameWithType: DateTimeEx.EndOfDay
+- uid: Snipster.Library.Extensions.DateTimeEx.FromTimeZone(System.DateTime,System.String)
+  name: FromTimeZone(DateTime, string)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_FromTimeZone_System_DateTime_System_String_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.FromTimeZone(System.DateTime,System.String)
+  name.vb: FromTimeZone(Date, String)
+  fullName: Snipster.Library.Extensions.DateTimeEx.FromTimeZone(System.DateTime, string)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.FromTimeZone(Date, String)
+  nameWithType: DateTimeEx.FromTimeZone(DateTime, string)
+  nameWithType.vb: DateTimeEx.FromTimeZone(Date, String)
+- uid: Snipster.Library.Extensions.DateTimeEx.FromTimeZone*
+  name: FromTimeZone
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_FromTimeZone_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.FromTimeZone
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.FromTimeZone
+  nameWithType: DateTimeEx.FromTimeZone
+- uid: Snipster.Library.Extensions.DateTimeEx.FromUnixTimestamp(System.Int64)
+  name: FromUnixTimestamp(long)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_FromUnixTimestamp_System_Int64_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.FromUnixTimestamp(System.Int64)
+  name.vb: FromUnixTimestamp(Long)
+  fullName: Snipster.Library.Extensions.DateTimeEx.FromUnixTimestamp(long)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.FromUnixTimestamp(Long)
+  nameWithType: DateTimeEx.FromUnixTimestamp(long)
+  nameWithType.vb: DateTimeEx.FromUnixTimestamp(Long)
+- uid: Snipster.Library.Extensions.DateTimeEx.FromUnixTimestamp*
+  name: FromUnixTimestamp
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_FromUnixTimestamp_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.FromUnixTimestamp
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.FromUnixTimestamp
+  nameWithType: DateTimeEx.FromUnixTimestamp
+- uid: Snipster.Library.Extensions.DateTimeEx.GetWeekEndDate(System.DateTime)
+  name: GetWeekEndDate(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_GetWeekEndDate_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.GetWeekEndDate(System.DateTime)
+  name.vb: GetWeekEndDate(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.GetWeekEndDate(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.GetWeekEndDate(Date)
+  nameWithType: DateTimeEx.GetWeekEndDate(DateTime)
+  nameWithType.vb: DateTimeEx.GetWeekEndDate(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.GetWeekEndDate*
+  name: GetWeekEndDate
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_GetWeekEndDate_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.GetWeekEndDate
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.GetWeekEndDate
+  nameWithType: DateTimeEx.GetWeekEndDate
+- uid: Snipster.Library.Extensions.DateTimeEx.GetWeekOfYear(System.DateTime)
+  name: GetWeekOfYear(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_GetWeekOfYear_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.GetWeekOfYear(System.DateTime)
+  name.vb: GetWeekOfYear(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.GetWeekOfYear(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.GetWeekOfYear(Date)
+  nameWithType: DateTimeEx.GetWeekOfYear(DateTime)
+  nameWithType.vb: DateTimeEx.GetWeekOfYear(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.GetWeekOfYear*
+  name: GetWeekOfYear
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_GetWeekOfYear_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.GetWeekOfYear
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.GetWeekOfYear
+  nameWithType: DateTimeEx.GetWeekOfYear
+- uid: Snipster.Library.Extensions.DateTimeEx.GetWeekStartDate(System.DateTime)
+  name: GetWeekStartDate(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_GetWeekStartDate_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.GetWeekStartDate(System.DateTime)
+  name.vb: GetWeekStartDate(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.GetWeekStartDate(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.GetWeekStartDate(Date)
+  nameWithType: DateTimeEx.GetWeekStartDate(DateTime)
+  nameWithType.vb: DateTimeEx.GetWeekStartDate(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.GetWeekStartDate*
+  name: GetWeekStartDate
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_GetWeekStartDate_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.GetWeekStartDate
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.GetWeekStartDate
+  nameWithType: DateTimeEx.GetWeekStartDate
+- uid: Snipster.Library.Extensions.DateTimeEx.StartOfDay(System.DateTime)
+  name: StartOfDay(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_StartOfDay_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.StartOfDay(System.DateTime)
+  name.vb: StartOfDay(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.StartOfDay(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.StartOfDay(Date)
+  nameWithType: DateTimeEx.StartOfDay(DateTime)
+  nameWithType.vb: DateTimeEx.StartOfDay(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.StartOfDay*
+  name: StartOfDay
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_StartOfDay_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.StartOfDay
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.StartOfDay
+  nameWithType: DateTimeEx.StartOfDay
+- uid: Snipster.Library.Extensions.DateTimeEx.ToAge(System.DateTime)
+  name: ToAge(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToAge_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.ToAge(System.DateTime)
+  name.vb: ToAge(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToAge(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.ToAge(Date)
+  nameWithType: DateTimeEx.ToAge(DateTime)
+  nameWithType.vb: DateTimeEx.ToAge(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.ToAge*
+  name: ToAge
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToAge_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.ToAge
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToAge
+  nameWithType: DateTimeEx.ToAge
+- uid: Snipster.Library.Extensions.DateTimeEx.ToDateString(System.DateTime)
+  name: ToDateString(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToDateString_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.ToDateString(System.DateTime)
+  name.vb: ToDateString(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToDateString(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.ToDateString(Date)
+  nameWithType: DateTimeEx.ToDateString(DateTime)
+  nameWithType.vb: DateTimeEx.ToDateString(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.ToDateString*
+  name: ToDateString
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToDateString_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.ToDateString
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToDateString
+  nameWithType: DateTimeEx.ToDateString
+- uid: Snipster.Library.Extensions.DateTimeEx.ToFullDateTimeString(System.DateTime)
+  name: ToFullDateTimeString(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToFullDateTimeString_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.ToFullDateTimeString(System.DateTime)
+  name.vb: ToFullDateTimeString(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToFullDateTimeString(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.ToFullDateTimeString(Date)
+  nameWithType: DateTimeEx.ToFullDateTimeString(DateTime)
+  nameWithType.vb: DateTimeEx.ToFullDateTimeString(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.ToFullDateTimeString*
+  name: ToFullDateTimeString
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToFullDateTimeString_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.ToFullDateTimeString
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToFullDateTimeString
+  nameWithType: DateTimeEx.ToFullDateTimeString
+- uid: Snipster.Library.Extensions.DateTimeEx.ToTimeAgo(System.DateTime)
+  name: ToTimeAgo(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToTimeAgo_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.ToTimeAgo(System.DateTime)
+  name.vb: ToTimeAgo(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToTimeAgo(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.ToTimeAgo(Date)
+  nameWithType: DateTimeEx.ToTimeAgo(DateTime)
+  nameWithType.vb: DateTimeEx.ToTimeAgo(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.ToTimeAgo*
+  name: ToTimeAgo
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToTimeAgo_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.ToTimeAgo
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToTimeAgo
+  nameWithType: DateTimeEx.ToTimeAgo
+- uid: Snipster.Library.Extensions.DateTimeEx.ToTimeString(System.DateTime)
+  name: ToTimeString(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToTimeString_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.ToTimeString(System.DateTime)
+  name.vb: ToTimeString(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToTimeString(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.ToTimeString(Date)
+  nameWithType: DateTimeEx.ToTimeString(DateTime)
+  nameWithType.vb: DateTimeEx.ToTimeString(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.ToTimeString*
+  name: ToTimeString
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToTimeString_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.ToTimeString
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToTimeString
+  nameWithType: DateTimeEx.ToTimeString
+- uid: Snipster.Library.Extensions.DateTimeEx.ToTimeZone(System.DateTime,System.String)
+  name: ToTimeZone(DateTime, string)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToTimeZone_System_DateTime_System_String_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.ToTimeZone(System.DateTime,System.String)
+  name.vb: ToTimeZone(Date, String)
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToTimeZone(System.DateTime, string)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.ToTimeZone(Date, String)
+  nameWithType: DateTimeEx.ToTimeZone(DateTime, string)
+  nameWithType.vb: DateTimeEx.ToTimeZone(Date, String)
+- uid: Snipster.Library.Extensions.DateTimeEx.ToTimeZone*
+  name: ToTimeZone
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToTimeZone_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.ToTimeZone
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToTimeZone
+  nameWithType: DateTimeEx.ToTimeZone
+- uid: Snipster.Library.Extensions.DateTimeEx.ToUnixTimestamp(System.DateTime)
+  name: ToUnixTimestamp(DateTime)
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToUnixTimestamp_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.DateTimeEx.ToUnixTimestamp(System.DateTime)
+  name.vb: ToUnixTimestamp(Date)
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToUnixTimestamp(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.DateTimeEx.ToUnixTimestamp(Date)
+  nameWithType: DateTimeEx.ToUnixTimestamp(DateTime)
+  nameWithType.vb: DateTimeEx.ToUnixTimestamp(Date)
+- uid: Snipster.Library.Extensions.DateTimeEx.ToUnixTimestamp*
+  name: ToUnixTimestamp
+  href: api/Snipster.Library.Extensions.DateTimeEx.html#Snipster_Library_Extensions_DateTimeEx_ToUnixTimestamp_
+  commentId: Overload:Snipster.Library.Extensions.DateTimeEx.ToUnixTimestamp
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.DateTimeEx.ToUnixTimestamp
+  nameWithType: DateTimeEx.ToUnixTimestamp
+- uid: Snipster.Library.Extensions.JsonEx
+  name: JsonEx
+  href: api/Snipster.Library.Extensions.JsonEx.html
+  commentId: T:Snipster.Library.Extensions.JsonEx
+  fullName: Snipster.Library.Extensions.JsonEx
+  nameWithType: JsonEx
+- uid: Snipster.Library.Extensions.JsonEx.FromJson*
+  name: FromJson
+  href: api/Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_FromJson_
+  commentId: Overload:Snipster.Library.Extensions.JsonEx.FromJson
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.JsonEx.FromJson
+  nameWithType: JsonEx.FromJson
+- uid: Snipster.Library.Extensions.JsonEx.FromJson``1(System.String)
+  name: FromJson<T>(string)
+  href: api/Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_FromJson__1_System_String_
+  commentId: M:Snipster.Library.Extensions.JsonEx.FromJson``1(System.String)
+  name.vb: FromJson(Of T)(String)
+  fullName: Snipster.Library.Extensions.JsonEx.FromJson<T>(string)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.FromJson(Of T)(String)
+  nameWithType: JsonEx.FromJson<T>(string)
+  nameWithType.vb: JsonEx.FromJson(Of T)(String)
+- uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  name: ToJson(object, Formatting)
+  href: api/Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+- uid: Snipster.Library.Extensions.JsonEx.ToJson*
+  name: ToJson
+  href: api/Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_
+  commentId: Overload:Snipster.Library.Extensions.JsonEx.ToJson
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson
+  nameWithType: JsonEx.ToJson
+- uid: Snipster.Library.Extensions.NumberEx
+  name: NumberEx
+  href: api/Snipster.Library.Extensions.NumberEx.html
+  commentId: T:Snipster.Library.Extensions.NumberEx
+  fullName: Snipster.Library.Extensions.NumberEx
+  nameWithType: NumberEx
+- uid: Snipster.Library.Extensions.NumberEx.ToDoubleSafe(System.String,System.Double)
+  name: ToDoubleSafe(string, double)
+  href: api/Snipster.Library.Extensions.NumberEx.html#Snipster_Library_Extensions_NumberEx_ToDoubleSafe_System_String_System_Double_
+  commentId: M:Snipster.Library.Extensions.NumberEx.ToDoubleSafe(System.String,System.Double)
+  name.vb: ToDoubleSafe(String, Double)
+  fullName: Snipster.Library.Extensions.NumberEx.ToDoubleSafe(string, double)
+  fullName.vb: Snipster.Library.Extensions.NumberEx.ToDoubleSafe(String, Double)
+  nameWithType: NumberEx.ToDoubleSafe(string, double)
+  nameWithType.vb: NumberEx.ToDoubleSafe(String, Double)
+- uid: Snipster.Library.Extensions.NumberEx.ToDoubleSafe*
+  name: ToDoubleSafe
+  href: api/Snipster.Library.Extensions.NumberEx.html#Snipster_Library_Extensions_NumberEx_ToDoubleSafe_
+  commentId: Overload:Snipster.Library.Extensions.NumberEx.ToDoubleSafe
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.NumberEx.ToDoubleSafe
+  nameWithType: NumberEx.ToDoubleSafe
+- uid: Snipster.Library.Extensions.NumberEx.ToIntSafe(System.String,System.Int32)
+  name: ToIntSafe(string, int)
+  href: api/Snipster.Library.Extensions.NumberEx.html#Snipster_Library_Extensions_NumberEx_ToIntSafe_System_String_System_Int32_
+  commentId: M:Snipster.Library.Extensions.NumberEx.ToIntSafe(System.String,System.Int32)
+  name.vb: ToIntSafe(String, Integer)
+  fullName: Snipster.Library.Extensions.NumberEx.ToIntSafe(string, int)
+  fullName.vb: Snipster.Library.Extensions.NumberEx.ToIntSafe(String, Integer)
+  nameWithType: NumberEx.ToIntSafe(string, int)
+  nameWithType.vb: NumberEx.ToIntSafe(String, Integer)
+- uid: Snipster.Library.Extensions.NumberEx.ToIntSafe*
+  name: ToIntSafe
+  href: api/Snipster.Library.Extensions.NumberEx.html#Snipster_Library_Extensions_NumberEx_ToIntSafe_
+  commentId: Overload:Snipster.Library.Extensions.NumberEx.ToIntSafe
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.NumberEx.ToIntSafe
+  nameWithType: NumberEx.ToIntSafe
+- uid: Snipster.Library.Extensions.NumberEx.ToOrdinal(System.Int32)
+  name: ToOrdinal(int)
+  href: api/Snipster.Library.Extensions.NumberEx.html#Snipster_Library_Extensions_NumberEx_ToOrdinal_System_Int32_
+  commentId: M:Snipster.Library.Extensions.NumberEx.ToOrdinal(System.Int32)
+  name.vb: ToOrdinal(Integer)
+  fullName: Snipster.Library.Extensions.NumberEx.ToOrdinal(int)
+  fullName.vb: Snipster.Library.Extensions.NumberEx.ToOrdinal(Integer)
+  nameWithType: NumberEx.ToOrdinal(int)
+  nameWithType.vb: NumberEx.ToOrdinal(Integer)
+- uid: Snipster.Library.Extensions.NumberEx.ToOrdinal*
+  name: ToOrdinal
+  href: api/Snipster.Library.Extensions.NumberEx.html#Snipster_Library_Extensions_NumberEx_ToOrdinal_
+  commentId: Overload:Snipster.Library.Extensions.NumberEx.ToOrdinal
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.NumberEx.ToOrdinal
+  nameWithType: NumberEx.ToOrdinal
+- uid: Snipster.Library.Extensions.ObjectEx
+  name: ObjectEx
+  href: api/Snipster.Library.Extensions.ObjectEx.html
+  commentId: T:Snipster.Library.Extensions.ObjectEx
+  fullName: Snipster.Library.Extensions.ObjectEx
+  nameWithType: ObjectEx
+- uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  name: GetPropertyValue(object, string)
+  href: api/Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  name.vb: GetPropertyValue(Object, String)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+- uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue*
+  name: GetPropertyValue
+  href: api/Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_
+  commentId: Overload:Snipster.Library.Extensions.ObjectEx.GetPropertyValue
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue
+  nameWithType: ObjectEx.GetPropertyValue
+- uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  name: SetPropertyValue(object, string, object?)
+  href: api/Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object?)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object?)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+- uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue*
+  name: SetPropertyValue
+  href: api/Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_
+  commentId: Overload:Snipster.Library.Extensions.ObjectEx.SetPropertyValue
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue
+  nameWithType: ObjectEx.SetPropertyValue
+- uid: Snipster.Library.Extensions.SecurityEx
+  name: SecurityEx
+  href: api/Snipster.Library.Extensions.SecurityEx.html
+  commentId: T:Snipster.Library.Extensions.SecurityEx
+  fullName: Snipster.Library.Extensions.SecurityEx
+  nameWithType: SecurityEx
+- uid: Snipster.Library.Extensions.SecurityEx.ToSha256(System.String)
+  name: ToSha256(string)
+  href: api/Snipster.Library.Extensions.SecurityEx.html#Snipster_Library_Extensions_SecurityEx_ToSha256_System_String_
+  commentId: M:Snipster.Library.Extensions.SecurityEx.ToSha256(System.String)
+  name.vb: ToSha256(String)
+  fullName: Snipster.Library.Extensions.SecurityEx.ToSha256(string)
+  fullName.vb: Snipster.Library.Extensions.SecurityEx.ToSha256(String)
+  nameWithType: SecurityEx.ToSha256(string)
+  nameWithType.vb: SecurityEx.ToSha256(String)
+- uid: Snipster.Library.Extensions.SecurityEx.ToSha256*
+  name: ToSha256
+  href: api/Snipster.Library.Extensions.SecurityEx.html#Snipster_Library_Extensions_SecurityEx_ToSha256_
+  commentId: Overload:Snipster.Library.Extensions.SecurityEx.ToSha256
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.SecurityEx.ToSha256
+  nameWithType: SecurityEx.ToSha256
+- uid: Snipster.Library.Extensions.StringEx
+  name: StringEx
+  href: api/Snipster.Library.Extensions.StringEx.html
+  commentId: T:Snipster.Library.Extensions.StringEx
+  fullName: Snipster.Library.Extensions.StringEx
+  nameWithType: StringEx
+- uid: Snipster.Library.Extensions.StringEx.CapitalizeFirst(System.String)
+  name: CapitalizeFirst(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_CapitalizeFirst_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.CapitalizeFirst(System.String)
+  name.vb: CapitalizeFirst(String)
+  fullName: Snipster.Library.Extensions.StringEx.CapitalizeFirst(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.CapitalizeFirst(String)
+  nameWithType: StringEx.CapitalizeFirst(string)
+  nameWithType.vb: StringEx.CapitalizeFirst(String)
+- uid: Snipster.Library.Extensions.StringEx.CapitalizeFirst*
+  name: CapitalizeFirst
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_CapitalizeFirst_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.CapitalizeFirst
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.CapitalizeFirst
+  nameWithType: StringEx.CapitalizeFirst
+- uid: Snipster.Library.Extensions.StringEx.FromBase64(System.String)
+  name: FromBase64(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_FromBase64_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.FromBase64(System.String)
+  name.vb: FromBase64(String)
+  fullName: Snipster.Library.Extensions.StringEx.FromBase64(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.FromBase64(String)
+  nameWithType: StringEx.FromBase64(string)
+  nameWithType.vb: StringEx.FromBase64(String)
+- uid: Snipster.Library.Extensions.StringEx.FromBase64*
+  name: FromBase64
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_FromBase64_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.FromBase64
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.FromBase64
+  nameWithType: StringEx.FromBase64
+- uid: Snipster.Library.Extensions.StringEx.GetDescription(System.Enum)
+  name: GetDescription(Enum)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_GetDescription_System_Enum_
+  commentId: M:Snipster.Library.Extensions.StringEx.GetDescription(System.Enum)
+  fullName: Snipster.Library.Extensions.StringEx.GetDescription(System.Enum)
+  nameWithType: StringEx.GetDescription(Enum)
+- uid: Snipster.Library.Extensions.StringEx.GetDescription*
+  name: GetDescription
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_GetDescription_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.GetDescription
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.GetDescription
+  nameWithType: StringEx.GetDescription
+- uid: Snipster.Library.Extensions.StringEx.NormalizeSpaces(System.String)
+  name: NormalizeSpaces(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_NormalizeSpaces_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.NormalizeSpaces(System.String)
+  name.vb: NormalizeSpaces(String)
+  fullName: Snipster.Library.Extensions.StringEx.NormalizeSpaces(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.NormalizeSpaces(String)
+  nameWithType: StringEx.NormalizeSpaces(string)
+  nameWithType.vb: StringEx.NormalizeSpaces(String)
+- uid: Snipster.Library.Extensions.StringEx.NormalizeSpaces*
+  name: NormalizeSpaces
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_NormalizeSpaces_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.NormalizeSpaces
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.NormalizeSpaces
+  nameWithType: StringEx.NormalizeSpaces
+- uid: Snipster.Library.Extensions.StringEx.OnlyDigits(System.String)
+  name: OnlyDigits(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_OnlyDigits_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.OnlyDigits(System.String)
+  name.vb: OnlyDigits(String)
+  fullName: Snipster.Library.Extensions.StringEx.OnlyDigits(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.OnlyDigits(String)
+  nameWithType: StringEx.OnlyDigits(string)
+  nameWithType.vb: StringEx.OnlyDigits(String)
+- uid: Snipster.Library.Extensions.StringEx.OnlyDigits*
+  name: OnlyDigits
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_OnlyDigits_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.OnlyDigits
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.OnlyDigits
+  nameWithType: StringEx.OnlyDigits
+- uid: Snipster.Library.Extensions.StringEx.OrDefault(System.String,System.String)
+  name: OrDefault(string?, string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_OrDefault_System_String_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.OrDefault(System.String,System.String)
+  name.vb: OrDefault(String, String)
+  fullName: Snipster.Library.Extensions.StringEx.OrDefault(string?, string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.OrDefault(String, String)
+  nameWithType: StringEx.OrDefault(string?, string)
+  nameWithType.vb: StringEx.OrDefault(String, String)
+- uid: Snipster.Library.Extensions.StringEx.OrDefault*
+  name: OrDefault
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_OrDefault_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.OrDefault
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.OrDefault
+  nameWithType: StringEx.OrDefault
+- uid: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters(System.String)
+  name: RemoveSpecialCharacters(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_RemoveSpecialCharacters_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters(System.String)
+  name.vb: RemoveSpecialCharacters(String)
+  fullName: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters(String)
+  nameWithType: StringEx.RemoveSpecialCharacters(string)
+  nameWithType.vb: StringEx.RemoveSpecialCharacters(String)
+- uid: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters*
+  name: RemoveSpecialCharacters
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_RemoveSpecialCharacters_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters
+  nameWithType: StringEx.RemoveSpecialCharacters
+- uid: Snipster.Library.Extensions.StringEx.RemoveWhitespace(System.String)
+  name: RemoveWhitespace(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_RemoveWhitespace_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.RemoveWhitespace(System.String)
+  name.vb: RemoveWhitespace(String)
+  fullName: Snipster.Library.Extensions.StringEx.RemoveWhitespace(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.RemoveWhitespace(String)
+  nameWithType: StringEx.RemoveWhitespace(string)
+  nameWithType.vb: StringEx.RemoveWhitespace(String)
+- uid: Snipster.Library.Extensions.StringEx.RemoveWhitespace*
+  name: RemoveWhitespace
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_RemoveWhitespace_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.RemoveWhitespace
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.RemoveWhitespace
+  nameWithType: StringEx.RemoveWhitespace
+- uid: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric(System.String)
+  name: SanitizeAlphanumeric(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_SanitizeAlphanumeric_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric(System.String)
+  name.vb: SanitizeAlphanumeric(String)
+  fullName: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric(String)
+  nameWithType: StringEx.SanitizeAlphanumeric(string)
+  nameWithType.vb: StringEx.SanitizeAlphanumeric(String)
+- uid: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric*
+  name: SanitizeAlphanumeric
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_SanitizeAlphanumeric_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric
+  nameWithType: StringEx.SanitizeAlphanumeric
+- uid: Snipster.Library.Extensions.StringEx.Slugify(System.String)
+  name: Slugify(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_Slugify_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.Slugify(System.String)
+  name.vb: Slugify(String)
+  fullName: Snipster.Library.Extensions.StringEx.Slugify(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.Slugify(String)
+  nameWithType: StringEx.Slugify(string)
+  nameWithType.vb: StringEx.Slugify(String)
+- uid: Snipster.Library.Extensions.StringEx.Slugify*
+  name: Slugify
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_Slugify_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.Slugify
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.Slugify
+  nameWithType: StringEx.Slugify
+- uid: Snipster.Library.Extensions.StringEx.StripHtmlTags(System.String)
+  name: StripHtmlTags(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_StripHtmlTags_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.StripHtmlTags(System.String)
+  name.vb: StripHtmlTags(String)
+  fullName: Snipster.Library.Extensions.StringEx.StripHtmlTags(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.StripHtmlTags(String)
+  nameWithType: StringEx.StripHtmlTags(string)
+  nameWithType.vb: StringEx.StripHtmlTags(String)
+- uid: Snipster.Library.Extensions.StringEx.StripHtmlTags*
+  name: StripHtmlTags
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_StripHtmlTags_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.StripHtmlTags
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.StripHtmlTags
+  nameWithType: StringEx.StripHtmlTags
+- uid: Snipster.Library.Extensions.StringEx.ToBase64(System.String)
+  name: ToBase64(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToBase64_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.ToBase64(System.String)
+  name.vb: ToBase64(String)
+  fullName: Snipster.Library.Extensions.StringEx.ToBase64(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToBase64(String)
+  nameWithType: StringEx.ToBase64(string)
+  nameWithType.vb: StringEx.ToBase64(String)
+- uid: Snipster.Library.Extensions.StringEx.ToBase64*
+  name: ToBase64
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToBase64_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToBase64
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.ToBase64
+  nameWithType: StringEx.ToBase64
+- uid: Snipster.Library.Extensions.StringEx.ToCamelCase(System.String)
+  name: ToCamelCase(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToCamelCase_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.ToCamelCase(System.String)
+  name.vb: ToCamelCase(String)
+  fullName: Snipster.Library.Extensions.StringEx.ToCamelCase(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToCamelCase(String)
+  nameWithType: StringEx.ToCamelCase(string)
+  nameWithType.vb: StringEx.ToCamelCase(String)
+- uid: Snipster.Library.Extensions.StringEx.ToCamelCase*
+  name: ToCamelCase
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToCamelCase_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToCamelCase
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.ToCamelCase
+  nameWithType: StringEx.ToCamelCase
+- uid: Snipster.Library.Extensions.StringEx.ToCleanQueryString(System.String)
+  name: ToCleanQueryString(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToCleanQueryString_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.ToCleanQueryString(System.String)
+  name.vb: ToCleanQueryString(String)
+  fullName: Snipster.Library.Extensions.StringEx.ToCleanQueryString(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToCleanQueryString(String)
+  nameWithType: StringEx.ToCleanQueryString(string)
+  nameWithType.vb: StringEx.ToCleanQueryString(String)
+- uid: Snipster.Library.Extensions.StringEx.ToCleanQueryString*
+  name: ToCleanQueryString
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToCleanQueryString_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToCleanQueryString
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.ToCleanQueryString
+  nameWithType: StringEx.ToCleanQueryString
+- uid: Snipster.Library.Extensions.StringEx.ToKebabCase(System.String)
+  name: ToKebabCase(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToKebabCase_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.ToKebabCase(System.String)
+  name.vb: ToKebabCase(String)
+  fullName: Snipster.Library.Extensions.StringEx.ToKebabCase(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToKebabCase(String)
+  nameWithType: StringEx.ToKebabCase(string)
+  nameWithType.vb: StringEx.ToKebabCase(String)
+- uid: Snipster.Library.Extensions.StringEx.ToKebabCase*
+  name: ToKebabCase
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToKebabCase_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToKebabCase
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.ToKebabCase
+  nameWithType: StringEx.ToKebabCase
+- uid: Snipster.Library.Extensions.StringEx.ToPascalCase(System.String)
+  name: ToPascalCase(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToPascalCase_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.ToPascalCase(System.String)
+  name.vb: ToPascalCase(String)
+  fullName: Snipster.Library.Extensions.StringEx.ToPascalCase(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToPascalCase(String)
+  nameWithType: StringEx.ToPascalCase(string)
+  nameWithType.vb: StringEx.ToPascalCase(String)
+- uid: Snipster.Library.Extensions.StringEx.ToPascalCase*
+  name: ToPascalCase
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToPascalCase_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToPascalCase
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.ToPascalCase
+  nameWithType: StringEx.ToPascalCase
+- uid: Snipster.Library.Extensions.StringEx.ToTitleCase(System.String)
+  name: ToTitleCase(string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToTitleCase_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.ToTitleCase(System.String)
+  name.vb: ToTitleCase(String)
+  fullName: Snipster.Library.Extensions.StringEx.ToTitleCase(string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToTitleCase(String)
+  nameWithType: StringEx.ToTitleCase(string)
+  nameWithType.vb: StringEx.ToTitleCase(String)
+- uid: Snipster.Library.Extensions.StringEx.ToTitleCase*
+  name: ToTitleCase
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToTitleCase_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToTitleCase
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.ToTitleCase
+  nameWithType: StringEx.ToTitleCase
+- uid: Snipster.Library.Extensions.StringEx.Truncate(System.String,System.Int32,System.String)
+  name: Truncate(string, int, string)
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_Truncate_System_String_System_Int32_System_String_
+  commentId: M:Snipster.Library.Extensions.StringEx.Truncate(System.String,System.Int32,System.String)
+  name.vb: Truncate(String, Integer, String)
+  fullName: Snipster.Library.Extensions.StringEx.Truncate(string, int, string)
+  fullName.vb: Snipster.Library.Extensions.StringEx.Truncate(String, Integer, String)
+  nameWithType: StringEx.Truncate(string, int, string)
+  nameWithType.vb: StringEx.Truncate(String, Integer, String)
+- uid: Snipster.Library.Extensions.StringEx.Truncate*
+  name: Truncate
+  href: api/Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_Truncate_
+  commentId: Overload:Snipster.Library.Extensions.StringEx.Truncate
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.StringEx.Truncate
+  nameWithType: StringEx.Truncate
+- uid: Snipster.Library.Extensions.Validations
+  name: Snipster.Library.Extensions.Validations
+  href: api/Snipster.Library.Extensions.Validations.html
+  commentId: N:Snipster.Library.Extensions.Validations
+  fullName: Snipster.Library.Extensions.Validations
+  nameWithType: Snipster.Library.Extensions.Validations
+- uid: Snipster.Library.Extensions.Validations.CollectionValEx
+  name: CollectionValEx
+  href: api/Snipster.Library.Extensions.Validations.CollectionValEx.html
+  commentId: T:Snipster.Library.Extensions.Validations.CollectionValEx
+  fullName: Snipster.Library.Extensions.Validations.CollectionValEx
+  nameWithType: CollectionValEx
+- uid: Snipster.Library.Extensions.Validations.CollectionValEx.HasDuplicates*
+  name: HasDuplicates
+  href: api/Snipster.Library.Extensions.Validations.CollectionValEx.html#Snipster_Library_Extensions_Validations_CollectionValEx_HasDuplicates_
+  commentId: Overload:Snipster.Library.Extensions.Validations.CollectionValEx.HasDuplicates
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.CollectionValEx.HasDuplicates
+  nameWithType: CollectionValEx.HasDuplicates
+- uid: Snipster.Library.Extensions.Validations.CollectionValEx.HasDuplicates``1(System.Collections.Generic.IEnumerable{``0})
+  name: HasDuplicates<T>(IEnumerable<T>)
+  href: api/Snipster.Library.Extensions.Validations.CollectionValEx.html#Snipster_Library_Extensions_Validations_CollectionValEx_HasDuplicates__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Snipster.Library.Extensions.Validations.CollectionValEx.HasDuplicates``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: HasDuplicates(Of T)(IEnumerable(Of T))
+  fullName: Snipster.Library.Extensions.Validations.CollectionValEx.HasDuplicates<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Snipster.Library.Extensions.Validations.CollectionValEx.HasDuplicates(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: CollectionValEx.HasDuplicates<T>(IEnumerable<T>)
+  nameWithType.vb: CollectionValEx.HasDuplicates(Of T)(IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.Validations.CollectionValEx.IsNullOrEmpty*
+  name: IsNullOrEmpty
+  href: api/Snipster.Library.Extensions.Validations.CollectionValEx.html#Snipster_Library_Extensions_Validations_CollectionValEx_IsNullOrEmpty_
+  commentId: Overload:Snipster.Library.Extensions.Validations.CollectionValEx.IsNullOrEmpty
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.CollectionValEx.IsNullOrEmpty
+  nameWithType: CollectionValEx.IsNullOrEmpty
+- uid: Snipster.Library.Extensions.Validations.CollectionValEx.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  name: IsNullOrEmpty<T>(IEnumerable<T>)
+  href: api/Snipster.Library.Extensions.Validations.CollectionValEx.html#Snipster_Library_Extensions_Validations_CollectionValEx_IsNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Snipster.Library.Extensions.Validations.CollectionValEx.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: IsNullOrEmpty(Of T)(IEnumerable(Of T))
+  fullName: Snipster.Library.Extensions.Validations.CollectionValEx.IsNullOrEmpty<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Snipster.Library.Extensions.Validations.CollectionValEx.IsNullOrEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: CollectionValEx.IsNullOrEmpty<T>(IEnumerable<T>)
+  nameWithType.vb: CollectionValEx.IsNullOrEmpty(Of T)(IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.Validations.CreditCardValEx
+  name: CreditCardValEx
+  href: api/Snipster.Library.Extensions.Validations.CreditCardValEx.html
+  commentId: T:Snipster.Library.Extensions.Validations.CreditCardValEx
+  fullName: Snipster.Library.Extensions.Validations.CreditCardValEx
+  nameWithType: CreditCardValEx
+- uid: Snipster.Library.Extensions.Validations.CreditCardValEx.IsValidCreditCard(System.String)
+  name: IsValidCreditCard(string)
+  href: api/Snipster.Library.Extensions.Validations.CreditCardValEx.html#Snipster_Library_Extensions_Validations_CreditCardValEx_IsValidCreditCard_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.CreditCardValEx.IsValidCreditCard(System.String)
+  name.vb: IsValidCreditCard(String)
+  fullName: Snipster.Library.Extensions.Validations.CreditCardValEx.IsValidCreditCard(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.CreditCardValEx.IsValidCreditCard(String)
+  nameWithType: CreditCardValEx.IsValidCreditCard(string)
+  nameWithType.vb: CreditCardValEx.IsValidCreditCard(String)
+- uid: Snipster.Library.Extensions.Validations.CreditCardValEx.IsValidCreditCard*
+  name: IsValidCreditCard
+  href: api/Snipster.Library.Extensions.Validations.CreditCardValEx.html#Snipster_Library_Extensions_Validations_CreditCardValEx_IsValidCreditCard_
+  commentId: Overload:Snipster.Library.Extensions.Validations.CreditCardValEx.IsValidCreditCard
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.CreditCardValEx.IsValidCreditCard
+  nameWithType: CreditCardValEx.IsValidCreditCard
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx
+  name: DateTimeValEx
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html
+  commentId: T:Snipster.Library.Extensions.Validations.DateTimeValEx
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx
+  nameWithType: DateTimeValEx
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(System.DateTime)
+  name: IsFuture(DateTime)
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsFuture_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(System.DateTime)
+  name.vb: IsFuture(Date)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(Date)
+  nameWithType: DateTimeValEx.IsFuture(DateTime)
+  nameWithType.vb: DateTimeValEx.IsFuture(Date)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture*
+  name: IsFuture
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsFuture_
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture
+  nameWithType: DateTimeValEx.IsFuture
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(System.DateTime)
+  name: IsPast(DateTime)
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsPast_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(System.DateTime)
+  name.vb: IsPast(Date)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(Date)
+  nameWithType: DateTimeValEx.IsPast(DateTime)
+  nameWithType.vb: DateTimeValEx.IsPast(Date)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast*
+  name: IsPast
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsPast_
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast
+  nameWithType: DateTimeValEx.IsPast
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(System.DateTime)
+  name: IsToday(DateTime)
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsToday_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(System.DateTime)
+  name.vb: IsToday(Date)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(Date)
+  nameWithType: DateTimeValEx.IsToday(DateTime)
+  nameWithType.vb: DateTimeValEx.IsToday(Date)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday*
+  name: IsToday
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsToday_
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday
+  nameWithType: DateTimeValEx.IsToday
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate(System.String,System.String)
+  name: IsValidDate(string, string)
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsValidDate_System_String_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate(System.String,System.String)
+  name.vb: IsValidDate(String, String)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate(string, string)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate(String, String)
+  nameWithType: DateTimeValEx.IsValidDate(string, string)
+  nameWithType.vb: DateTimeValEx.IsValidDate(String, String)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate*
+  name: IsValidDate
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsValidDate_
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate
+  nameWithType: DateTimeValEx.IsValidDate
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(System.DateTime)
+  name: IsWeekday(DateTime)
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsWeekday_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(System.DateTime)
+  name.vb: IsWeekday(Date)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(Date)
+  nameWithType: DateTimeValEx.IsWeekday(DateTime)
+  nameWithType.vb: DateTimeValEx.IsWeekday(Date)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday*
+  name: IsWeekday
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsWeekday_
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday
+  nameWithType: DateTimeValEx.IsWeekday
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(System.DateTime)
+  name: IsWeekend(DateTime)
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsWeekend_System_DateTime_
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(System.DateTime)
+  name.vb: IsWeekend(Date)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(System.DateTime)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(Date)
+  nameWithType: DateTimeValEx.IsWeekend(DateTime)
+  nameWithType.vb: DateTimeValEx.IsWeekend(Date)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend*
+  name: IsWeekend
+  href: api/Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsWeekend_
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend
+  nameWithType: DateTimeValEx.IsWeekend
+- uid: Snipster.Library.Extensions.Validations.JsonValEx
+  name: JsonValEx
+  href: api/Snipster.Library.Extensions.Validations.JsonValEx.html
+  commentId: T:Snipster.Library.Extensions.Validations.JsonValEx
+  fullName: Snipster.Library.Extensions.Validations.JsonValEx
+  nameWithType: JsonValEx
+- uid: Snipster.Library.Extensions.Validations.JsonValEx.IsValidJson(System.String)
+  name: IsValidJson(string)
+  href: api/Snipster.Library.Extensions.Validations.JsonValEx.html#Snipster_Library_Extensions_Validations_JsonValEx_IsValidJson_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.JsonValEx.IsValidJson(System.String)
+  name.vb: IsValidJson(String)
+  fullName: Snipster.Library.Extensions.Validations.JsonValEx.IsValidJson(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.JsonValEx.IsValidJson(String)
+  nameWithType: JsonValEx.IsValidJson(string)
+  nameWithType.vb: JsonValEx.IsValidJson(String)
+- uid: Snipster.Library.Extensions.Validations.JsonValEx.IsValidJson*
+  name: IsValidJson
+  href: api/Snipster.Library.Extensions.Validations.JsonValEx.html#Snipster_Library_Extensions_Validations_JsonValEx_IsValidJson_
+  commentId: Overload:Snipster.Library.Extensions.Validations.JsonValEx.IsValidJson
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.JsonValEx.IsValidJson
+  nameWithType: JsonValEx.IsValidJson
+- uid: Snipster.Library.Extensions.Validations.NetworkValEx
+  name: NetworkValEx
+  href: api/Snipster.Library.Extensions.Validations.NetworkValEx.html
+  commentId: T:Snipster.Library.Extensions.Validations.NetworkValEx
+  fullName: Snipster.Library.Extensions.Validations.NetworkValEx
+  nameWithType: NetworkValEx
+- uid: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv4(System.String)
+  name: IsValidIPv4(string)
+  href: api/Snipster.Library.Extensions.Validations.NetworkValEx.html#Snipster_Library_Extensions_Validations_NetworkValEx_IsValidIPv4_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv4(System.String)
+  name.vb: IsValidIPv4(String)
+  fullName: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv4(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv4(String)
+  nameWithType: NetworkValEx.IsValidIPv4(string)
+  nameWithType.vb: NetworkValEx.IsValidIPv4(String)
+- uid: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv4*
+  name: IsValidIPv4
+  href: api/Snipster.Library.Extensions.Validations.NetworkValEx.html#Snipster_Library_Extensions_Validations_NetworkValEx_IsValidIPv4_
+  commentId: Overload:Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv4
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv4
+  nameWithType: NetworkValEx.IsValidIPv4
+- uid: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv6(System.String)
+  name: IsValidIPv6(string)
+  href: api/Snipster.Library.Extensions.Validations.NetworkValEx.html#Snipster_Library_Extensions_Validations_NetworkValEx_IsValidIPv6_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv6(System.String)
+  name.vb: IsValidIPv6(String)
+  fullName: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv6(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv6(String)
+  nameWithType: NetworkValEx.IsValidIPv6(string)
+  nameWithType.vb: NetworkValEx.IsValidIPv6(String)
+- uid: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv6*
+  name: IsValidIPv6
+  href: api/Snipster.Library.Extensions.Validations.NetworkValEx.html#Snipster_Library_Extensions_Validations_NetworkValEx_IsValidIPv6_
+  commentId: Overload:Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv6
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidIPv6
+  nameWithType: NetworkValEx.IsValidIPv6
+- uid: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidWebAddress(System.String)
+  name: IsValidWebAddress(string)
+  href: api/Snipster.Library.Extensions.Validations.NetworkValEx.html#Snipster_Library_Extensions_Validations_NetworkValEx_IsValidWebAddress_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.NetworkValEx.IsValidWebAddress(System.String)
+  name.vb: IsValidWebAddress(String)
+  fullName: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidWebAddress(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidWebAddress(String)
+  nameWithType: NetworkValEx.IsValidWebAddress(string)
+  nameWithType.vb: NetworkValEx.IsValidWebAddress(String)
+- uid: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidWebAddress*
+  name: IsValidWebAddress
+  href: api/Snipster.Library.Extensions.Validations.NetworkValEx.html#Snipster_Library_Extensions_Validations_NetworkValEx_IsValidWebAddress_
+  commentId: Overload:Snipster.Library.Extensions.Validations.NetworkValEx.IsValidWebAddress
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.NetworkValEx.IsValidWebAddress
+  nameWithType: NetworkValEx.IsValidWebAddress
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx
+  name: ObjectValEx
+  href: api/Snipster.Library.Extensions.Validations.ObjectValEx.html
+  commentId: T:Snipster.Library.Extensions.Validations.ObjectValEx
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx
+  nameWithType: ObjectValEx
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  name: HasProperty(object, string)
+  href: api/Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  name.vb: HasProperty(Object, String)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty*
+  name: HasProperty
+  href: api/Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_
+  commentId: Overload:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty
+  nameWithType: ObjectValEx.HasProperty
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue*
+  name: IsDefaultValue
+  href: api/Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue_
+  commentId: Overload:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue
+  nameWithType: ObjectValEx.IsDefaultValue
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  name: IsDefaultValue<T>(T)
+  href: api/Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  name.vb: IsDefaultValue(Of T)(T)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<T>(T)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of T)(T)
+  nameWithType: ObjectValEx.IsDefaultValue<T>(T)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of T)(T)
+- uid: Snipster.Library.Extensions.Validations.SecurityValEx
+  name: SecurityValEx
+  href: api/Snipster.Library.Extensions.Validations.SecurityValEx.html
+  commentId: T:Snipster.Library.Extensions.Validations.SecurityValEx
+  fullName: Snipster.Library.Extensions.Validations.SecurityValEx
+  nameWithType: SecurityValEx
+- uid: Snipster.Library.Extensions.Validations.SecurityValEx.IsStrongPassword(System.String,System.Int32)
+  name: IsStrongPassword(string, int)
+  href: api/Snipster.Library.Extensions.Validations.SecurityValEx.html#Snipster_Library_Extensions_Validations_SecurityValEx_IsStrongPassword_System_String_System_Int32_
+  commentId: M:Snipster.Library.Extensions.Validations.SecurityValEx.IsStrongPassword(System.String,System.Int32)
+  name.vb: IsStrongPassword(String, Integer)
+  fullName: Snipster.Library.Extensions.Validations.SecurityValEx.IsStrongPassword(string, int)
+  fullName.vb: Snipster.Library.Extensions.Validations.SecurityValEx.IsStrongPassword(String, Integer)
+  nameWithType: SecurityValEx.IsStrongPassword(string, int)
+  nameWithType.vb: SecurityValEx.IsStrongPassword(String, Integer)
+- uid: Snipster.Library.Extensions.Validations.SecurityValEx.IsStrongPassword*
+  name: IsStrongPassword
+  href: api/Snipster.Library.Extensions.Validations.SecurityValEx.html#Snipster_Library_Extensions_Validations_SecurityValEx_IsStrongPassword_
+  commentId: Overload:Snipster.Library.Extensions.Validations.SecurityValEx.IsStrongPassword
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.SecurityValEx.IsStrongPassword
+  nameWithType: SecurityValEx.IsStrongPassword
+- uid: Snipster.Library.Extensions.Validations.SecurityValEx.IsValidEmail(System.String)
+  name: IsValidEmail(string)
+  href: api/Snipster.Library.Extensions.Validations.SecurityValEx.html#Snipster_Library_Extensions_Validations_SecurityValEx_IsValidEmail_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.SecurityValEx.IsValidEmail(System.String)
+  name.vb: IsValidEmail(String)
+  fullName: Snipster.Library.Extensions.Validations.SecurityValEx.IsValidEmail(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.SecurityValEx.IsValidEmail(String)
+  nameWithType: SecurityValEx.IsValidEmail(string)
+  nameWithType.vb: SecurityValEx.IsValidEmail(String)
+- uid: Snipster.Library.Extensions.Validations.SecurityValEx.IsValidEmail*
+  name: IsValidEmail
+  href: api/Snipster.Library.Extensions.Validations.SecurityValEx.html#Snipster_Library_Extensions_Validations_SecurityValEx_IsValidEmail_
+  commentId: Overload:Snipster.Library.Extensions.Validations.SecurityValEx.IsValidEmail
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.SecurityValEx.IsValidEmail
+  nameWithType: SecurityValEx.IsValidEmail
+- uid: Snipster.Library.Extensions.Validations.StringValEx
+  name: StringValEx
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html
+  commentId: T:Snipster.Library.Extensions.Validations.StringValEx
+  fullName: Snipster.Library.Extensions.Validations.StringValEx
+  nameWithType: StringValEx
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsAlphabetic(System.String)
+  name: IsAlphabetic(string)
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsAlphabetic_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.StringValEx.IsAlphabetic(System.String)
+  name.vb: IsAlphabetic(String)
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsAlphabetic(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.StringValEx.IsAlphabetic(String)
+  nameWithType: StringValEx.IsAlphabetic(string)
+  nameWithType.vb: StringValEx.IsAlphabetic(String)
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsAlphabetic*
+  name: IsAlphabetic
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsAlphabetic_
+  commentId: Overload:Snipster.Library.Extensions.Validations.StringValEx.IsAlphabetic
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsAlphabetic
+  nameWithType: StringValEx.IsAlphabetic
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsAlphanumeric(System.String)
+  name: IsAlphanumeric(string)
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsAlphanumeric_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.StringValEx.IsAlphanumeric(System.String)
+  name.vb: IsAlphanumeric(String)
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsAlphanumeric(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.StringValEx.IsAlphanumeric(String)
+  nameWithType: StringValEx.IsAlphanumeric(string)
+  nameWithType.vb: StringValEx.IsAlphanumeric(String)
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsAlphanumeric*
+  name: IsAlphanumeric
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsAlphanumeric_
+  commentId: Overload:Snipster.Library.Extensions.Validations.StringValEx.IsAlphanumeric
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsAlphanumeric
+  nameWithType: StringValEx.IsAlphanumeric
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsContainsIgnoreCase(System.String,System.String)
+  name: IsContainsIgnoreCase(string, string)
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsContainsIgnoreCase_System_String_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.StringValEx.IsContainsIgnoreCase(System.String,System.String)
+  name.vb: IsContainsIgnoreCase(String, String)
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsContainsIgnoreCase(string, string)
+  fullName.vb: Snipster.Library.Extensions.Validations.StringValEx.IsContainsIgnoreCase(String, String)
+  nameWithType: StringValEx.IsContainsIgnoreCase(string, string)
+  nameWithType.vb: StringValEx.IsContainsIgnoreCase(String, String)
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsContainsIgnoreCase*
+  name: IsContainsIgnoreCase
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsContainsIgnoreCase_
+  commentId: Overload:Snipster.Library.Extensions.Validations.StringValEx.IsContainsIgnoreCase
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsContainsIgnoreCase
+  nameWithType: StringValEx.IsContainsIgnoreCase
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsNumeric(System.String)
+  name: IsNumeric(string)
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsNumeric_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.StringValEx.IsNumeric(System.String)
+  name.vb: IsNumeric(String)
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsNumeric(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.StringValEx.IsNumeric(String)
+  nameWithType: StringValEx.IsNumeric(string)
+  nameWithType.vb: StringValEx.IsNumeric(String)
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsNumeric*
+  name: IsNumeric
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsNumeric_
+  commentId: Overload:Snipster.Library.Extensions.Validations.StringValEx.IsNumeric
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsNumeric
+  nameWithType: StringValEx.IsNumeric
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsValidInternationalPhone(System.String)
+  name: IsValidInternationalPhone(string)
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsValidInternationalPhone_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.StringValEx.IsValidInternationalPhone(System.String)
+  name.vb: IsValidInternationalPhone(String)
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsValidInternationalPhone(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.StringValEx.IsValidInternationalPhone(String)
+  nameWithType: StringValEx.IsValidInternationalPhone(string)
+  nameWithType.vb: StringValEx.IsValidInternationalPhone(String)
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsValidInternationalPhone*
+  name: IsValidInternationalPhone
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsValidInternationalPhone_
+  commentId: Overload:Snipster.Library.Extensions.Validations.StringValEx.IsValidInternationalPhone
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsValidInternationalPhone
+  nameWithType: StringValEx.IsValidInternationalPhone
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsValidSriLankanPhone(System.String)
+  name: IsValidSriLankanPhone(string)
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsValidSriLankanPhone_System_String_
+  commentId: M:Snipster.Library.Extensions.Validations.StringValEx.IsValidSriLankanPhone(System.String)
+  name.vb: IsValidSriLankanPhone(String)
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsValidSriLankanPhone(string)
+  fullName.vb: Snipster.Library.Extensions.Validations.StringValEx.IsValidSriLankanPhone(String)
+  nameWithType: StringValEx.IsValidSriLankanPhone(string)
+  nameWithType.vb: StringValEx.IsValidSriLankanPhone(String)
+- uid: Snipster.Library.Extensions.Validations.StringValEx.IsValidSriLankanPhone*
+  name: IsValidSriLankanPhone
+  href: api/Snipster.Library.Extensions.Validations.StringValEx.html#Snipster_Library_Extensions_Validations_StringValEx_IsValidSriLankanPhone_
+  commentId: Overload:Snipster.Library.Extensions.Validations.StringValEx.IsValidSriLankanPhone
+  isSpec: "True"
+  fullName: Snipster.Library.Extensions.Validations.StringValEx.IsValidSriLankanPhone
+  nameWithType: StringValEx.IsValidSriLankanPhone
+- uid: Snipster.Library.Helpers
+  name: Snipster.Library.Helpers
+  href: api/Snipster.Library.Helpers.html
+  commentId: N:Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+- uid: Snipster.Library.Helpers.ExcelFx
+  name: ExcelFx
+  href: api/Snipster.Library.Helpers.ExcelFx.html
+  commentId: T:Snipster.Library.Helpers.ExcelFx
+  fullName: Snipster.Library.Helpers.ExcelFx
+  nameWithType: ExcelFx
+- uid: Snipster.Library.Helpers.ExcelFx.WriteToExcel*
+  name: WriteToExcel
+  href: api/Snipster.Library.Helpers.ExcelFx.html#Snipster_Library_Helpers_ExcelFx_WriteToExcel_
+  commentId: Overload:Snipster.Library.Helpers.ExcelFx.WriteToExcel
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.ExcelFx.WriteToExcel
+  nameWithType: ExcelFx.WriteToExcel
+- uid: Snipster.Library.Helpers.ExcelFx.WriteToExcel``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.String,System.String,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  name: WriteToExcel<T>(IEnumerable<T>, List<ExcelColumn>, string, string, Action<ExcelExportOptions>?)
+  href: api/Snipster.Library.Helpers.ExcelFx.html#Snipster_Library_Helpers_ExcelFx_WriteToExcel__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_List_Snipster_Library_Models_ExcelColumn__System_String_System_String_System_Action_Snipster_Library_Models_ExcelExportOptions__
+  commentId: M:Snipster.Library.Helpers.ExcelFx.WriteToExcel``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.String,System.String,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  name.vb: WriteToExcel(Of T)(IEnumerable(Of T), List(Of ExcelColumn), String, String, Action(Of ExcelExportOptions))
+  fullName: Snipster.Library.Helpers.ExcelFx.WriteToExcel<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.List<Snipster.Library.Models.ExcelColumn>, string, string, System.Action<Snipster.Library.Models.ExcelExportOptions>?)
+  fullName.vb: Snipster.Library.Helpers.ExcelFx.WriteToExcel(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.List(Of Snipster.Library.Models.ExcelColumn), String, String, System.Action(Of Snipster.Library.Models.ExcelExportOptions))
+  nameWithType: ExcelFx.WriteToExcel<T>(IEnumerable<T>, List<ExcelColumn>, string, string, Action<ExcelExportOptions>?)
+  nameWithType.vb: ExcelFx.WriteToExcel(Of T)(IEnumerable(Of T), List(Of ExcelColumn), String, String, Action(Of ExcelExportOptions))
+- uid: Snipster.Library.Helpers.ExcelFx.WriteToMemory*
+  name: WriteToMemory
+  href: api/Snipster.Library.Helpers.ExcelFx.html#Snipster_Library_Helpers_ExcelFx_WriteToMemory_
+  commentId: Overload:Snipster.Library.Helpers.ExcelFx.WriteToMemory
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.ExcelFx.WriteToMemory
+  nameWithType: ExcelFx.WriteToMemory
+- uid: Snipster.Library.Helpers.ExcelFx.WriteToMemory``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.IO.MemoryStream,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  name: WriteToMemory<T>(IEnumerable<T>, List<ExcelColumn>, MemoryStream, Action<ExcelExportOptions>?)
+  href: api/Snipster.Library.Helpers.ExcelFx.html#Snipster_Library_Helpers_ExcelFx_WriteToMemory__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_List_Snipster_Library_Models_ExcelColumn__System_IO_MemoryStream_System_Action_Snipster_Library_Models_ExcelExportOptions__
+  commentId: M:Snipster.Library.Helpers.ExcelFx.WriteToMemory``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.IO.MemoryStream,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  name.vb: WriteToMemory(Of T)(IEnumerable(Of T), List(Of ExcelColumn), MemoryStream, Action(Of ExcelExportOptions))
+  fullName: Snipster.Library.Helpers.ExcelFx.WriteToMemory<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.List<Snipster.Library.Models.ExcelColumn>, System.IO.MemoryStream, System.Action<Snipster.Library.Models.ExcelExportOptions>?)
+  fullName.vb: Snipster.Library.Helpers.ExcelFx.WriteToMemory(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.List(Of Snipster.Library.Models.ExcelColumn), System.IO.MemoryStream, System.Action(Of Snipster.Library.Models.ExcelExportOptions))
+  nameWithType: ExcelFx.WriteToMemory<T>(IEnumerable<T>, List<ExcelColumn>, MemoryStream, Action<ExcelExportOptions>?)
+  nameWithType.vb: ExcelFx.WriteToMemory(Of T)(IEnumerable(Of T), List(Of ExcelColumn), MemoryStream, Action(Of ExcelExportOptions))
+- uid: Snipster.Library.Helpers.FileFx
+  name: FileFx
+  href: api/Snipster.Library.Helpers.FileFx.html
+  commentId: T:Snipster.Library.Helpers.FileFx
+  fullName: Snipster.Library.Helpers.FileFx
+  nameWithType: FileFx
+- uid: Snipster.Library.Helpers.FileFx.CreateTempFile(System.String)
+  name: CreateTempFile(string)
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_CreateTempFile_System_String_
+  commentId: M:Snipster.Library.Helpers.FileFx.CreateTempFile(System.String)
+  name.vb: CreateTempFile(String)
+  fullName: Snipster.Library.Helpers.FileFx.CreateTempFile(string)
+  fullName.vb: Snipster.Library.Helpers.FileFx.CreateTempFile(String)
+  nameWithType: FileFx.CreateTempFile(string)
+  nameWithType.vb: FileFx.CreateTempFile(String)
+- uid: Snipster.Library.Helpers.FileFx.CreateTempFile*
+  name: CreateTempFile
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_CreateTempFile_
+  commentId: Overload:Snipster.Library.Helpers.FileFx.CreateTempFile
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.FileFx.CreateTempFile
+  nameWithType: FileFx.CreateTempFile
+- uid: Snipster.Library.Helpers.FileFx.GetDirectorySize(System.String)
+  name: GetDirectorySize(string)
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_GetDirectorySize_System_String_
+  commentId: M:Snipster.Library.Helpers.FileFx.GetDirectorySize(System.String)
+  name.vb: GetDirectorySize(String)
+  fullName: Snipster.Library.Helpers.FileFx.GetDirectorySize(string)
+  fullName.vb: Snipster.Library.Helpers.FileFx.GetDirectorySize(String)
+  nameWithType: FileFx.GetDirectorySize(string)
+  nameWithType.vb: FileFx.GetDirectorySize(String)
+- uid: Snipster.Library.Helpers.FileFx.GetDirectorySize*
+  name: GetDirectorySize
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_GetDirectorySize_
+  commentId: Overload:Snipster.Library.Helpers.FileFx.GetDirectorySize
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.FileFx.GetDirectorySize
+  nameWithType: FileFx.GetDirectorySize
+- uid: Snipster.Library.Helpers.FileFx.SafeReadBytes(System.String)
+  name: SafeReadBytes(string)
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeReadBytes_System_String_
+  commentId: M:Snipster.Library.Helpers.FileFx.SafeReadBytes(System.String)
+  name.vb: SafeReadBytes(String)
+  fullName: Snipster.Library.Helpers.FileFx.SafeReadBytes(string)
+  fullName.vb: Snipster.Library.Helpers.FileFx.SafeReadBytes(String)
+  nameWithType: FileFx.SafeReadBytes(string)
+  nameWithType.vb: FileFx.SafeReadBytes(String)
+- uid: Snipster.Library.Helpers.FileFx.SafeReadBytes*
+  name: SafeReadBytes
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeReadBytes_
+  commentId: Overload:Snipster.Library.Helpers.FileFx.SafeReadBytes
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.FileFx.SafeReadBytes
+  nameWithType: FileFx.SafeReadBytes
+- uid: Snipster.Library.Helpers.FileFx.SafeReadText(System.String,System.Text.Encoding)
+  name: SafeReadText(string, Encoding?)
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeReadText_System_String_System_Text_Encoding_
+  commentId: M:Snipster.Library.Helpers.FileFx.SafeReadText(System.String,System.Text.Encoding)
+  name.vb: SafeReadText(String, Encoding)
+  fullName: Snipster.Library.Helpers.FileFx.SafeReadText(string, System.Text.Encoding?)
+  fullName.vb: Snipster.Library.Helpers.FileFx.SafeReadText(String, System.Text.Encoding)
+  nameWithType: FileFx.SafeReadText(string, Encoding?)
+  nameWithType.vb: FileFx.SafeReadText(String, Encoding)
+- uid: Snipster.Library.Helpers.FileFx.SafeReadText*
+  name: SafeReadText
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeReadText_
+  commentId: Overload:Snipster.Library.Helpers.FileFx.SafeReadText
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.FileFx.SafeReadText
+  nameWithType: FileFx.SafeReadText
+- uid: Snipster.Library.Helpers.FileFx.SafeWriteBytes(System.String,System.Byte[])
+  name: SafeWriteBytes(string, byte[])
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeWriteBytes_System_String_System_Byte___
+  commentId: M:Snipster.Library.Helpers.FileFx.SafeWriteBytes(System.String,System.Byte[])
+  name.vb: SafeWriteBytes(String, Byte())
+  fullName: Snipster.Library.Helpers.FileFx.SafeWriteBytes(string, byte[])
+  fullName.vb: Snipster.Library.Helpers.FileFx.SafeWriteBytes(String, Byte())
+  nameWithType: FileFx.SafeWriteBytes(string, byte[])
+  nameWithType.vb: FileFx.SafeWriteBytes(String, Byte())
+- uid: Snipster.Library.Helpers.FileFx.SafeWriteBytes*
+  name: SafeWriteBytes
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeWriteBytes_
+  commentId: Overload:Snipster.Library.Helpers.FileFx.SafeWriteBytes
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.FileFx.SafeWriteBytes
+  nameWithType: FileFx.SafeWriteBytes
+- uid: Snipster.Library.Helpers.FileFx.SafeWriteText(System.String,System.String,System.Text.Encoding)
+  name: SafeWriteText(string, string, Encoding?)
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeWriteText_System_String_System_String_System_Text_Encoding_
+  commentId: M:Snipster.Library.Helpers.FileFx.SafeWriteText(System.String,System.String,System.Text.Encoding)
+  name.vb: SafeWriteText(String, String, Encoding)
+  fullName: Snipster.Library.Helpers.FileFx.SafeWriteText(string, string, System.Text.Encoding?)
+  fullName.vb: Snipster.Library.Helpers.FileFx.SafeWriteText(String, String, System.Text.Encoding)
+  nameWithType: FileFx.SafeWriteText(string, string, Encoding?)
+  nameWithType.vb: FileFx.SafeWriteText(String, String, Encoding)
+- uid: Snipster.Library.Helpers.FileFx.SafeWriteText*
+  name: SafeWriteText
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeWriteText_
+  commentId: Overload:Snipster.Library.Helpers.FileFx.SafeWriteText
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.FileFx.SafeWriteText
+  nameWithType: FileFx.SafeWriteText
+- uid: Snipster.Library.Helpers.FileFx.SanitizeFileName(System.String,System.String)
+  name: SanitizeFileName(string, string)
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SanitizeFileName_System_String_System_String_
+  commentId: M:Snipster.Library.Helpers.FileFx.SanitizeFileName(System.String,System.String)
+  name.vb: SanitizeFileName(String, String)
+  fullName: Snipster.Library.Helpers.FileFx.SanitizeFileName(string, string)
+  fullName.vb: Snipster.Library.Helpers.FileFx.SanitizeFileName(String, String)
+  nameWithType: FileFx.SanitizeFileName(string, string)
+  nameWithType.vb: FileFx.SanitizeFileName(String, String)
+- uid: Snipster.Library.Helpers.FileFx.SanitizeFileName*
+  name: SanitizeFileName
+  href: api/Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SanitizeFileName_
+  commentId: Overload:Snipster.Library.Helpers.FileFx.SanitizeFileName
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.FileFx.SanitizeFileName
+  nameWithType: FileFx.SanitizeFileName
+- uid: Snipster.Library.Helpers.JsonFx
+  name: JsonFx
+  href: api/Snipster.Library.Helpers.JsonFx.html
+  commentId: T:Snipster.Library.Helpers.JsonFx
+  fullName: Snipster.Library.Helpers.JsonFx
+  nameWithType: JsonFx
+- uid: Snipster.Library.Helpers.JsonFx.Minify(System.String)
+  name: Minify(string)
+  href: api/Snipster.Library.Helpers.JsonFx.html#Snipster_Library_Helpers_JsonFx_Minify_System_String_
+  commentId: M:Snipster.Library.Helpers.JsonFx.Minify(System.String)
+  name.vb: Minify(String)
+  fullName: Snipster.Library.Helpers.JsonFx.Minify(string)
+  fullName.vb: Snipster.Library.Helpers.JsonFx.Minify(String)
+  nameWithType: JsonFx.Minify(string)
+  nameWithType.vb: JsonFx.Minify(String)
+- uid: Snipster.Library.Helpers.JsonFx.Minify*
+  name: Minify
+  href: api/Snipster.Library.Helpers.JsonFx.html#Snipster_Library_Helpers_JsonFx_Minify_
+  commentId: Overload:Snipster.Library.Helpers.JsonFx.Minify
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.JsonFx.Minify
+  nameWithType: JsonFx.Minify
+- uid: Snipster.Library.Helpers.JsonFx.Prettify(System.String)
+  name: Prettify(string)
+  href: api/Snipster.Library.Helpers.JsonFx.html#Snipster_Library_Helpers_JsonFx_Prettify_System_String_
+  commentId: M:Snipster.Library.Helpers.JsonFx.Prettify(System.String)
+  name.vb: Prettify(String)
+  fullName: Snipster.Library.Helpers.JsonFx.Prettify(string)
+  fullName.vb: Snipster.Library.Helpers.JsonFx.Prettify(String)
+  nameWithType: JsonFx.Prettify(string)
+  nameWithType.vb: JsonFx.Prettify(String)
+- uid: Snipster.Library.Helpers.JsonFx.Prettify*
+  name: Prettify
+  href: api/Snipster.Library.Helpers.JsonFx.html#Snipster_Library_Helpers_JsonFx_Prettify_
+  commentId: Overload:Snipster.Library.Helpers.JsonFx.Prettify
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.JsonFx.Prettify
+  nameWithType: JsonFx.Prettify
+- uid: Snipster.Library.Helpers.NetworkFx
+  name: NetworkFx
+  href: api/Snipster.Library.Helpers.NetworkFx.html
+  commentId: T:Snipster.Library.Helpers.NetworkFx
+  fullName: Snipster.Library.Helpers.NetworkFx
+  nameWithType: NetworkFx
+- uid: Snipster.Library.Helpers.NetworkFx.BuildUrl(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  name: BuildUrl(string, Dictionary<string, object?>)
+  href: api/Snipster.Library.Helpers.NetworkFx.html#Snipster_Library_Helpers_NetworkFx_BuildUrl_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__
+  commentId: M:Snipster.Library.Helpers.NetworkFx.BuildUrl(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  name.vb: BuildUrl(String, Dictionary(Of String, Object))
+  fullName: Snipster.Library.Helpers.NetworkFx.BuildUrl(string, System.Collections.Generic.Dictionary<string, object?>)
+  fullName.vb: Snipster.Library.Helpers.NetworkFx.BuildUrl(String, System.Collections.Generic.Dictionary(Of String, Object))
+  nameWithType: NetworkFx.BuildUrl(string, Dictionary<string, object?>)
+  nameWithType.vb: NetworkFx.BuildUrl(String, Dictionary(Of String, Object))
+- uid: Snipster.Library.Helpers.NetworkFx.BuildUrl*
+  name: BuildUrl
+  href: api/Snipster.Library.Helpers.NetworkFx.html#Snipster_Library_Helpers_NetworkFx_BuildUrl_
+  commentId: Overload:Snipster.Library.Helpers.NetworkFx.BuildUrl
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.NetworkFx.BuildUrl
+  nameWithType: NetworkFx.BuildUrl
+- uid: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync(System.String,System.Int32)
+  name: HasInternetConnectionAsync(string, int)
+  href: api/Snipster.Library.Helpers.NetworkFx.html#Snipster_Library_Helpers_NetworkFx_HasInternetConnectionAsync_System_String_System_Int32_
+  commentId: M:Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync(System.String,System.Int32)
+  name.vb: HasInternetConnectionAsync(String, Integer)
+  fullName: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync(string, int)
+  fullName.vb: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync(String, Integer)
+  nameWithType: NetworkFx.HasInternetConnectionAsync(string, int)
+  nameWithType.vb: NetworkFx.HasInternetConnectionAsync(String, Integer)
+- uid: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync*
+  name: HasInternetConnectionAsync
+  href: api/Snipster.Library.Helpers.NetworkFx.html#Snipster_Library_Helpers_NetworkFx_HasInternetConnectionAsync_
+  commentId: Overload:Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync
+  nameWithType: NetworkFx.HasInternetConnectionAsync
+- uid: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync(System.String,System.Int32)
+  name: IsHostAvailableAsync(string, int)
+  href: api/Snipster.Library.Helpers.NetworkFx.html#Snipster_Library_Helpers_NetworkFx_IsHostAvailableAsync_System_String_System_Int32_
+  commentId: M:Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync(System.String,System.Int32)
+  name.vb: IsHostAvailableAsync(String, Integer)
+  fullName: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync(string, int)
+  fullName.vb: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync(String, Integer)
+  nameWithType: NetworkFx.IsHostAvailableAsync(string, int)
+  nameWithType.vb: NetworkFx.IsHostAvailableAsync(String, Integer)
+- uid: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync*
+  name: IsHostAvailableAsync
+  href: api/Snipster.Library.Helpers.NetworkFx.html#Snipster_Library_Helpers_NetworkFx_IsHostAvailableAsync_
+  commentId: Overload:Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync
+  nameWithType: NetworkFx.IsHostAvailableAsync
+- uid: Snipster.Library.Helpers.ObjectFx
+  name: ObjectFx
+  href: api/Snipster.Library.Helpers.ObjectFx.html
+  commentId: T:Snipster.Library.Helpers.ObjectFx
+  fullName: Snipster.Library.Helpers.ObjectFx
+  nameWithType: ObjectFx
+- uid: Snipster.Library.Helpers.ObjectFx.DeepClone*
+  name: DeepClone
+  href: api/Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone_
+  commentId: Overload:Snipster.Library.Helpers.ObjectFx.DeepClone
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone
+  nameWithType: ObjectFx.DeepClone
+- uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  name: DeepClone<T>(T)
+  href: api/Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  name.vb: DeepClone(Of T)(T)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<T>(T)
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of T)(T)
+  nameWithType: ObjectFx.DeepClone<T>(T)
+  nameWithType.vb: ObjectFx.DeepClone(Of T)(T)
+- uid: Snipster.Library.Helpers.SecurityFx
+  name: SecurityFx
+  href: api/Snipster.Library.Helpers.SecurityFx.html
+  commentId: T:Snipster.Library.Helpers.SecurityFx
+  fullName: Snipster.Library.Helpers.SecurityFx
+  nameWithType: SecurityFx
+- uid: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken(System.Int32)
+  name: GenerateSecureToken(int)
+  href: api/Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_GenerateSecureToken_System_Int32_
+  commentId: M:Snipster.Library.Helpers.SecurityFx.GenerateSecureToken(System.Int32)
+  name.vb: GenerateSecureToken(Integer)
+  fullName: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken(int)
+  fullName.vb: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken(Integer)
+  nameWithType: SecurityFx.GenerateSecureToken(int)
+  nameWithType.vb: SecurityFx.GenerateSecureToken(Integer)
+- uid: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken*
+  name: GenerateSecureToken
+  href: api/Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_GenerateSecureToken_
+  commentId: Overload:Snipster.Library.Helpers.SecurityFx.GenerateSecureToken
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.SecurityFx.GenerateSecureToken
+  nameWithType: SecurityFx.GenerateSecureToken
+- uid: Snipster.Library.Helpers.SecurityFx.PasswordHash(System.String,System.Byte[]@,System.Byte[]@)
+  name: PasswordHash(string, out byte[], out byte[])
+  href: api/Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_PasswordHash_System_String_System_Byte____System_Byte____
+  commentId: M:Snipster.Library.Helpers.SecurityFx.PasswordHash(System.String,System.Byte[]@,System.Byte[]@)
+  name.vb: PasswordHash(String, Byte(), Byte())
+  fullName: Snipster.Library.Helpers.SecurityFx.PasswordHash(string, out byte[], out byte[])
+  fullName.vb: Snipster.Library.Helpers.SecurityFx.PasswordHash(String, Byte(), Byte())
+  nameWithType: SecurityFx.PasswordHash(string, out byte[], out byte[])
+  nameWithType.vb: SecurityFx.PasswordHash(String, Byte(), Byte())
+- uid: Snipster.Library.Helpers.SecurityFx.PasswordHash*
+  name: PasswordHash
+  href: api/Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_PasswordHash_
+  commentId: Overload:Snipster.Library.Helpers.SecurityFx.PasswordHash
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.SecurityFx.PasswordHash
+  nameWithType: SecurityFx.PasswordHash
+- uid: Snipster.Library.Helpers.SecurityFx.RandomString(System.Int32,System.String)
+  name: RandomString(int, string)
+  href: api/Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_RandomString_System_Int32_System_String_
+  commentId: M:Snipster.Library.Helpers.SecurityFx.RandomString(System.Int32,System.String)
+  name.vb: RandomString(Integer, String)
+  fullName: Snipster.Library.Helpers.SecurityFx.RandomString(int, string)
+  fullName.vb: Snipster.Library.Helpers.SecurityFx.RandomString(Integer, String)
+  nameWithType: SecurityFx.RandomString(int, string)
+  nameWithType.vb: SecurityFx.RandomString(Integer, String)
+- uid: Snipster.Library.Helpers.SecurityFx.RandomString*
+  name: RandomString
+  href: api/Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_RandomString_
+  commentId: Overload:Snipster.Library.Helpers.SecurityFx.RandomString
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.SecurityFx.RandomString
+  nameWithType: SecurityFx.RandomString
+- uid: Snipster.Library.Helpers.SecurityFx.VerifyPassword(System.String,System.Byte[],System.Byte[])
+  name: VerifyPassword(string, byte[], byte[])
+  href: api/Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_VerifyPassword_System_String_System_Byte___System_Byte___
+  commentId: M:Snipster.Library.Helpers.SecurityFx.VerifyPassword(System.String,System.Byte[],System.Byte[])
+  name.vb: VerifyPassword(String, Byte(), Byte())
+  fullName: Snipster.Library.Helpers.SecurityFx.VerifyPassword(string, byte[], byte[])
+  fullName.vb: Snipster.Library.Helpers.SecurityFx.VerifyPassword(String, Byte(), Byte())
+  nameWithType: SecurityFx.VerifyPassword(string, byte[], byte[])
+  nameWithType.vb: SecurityFx.VerifyPassword(String, Byte(), Byte())
+- uid: Snipster.Library.Helpers.SecurityFx.VerifyPassword*
+  name: VerifyPassword
+  href: api/Snipster.Library.Helpers.SecurityFx.html#Snipster_Library_Helpers_SecurityFx_VerifyPassword_
+  commentId: Overload:Snipster.Library.Helpers.SecurityFx.VerifyPassword
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.SecurityFx.VerifyPassword
+  nameWithType: SecurityFx.VerifyPassword
+- uid: Snipster.Library.Helpers.StringFx
+  name: StringFx
+  href: api/Snipster.Library.Helpers.StringFx.html
+  commentId: T:Snipster.Library.Helpers.StringFx
+  fullName: Snipster.Library.Helpers.StringFx
+  nameWithType: StringFx
+- uid: Snipster.Library.Helpers.StringFx.FormatBytes(System.Int64,System.Int32)
+  name: FormatBytes(long, int)
+  href: api/Snipster.Library.Helpers.StringFx.html#Snipster_Library_Helpers_StringFx_FormatBytes_System_Int64_System_Int32_
+  commentId: M:Snipster.Library.Helpers.StringFx.FormatBytes(System.Int64,System.Int32)
+  name.vb: FormatBytes(Long, Integer)
+  fullName: Snipster.Library.Helpers.StringFx.FormatBytes(long, int)
+  fullName.vb: Snipster.Library.Helpers.StringFx.FormatBytes(Long, Integer)
+  nameWithType: StringFx.FormatBytes(long, int)
+  nameWithType.vb: StringFx.FormatBytes(Long, Integer)
+- uid: Snipster.Library.Helpers.StringFx.FormatBytes*
+  name: FormatBytes
+  href: api/Snipster.Library.Helpers.StringFx.html#Snipster_Library_Helpers_StringFx_FormatBytes_
+  commentId: Overload:Snipster.Library.Helpers.StringFx.FormatBytes
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.StringFx.FormatBytes
+  nameWithType: StringFx.FormatBytes
+- uid: Snipster.Library.Helpers.StringFx.GenerateGuid(System.Boolean)
+  name: GenerateGuid(bool)
+  href: api/Snipster.Library.Helpers.StringFx.html#Snipster_Library_Helpers_StringFx_GenerateGuid_System_Boolean_
+  commentId: M:Snipster.Library.Helpers.StringFx.GenerateGuid(System.Boolean)
+  name.vb: GenerateGuid(Boolean)
+  fullName: Snipster.Library.Helpers.StringFx.GenerateGuid(bool)
+  fullName.vb: Snipster.Library.Helpers.StringFx.GenerateGuid(Boolean)
+  nameWithType: StringFx.GenerateGuid(bool)
+  nameWithType.vb: StringFx.GenerateGuid(Boolean)
+- uid: Snipster.Library.Helpers.StringFx.GenerateGuid*
+  name: GenerateGuid
+  href: api/Snipster.Library.Helpers.StringFx.html#Snipster_Library_Helpers_StringFx_GenerateGuid_
+  commentId: Overload:Snipster.Library.Helpers.StringFx.GenerateGuid
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.StringFx.GenerateGuid
+  nameWithType: StringFx.GenerateGuid
+- uid: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername(System.String,System.String,System.Func{System.String,System.Boolean})
+  name: GenerateUniqueUsername(string, string, Func<string, bool>)
+  href: api/Snipster.Library.Helpers.StringFx.html#Snipster_Library_Helpers_StringFx_GenerateUniqueUsername_System_String_System_String_System_Func_System_String_System_Boolean__
+  commentId: M:Snipster.Library.Helpers.StringFx.GenerateUniqueUsername(System.String,System.String,System.Func{System.String,System.Boolean})
+  name.vb: GenerateUniqueUsername(String, String, Func(Of String, Boolean))
+  fullName: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername(string, string, System.Func<string, bool>)
+  fullName.vb: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername(String, String, System.Func(Of String, Boolean))
+  nameWithType: StringFx.GenerateUniqueUsername(string, string, Func<string, bool>)
+  nameWithType.vb: StringFx.GenerateUniqueUsername(String, String, Func(Of String, Boolean))
+- uid: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername*
+  name: GenerateUniqueUsername
+  href: api/Snipster.Library.Helpers.StringFx.html#Snipster_Library_Helpers_StringFx_GenerateUniqueUsername_
+  commentId: Overload:Snipster.Library.Helpers.StringFx.GenerateUniqueUsername
+  isSpec: "True"
+  fullName: Snipster.Library.Helpers.StringFx.GenerateUniqueUsername
+  nameWithType: StringFx.GenerateUniqueUsername
+- uid: Snipster.Library.Models
+  name: Snipster.Library.Models
+  href: api/Snipster.Library.Models.html
+  commentId: N:Snipster.Library.Models
+  fullName: Snipster.Library.Models
+  nameWithType: Snipster.Library.Models
+- uid: Snipster.Library.Models.ExcelColumn
+  name: ExcelColumn
+  href: api/Snipster.Library.Models.ExcelColumn.html
+  commentId: T:Snipster.Library.Models.ExcelColumn
+  fullName: Snipster.Library.Models.ExcelColumn
+  nameWithType: ExcelColumn
+- uid: Snipster.Library.Models.ExcelColumn.Alignment
+  name: Alignment
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Alignment
+  commentId: P:Snipster.Library.Models.ExcelColumn.Alignment
+  fullName: Snipster.Library.Models.ExcelColumn.Alignment
+  nameWithType: ExcelColumn.Alignment
+- uid: Snipster.Library.Models.ExcelColumn.Alignment*
+  name: Alignment
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Alignment_
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.Alignment
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelColumn.Alignment
+  nameWithType: ExcelColumn.Alignment
+- uid: Snipster.Library.Models.ExcelColumn.DataType
+  name: DataType
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_DataType
+  commentId: P:Snipster.Library.Models.ExcelColumn.DataType
+  fullName: Snipster.Library.Models.ExcelColumn.DataType
+  nameWithType: ExcelColumn.DataType
+- uid: Snipster.Library.Models.ExcelColumn.DataType*
+  name: DataType
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_DataType_
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.DataType
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelColumn.DataType
+  nameWithType: ExcelColumn.DataType
+- uid: Snipster.Library.Models.ExcelColumn.FalseText
+  name: FalseText
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_FalseText
+  commentId: P:Snipster.Library.Models.ExcelColumn.FalseText
+  fullName: Snipster.Library.Models.ExcelColumn.FalseText
+  nameWithType: ExcelColumn.FalseText
+- uid: Snipster.Library.Models.ExcelColumn.FalseText*
+  name: FalseText
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_FalseText_
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.FalseText
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelColumn.FalseText
+  nameWithType: ExcelColumn.FalseText
+- uid: Snipster.Library.Models.ExcelColumn.Format
+  name: Format
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Format
+  commentId: P:Snipster.Library.Models.ExcelColumn.Format
+  fullName: Snipster.Library.Models.ExcelColumn.Format
+  nameWithType: ExcelColumn.Format
+- uid: Snipster.Library.Models.ExcelColumn.Format*
+  name: Format
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Format_
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.Format
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelColumn.Format
+  nameWithType: ExcelColumn.Format
+- uid: Snipster.Library.Models.ExcelColumn.HeaderAlignment
+  name: HeaderAlignment
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_HeaderAlignment
+  commentId: P:Snipster.Library.Models.ExcelColumn.HeaderAlignment
+  fullName: Snipster.Library.Models.ExcelColumn.HeaderAlignment
+  nameWithType: ExcelColumn.HeaderAlignment
+- uid: Snipster.Library.Models.ExcelColumn.HeaderAlignment*
+  name: HeaderAlignment
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_HeaderAlignment_
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.HeaderAlignment
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelColumn.HeaderAlignment
+  nameWithType: ExcelColumn.HeaderAlignment
+- uid: Snipster.Library.Models.ExcelColumn.HeaderText
+  name: HeaderText
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_HeaderText
+  commentId: P:Snipster.Library.Models.ExcelColumn.HeaderText
+  fullName: Snipster.Library.Models.ExcelColumn.HeaderText
+  nameWithType: ExcelColumn.HeaderText
+- uid: Snipster.Library.Models.ExcelColumn.HeaderText*
+  name: HeaderText
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_HeaderText_
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.HeaderText
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelColumn.HeaderText
+  nameWithType: ExcelColumn.HeaderText
+- uid: Snipster.Library.Models.ExcelColumn.Name
+  name: Name
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Name
+  commentId: P:Snipster.Library.Models.ExcelColumn.Name
+  fullName: Snipster.Library.Models.ExcelColumn.Name
+  nameWithType: ExcelColumn.Name
+- uid: Snipster.Library.Models.ExcelColumn.Name*
+  name: Name
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Name_
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.Name
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelColumn.Name
+  nameWithType: ExcelColumn.Name
+- uid: Snipster.Library.Models.ExcelColumn.TrueText
+  name: TrueText
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_TrueText
+  commentId: P:Snipster.Library.Models.ExcelColumn.TrueText
+  fullName: Snipster.Library.Models.ExcelColumn.TrueText
+  nameWithType: ExcelColumn.TrueText
+- uid: Snipster.Library.Models.ExcelColumn.TrueText*
+  name: TrueText
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_TrueText_
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.TrueText
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelColumn.TrueText
+  nameWithType: ExcelColumn.TrueText
+- uid: Snipster.Library.Models.ExcelColumn.Width
+  name: Width
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Width
+  commentId: P:Snipster.Library.Models.ExcelColumn.Width
+  fullName: Snipster.Library.Models.ExcelColumn.Width
+  nameWithType: ExcelColumn.Width
+- uid: Snipster.Library.Models.ExcelColumn.Width*
+  name: Width
+  href: api/Snipster.Library.Models.ExcelColumn.html#Snipster_Library_Models_ExcelColumn_Width_
+  commentId: Overload:Snipster.Library.Models.ExcelColumn.Width
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelColumn.Width
+  nameWithType: ExcelColumn.Width
+- uid: Snipster.Library.Models.ExcelExportOptions
+  name: ExcelExportOptions
+  href: api/Snipster.Library.Models.ExcelExportOptions.html
+  commentId: T:Snipster.Library.Models.ExcelExportOptions
+  fullName: Snipster.Library.Models.ExcelExportOptions
+  nameWithType: ExcelExportOptions
+- uid: Snipster.Library.Models.ExcelExportOptions.AlternateRowColor
+  name: AlternateRowColor
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_AlternateRowColor
+  commentId: P:Snipster.Library.Models.ExcelExportOptions.AlternateRowColor
+  fullName: Snipster.Library.Models.ExcelExportOptions.AlternateRowColor
+  nameWithType: ExcelExportOptions.AlternateRowColor
+- uid: Snipster.Library.Models.ExcelExportOptions.AlternateRowColor*
+  name: AlternateRowColor
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_AlternateRowColor_
+  commentId: Overload:Snipster.Library.Models.ExcelExportOptions.AlternateRowColor
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelExportOptions.AlternateRowColor
+  nameWithType: ExcelExportOptions.AlternateRowColor
+- uid: Snipster.Library.Models.ExcelExportOptions.AlternateRowColors
+  name: AlternateRowColors
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_AlternateRowColors
+  commentId: P:Snipster.Library.Models.ExcelExportOptions.AlternateRowColors
+  fullName: Snipster.Library.Models.ExcelExportOptions.AlternateRowColors
+  nameWithType: ExcelExportOptions.AlternateRowColors
+- uid: Snipster.Library.Models.ExcelExportOptions.AlternateRowColors*
+  name: AlternateRowColors
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_AlternateRowColors_
+  commentId: Overload:Snipster.Library.Models.ExcelExportOptions.AlternateRowColors
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelExportOptions.AlternateRowColors
+  nameWithType: ExcelExportOptions.AlternateRowColors
+- uid: Snipster.Library.Models.ExcelExportOptions.AutoFitColumns
+  name: AutoFitColumns
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_AutoFitColumns
+  commentId: P:Snipster.Library.Models.ExcelExportOptions.AutoFitColumns
+  fullName: Snipster.Library.Models.ExcelExportOptions.AutoFitColumns
+  nameWithType: ExcelExportOptions.AutoFitColumns
+- uid: Snipster.Library.Models.ExcelExportOptions.AutoFitColumns*
+  name: AutoFitColumns
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_AutoFitColumns_
+  commentId: Overload:Snipster.Library.Models.ExcelExportOptions.AutoFitColumns
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelExportOptions.AutoFitColumns
+  nameWithType: ExcelExportOptions.AutoFitColumns
+- uid: Snipster.Library.Models.ExcelExportOptions.FreezeHeader
+  name: FreezeHeader
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_FreezeHeader
+  commentId: P:Snipster.Library.Models.ExcelExportOptions.FreezeHeader
+  fullName: Snipster.Library.Models.ExcelExportOptions.FreezeHeader
+  nameWithType: ExcelExportOptions.FreezeHeader
+- uid: Snipster.Library.Models.ExcelExportOptions.FreezeHeader*
+  name: FreezeHeader
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_FreezeHeader_
+  commentId: Overload:Snipster.Library.Models.ExcelExportOptions.FreezeHeader
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelExportOptions.FreezeHeader
+  nameWithType: ExcelExportOptions.FreezeHeader
+- uid: Snipster.Library.Models.ExcelExportOptions.HeaderBackground
+  name: HeaderBackground
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_HeaderBackground
+  commentId: P:Snipster.Library.Models.ExcelExportOptions.HeaderBackground
+  fullName: Snipster.Library.Models.ExcelExportOptions.HeaderBackground
+  nameWithType: ExcelExportOptions.HeaderBackground
+- uid: Snipster.Library.Models.ExcelExportOptions.HeaderBackground*
+  name: HeaderBackground
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_HeaderBackground_
+  commentId: Overload:Snipster.Library.Models.ExcelExportOptions.HeaderBackground
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelExportOptions.HeaderBackground
+  nameWithType: ExcelExportOptions.HeaderBackground
+- uid: Snipster.Library.Models.ExcelExportOptions.SheetName
+  name: SheetName
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_SheetName
+  commentId: P:Snipster.Library.Models.ExcelExportOptions.SheetName
+  fullName: Snipster.Library.Models.ExcelExportOptions.SheetName
+  nameWithType: ExcelExportOptions.SheetName
+- uid: Snipster.Library.Models.ExcelExportOptions.SheetName*
+  name: SheetName
+  href: api/Snipster.Library.Models.ExcelExportOptions.html#Snipster_Library_Models_ExcelExportOptions_SheetName_
+  commentId: Overload:Snipster.Library.Models.ExcelExportOptions.SheetName
+  isSpec: "True"
+  fullName: Snipster.Library.Models.ExcelExportOptions.SheetName
+  nameWithType: ExcelExportOptions.SheetName
+- uid: Snipster.Library.Models.ExcelFormats
+  name: ExcelFormats
+  href: api/Snipster.Library.Models.ExcelFormats.html
+  commentId: T:Snipster.Library.Models.ExcelFormats
+  fullName: Snipster.Library.Models.ExcelFormats
+  nameWithType: ExcelFormats
+- uid: Snipster.Library.Models.ExcelFormats.Currency
+  name: Currency
+  href: api/Snipster.Library.Models.ExcelFormats.html#Snipster_Library_Models_ExcelFormats_Currency
+  commentId: F:Snipster.Library.Models.ExcelFormats.Currency
+  fullName: Snipster.Library.Models.ExcelFormats.Currency
+  nameWithType: ExcelFormats.Currency
+- uid: Snipster.Library.Models.ExcelFormats.DateLong
+  name: DateLong
+  href: api/Snipster.Library.Models.ExcelFormats.html#Snipster_Library_Models_ExcelFormats_DateLong
+  commentId: F:Snipster.Library.Models.ExcelFormats.DateLong
+  fullName: Snipster.Library.Models.ExcelFormats.DateLong
+  nameWithType: ExcelFormats.DateLong
+- uid: Snipster.Library.Models.ExcelFormats.DateShort
+  name: DateShort
+  href: api/Snipster.Library.Models.ExcelFormats.html#Snipster_Library_Models_ExcelFormats_DateShort
+  commentId: F:Snipster.Library.Models.ExcelFormats.DateShort
+  fullName: Snipster.Library.Models.ExcelFormats.DateShort
+  nameWithType: ExcelFormats.DateShort
+- uid: Snipster.Library.Models.ExcelFormats.DateTime
+  name: DateTime
+  href: api/Snipster.Library.Models.ExcelFormats.html#Snipster_Library_Models_ExcelFormats_DateTime
+  commentId: F:Snipster.Library.Models.ExcelFormats.DateTime
+  fullName: Snipster.Library.Models.ExcelFormats.DateTime
+  nameWithType: ExcelFormats.DateTime
+- uid: Snipster.Library.Models.ExcelFormats.Double
+  name: Double
+  href: api/Snipster.Library.Models.ExcelFormats.html#Snipster_Library_Models_ExcelFormats_Double
+  commentId: F:Snipster.Library.Models.ExcelFormats.Double
+  fullName: Snipster.Library.Models.ExcelFormats.Double
+  nameWithType: ExcelFormats.Double
+- uid: Snipster.Library.Models.ExcelFormats.General
+  name: General
+  href: api/Snipster.Library.Models.ExcelFormats.html#Snipster_Library_Models_ExcelFormats_General
+  commentId: F:Snipster.Library.Models.ExcelFormats.General
+  fullName: Snipster.Library.Models.ExcelFormats.General
+  nameWithType: ExcelFormats.General
+- uid: Snipster.Library.Models.ExcelFormats.Integer
+  name: Integer
+  href: api/Snipster.Library.Models.ExcelFormats.html#Snipster_Library_Models_ExcelFormats_Integer
+  commentId: F:Snipster.Library.Models.ExcelFormats.Integer
+  fullName: Snipster.Library.Models.ExcelFormats.Integer
+  nameWithType: ExcelFormats.Integer
+- uid: Snipster.Library.Models.ExcelFormats.Percent
+  name: Percent
+  href: api/Snipster.Library.Models.ExcelFormats.html#Snipster_Library_Models_ExcelFormats_Percent
+  commentId: F:Snipster.Library.Models.ExcelFormats.Percent
+  fullName: Snipster.Library.Models.ExcelFormats.Percent
+  nameWithType: ExcelFormats.Percent
+- uid: Snipster.Library.Models.ExcelFormats.Text
+  name: Text
+  href: api/Snipster.Library.Models.ExcelFormats.html#Snipster_Library_Models_ExcelFormats_Text
+  commentId: F:Snipster.Library.Models.ExcelFormats.Text
+  fullName: Snipster.Library.Models.ExcelFormats.Text
+  nameWithType: ExcelFormats.Text
+- uid: Snipster.Library.Repository
+  name: Snipster.Library.Repository
+  href: api/Snipster.Library.Repository.html
+  commentId: N:Snipster.Library.Repository
+  fullName: Snipster.Library.Repository
+  nameWithType: Snipster.Library.Repository
+- uid: Snipster.Library.Repository.GenericRepository`1
+  name: GenericRepository<TEntity>
+  href: api/Snipster.Library.Repository.GenericRepository-1.html
+  commentId: T:Snipster.Library.Repository.GenericRepository`1
+  name.vb: GenericRepository(Of TEntity)
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity)
+  nameWithType: GenericRepository<TEntity>
+  nameWithType.vb: GenericRepository(Of TEntity)
+- uid: Snipster.Library.Repository.GenericRepository`1.#ctor(Microsoft.EntityFrameworkCore.DbContext)
+  name: GenericRepository(DbContext)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1__ctor_Microsoft_EntityFrameworkCore_DbContext_
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.#ctor(Microsoft.EntityFrameworkCore.DbContext)
+  name.vb: New(DbContext)
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.GenericRepository(Microsoft.EntityFrameworkCore.DbContext)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).New(Microsoft.EntityFrameworkCore.DbContext)
+  nameWithType: GenericRepository<TEntity>.GenericRepository(DbContext)
+  nameWithType.vb: GenericRepository(Of TEntity).New(DbContext)
+- uid: Snipster.Library.Repository.GenericRepository`1.#ctor*
+  name: GenericRepository
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1__ctor_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.GenericRepository
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).New
+  nameWithType: GenericRepository<TEntity>.GenericRepository
+  nameWithType.vb: GenericRepository(Of TEntity).New
+- uid: Snipster.Library.Repository.GenericRepository`1.AddAsync(`0)
+  name: AddAsync(TEntity)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_AddAsync__0_
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.AddAsync(`0)
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.AddAsync(TEntity)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).AddAsync(TEntity)
+  nameWithType: GenericRepository<TEntity>.AddAsync(TEntity)
+  nameWithType.vb: GenericRepository(Of TEntity).AddAsync(TEntity)
+- uid: Snipster.Library.Repository.GenericRepository`1.AddAsync*
+  name: AddAsync
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_AddAsync_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.AddAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.AddAsync
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).AddAsync
+  nameWithType: GenericRepository<TEntity>.AddAsync
+  nameWithType.vb: GenericRepository(Of TEntity).AddAsync
+- uid: Snipster.Library.Repository.GenericRepository`1.AddRangeAsync(System.Collections.Generic.IEnumerable{`0})
+  name: AddRangeAsync(IEnumerable<TEntity>)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_AddRangeAsync_System_Collections_Generic_IEnumerable__0__
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.AddRangeAsync(System.Collections.Generic.IEnumerable{`0})
+  name.vb: AddRangeAsync(IEnumerable(Of TEntity))
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.AddRangeAsync(System.Collections.Generic.IEnumerable<TEntity>)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).AddRangeAsync(System.Collections.Generic.IEnumerable(Of TEntity))
+  nameWithType: GenericRepository<TEntity>.AddRangeAsync(IEnumerable<TEntity>)
+  nameWithType.vb: GenericRepository(Of TEntity).AddRangeAsync(IEnumerable(Of TEntity))
+- uid: Snipster.Library.Repository.GenericRepository`1.AddRangeAsync*
+  name: AddRangeAsync
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_AddRangeAsync_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.AddRangeAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.AddRangeAsync
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).AddRangeAsync
+  nameWithType: GenericRepository<TEntity>.AddRangeAsync
+  nameWithType.vb: GenericRepository(Of TEntity).AddRangeAsync
+- uid: Snipster.Library.Repository.GenericRepository`1.GetAllAsync(System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name: GetAllAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_GetAllAsync_System_Func_System_Linq_IQueryable__0__System_Linq_IQueryable__0___
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.GetAllAsync(System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name.vb: GetAllAsync(Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.GetAllAsync(System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IQueryable<TEntity>>?)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).GetAllAsync(System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IQueryable(Of TEntity)))
+  nameWithType: GenericRepository<TEntity>.GetAllAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  nameWithType.vb: GenericRepository(Of TEntity).GetAllAsync(Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+- uid: Snipster.Library.Repository.GenericRepository`1.GetAllAsync*
+  name: GetAllAsync
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_GetAllAsync_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.GetAllAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.GetAllAsync
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).GetAllAsync
+  nameWithType: GenericRepository<TEntity>.GetAllAsync
+  nameWithType.vb: GenericRepository(Of TEntity).GetAllAsync
+- uid: Snipster.Library.Repository.GenericRepository`1.GetAllByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name: GetAllByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_GetAllByConditionAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Func_System_Linq_IQueryable__0__System_Linq_IQueryable__0___
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.GetAllByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name.vb: GetAllByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.GetAllByConditionAsync(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>, System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IQueryable<TEntity>>?)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).GetAllByConditionAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)), System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IQueryable(Of TEntity)))
+  nameWithType: GenericRepository<TEntity>.GetAllByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  nameWithType.vb: GenericRepository(Of TEntity).GetAllByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+- uid: Snipster.Library.Repository.GenericRepository`1.GetAllByConditionAsync*
+  name: GetAllByConditionAsync
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_GetAllByConditionAsync_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.GetAllByConditionAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.GetAllByConditionAsync
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).GetAllByConditionAsync
+  nameWithType: GenericRepository<TEntity>.GetAllByConditionAsync
+  nameWithType.vb: GenericRepository(Of TEntity).GetAllByConditionAsync
+- uid: Snipster.Library.Repository.GenericRepository`1.GetByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name: GetByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_GetByConditionAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Func_System_Linq_IQueryable__0__System_Linq_IQueryable__0___
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.GetByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name.vb: GetByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.GetByConditionAsync(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>, System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IQueryable<TEntity>>?)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).GetByConditionAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)), System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IQueryable(Of TEntity)))
+  nameWithType: GenericRepository<TEntity>.GetByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  nameWithType.vb: GenericRepository(Of TEntity).GetByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+- uid: Snipster.Library.Repository.GenericRepository`1.GetByConditionAsync*
+  name: GetByConditionAsync
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_GetByConditionAsync_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.GetByConditionAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.GetByConditionAsync
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).GetByConditionAsync
+  nameWithType: GenericRepository<TEntity>.GetByConditionAsync
+  nameWithType.vb: GenericRepository(Of TEntity).GetByConditionAsync
+- uid: Snipster.Library.Repository.GenericRepository`1.GetSelectedColumnsAsync*
+  name: GetSelectedColumnsAsync
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_GetSelectedColumnsAsync_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.GetSelectedColumnsAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.GetSelectedColumnsAsync
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).GetSelectedColumnsAsync
+  nameWithType: GenericRepository<TEntity>.GetSelectedColumnsAsync
+  nameWithType.vb: GenericRepository(Of TEntity).GetSelectedColumnsAsync
+- uid: Snipster.Library.Repository.GenericRepository`1.GetSelectedColumnsAsync``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: GetSelectedColumnsAsync<TResult>(Expression<Func<TEntity, TResult>>)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_GetSelectedColumnsAsync__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.GetSelectedColumnsAsync``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name.vb: GetSelectedColumnsAsync(Of TResult)(Expression(Of Func(Of TEntity, TResult)))
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.GetSelectedColumnsAsync<TResult>(System.Linq.Expressions.Expression<System.Func<TEntity, TResult>>)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).GetSelectedColumnsAsync(Of TResult)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TResult)))
+  nameWithType: GenericRepository<TEntity>.GetSelectedColumnsAsync<TResult>(Expression<Func<TEntity, TResult>>)
+  nameWithType.vb: GenericRepository(Of TEntity).GetSelectedColumnsAsync(Of TResult)(Expression(Of Func(Of TEntity, TResult)))
+- uid: Snipster.Library.Repository.GenericRepository`1.IsExistAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  name: IsExistAsync(Expression<Func<TEntity, bool>>)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_IsExistAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.IsExistAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  name.vb: IsExistAsync(Expression(Of Func(Of TEntity, Boolean)))
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.IsExistAsync(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).IsExistAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)))
+  nameWithType: GenericRepository<TEntity>.IsExistAsync(Expression<Func<TEntity, bool>>)
+  nameWithType.vb: GenericRepository(Of TEntity).IsExistAsync(Expression(Of Func(Of TEntity, Boolean)))
+- uid: Snipster.Library.Repository.GenericRepository`1.IsExistAsync*
+  name: IsExistAsync
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_IsExistAsync_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.IsExistAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.IsExistAsync
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).IsExistAsync
+  nameWithType: GenericRepository<TEntity>.IsExistAsync
+  nameWithType.vb: GenericRepository(Of TEntity).IsExistAsync
+- uid: Snipster.Library.Repository.GenericRepository`1.Remove(`0)
+  name: Remove(TEntity)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_Remove__0_
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.Remove(`0)
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.Remove(TEntity)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).Remove(TEntity)
+  nameWithType: GenericRepository<TEntity>.Remove(TEntity)
+  nameWithType.vb: GenericRepository(Of TEntity).Remove(TEntity)
+- uid: Snipster.Library.Repository.GenericRepository`1.Remove*
+  name: Remove
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_Remove_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.Remove
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.Remove
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).Remove
+  nameWithType: GenericRepository<TEntity>.Remove
+  nameWithType.vb: GenericRepository(Of TEntity).Remove
+- uid: Snipster.Library.Repository.GenericRepository`1.RemoveAsync(System.Object)
+  name: RemoveAsync(object)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_RemoveAsync_System_Object_
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.RemoveAsync(System.Object)
+  name.vb: RemoveAsync(Object)
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.RemoveAsync(object)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).RemoveAsync(Object)
+  nameWithType: GenericRepository<TEntity>.RemoveAsync(object)
+  nameWithType.vb: GenericRepository(Of TEntity).RemoveAsync(Object)
+- uid: Snipster.Library.Repository.GenericRepository`1.RemoveAsync*
+  name: RemoveAsync
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_RemoveAsync_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.RemoveAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.RemoveAsync
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).RemoveAsync
+  nameWithType: GenericRepository<TEntity>.RemoveAsync
+  nameWithType.vb: GenericRepository(Of TEntity).RemoveAsync
+- uid: Snipster.Library.Repository.GenericRepository`1.SaveChangesAsync
+  name: SaveChangesAsync()
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_SaveChangesAsync
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.SaveChangesAsync
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.SaveChangesAsync()
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).SaveChangesAsync()
+  nameWithType: GenericRepository<TEntity>.SaveChangesAsync()
+  nameWithType.vb: GenericRepository(Of TEntity).SaveChangesAsync()
+- uid: Snipster.Library.Repository.GenericRepository`1.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_SaveChangesAsync_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.SaveChangesAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.SaveChangesAsync
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).SaveChangesAsync
+  nameWithType: GenericRepository<TEntity>.SaveChangesAsync
+  nameWithType.vb: GenericRepository(Of TEntity).SaveChangesAsync
+- uid: Snipster.Library.Repository.GenericRepository`1.Update(`0)
+  name: Update(TEntity)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_Update__0_
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.Update(`0)
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.Update(TEntity)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).Update(TEntity)
+  nameWithType: GenericRepository<TEntity>.Update(TEntity)
+  nameWithType.vb: GenericRepository(Of TEntity).Update(TEntity)
+- uid: Snipster.Library.Repository.GenericRepository`1.Update*
+  name: Update
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_Update_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.Update
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.Update
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).Update
+  nameWithType: GenericRepository<TEntity>.Update
+  nameWithType.vb: GenericRepository(Of TEntity).Update
+- uid: Snipster.Library.Repository.GenericRepository`1.UpdateRange(System.Collections.Generic.IEnumerable{`0})
+  name: UpdateRange(IEnumerable<TEntity>)
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_UpdateRange_System_Collections_Generic_IEnumerable__0__
+  commentId: M:Snipster.Library.Repository.GenericRepository`1.UpdateRange(System.Collections.Generic.IEnumerable{`0})
+  name.vb: UpdateRange(IEnumerable(Of TEntity))
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.UpdateRange(System.Collections.Generic.IEnumerable<TEntity>)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).UpdateRange(System.Collections.Generic.IEnumerable(Of TEntity))
+  nameWithType: GenericRepository<TEntity>.UpdateRange(IEnumerable<TEntity>)
+  nameWithType.vb: GenericRepository(Of TEntity).UpdateRange(IEnumerable(Of TEntity))
+- uid: Snipster.Library.Repository.GenericRepository`1.UpdateRange*
+  name: UpdateRange
+  href: api/Snipster.Library.Repository.GenericRepository-1.html#Snipster_Library_Repository_GenericRepository_1_UpdateRange_
+  commentId: Overload:Snipster.Library.Repository.GenericRepository`1.UpdateRange
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>.UpdateRange
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity).UpdateRange
+  nameWithType: GenericRepository<TEntity>.UpdateRange
+  nameWithType.vb: GenericRepository(Of TEntity).UpdateRange
+- uid: Snipster.Library.Repository.IGenericRepository`1
+  name: IGenericRepository<TEntity>
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html
+  commentId: T:Snipster.Library.Repository.IGenericRepository`1
+  name.vb: IGenericRepository(Of TEntity)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity)
+  nameWithType: IGenericRepository<TEntity>
+  nameWithType.vb: IGenericRepository(Of TEntity)
+- uid: Snipster.Library.Repository.IGenericRepository`1.AddAsync(`0)
+  name: AddAsync(TEntity)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_AddAsync__0_
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.AddAsync(`0)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.AddAsync(TEntity)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).AddAsync(TEntity)
+  nameWithType: IGenericRepository<TEntity>.AddAsync(TEntity)
+  nameWithType.vb: IGenericRepository(Of TEntity).AddAsync(TEntity)
+- uid: Snipster.Library.Repository.IGenericRepository`1.AddAsync*
+  name: AddAsync
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_AddAsync_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.AddAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.AddAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).AddAsync
+  nameWithType: IGenericRepository<TEntity>.AddAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).AddAsync
+- uid: Snipster.Library.Repository.IGenericRepository`1.AddRangeAsync(System.Collections.Generic.IEnumerable{`0})
+  name: AddRangeAsync(IEnumerable<TEntity>)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_AddRangeAsync_System_Collections_Generic_IEnumerable__0__
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.AddRangeAsync(System.Collections.Generic.IEnumerable{`0})
+  name.vb: AddRangeAsync(IEnumerable(Of TEntity))
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.AddRangeAsync(System.Collections.Generic.IEnumerable<TEntity>)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).AddRangeAsync(System.Collections.Generic.IEnumerable(Of TEntity))
+  nameWithType: IGenericRepository<TEntity>.AddRangeAsync(IEnumerable<TEntity>)
+  nameWithType.vb: IGenericRepository(Of TEntity).AddRangeAsync(IEnumerable(Of TEntity))
+- uid: Snipster.Library.Repository.IGenericRepository`1.AddRangeAsync*
+  name: AddRangeAsync
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_AddRangeAsync_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.AddRangeAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.AddRangeAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).AddRangeAsync
+  nameWithType: IGenericRepository<TEntity>.AddRangeAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).AddRangeAsync
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetAllAsync(System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name: GetAllAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetAllAsync_System_Func_System_Linq_IQueryable__0__System_Linq_IQueryable__0___
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.GetAllAsync(System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name.vb: GetAllAsync(Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetAllAsync(System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IQueryable<TEntity>>?)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetAllAsync(System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IQueryable(Of TEntity)))
+  nameWithType: IGenericRepository<TEntity>.GetAllAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAllAsync(Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetAllAsync*
+  name: GetAllAsync
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetAllAsync_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.GetAllAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetAllAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetAllAsync
+  nameWithType: IGenericRepository<TEntity>.GetAllAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAllAsync
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetAllByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name: GetAllByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetAllByConditionAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Func_System_Linq_IQueryable__0__System_Linq_IQueryable__0___
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.GetAllByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name.vb: GetAllByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetAllByConditionAsync(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>, System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IQueryable<TEntity>>?)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetAllByConditionAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)), System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IQueryable(Of TEntity)))
+  nameWithType: IGenericRepository<TEntity>.GetAllByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAllByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetAllByConditionAsync*
+  name: GetAllByConditionAsync
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetAllByConditionAsync_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.GetAllByConditionAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetAllByConditionAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetAllByConditionAsync
+  nameWithType: IGenericRepository<TEntity>.GetAllByConditionAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAllByConditionAsync
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name: GetByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetByConditionAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Func_System_Linq_IQueryable__0__System_Linq_IQueryable__0___
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.GetByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IQueryable{`0}})
+  name.vb: GetByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetByConditionAsync(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>, System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IQueryable<TEntity>>?)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetByConditionAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)), System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IQueryable(Of TEntity)))
+  nameWithType: IGenericRepository<TEntity>.GetByConditionAsync(Expression<Func<TEntity, bool>>, Func<IQueryable<TEntity>, IQueryable<TEntity>>?)
+  nameWithType.vb: IGenericRepository(Of TEntity).GetByConditionAsync(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IQueryable(Of TEntity)))
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetByConditionAsync*
+  name: GetByConditionAsync
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetByConditionAsync_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.GetByConditionAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetByConditionAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetByConditionAsync
+  nameWithType: IGenericRepository<TEntity>.GetByConditionAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).GetByConditionAsync
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetSelectedColumnsAsync*
+  name: GetSelectedColumnsAsync
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetSelectedColumnsAsync_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.GetSelectedColumnsAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetSelectedColumnsAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetSelectedColumnsAsync
+  nameWithType: IGenericRepository<TEntity>.GetSelectedColumnsAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).GetSelectedColumnsAsync
+- uid: Snipster.Library.Repository.IGenericRepository`1.GetSelectedColumnsAsync``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: GetSelectedColumnsAsync<TResult>(Expression<Func<TEntity, TResult>>)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_GetSelectedColumnsAsync__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.GetSelectedColumnsAsync``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name.vb: GetSelectedColumnsAsync(Of TResult)(Expression(Of Func(Of TEntity, TResult)))
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.GetSelectedColumnsAsync<TResult>(System.Linq.Expressions.Expression<System.Func<TEntity, TResult>>)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).GetSelectedColumnsAsync(Of TResult)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TResult)))
+  nameWithType: IGenericRepository<TEntity>.GetSelectedColumnsAsync<TResult>(Expression<Func<TEntity, TResult>>)
+  nameWithType.vb: IGenericRepository(Of TEntity).GetSelectedColumnsAsync(Of TResult)(Expression(Of Func(Of TEntity, TResult)))
+- uid: Snipster.Library.Repository.IGenericRepository`1.IsExistAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  name: IsExistAsync(Expression<Func<TEntity, bool>>)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_IsExistAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.IsExistAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  name.vb: IsExistAsync(Expression(Of Func(Of TEntity, Boolean)))
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.IsExistAsync(System.Linq.Expressions.Expression<System.Func<TEntity, bool>>)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).IsExistAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, Boolean)))
+  nameWithType: IGenericRepository<TEntity>.IsExistAsync(Expression<Func<TEntity, bool>>)
+  nameWithType.vb: IGenericRepository(Of TEntity).IsExistAsync(Expression(Of Func(Of TEntity, Boolean)))
+- uid: Snipster.Library.Repository.IGenericRepository`1.IsExistAsync*
+  name: IsExistAsync
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_IsExistAsync_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.IsExistAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.IsExistAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).IsExistAsync
+  nameWithType: IGenericRepository<TEntity>.IsExistAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).IsExistAsync
+- uid: Snipster.Library.Repository.IGenericRepository`1.Remove(`0)
+  name: Remove(TEntity)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_Remove__0_
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.Remove(`0)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.Remove(TEntity)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).Remove(TEntity)
+  nameWithType: IGenericRepository<TEntity>.Remove(TEntity)
+  nameWithType.vb: IGenericRepository(Of TEntity).Remove(TEntity)
+- uid: Snipster.Library.Repository.IGenericRepository`1.Remove*
+  name: Remove
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_Remove_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.Remove
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.Remove
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).Remove
+  nameWithType: IGenericRepository<TEntity>.Remove
+  nameWithType.vb: IGenericRepository(Of TEntity).Remove
+- uid: Snipster.Library.Repository.IGenericRepository`1.RemoveAsync(System.Object)
+  name: RemoveAsync(object)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_RemoveAsync_System_Object_
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.RemoveAsync(System.Object)
+  name.vb: RemoveAsync(Object)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.RemoveAsync(object)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).RemoveAsync(Object)
+  nameWithType: IGenericRepository<TEntity>.RemoveAsync(object)
+  nameWithType.vb: IGenericRepository(Of TEntity).RemoveAsync(Object)
+- uid: Snipster.Library.Repository.IGenericRepository`1.RemoveAsync*
+  name: RemoveAsync
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_RemoveAsync_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.RemoveAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.RemoveAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).RemoveAsync
+  nameWithType: IGenericRepository<TEntity>.RemoveAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).RemoveAsync
+- uid: Snipster.Library.Repository.IGenericRepository`1.SaveChangesAsync
+  name: SaveChangesAsync()
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_SaveChangesAsync
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.SaveChangesAsync
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.SaveChangesAsync()
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).SaveChangesAsync()
+  nameWithType: IGenericRepository<TEntity>.SaveChangesAsync()
+  nameWithType.vb: IGenericRepository(Of TEntity).SaveChangesAsync()
+- uid: Snipster.Library.Repository.IGenericRepository`1.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_SaveChangesAsync_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.SaveChangesAsync
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.SaveChangesAsync
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).SaveChangesAsync
+  nameWithType: IGenericRepository<TEntity>.SaveChangesAsync
+  nameWithType.vb: IGenericRepository(Of TEntity).SaveChangesAsync
+- uid: Snipster.Library.Repository.IGenericRepository`1.Update(`0)
+  name: Update(TEntity)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_Update__0_
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.Update(`0)
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.Update(TEntity)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).Update(TEntity)
+  nameWithType: IGenericRepository<TEntity>.Update(TEntity)
+  nameWithType.vb: IGenericRepository(Of TEntity).Update(TEntity)
+- uid: Snipster.Library.Repository.IGenericRepository`1.Update*
+  name: Update
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_Update_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.Update
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.Update
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).Update
+  nameWithType: IGenericRepository<TEntity>.Update
+  nameWithType.vb: IGenericRepository(Of TEntity).Update
+- uid: Snipster.Library.Repository.IGenericRepository`1.UpdateRange(System.Collections.Generic.IEnumerable{`0})
+  name: UpdateRange(IEnumerable<TEntity>)
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_UpdateRange_System_Collections_Generic_IEnumerable__0__
+  commentId: M:Snipster.Library.Repository.IGenericRepository`1.UpdateRange(System.Collections.Generic.IEnumerable{`0})
+  name.vb: UpdateRange(IEnumerable(Of TEntity))
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.UpdateRange(System.Collections.Generic.IEnumerable<TEntity>)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).UpdateRange(System.Collections.Generic.IEnumerable(Of TEntity))
+  nameWithType: IGenericRepository<TEntity>.UpdateRange(IEnumerable<TEntity>)
+  nameWithType.vb: IGenericRepository(Of TEntity).UpdateRange(IEnumerable(Of TEntity))
+- uid: Snipster.Library.Repository.IGenericRepository`1.UpdateRange*
+  name: UpdateRange
+  href: api/Snipster.Library.Repository.IGenericRepository-1.html#Snipster_Library_Repository_IGenericRepository_1_UpdateRange_
+  commentId: Overload:Snipster.Library.Repository.IGenericRepository`1.UpdateRange
+  isSpec: "True"
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>.UpdateRange
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity).UpdateRange
+  nameWithType: IGenericRepository<TEntity>.UpdateRange
+  nameWithType.vb: IGenericRepository(Of TEntity).UpdateRange
+- uid: Snipster.Library.UOW
+  name: Snipster.Library.UOW
+  href: api/Snipster.Library.UOW.html
+  commentId: N:Snipster.Library.UOW
+  fullName: Snipster.Library.UOW
+  nameWithType: Snipster.Library.UOW
+- uid: Snipster.Library.UOW.IUnitOfWork
+  name: IUnitOfWork
+  href: api/Snipster.Library.UOW.IUnitOfWork.html
+  commentId: T:Snipster.Library.UOW.IUnitOfWork
+  fullName: Snipster.Library.UOW.IUnitOfWork
+  nameWithType: IUnitOfWork
+- uid: Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync
+  name: BeginTransactionAsync()
+  href: api/Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_BeginTransactionAsync
+  commentId: M:Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync
+  fullName: Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync()
+  nameWithType: IUnitOfWork.BeginTransactionAsync()
+- uid: Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync*
+  name: BeginTransactionAsync
+  href: api/Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_BeginTransactionAsync_
+  commentId: Overload:Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync
+  nameWithType: IUnitOfWork.BeginTransactionAsync
+- uid: Snipster.Library.UOW.IUnitOfWork.CommitAsync
+  name: CommitAsync()
+  href: api/Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_CommitAsync
+  commentId: M:Snipster.Library.UOW.IUnitOfWork.CommitAsync
+  fullName: Snipster.Library.UOW.IUnitOfWork.CommitAsync()
+  nameWithType: IUnitOfWork.CommitAsync()
+- uid: Snipster.Library.UOW.IUnitOfWork.CommitAsync*
+  name: CommitAsync
+  href: api/Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_CommitAsync_
+  commentId: Overload:Snipster.Library.UOW.IUnitOfWork.CommitAsync
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.IUnitOfWork.CommitAsync
+  nameWithType: IUnitOfWork.CommitAsync
+- uid: Snipster.Library.UOW.IUnitOfWork.Repository*
+  name: Repository
+  href: api/Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_Repository_
+  commentId: Overload:Snipster.Library.UOW.IUnitOfWork.Repository
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.IUnitOfWork.Repository
+  nameWithType: IUnitOfWork.Repository
+- uid: Snipster.Library.UOW.IUnitOfWork.Repository``1
+  name: Repository<TEntity>()
+  href: api/Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_Repository__1
+  commentId: M:Snipster.Library.UOW.IUnitOfWork.Repository``1
+  name.vb: Repository(Of TEntity)()
+  fullName: Snipster.Library.UOW.IUnitOfWork.Repository<TEntity>()
+  fullName.vb: Snipster.Library.UOW.IUnitOfWork.Repository(Of TEntity)()
+  nameWithType: IUnitOfWork.Repository<TEntity>()
+  nameWithType.vb: IUnitOfWork.Repository(Of TEntity)()
+- uid: Snipster.Library.UOW.IUnitOfWork.RollbackAsync
+  name: RollbackAsync()
+  href: api/Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_RollbackAsync
+  commentId: M:Snipster.Library.UOW.IUnitOfWork.RollbackAsync
+  fullName: Snipster.Library.UOW.IUnitOfWork.RollbackAsync()
+  nameWithType: IUnitOfWork.RollbackAsync()
+- uid: Snipster.Library.UOW.IUnitOfWork.RollbackAsync*
+  name: RollbackAsync
+  href: api/Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_RollbackAsync_
+  commentId: Overload:Snipster.Library.UOW.IUnitOfWork.RollbackAsync
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.IUnitOfWork.RollbackAsync
+  nameWithType: IUnitOfWork.RollbackAsync
+- uid: Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync
+  name: SaveChangesAsync()
+  href: api/Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_SaveChangesAsync
+  commentId: M:Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync
+  fullName: Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync()
+  nameWithType: IUnitOfWork.SaveChangesAsync()
+- uid: Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/Snipster.Library.UOW.IUnitOfWork.html#Snipster_Library_UOW_IUnitOfWork_SaveChangesAsync_
+  commentId: Overload:Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync
+  nameWithType: IUnitOfWork.SaveChangesAsync
+- uid: Snipster.Library.UOW.UnitOfWork
+  name: UnitOfWork
+  href: api/Snipster.Library.UOW.UnitOfWork.html
+  commentId: T:Snipster.Library.UOW.UnitOfWork
+  fullName: Snipster.Library.UOW.UnitOfWork
+  nameWithType: UnitOfWork
+- uid: Snipster.Library.UOW.UnitOfWork.#ctor(Microsoft.EntityFrameworkCore.DbContext,System.Boolean)
+  name: UnitOfWork(DbContext, bool)
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork__ctor_Microsoft_EntityFrameworkCore_DbContext_System_Boolean_
+  commentId: M:Snipster.Library.UOW.UnitOfWork.#ctor(Microsoft.EntityFrameworkCore.DbContext,System.Boolean)
+  name.vb: New(DbContext, Boolean)
+  fullName: Snipster.Library.UOW.UnitOfWork.UnitOfWork(Microsoft.EntityFrameworkCore.DbContext, bool)
+  fullName.vb: Snipster.Library.UOW.UnitOfWork.New(Microsoft.EntityFrameworkCore.DbContext, Boolean)
+  nameWithType: UnitOfWork.UnitOfWork(DbContext, bool)
+  nameWithType.vb: UnitOfWork.New(DbContext, Boolean)
+- uid: Snipster.Library.UOW.UnitOfWork.#ctor*
+  name: UnitOfWork
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork__ctor_
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Snipster.Library.UOW.UnitOfWork.UnitOfWork
+  fullName.vb: Snipster.Library.UOW.UnitOfWork.New
+  nameWithType: UnitOfWork.UnitOfWork
+  nameWithType.vb: UnitOfWork.New
+- uid: Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync
+  name: BeginTransactionAsync()
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_BeginTransactionAsync
+  commentId: M:Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync
+  fullName: Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync()
+  nameWithType: UnitOfWork.BeginTransactionAsync()
+- uid: Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync*
+  name: BeginTransactionAsync
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_BeginTransactionAsync_
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.UnitOfWork.BeginTransactionAsync
+  nameWithType: UnitOfWork.BeginTransactionAsync
+- uid: Snipster.Library.UOW.UnitOfWork.CommitAsync
+  name: CommitAsync()
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_CommitAsync
+  commentId: M:Snipster.Library.UOW.UnitOfWork.CommitAsync
+  fullName: Snipster.Library.UOW.UnitOfWork.CommitAsync()
+  nameWithType: UnitOfWork.CommitAsync()
+- uid: Snipster.Library.UOW.UnitOfWork.CommitAsync*
+  name: CommitAsync
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_CommitAsync_
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.CommitAsync
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.UnitOfWork.CommitAsync
+  nameWithType: UnitOfWork.CommitAsync
+- uid: Snipster.Library.UOW.UnitOfWork.Dispose
+  name: Dispose()
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_Dispose
+  commentId: M:Snipster.Library.UOW.UnitOfWork.Dispose
+  fullName: Snipster.Library.UOW.UnitOfWork.Dispose()
+  nameWithType: UnitOfWork.Dispose()
+- uid: Snipster.Library.UOW.UnitOfWork.Dispose*
+  name: Dispose
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_Dispose_
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.Dispose
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.UnitOfWork.Dispose
+  nameWithType: UnitOfWork.Dispose
+- uid: Snipster.Library.UOW.UnitOfWork.Repository*
+  name: Repository
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_Repository_
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.Repository
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.UnitOfWork.Repository
+  nameWithType: UnitOfWork.Repository
+- uid: Snipster.Library.UOW.UnitOfWork.Repository``1
+  name: Repository<TEntity>()
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_Repository__1
+  commentId: M:Snipster.Library.UOW.UnitOfWork.Repository``1
+  name.vb: Repository(Of TEntity)()
+  fullName: Snipster.Library.UOW.UnitOfWork.Repository<TEntity>()
+  fullName.vb: Snipster.Library.UOW.UnitOfWork.Repository(Of TEntity)()
+  nameWithType: UnitOfWork.Repository<TEntity>()
+  nameWithType.vb: UnitOfWork.Repository(Of TEntity)()
+- uid: Snipster.Library.UOW.UnitOfWork.RollbackAsync
+  name: RollbackAsync()
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_RollbackAsync
+  commentId: M:Snipster.Library.UOW.UnitOfWork.RollbackAsync
+  fullName: Snipster.Library.UOW.UnitOfWork.RollbackAsync()
+  nameWithType: UnitOfWork.RollbackAsync()
+- uid: Snipster.Library.UOW.UnitOfWork.RollbackAsync*
+  name: RollbackAsync
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_RollbackAsync_
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.RollbackAsync
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.UnitOfWork.RollbackAsync
+  nameWithType: UnitOfWork.RollbackAsync
+- uid: Snipster.Library.UOW.UnitOfWork.SaveChangesAsync
+  name: SaveChangesAsync()
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_SaveChangesAsync
+  commentId: M:Snipster.Library.UOW.UnitOfWork.SaveChangesAsync
+  fullName: Snipster.Library.UOW.UnitOfWork.SaveChangesAsync()
+  nameWithType: UnitOfWork.SaveChangesAsync()
+- uid: Snipster.Library.UOW.UnitOfWork.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/Snipster.Library.UOW.UnitOfWork.html#Snipster_Library_UOW_UnitOfWork_SaveChangesAsync_
+  commentId: Overload:Snipster.Library.UOW.UnitOfWork.SaveChangesAsync
+  isSpec: "True"
+  fullName: Snipster.Library.UOW.UnitOfWork.SaveChangesAsync
+  nameWithType: UnitOfWork.SaveChangesAsync

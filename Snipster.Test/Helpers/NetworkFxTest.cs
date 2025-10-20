@@ -12,7 +12,7 @@ namespace Snipster.Test.Helpers
         /// Tests the IsHostAvailableAsync method to ensure it returns true when the host is available and false when it is not available, as expected.
         /// </summary>
         [TestMethod]
-        public async Task IsHostAvailableAsync_ValidHostReturnsTrueOrFalse()
+        public async Task IsHostAvailableAsync_ValidHostReturns_TrueOrFalse()
         {
             // Arrange
             var host = "google.com";
@@ -24,6 +24,10 @@ namespace Snipster.Test.Helpers
             // Optionally, you can assert it's true, but connectivity can fail in CI/CD or offline environments
 
             // Assert
+
+#if DEBUG
+            Assert.IsTrue(result);
+#endif
             Assert.IsNotNull(result);
         }
 
@@ -31,7 +35,7 @@ namespace Snipster.Test.Helpers
         /// Tests the IsHostAvailableAsync method throws an <see cref="ArgumentException"/> when the host is empty.
         /// </summary>
         [TestMethod]
-        public async Task IsHostAvailableAsync_EmptyHostThrowsArgumentException()
+        public async Task IsHostAvailableAsync_EmptyHostThrows_ArgumentException()
         {
             // Arrange
             var host = string.Empty;
@@ -47,7 +51,7 @@ namespace Snipster.Test.Helpers
         /// Tests the IsHostAvailableAsync method throws an <see cref="ArgumentOutOfRangeException"/> when the timeout parameter is zero.
         /// </summary>
         [TestMethod]
-        public async Task IsHostAvailableAsync_TimeoutZeroThrowsArgumentOutOfRangeException()
+        public async Task IsHostAvailableAsync_TimeoutZeroThrows_ArgumentOutOfRangeException()
         {
             // Arrange
             var host = "google.com";
@@ -63,7 +67,7 @@ namespace Snipster.Test.Helpers
         /// Tests the BuildUrl method throws an <see cref="ArgumentException"/> when the base url is empty.
         /// </summary>
         [TestMethod]
-        public void BuildUrl_ShouldReturnArgumentExceptionOnEmptyUrl()
+        public void BuildUrl_ShouldReturn_ArgumentException_On_EmptyUrl()
         {
             // Arrange
             string baseUrl = string.Empty;
@@ -84,7 +88,7 @@ namespace Snipster.Test.Helpers
         /// Tests the BuildUrl method throws an <see cref="ArgumentNullException"/> when the parameters are null.
         /// </summary>
         [TestMethod]
-        public void BuildUrl_ShouldReturnArgumentNullExceptionOnNullParameters()
+        public void BuildUrl_ShouldReturn_ArgumentNullException_On_NullParameters()
         {
             // Arrange
             string baseUrl = "https://www.google.com/search";
@@ -102,7 +106,7 @@ namespace Snipster.Test.Helpers
         /// Tests the BuildUrl method returns valid url with the provided query params.
         /// </summary>
         [TestMethod]
-        public void BuildUrl_ShouldReturnValidUrlWithQueryParams()
+        public void BuildUrl_ShouldReturn_ValidUrlWithQueryParams()
         {
             // Arrange
             string baseUrl = "https://www.google.com/search";
@@ -125,7 +129,7 @@ namespace Snipster.Test.Helpers
         /// Tests the BuildUrl method returns valid url when query params contains a list.
         /// </summary>
         [TestMethod]
-        public void BuildUrl_ShouldReturnValidUrl_WhenQueryParamsContainList()
+        public void BuildUrl_ShouldReturn_ValidUrl_When_QueryParamsContainList()
         {
             // Arrange
             string baseUrl = "https://www.google.com/search";
@@ -149,7 +153,7 @@ namespace Snipster.Test.Helpers
         /// Tests the BuildUrl method returns a valid url when query parameter values contain special characters.
         /// </summary>
         [TestMethod]
-        public void BuildUrl_ShouldReturnValidUrl_WhenQueryParamValuesContainSpecialCharacters()
+        public void BuildUrl_ShouldReturn_ValidUrl_When_QueryParamValues_ContainSpecialCharacters()
         {
             // Arrange
             string baseUrl = "https://www.google.com/search";
@@ -167,6 +171,26 @@ namespace Snipster.Test.Helpers
             // Assert
             Assert.IsNotNull(url);
             Assert.IsTrue(url.Equals(expected));
+        }
+
+        /// <summary>
+        /// Tests the HasInternetConnectionAsync method to ensure it returns true when there is an active internet connection.
+        /// </summary>
+        [TestMethod]
+        public async Task HasInternetConnectionAsync_ShouldValidate_Active_InternetConnection()
+        {
+            // Act
+            var result = await NetworkFx.HasInternetConnectionAsync();
+
+            // We just ensure it doesn't crash
+            // Optionally, you can assert it's true, but connectivity can fail in CI/CD or offline environments
+
+            // Assert
+
+#if DEBUG
+            Assert.IsTrue(result);
+#endif
+            Assert.IsNotNull(result);
         }
     }
 }

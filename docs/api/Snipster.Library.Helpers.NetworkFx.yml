@@ -1,0 +1,730 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Helpers.NetworkFx
+  commentId: T:Snipster.Library.Helpers.NetworkFx
+  id: NetworkFx
+  parent: Snipster.Library.Helpers
+  children:
+  - Snipster.Library.Helpers.NetworkFx.BuildUrl(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  - Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync(System.String,System.Int32)
+  - Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync(System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: NetworkFx
+  nameWithType: NetworkFx
+  fullName: Snipster.Library.Helpers.NetworkFx
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/Helpers/NetworkFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: NetworkFx
+    path: ../Snipster.Library/Helpers/NetworkFx.cs
+    startLine: 14
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: A class that provides network-related functionality.
+  example: []
+  syntax:
+    content: public static class NetworkFx
+    content.vb: Public Module NetworkFx
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync(System.String,System.Int32)
+  commentId: M:Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync(System.String,System.Int32)
+  id: IsHostAvailableAsync(System.String,System.Int32)
+  parent: Snipster.Library.Helpers.NetworkFx
+  langs:
+  - csharp
+  - vb
+  name: IsHostAvailableAsync(string, int)
+  nameWithType: NetworkFx.IsHostAvailableAsync(string, int)
+  fullName: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync(string, int)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/NetworkFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: IsHostAvailableAsync
+    path: ../Snipster.Library/Helpers/NetworkFx.cs
+    startLine: 30
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Checks if a host is available by sending a ping request.
+  example: []
+  syntax:
+    content: public static Task<bool> IsHostAvailableAsync(string host, int timeout = 1000)
+    parameters:
+    - id: host
+      type: System.String
+      description: The host to check.
+    - id: timeout
+      type: System.Int32
+      description: The timeout in milliseconds for the ping request. Defaults to 1000 milliseconds (1 second).
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: True if the host is available, otherwise false.
+    content.vb: Public Shared Function IsHostAvailableAsync(host As String, timeout As Integer = 1000) As Task(Of Boolean)
+  overload: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the host is null or empty.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when the timeout is less than or equal to zero.
+  nameWithType.vb: NetworkFx.IsHostAvailableAsync(String, Integer)
+  fullName.vb: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync(String, Integer)
+  name.vb: IsHostAvailableAsync(String, Integer)
+- uid: Snipster.Library.Helpers.NetworkFx.BuildUrl(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  commentId: M:Snipster.Library.Helpers.NetworkFx.BuildUrl(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  id: BuildUrl(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  parent: Snipster.Library.Helpers.NetworkFx
+  langs:
+  - csharp
+  - vb
+  name: BuildUrl(string, Dictionary<string, object?>)
+  nameWithType: NetworkFx.BuildUrl(string, Dictionary<string, object?>)
+  fullName: Snipster.Library.Helpers.NetworkFx.BuildUrl(string, System.Collections.Generic.Dictionary<string, object?>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/NetworkFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: BuildUrl
+    path: ../Snipster.Library/Helpers/NetworkFx.cs
+    startLine: 57
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Builds a URL with query parameters from a base URL and a dictionary of parameters. Supports both single values and collections as parameter values.
+  example: []
+  syntax:
+    content: public static string BuildUrl(string baseUrl, Dictionary<string, object?> parameters)
+    parameters:
+    - id: baseUrl
+      type: System.String
+      description: The base URL to which the parameters will be added.
+    - id: parameters
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: A dictionary containing the query parameters to be added to the URL.
+    return:
+      type: System.String
+      description: A string representing the complete URL with the query parameters appended.
+    content.vb: Public Shared Function BuildUrl(baseUrl As String, parameters As Dictionary(Of String, Object)) As String
+  overload: Snipster.Library.Helpers.NetworkFx.BuildUrl*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the base URL is null or empty.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the parameters dictionary is null.
+  nameWithType.vb: NetworkFx.BuildUrl(String, Dictionary(Of String, Object))
+  fullName.vb: Snipster.Library.Helpers.NetworkFx.BuildUrl(String, System.Collections.Generic.Dictionary(Of String, Object))
+  name.vb: BuildUrl(String, Dictionary(Of String, Object))
+- uid: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync(System.String,System.Int32)
+  commentId: M:Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync(System.String,System.Int32)
+  id: HasInternetConnectionAsync(System.String,System.Int32)
+  parent: Snipster.Library.Helpers.NetworkFx
+  langs:
+  - csharp
+  - vb
+  name: HasInternetConnectionAsync(string, int)
+  nameWithType: NetworkFx.HasInternetConnectionAsync(string, int)
+  fullName: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync(string, int)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/NetworkFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: HasInternetConnectionAsync
+    path: ../Snipster.Library/Helpers/NetworkFx.cs
+    startLine: 108
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: >-
+    Checks if the system has an active internet connection by sending a lightweight request
+
+    to a reliable host (default: https://www.google.com).
+  example: []
+  syntax:
+    content: public static Task<bool> HasInternetConnectionAsync(string testUrl = "http://www.google.com", int timeoutSeconds = 5)
+    parameters:
+    - id: testUrl
+      type: System.String
+      description: 'Optional test URL (default: https://www.google.com)'
+    - id: timeoutSeconds
+      type: System.Int32
+      description: 'Timeout in seconds (default: 5)'
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: True if internet connection is available; otherwise false.
+    content.vb: Public Shared Function HasInternetConnectionAsync(testUrl As String = "http://www.google.com", timeoutSeconds As Integer = 5) As Task(Of Boolean)
+  overload: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync*
+  nameWithType.vb: NetworkFx.HasInternetConnectionAsync(String, Integer)
+  fullName.vb: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync(String, Integer)
+  name.vb: HasInternetConnectionAsync(String, Integer)
+references:
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  href: Snipster.html
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync*
+  commentId: Overload:Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync
+  href: Snipster.Library.Helpers.NetworkFx.html#Snipster_Library_Helpers_NetworkFx_IsHostAvailableAsync_System_String_System_Int32_
+  name: IsHostAvailableAsync
+  nameWithType: NetworkFx.IsHostAvailableAsync
+  fullName: Snipster.Library.Helpers.NetworkFx.IsHostAvailableAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Snipster.Library.Helpers.NetworkFx.BuildUrl*
+  commentId: Overload:Snipster.Library.Helpers.NetworkFx.BuildUrl
+  href: Snipster.Library.Helpers.NetworkFx.html#Snipster_Library_Helpers_NetworkFx_BuildUrl_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__
+  name: BuildUrl
+  nameWithType: NetworkFx.BuildUrl
+  fullName: Snipster.Library.Helpers.NetworkFx.BuildUrl
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, object>
+  nameWithType: Dictionary<string, object>
+  fullName: System.Collections.Generic.Dictionary<string, object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync*
+  commentId: Overload:Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync
+  href: Snipster.Library.Helpers.NetworkFx.html#Snipster_Library_Helpers_NetworkFx_HasInternetConnectionAsync_System_String_System_Int32_
+  name: HasInternetConnectionAsync
+  nameWithType: NetworkFx.HasInternetConnectionAsync
+  fullName: Snipster.Library.Helpers.NetworkFx.HasInternetConnectionAsync

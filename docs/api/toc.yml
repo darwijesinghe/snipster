@@ -1,0 +1,134 @@
+### YamlMime:TableOfContent
+items:
+- uid: Snipster.Library.Cache
+  name: Snipster.Library.Cache
+  type: Namespace
+  items:
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    type: Class
+  - uid: Snipster.Library.Cache.ICacheService
+    name: ICacheService
+    type: Interface
+- uid: Snipster.Library.Enums
+  name: Snipster.Library.Enums
+  type: Namespace
+  items:
+  - uid: Snipster.Library.Enums.ExcelAlignment
+    name: ExcelAlignment
+    type: Enum
+- uid: Snipster.Library.Extensions
+  name: Snipster.Library.Extensions
+  type: Namespace
+  items:
+  - uid: Snipster.Library.Extensions.CollectionEx
+    name: CollectionEx
+    type: Class
+  - uid: Snipster.Library.Extensions.CreditCardEx
+    name: CreditCardEx
+    type: Class
+  - uid: Snipster.Library.Extensions.DateTimeEx
+    name: DateTimeEx
+    type: Class
+  - uid: Snipster.Library.Extensions.JsonEx
+    name: JsonEx
+    type: Class
+  - uid: Snipster.Library.Extensions.NumberEx
+    name: NumberEx
+    type: Class
+  - uid: Snipster.Library.Extensions.ObjectEx
+    name: ObjectEx
+    type: Class
+  - uid: Snipster.Library.Extensions.SecurityEx
+    name: SecurityEx
+    type: Class
+  - uid: Snipster.Library.Extensions.StringEx
+    name: StringEx
+    type: Class
+- uid: Snipster.Library.Extensions.Validations
+  name: Snipster.Library.Extensions.Validations
+  type: Namespace
+  items:
+  - uid: Snipster.Library.Extensions.Validations.CollectionValEx
+    name: CollectionValEx
+    type: Class
+  - uid: Snipster.Library.Extensions.Validations.CreditCardValEx
+    name: CreditCardValEx
+    type: Class
+  - uid: Snipster.Library.Extensions.Validations.DateTimeValEx
+    name: DateTimeValEx
+    type: Class
+  - uid: Snipster.Library.Extensions.Validations.JsonValEx
+    name: JsonValEx
+    type: Class
+  - uid: Snipster.Library.Extensions.Validations.NetworkValEx
+    name: NetworkValEx
+    type: Class
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx
+    name: ObjectValEx
+    type: Class
+  - uid: Snipster.Library.Extensions.Validations.SecurityValEx
+    name: SecurityValEx
+    type: Class
+  - uid: Snipster.Library.Extensions.Validations.StringValEx
+    name: StringValEx
+    type: Class
+- uid: Snipster.Library.Helpers
+  name: Snipster.Library.Helpers
+  type: Namespace
+  items:
+  - uid: Snipster.Library.Helpers.ExcelFx
+    name: ExcelFx
+    type: Class
+  - uid: Snipster.Library.Helpers.FileFx
+    name: FileFx
+    type: Class
+  - uid: Snipster.Library.Helpers.JsonFx
+    name: JsonFx
+    type: Class
+  - uid: Snipster.Library.Helpers.NetworkFx
+    name: NetworkFx
+    type: Class
+  - uid: Snipster.Library.Helpers.ObjectFx
+    name: ObjectFx
+    type: Class
+  - uid: Snipster.Library.Helpers.SecurityFx
+    name: SecurityFx
+    type: Class
+  - uid: Snipster.Library.Helpers.StringFx
+    name: StringFx
+    type: Class
+- uid: Snipster.Library.Models
+  name: Snipster.Library.Models
+  type: Namespace
+  items:
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    type: Class
+  - uid: Snipster.Library.Models.ExcelExportOptions
+    name: ExcelExportOptions
+    type: Class
+  - uid: Snipster.Library.Models.ExcelFormats
+    name: ExcelFormats
+    type: Class
+- uid: Snipster.Library.Repository
+  name: Snipster.Library.Repository
+  type: Namespace
+  items:
+  - uid: Snipster.Library.Repository.GenericRepository`1
+    name: GenericRepository<TEntity>
+    type: Class
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository<TEntity>
+    type: Interface
+- uid: Snipster.Library.UOW
+  name: Snipster.Library.UOW
+  type: Namespace
+  items:
+  - uid: Snipster.Library.UOW.IUnitOfWork
+    name: IUnitOfWork
+    type: Interface
+  - uid: Snipster.Library.UOW.UnitOfWork
+    name: UnitOfWork
+    type: Class
+memberLayout: SamePage

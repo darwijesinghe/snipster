@@ -1,0 +1,1339 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Helpers.FileFx
+  commentId: T:Snipster.Library.Helpers.FileFx
+  id: FileFx
+  parent: Snipster.Library.Helpers
+  children:
+  - Snipster.Library.Helpers.FileFx.CreateTempFile(System.String)
+  - Snipster.Library.Helpers.FileFx.GetDirectorySize(System.String)
+  - Snipster.Library.Helpers.FileFx.SafeReadBytes(System.String)
+  - Snipster.Library.Helpers.FileFx.SafeReadText(System.String,System.Text.Encoding)
+  - Snipster.Library.Helpers.FileFx.SafeWriteBytes(System.String,System.Byte[])
+  - Snipster.Library.Helpers.FileFx.SafeWriteText(System.String,System.String,System.Text.Encoding)
+  - Snipster.Library.Helpers.FileFx.SanitizeFileName(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: FileFx
+  nameWithType: FileFx
+  fullName: Snipster.Library.Helpers.FileFx
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/Helpers/FileFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: FileFx
+    path: ../Snipster.Library/Helpers/FileFx.cs
+    startLine: 9
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: A class that provides file-related utility functions.
+  example: []
+  syntax:
+    content: public class FileFx
+    content.vb: Public Class FileFx
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Snipster.Library.Helpers.FileFx.Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1
+  - Snipster.Library.Helpers.FileFx.Snipster.Library.Helpers.ObjectFx.DeepClone``1
+  - System.Object.Snipster.Library.Extensions.JsonEx.ToJson(Newtonsoft.Json.Formatting)
+  - System.Object.Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.String)
+  - System.Object.Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.String,System.Object)
+  - System.Object.Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.String)
+- uid: Snipster.Library.Helpers.FileFx.SafeReadText(System.String,System.Text.Encoding)
+  commentId: M:Snipster.Library.Helpers.FileFx.SafeReadText(System.String,System.Text.Encoding)
+  id: SafeReadText(System.String,System.Text.Encoding)
+  parent: Snipster.Library.Helpers.FileFx
+  langs:
+  - csharp
+  - vb
+  name: SafeReadText(string, Encoding?)
+  nameWithType: FileFx.SafeReadText(string, Encoding?)
+  fullName: Snipster.Library.Helpers.FileFx.SafeReadText(string, System.Text.Encoding?)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/FileFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SafeReadText
+    path: ../Snipster.Library/Helpers/FileFx.cs
+    startLine: 19
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Safely reads the content of a text file.
+  example: []
+  syntax:
+    content: public static string? SafeReadText(string path, Encoding? encoding = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the file.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding to use for reading the file. Defaults to UTF8.
+    return:
+      type: System.String
+      description: The content of the file as a string, or null if an error occurs.
+    content.vb: Public Shared Function SafeReadText(path As String, encoding As Encoding = Nothing) As String
+  overload: Snipster.Library.Helpers.FileFx.SafeReadText*
+  nameWithType.vb: FileFx.SafeReadText(String, Encoding)
+  fullName.vb: Snipster.Library.Helpers.FileFx.SafeReadText(String, System.Text.Encoding)
+  name.vb: SafeReadText(String, Encoding)
+- uid: Snipster.Library.Helpers.FileFx.SafeReadBytes(System.String)
+  commentId: M:Snipster.Library.Helpers.FileFx.SafeReadBytes(System.String)
+  id: SafeReadBytes(System.String)
+  parent: Snipster.Library.Helpers.FileFx
+  langs:
+  - csharp
+  - vb
+  name: SafeReadBytes(string)
+  nameWithType: FileFx.SafeReadBytes(string)
+  fullName: Snipster.Library.Helpers.FileFx.SafeReadBytes(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/FileFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SafeReadBytes
+    path: ../Snipster.Library/Helpers/FileFx.cs
+    startLine: 38
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Safely reads the content of a binary file as a byte array.
+  example: []
+  syntax:
+    content: public static byte[]? SafeReadBytes(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the file.
+    return:
+      type: System.Byte[]
+      description: The content of the file as a byte array, or null if an error occurs.
+    content.vb: Public Shared Function SafeReadBytes(path As String) As Byte()
+  overload: Snipster.Library.Helpers.FileFx.SafeReadBytes*
+  nameWithType.vb: FileFx.SafeReadBytes(String)
+  fullName.vb: Snipster.Library.Helpers.FileFx.SafeReadBytes(String)
+  name.vb: SafeReadBytes(String)
+- uid: Snipster.Library.Helpers.FileFx.SafeWriteText(System.String,System.String,System.Text.Encoding)
+  commentId: M:Snipster.Library.Helpers.FileFx.SafeWriteText(System.String,System.String,System.Text.Encoding)
+  id: SafeWriteText(System.String,System.String,System.Text.Encoding)
+  parent: Snipster.Library.Helpers.FileFx
+  langs:
+  - csharp
+  - vb
+  name: SafeWriteText(string, string, Encoding?)
+  nameWithType: FileFx.SafeWriteText(string, string, Encoding?)
+  fullName: Snipster.Library.Helpers.FileFx.SafeWriteText(string, string, System.Text.Encoding?)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/FileFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SafeWriteText
+    path: ../Snipster.Library/Helpers/FileFx.cs
+    startLine: 59
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Safely writes text content to a file, creating the file if it does not exist or overwriting it if it does.
+  example: []
+  syntax:
+    content: public static bool SafeWriteText(string path, string content, Encoding? encoding = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the file.
+    - id: content
+      type: System.String
+      description: The content to write to the file.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding to use for writing the file. Defaults to UTF8.
+    return:
+      type: System.Boolean
+      description: True if the write operation was successful; otherwise, false.
+    content.vb: Public Shared Function SafeWriteText(path As String, content As String, encoding As Encoding = Nothing) As Boolean
+  overload: Snipster.Library.Helpers.FileFx.SafeWriteText*
+  nameWithType.vb: FileFx.SafeWriteText(String, String, Encoding)
+  fullName.vb: Snipster.Library.Helpers.FileFx.SafeWriteText(String, String, System.Text.Encoding)
+  name.vb: SafeWriteText(String, String, Encoding)
+- uid: Snipster.Library.Helpers.FileFx.SafeWriteBytes(System.String,System.Byte[])
+  commentId: M:Snipster.Library.Helpers.FileFx.SafeWriteBytes(System.String,System.Byte[])
+  id: SafeWriteBytes(System.String,System.Byte[])
+  parent: Snipster.Library.Helpers.FileFx
+  langs:
+  - csharp
+  - vb
+  name: SafeWriteBytes(string, byte[])
+  nameWithType: FileFx.SafeWriteBytes(string, byte[])
+  fullName: Snipster.Library.Helpers.FileFx.SafeWriteBytes(string, byte[])
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/FileFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SafeWriteBytes
+    path: ../Snipster.Library/Helpers/FileFx.cs
+    startLine: 80
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Safely writes a byte array to a file, creating the file if it does not exist or overwriting it if it does.
+  example: []
+  syntax:
+    content: public static bool SafeWriteBytes(string path, byte[] data)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the file.
+    - id: data
+      type: System.Byte[]
+      description: The byte array to write to the file.
+    return:
+      type: System.Boolean
+      description: True if the write operation was successful; otherwise, false.
+    content.vb: Public Shared Function SafeWriteBytes(path As String, data As Byte()) As Boolean
+  overload: Snipster.Library.Helpers.FileFx.SafeWriteBytes*
+  nameWithType.vb: FileFx.SafeWriteBytes(String, Byte())
+  fullName.vb: Snipster.Library.Helpers.FileFx.SafeWriteBytes(String, Byte())
+  name.vb: SafeWriteBytes(String, Byte())
+- uid: Snipster.Library.Helpers.FileFx.CreateTempFile(System.String)
+  commentId: M:Snipster.Library.Helpers.FileFx.CreateTempFile(System.String)
+  id: CreateTempFile(System.String)
+  parent: Snipster.Library.Helpers.FileFx
+  langs:
+  - csharp
+  - vb
+  name: CreateTempFile(string)
+  nameWithType: FileFx.CreateTempFile(string)
+  fullName: Snipster.Library.Helpers.FileFx.CreateTempFile(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/FileFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: CreateTempFile
+    path: ../Snipster.Library/Helpers/FileFx.cs
+    startLine: 100
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Creates a temporary file with a unique name in the system's temporary directory.
+  example: []
+  syntax:
+    content: public static string? CreateTempFile(string extension = ".tmp")
+    parameters:
+    - id: extension
+      type: System.String
+      description: The file extension for the temporary file. Defaults to ".tmp".
+    return:
+      type: System.String
+      description: The path to the created temporary file, or null if an error occurs.
+    content.vb: Public Shared Function CreateTempFile(extension As String = ".tmp") As String
+  overload: Snipster.Library.Helpers.FileFx.CreateTempFile*
+  nameWithType.vb: FileFx.CreateTempFile(String)
+  fullName.vb: Snipster.Library.Helpers.FileFx.CreateTempFile(String)
+  name.vb: CreateTempFile(String)
+- uid: Snipster.Library.Helpers.FileFx.GetDirectorySize(System.String)
+  commentId: M:Snipster.Library.Helpers.FileFx.GetDirectorySize(System.String)
+  id: GetDirectorySize(System.String)
+  parent: Snipster.Library.Helpers.FileFx
+  langs:
+  - csharp
+  - vb
+  name: GetDirectorySize(string)
+  nameWithType: FileFx.GetDirectorySize(string)
+  fullName: Snipster.Library.Helpers.FileFx.GetDirectorySize(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/FileFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: GetDirectorySize
+    path: ../Snipster.Library/Helpers/FileFx.cs
+    startLine: 134
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Calculates the total size of a directory, including all its subdirectories and files.
+  example: []
+  syntax:
+    content: public static long GetDirectorySize(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the directory.
+    return:
+      type: System.Int64
+      description: The total size of the directory in bytes, or 0 if the directory does not exist or an error occurs.
+    content.vb: Public Shared Function GetDirectorySize(path As String) As Long
+  overload: Snipster.Library.Helpers.FileFx.GetDirectorySize*
+  nameWithType.vb: FileFx.GetDirectorySize(String)
+  fullName.vb: Snipster.Library.Helpers.FileFx.GetDirectorySize(String)
+  name.vb: GetDirectorySize(String)
+- uid: Snipster.Library.Helpers.FileFx.SanitizeFileName(System.String,System.String)
+  commentId: M:Snipster.Library.Helpers.FileFx.SanitizeFileName(System.String,System.String)
+  id: SanitizeFileName(System.String,System.String)
+  parent: Snipster.Library.Helpers.FileFx
+  langs:
+  - csharp
+  - vb
+  name: SanitizeFileName(string, string)
+  nameWithType: FileFx.SanitizeFileName(string, string)
+  fullName: Snipster.Library.Helpers.FileFx.SanitizeFileName(string, string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/FileFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SanitizeFileName
+    path: ../Snipster.Library/Helpers/FileFx.cs
+    startLine: 164
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: >-
+    Sanitizes a file name by replacing all invalid file name characters 
+
+    with a specified replacement string (default is underscore).
+  example: []
+  syntax:
+    content: public static string? SanitizeFileName(string fileName, string replacement = "_")
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The original file name to sanitize.
+    - id: replacement
+      type: System.String
+      description: The string used to replace invalid characters. Defaults to "_".
+    return:
+      type: System.String
+      description: A sanitized file name where invalid characters are replaced, or null if an error occurs.
+    content.vb: Public Shared Function SanitizeFileName(fileName As String, replacement As String = "_") As String
+  overload: Snipster.Library.Helpers.FileFx.SanitizeFileName*
+  nameWithType.vb: FileFx.SanitizeFileName(String, String)
+  fullName.vb: Snipster.Library.Helpers.FileFx.SanitizeFileName(String, String)
+  name.vb: SanitizeFileName(String, String)
+references:
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  href: Snipster.html
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Snipster.Library.Helpers.FileFx.Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  parent: Snipster.Library.Extensions.Validations.ObjectValEx
+  definition: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  name: IsDefaultValue<FileFx>(FileFx)
+  nameWithType: ObjectValEx.IsDefaultValue<FileFx>(FileFx)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<Snipster.Library.Helpers.FileFx>(Snipster.Library.Helpers.FileFx)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of FileFx)(FileFx)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of Snipster.Library.Helpers.FileFx)(Snipster.Library.Helpers.FileFx)
+  name.vb: IsDefaultValue(Of FileFx)(FileFx)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(Snipster.Library.Helpers.FileFx)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: <
+  - uid: Snipster.Library.Helpers.FileFx
+    name: FileFx
+    href: Snipster.Library.Helpers.FileFx.html
+  - name: '>'
+  - name: (
+  - uid: Snipster.Library.Helpers.FileFx
+    name: FileFx
+    href: Snipster.Library.Helpers.FileFx.html
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(Snipster.Library.Helpers.FileFx)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Helpers.FileFx
+    name: FileFx
+    href: Snipster.Library.Helpers.FileFx.html
+  - name: )
+  - name: (
+  - uid: Snipster.Library.Helpers.FileFx
+    name: FileFx
+    href: Snipster.Library.Helpers.FileFx.html
+  - name: )
+- uid: Snipster.Library.Helpers.FileFx.Snipster.Library.Helpers.ObjectFx.DeepClone``1
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  parent: Snipster.Library.Helpers.ObjectFx
+  definition: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  name: DeepClone<FileFx>(FileFx)
+  nameWithType: ObjectFx.DeepClone<FileFx>(FileFx)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<Snipster.Library.Helpers.FileFx>(Snipster.Library.Helpers.FileFx)
+  nameWithType.vb: ObjectFx.DeepClone(Of FileFx)(FileFx)
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of Snipster.Library.Helpers.FileFx)(Snipster.Library.Helpers.FileFx)
+  name.vb: DeepClone(Of FileFx)(FileFx)
+  spec.csharp:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(Snipster.Library.Helpers.FileFx)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: <
+  - uid: Snipster.Library.Helpers.FileFx
+    name: FileFx
+    href: Snipster.Library.Helpers.FileFx.html
+  - name: '>'
+  - name: (
+  - uid: Snipster.Library.Helpers.FileFx
+    name: FileFx
+    href: Snipster.Library.Helpers.FileFx.html
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(Snipster.Library.Helpers.FileFx)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Helpers.FileFx
+    name: FileFx
+    href: Snipster.Library.Helpers.FileFx.html
+  - name: )
+  - name: (
+  - uid: Snipster.Library.Helpers.FileFx
+    name: FileFx
+    href: Snipster.Library.Helpers.FileFx.html
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.JsonEx.ToJson(Newtonsoft.Json.Formatting)
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  parent: Snipster.Library.Extensions.JsonEx
+  definition: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  name: ToJson(object, Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.String)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  parent: Snipster.Library.Extensions.ObjectEx
+  definition: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  name: GetPropertyValue(object, string)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  name.vb: GetPropertyValue(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.String,System.Object)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  parent: Snipster.Library.Extensions.ObjectEx
+  definition: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  name: SetPropertyValue(object, string, object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  parent: Snipster.Library.Extensions.Validations.ObjectValEx
+  definition: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  name: HasProperty(object, string)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  name.vb: HasProperty(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  name: IsDefaultValue<T>(T)
+  nameWithType: ObjectValEx.IsDefaultValue<T>(T)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<T>(T)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of T)(T)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of T)(T)
+  name.vb: IsDefaultValue(Of T)(T)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx
+  commentId: T:Snipster.Library.Extensions.Validations.ObjectValEx
+  parent: Snipster.Library.Extensions.Validations
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html
+  name: ObjectValEx
+  nameWithType: ObjectValEx
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx
+- uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  name: DeepClone<T>(T)
+  nameWithType: ObjectFx.DeepClone<T>(T)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<T>(T)
+  nameWithType.vb: ObjectFx.DeepClone(Of T)(T)
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+  spec.csharp:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Snipster.Library.Helpers.ObjectFx
+  commentId: T:Snipster.Library.Helpers.ObjectFx
+  parent: Snipster.Library.Helpers
+  href: Snipster.Library.Helpers.ObjectFx.html
+  name: ObjectFx
+  nameWithType: ObjectFx
+  fullName: Snipster.Library.Helpers.ObjectFx
+- uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  isExternal: true
+  href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  name: ToJson(object, Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+- uid: Snipster.Library.Extensions.JsonEx
+  commentId: T:Snipster.Library.Extensions.JsonEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.JsonEx.html
+  name: JsonEx
+  nameWithType: JsonEx
+  fullName: Snipster.Library.Extensions.JsonEx
+- uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  isExternal: true
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  name: GetPropertyValue(object, string)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  name.vb: GetPropertyValue(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.ObjectEx
+  commentId: T:Snipster.Library.Extensions.ObjectEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.ObjectEx.html
+  name: ObjectEx
+  nameWithType: ObjectEx
+  fullName: Snipster.Library.Extensions.ObjectEx
+- uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  isExternal: true
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  name: SetPropertyValue(object, string, object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  isExternal: true
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  name: HasProperty(object, string)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  name.vb: HasProperty(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.Validations
+  commentId: N:Snipster.Library.Extensions.Validations
+  href: Snipster.html
+  name: Snipster.Library.Extensions.Validations
+  nameWithType: Snipster.Library.Extensions.Validations
+  fullName: Snipster.Library.Extensions.Validations
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+- uid: Snipster.Library.Extensions
+  commentId: N:Snipster.Library.Extensions
+  href: Snipster.html
+  name: Snipster.Library.Extensions
+  nameWithType: Snipster.Library.Extensions
+  fullName: Snipster.Library.Extensions
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+- uid: Snipster.Library.Helpers.FileFx.SafeReadText*
+  commentId: Overload:Snipster.Library.Helpers.FileFx.SafeReadText
+  href: Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeReadText_System_String_System_Text_Encoding_
+  name: SafeReadText
+  nameWithType: FileFx.SafeReadText
+  fullName: Snipster.Library.Helpers.FileFx.SafeReadText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.encoding
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: Snipster.Library.Helpers.FileFx.SafeReadBytes*
+  commentId: Overload:Snipster.Library.Helpers.FileFx.SafeReadBytes
+  href: Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeReadBytes_System_String_
+  name: SafeReadBytes
+  nameWithType: FileFx.SafeReadBytes
+  fullName: Snipster.Library.Helpers.FileFx.SafeReadBytes
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Snipster.Library.Helpers.FileFx.SafeWriteText*
+  commentId: Overload:Snipster.Library.Helpers.FileFx.SafeWriteText
+  href: Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeWriteText_System_String_System_String_System_Text_Encoding_
+  name: SafeWriteText
+  nameWithType: FileFx.SafeWriteText
+  fullName: Snipster.Library.Helpers.FileFx.SafeWriteText
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Snipster.Library.Helpers.FileFx.SafeWriteBytes*
+  commentId: Overload:Snipster.Library.Helpers.FileFx.SafeWriteBytes
+  href: Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SafeWriteBytes_System_String_System_Byte___
+  name: SafeWriteBytes
+  nameWithType: FileFx.SafeWriteBytes
+  fullName: Snipster.Library.Helpers.FileFx.SafeWriteBytes
+- uid: Snipster.Library.Helpers.FileFx.CreateTempFile*
+  commentId: Overload:Snipster.Library.Helpers.FileFx.CreateTempFile
+  href: Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_CreateTempFile_System_String_
+  name: CreateTempFile
+  nameWithType: FileFx.CreateTempFile
+  fullName: Snipster.Library.Helpers.FileFx.CreateTempFile
+- uid: Snipster.Library.Helpers.FileFx.GetDirectorySize*
+  commentId: Overload:Snipster.Library.Helpers.FileFx.GetDirectorySize
+  href: Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_GetDirectorySize_System_String_
+  name: GetDirectorySize
+  nameWithType: FileFx.GetDirectorySize
+  fullName: Snipster.Library.Helpers.FileFx.GetDirectorySize
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Snipster.Library.Helpers.FileFx.SanitizeFileName*
+  commentId: Overload:Snipster.Library.Helpers.FileFx.SanitizeFileName
+  href: Snipster.Library.Helpers.FileFx.html#Snipster_Library_Helpers_FileFx_SanitizeFileName_System_String_System_String_
+  name: SanitizeFileName
+  nameWithType: FileFx.SanitizeFileName
+  fullName: Snipster.Library.Helpers.FileFx.SanitizeFileName

@@ -29,7 +29,7 @@ namespace Snipster.Library.Extensions
         }
 
         /// <summary>
-        /// Converts string to Title Case.
+        /// Converts string to Title Case. e.g. "hello world" becomes "Hello World".
         /// </summary>
         /// <param name="input">The input string to convert.</param>
         /// <returns>
@@ -163,7 +163,7 @@ namespace Snipster.Library.Extensions
         }
 
         /// <summary>
-        /// Removes all non-alphanumeric characters (letters and digits).
+        /// Removes all non-alphanumeric characters from a string.
         /// </summary>
         /// <param name="input">The input string to sanitize.</param>
         /// <returns>

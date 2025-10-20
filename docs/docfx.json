@@ -1,0 +1,56 @@
+{
+	"$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+	"metadata": [
+		{
+			"src": [
+				{
+					"src": "../Snipster.Library",
+					"files": ["**/*.csproj"]
+				}
+			],
+			"dest": "api",
+			"outputFormat": "apiPage"
+		}
+	],
+	"build": {
+		"content": [
+			{
+				"files": ["**/*.{md,yml}"],
+				"exclude": ["_site/**", "obj/**"]
+			}
+		],
+		"resource": [
+			{
+				"files": ["**/images/**"],
+				"exclude": ["_site/**", "obj/**"]
+			},
+			{
+				"src": "../schemas",
+				"files": ["**/*.json"],
+				"dest": "schemas"
+			}
+		],
+		"postProcessors": ["ExtractSearchIndex"],
+		"globalMetadata": {
+			"_appTitle": "Snipster",
+			"_appName": "Snipster",
+			"_appFaviconPath": "images/favicon.ico",
+			"_appFooter": "<span>© 2025 Snipster • Made with <a href=\"https://dotnet.github.io/docfx\">DocFX</a></span>",
+			"_enableSearch": true,
+			"pdf": false
+		},
+		"markdownEngineProperties": {
+			"alerts": {
+				"TODO": "alert alert-secondary"
+			}
+		},
+		"sitemap": {
+			"baseUrl": "https://darwijesinghe.github.io/snipster",
+			"priority": 0.5,
+			"changefreq": "daily"
+		},
+		"xref": [],
+		"output": "_site",
+		"template": ["default", "modern", "my-template"]
+	}
+}

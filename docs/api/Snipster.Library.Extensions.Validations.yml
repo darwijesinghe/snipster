@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Extensions.Validations
+  commentId: N:Snipster.Library.Extensions.Validations
+  id: Snipster.Library.Extensions.Validations
+  children:
+  - Snipster.Library.Extensions.Validations.CollectionValEx
+  - Snipster.Library.Extensions.Validations.CreditCardValEx
+  - Snipster.Library.Extensions.Validations.DateTimeValEx
+  - Snipster.Library.Extensions.Validations.JsonValEx
+  - Snipster.Library.Extensions.Validations.NetworkValEx
+  - Snipster.Library.Extensions.Validations.ObjectValEx
+  - Snipster.Library.Extensions.Validations.SecurityValEx
+  - Snipster.Library.Extensions.Validations.StringValEx
+  langs:
+  - csharp
+  - vb
+  name: Snipster.Library.Extensions.Validations
+  nameWithType: Snipster.Library.Extensions.Validations
+  fullName: Snipster.Library.Extensions.Validations
+  type: Namespace
+  assemblies:
+  - Snipster.Library
+references:
+- uid: Snipster.Library.Extensions.Validations.CollectionValEx
+  commentId: T:Snipster.Library.Extensions.Validations.CollectionValEx
+  href: Snipster.Library.Extensions.Validations.CollectionValEx.html
+  name: CollectionValEx
+  nameWithType: CollectionValEx
+  fullName: Snipster.Library.Extensions.Validations.CollectionValEx
+- uid: Snipster.Library.Extensions.Validations.CreditCardValEx
+  commentId: T:Snipster.Library.Extensions.Validations.CreditCardValEx
+  href: Snipster.Library.Extensions.Validations.CreditCardValEx.html
+  name: CreditCardValEx
+  nameWithType: CreditCardValEx
+  fullName: Snipster.Library.Extensions.Validations.CreditCardValEx
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx
+  commentId: T:Snipster.Library.Extensions.Validations.DateTimeValEx
+  href: Snipster.Library.Extensions.Validations.DateTimeValEx.html
+  name: DateTimeValEx
+  nameWithType: DateTimeValEx
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx
+- uid: Snipster.Library.Extensions.Validations.JsonValEx
+  commentId: T:Snipster.Library.Extensions.Validations.JsonValEx
+  href: Snipster.Library.Extensions.Validations.JsonValEx.html
+  name: JsonValEx
+  nameWithType: JsonValEx
+  fullName: Snipster.Library.Extensions.Validations.JsonValEx
+- uid: Snipster.Library.Extensions.Validations.NetworkValEx
+  commentId: T:Snipster.Library.Extensions.Validations.NetworkValEx
+  href: Snipster.Library.Extensions.Validations.NetworkValEx.html
+  name: NetworkValEx
+  nameWithType: NetworkValEx
+  fullName: Snipster.Library.Extensions.Validations.NetworkValEx
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx
+  commentId: T:Snipster.Library.Extensions.Validations.ObjectValEx
+  parent: Snipster.Library.Extensions.Validations
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html
+  name: ObjectValEx
+  nameWithType: ObjectValEx
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx
+- uid: Snipster.Library.Extensions.Validations.SecurityValEx
+  commentId: T:Snipster.Library.Extensions.Validations.SecurityValEx
+  href: Snipster.Library.Extensions.Validations.SecurityValEx.html
+  name: SecurityValEx
+  nameWithType: SecurityValEx
+  fullName: Snipster.Library.Extensions.Validations.SecurityValEx
+- uid: Snipster.Library.Extensions.Validations.StringValEx
+  commentId: T:Snipster.Library.Extensions.Validations.StringValEx
+  href: Snipster.Library.Extensions.Validations.StringValEx.html
+  name: StringValEx
+  nameWithType: StringValEx
+  fullName: Snipster.Library.Extensions.Validations.StringValEx
+- uid: Snipster.Library.Extensions.Validations
+  commentId: N:Snipster.Library.Extensions.Validations
+  href: Snipster.html
+  name: Snipster.Library.Extensions.Validations
+  nameWithType: Snipster.Library.Extensions.Validations
+  fullName: Snipster.Library.Extensions.Validations
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html

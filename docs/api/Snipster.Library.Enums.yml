@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Enums
+  commentId: N:Snipster.Library.Enums
+  id: Snipster.Library.Enums
+  children:
+  - Snipster.Library.Enums.ExcelAlignment
+  langs:
+  - csharp
+  - vb
+  name: Snipster.Library.Enums
+  nameWithType: Snipster.Library.Enums
+  fullName: Snipster.Library.Enums
+  type: Namespace
+  assemblies:
+  - Snipster.Library
+references:
+- uid: Snipster.Library.Enums.ExcelAlignment
+  commentId: T:Snipster.Library.Enums.ExcelAlignment
+  parent: Snipster.Library.Enums
+  href: Snipster.Library.Enums.ExcelAlignment.html
+  name: ExcelAlignment
+  nameWithType: ExcelAlignment
+  fullName: Snipster.Library.Enums.ExcelAlignment
+- uid: Snipster.Library.Enums
+  commentId: N:Snipster.Library.Enums
+  href: Snipster.html
+  name: Snipster.Library.Enums
+  nameWithType: Snipster.Library.Enums
+  fullName: Snipster.Library.Enums
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Enums
+    name: Enums
+    href: Snipster.Library.Enums.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Enums
+    name: Enums
+    href: Snipster.Library.Enums.html

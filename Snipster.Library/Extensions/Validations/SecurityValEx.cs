@@ -36,8 +36,8 @@ namespace Snipster.Library.Extensions.Validations
         /// <summary>
         /// Validates if a password meets basic rules (length, upper, lower, number, special).
         /// </summary>
-        /// <param name="input"> The input string to validate.</param>
-        /// <param name="minLength"> The minimum length for the password.</param>
+        /// <param name="input">The input string to validate.</param>
+        /// <param name="minLength">The minimum length for the password.</param>
         /// <returns>
         /// True if the password is strong; otherwise, false.
         /// </returns>

@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  id: Snipster.Library.Helpers
+  children:
+  - Snipster.Library.Helpers.ExcelFx
+  - Snipster.Library.Helpers.FileFx
+  - Snipster.Library.Helpers.JsonFx
+  - Snipster.Library.Helpers.NetworkFx
+  - Snipster.Library.Helpers.ObjectFx
+  - Snipster.Library.Helpers.SecurityFx
+  - Snipster.Library.Helpers.StringFx
+  langs:
+  - csharp
+  - vb
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  type: Namespace
+  assemblies:
+  - Snipster.Library
+references:
+- uid: Snipster.Library.Helpers.ExcelFx
+  commentId: T:Snipster.Library.Helpers.ExcelFx
+  href: Snipster.Library.Helpers.ExcelFx.html
+  name: ExcelFx
+  nameWithType: ExcelFx
+  fullName: Snipster.Library.Helpers.ExcelFx
+- uid: Snipster.Library.Helpers.FileFx
+  commentId: T:Snipster.Library.Helpers.FileFx
+  href: Snipster.Library.Helpers.FileFx.html
+  name: FileFx
+  nameWithType: FileFx
+  fullName: Snipster.Library.Helpers.FileFx
+- uid: Snipster.Library.Helpers.JsonFx
+  commentId: T:Snipster.Library.Helpers.JsonFx
+  href: Snipster.Library.Helpers.JsonFx.html
+  name: JsonFx
+  nameWithType: JsonFx
+  fullName: Snipster.Library.Helpers.JsonFx
+- uid: Snipster.Library.Helpers.NetworkFx
+  commentId: T:Snipster.Library.Helpers.NetworkFx
+  href: Snipster.Library.Helpers.NetworkFx.html
+  name: NetworkFx
+  nameWithType: NetworkFx
+  fullName: Snipster.Library.Helpers.NetworkFx
+- uid: Snipster.Library.Helpers.ObjectFx
+  commentId: T:Snipster.Library.Helpers.ObjectFx
+  parent: Snipster.Library.Helpers
+  href: Snipster.Library.Helpers.ObjectFx.html
+  name: ObjectFx
+  nameWithType: ObjectFx
+  fullName: Snipster.Library.Helpers.ObjectFx
+- uid: Snipster.Library.Helpers.SecurityFx
+  commentId: T:Snipster.Library.Helpers.SecurityFx
+  href: Snipster.Library.Helpers.SecurityFx.html
+  name: SecurityFx
+  nameWithType: SecurityFx
+  fullName: Snipster.Library.Helpers.SecurityFx
+- uid: Snipster.Library.Helpers.StringFx
+  commentId: T:Snipster.Library.Helpers.StringFx
+  href: Snipster.Library.Helpers.StringFx.html
+  name: StringFx
+  nameWithType: StringFx
+  fullName: Snipster.Library.Helpers.StringFx
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  href: Snipster.html
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html

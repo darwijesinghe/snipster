@@ -1,0 +1,719 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Helpers.ExcelFx
+  commentId: T:Snipster.Library.Helpers.ExcelFx
+  id: ExcelFx
+  parent: Snipster.Library.Helpers
+  children:
+  - Snipster.Library.Helpers.ExcelFx.WriteToExcel``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.String,System.String,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  - Snipster.Library.Helpers.ExcelFx.WriteToMemory``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.IO.MemoryStream,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  langs:
+  - csharp
+  - vb
+  name: ExcelFx
+  nameWithType: ExcelFx
+  fullName: Snipster.Library.Helpers.ExcelFx
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/Helpers/ExcelFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ExcelFx
+    path: ../Snipster.Library/Helpers/ExcelFx.cs
+    startLine: 15
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: A class that provides Excel files related utility functions.
+  example: []
+  syntax:
+    content: public static class ExcelFx
+    content.vb: Public Module ExcelFx
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Snipster.Library.Helpers.ExcelFx.WriteToExcel``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.String,System.String,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  commentId: M:Snipster.Library.Helpers.ExcelFx.WriteToExcel``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.String,System.String,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  id: WriteToExcel``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.String,System.String,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  parent: Snipster.Library.Helpers.ExcelFx
+  langs:
+  - csharp
+  - vb
+  name: WriteToExcel<T>(IEnumerable<T>, List<ExcelColumn>, string, string, Action<ExcelExportOptions>?)
+  nameWithType: ExcelFx.WriteToExcel<T>(IEnumerable<T>, List<ExcelColumn>, string, string, Action<ExcelExportOptions>?)
+  fullName: Snipster.Library.Helpers.ExcelFx.WriteToExcel<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.List<Snipster.Library.Models.ExcelColumn>, string, string, System.Action<Snipster.Library.Models.ExcelExportOptions>?)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/ExcelFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: WriteToExcel
+    path: ../Snipster.Library/Helpers/ExcelFx.cs
+    startLine: 31
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Exports a collection of data to an Excel file written to the provided memory stream, using the specified column definitions and export options.
+  example: []
+  syntax:
+    content: public static void WriteToExcel<T>(IEnumerable<T> data, List<ExcelColumn> columns, string filePath, string fileName, Action<ExcelExportOptions>? configureOptions = null)
+    parameters:
+    - id: data
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection of data to export.
+    - id: columns
+      type: System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn}
+      description: The list of column definitions specifying how to map and format the data.
+    - id: filePath
+      type: System.String
+      description: The file path where the Excel file will be saved.
+    - id: fileName
+      type: System.String
+      description: The name of the Excel file to create (e.g., "output.xlsx").
+    - id: configureOptions
+      type: System.Action{Snipster.Library.Models.ExcelExportOptions}
+      description: An optional action to configure additional export options.
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub WriteToExcel(Of T)(data As IEnumerable(Of T), columns As List(Of ExcelColumn), filePath As String, fileName As String, configureOptions As Action(Of ExcelExportOptions) = Nothing)
+  overload: Snipster.Library.Helpers.ExcelFx.WriteToExcel*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the file path or file name is null or empty.
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: Thrown if the specified directory does not exist.
+  nameWithType.vb: ExcelFx.WriteToExcel(Of T)(IEnumerable(Of T), List(Of ExcelColumn), String, String, Action(Of ExcelExportOptions))
+  fullName.vb: Snipster.Library.Helpers.ExcelFx.WriteToExcel(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.List(Of Snipster.Library.Models.ExcelColumn), String, String, System.Action(Of Snipster.Library.Models.ExcelExportOptions))
+  name.vb: WriteToExcel(Of T)(IEnumerable(Of T), List(Of ExcelColumn), String, String, Action(Of ExcelExportOptions))
+- uid: Snipster.Library.Helpers.ExcelFx.WriteToMemory``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.IO.MemoryStream,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  commentId: M:Snipster.Library.Helpers.ExcelFx.WriteToMemory``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.IO.MemoryStream,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  id: WriteToMemory``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn},System.IO.MemoryStream,System.Action{Snipster.Library.Models.ExcelExportOptions})
+  parent: Snipster.Library.Helpers.ExcelFx
+  langs:
+  - csharp
+  - vb
+  name: WriteToMemory<T>(IEnumerable<T>, List<ExcelColumn>, MemoryStream, Action<ExcelExportOptions>?)
+  nameWithType: ExcelFx.WriteToMemory<T>(IEnumerable<T>, List<ExcelColumn>, MemoryStream, Action<ExcelExportOptions>?)
+  fullName: Snipster.Library.Helpers.ExcelFx.WriteToMemory<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.List<Snipster.Library.Models.ExcelColumn>, System.IO.MemoryStream, System.Action<Snipster.Library.Models.ExcelExportOptions>?)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Helpers/ExcelFx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: WriteToMemory
+    path: ../Snipster.Library/Helpers/ExcelFx.cs
+    startLine: 79
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Helpers
+  summary: Exports a collection of data to an Excel file written to the provided memory stream, using the specified column definitions and export options.
+  example: []
+  syntax:
+    content: public static void WriteToMemory<T>(IEnumerable<T> data, List<ExcelColumn> columns, MemoryStream stream, Action<ExcelExportOptions>? configureOptions = null)
+    parameters:
+    - id: data
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection of data to export.
+    - id: columns
+      type: System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn}
+      description: The list of column definitions specifying how to map and format the data.
+    - id: stream
+      type: System.IO.MemoryStream
+      description: The memory stream to which the Excel file will be written.
+    - id: configureOptions
+      type: System.Action{Snipster.Library.Models.ExcelExportOptions}
+      description: An optional action to configure additional export options.
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub WriteToMemory(Of T)(data As IEnumerable(Of T), columns As List(Of ExcelColumn), stream As MemoryStream, configureOptions As Action(Of ExcelExportOptions) = Nothing)
+  overload: Snipster.Library.Helpers.ExcelFx.WriteToMemory*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Thrown if the <code class="paramref">columns</code> list is null or empty,
+
+      if the <code class="paramref">data</code> collection is null or empty,
+
+      or if a column definition cannot be matched to a property or if there is a type mismatch in the <code class="paramref">data</code>.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if the provided memory stream is null.
+  nameWithType.vb: ExcelFx.WriteToMemory(Of T)(IEnumerable(Of T), List(Of ExcelColumn), MemoryStream, Action(Of ExcelExportOptions))
+  fullName.vb: Snipster.Library.Helpers.ExcelFx.WriteToMemory(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.List(Of Snipster.Library.Models.ExcelColumn), System.IO.MemoryStream, System.Action(Of Snipster.Library.Models.ExcelExportOptions))
+  name.vb: WriteToMemory(Of T)(IEnumerable(Of T), List(Of ExcelColumn), MemoryStream, Action(Of ExcelExportOptions))
+references:
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  href: Snipster.html
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.IO.DirectoryNotFoundException
+  commentId: T:System.IO.DirectoryNotFoundException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.directorynotfoundexception
+  name: DirectoryNotFoundException
+  nameWithType: DirectoryNotFoundException
+  fullName: System.IO.DirectoryNotFoundException
+- uid: Snipster.Library.Helpers.ExcelFx.WriteToExcel*
+  commentId: Overload:Snipster.Library.Helpers.ExcelFx.WriteToExcel
+  href: Snipster.Library.Helpers.ExcelFx.html#Snipster_Library_Helpers_ExcelFx_WriteToExcel__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_List_Snipster_Library_Models_ExcelColumn__System_String_System_String_System_Action_Snipster_Library_Models_ExcelExportOptions__
+  name: WriteToExcel
+  nameWithType: ExcelFx.WriteToExcel
+  fullName: Snipster.Library.Helpers.ExcelFx.WriteToExcel
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn}
+  commentId: T:System.Collections.Generic.List{Snipster.Library.Models.ExcelColumn}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ExcelColumn>
+  nameWithType: List<ExcelColumn>
+  fullName: System.Collections.Generic.List<Snipster.Library.Models.ExcelColumn>
+  nameWithType.vb: List(Of ExcelColumn)
+  fullName.vb: System.Collections.Generic.List(Of Snipster.Library.Models.ExcelColumn)
+  name.vb: List(Of ExcelColumn)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    href: Snipster.Library.Models.ExcelColumn.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Models.ExcelColumn
+    name: ExcelColumn
+    href: Snipster.Library.Models.ExcelColumn.html
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Action{Snipster.Library.Models.ExcelExportOptions}
+  commentId: T:System.Action{Snipster.Library.Models.ExcelExportOptions}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ExcelExportOptions>
+  nameWithType: Action<ExcelExportOptions>
+  fullName: System.Action<Snipster.Library.Models.ExcelExportOptions>
+  nameWithType.vb: Action(Of ExcelExportOptions)
+  fullName.vb: System.Action(Of Snipster.Library.Models.ExcelExportOptions)
+  name.vb: Action(Of ExcelExportOptions)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Snipster.Library.Models.ExcelExportOptions
+    name: ExcelExportOptions
+    href: Snipster.Library.Models.ExcelExportOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Models.ExcelExportOptions
+    name: ExcelExportOptions
+    href: Snipster.Library.Models.ExcelExportOptions.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Snipster.Library.Helpers.ExcelFx.WriteToMemory*
+  commentId: Overload:Snipster.Library.Helpers.ExcelFx.WriteToMemory
+  href: Snipster.Library.Helpers.ExcelFx.html#Snipster_Library_Helpers_ExcelFx_WriteToMemory__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_List_Snipster_Library_Models_ExcelColumn__System_IO_MemoryStream_System_Action_Snipster_Library_Models_ExcelExportOptions__
+  name: WriteToMemory
+  nameWithType: ExcelFx.WriteToMemory
+  fullName: Snipster.Library.Helpers.ExcelFx.WriteToMemory
+- uid: System.IO.MemoryStream
+  commentId: T:System.IO.MemoryStream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.memorystream
+  name: MemoryStream
+  nameWithType: MemoryStream
+  fullName: System.IO.MemoryStream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io

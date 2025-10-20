@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StringEx | Snipster </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StringEx | Snipster ">
+      
+      <meta name="description" content="Provides various string manipulation and formatting extension methods.">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darwijesinghe/Snipster/new/dev/apiSpec/new?filename=Snipster_Library_Extensions_StringEx.md&amp;value=---%0Auid%3A%20Snipster.Library.Extensions.StringEx%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Snipster">
+            Snipster
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Snipster.Library.Extensions.StringEx">
+
+
+
+  <h1 id="Snipster_Library_Extensions_StringEx" data-uid="Snipster.Library.Extensions.StringEx" class="text-break">
+Class StringEx  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Snipster.html">Snipster</a>.<a class="xref" href="Snipster.Library.html">Library</a>.<a class="xref" href="Snipster.Library.Extensions.html">Extensions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Snipster.Library.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides various string manipulation and formatting extension methods.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StringEx</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">StringEx</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Snipster_Library_Extensions_StringEx_CapitalizeFirst_" data-uid="Snipster.Library.Extensions.StringEx.CapitalizeFirst*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_CapitalizeFirst_System_String_" data-uid="Snipster.Library.Extensions.StringEx.CapitalizeFirst(System.String)">
+  CapitalizeFirst(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Capitalizes the first character of the string, leaving the rest unchanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CapitalizeFirst(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to modify.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string with the first character converted to uppercase; otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_FromBase64_" data-uid="Snipster.Library.Extensions.StringEx.FromBase64*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_FromBase64_System_String_" data-uid="Snipster.Library.Extensions.StringEx.FromBase64(System.String)">
+  FromBase64(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Decodes a Base64-encoded string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FromBase64(this string base64)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>base64</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Base64-encoded string to decode.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A decoded string from the Base64 input; otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_GetDescription_" data-uid="Snipster.Library.Extensions.StringEx.GetDescription*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_GetDescription_System_Enum_" data-uid="Snipster.Library.Extensions.StringEx.GetDescription(System.Enum)">
+  GetDescription(Enum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the value of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.descriptionattribute">DescriptionAttribute</a> applied to an enum value.
+If no description is found, it returns the enum's name as a fallback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDescription(this Enum value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a> value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The description string or enum name if no description is present.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_NormalizeSpaces_" data-uid="Snipster.Library.Extensions.StringEx.NormalizeSpaces*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_NormalizeSpaces_System_String_" data-uid="Snipster.Library.Extensions.StringEx.NormalizeSpaces(System.String)">
+  NormalizeSpaces(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normalizes spaces — trims and replaces multiple spaces with a single space. e.g. &quot;  Hello   World  &quot; becomes &quot;Hello World&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NormalizeSpaces(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to normalize.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string with leading/trailing spaces removed and multiple spaces replaced by a single space;
+otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_OnlyDigits_" data-uid="Snipster.Library.Extensions.StringEx.OnlyDigits*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_OnlyDigits_System_String_" data-uid="Snipster.Library.Extensions.StringEx.OnlyDigits(System.String)">
+  OnlyDigits(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all non-numeric characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string OnlyDigits(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to filter.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing only the numeric characters from the input; otherwise, returns the original string  if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_OrDefault_" data-uid="Snipster.Library.Extensions.StringEx.OrDefault*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_OrDefault_System_String_System_String_" data-uid="Snipster.Library.Extensions.StringEx.OrDefault(System.String,System.String)">
+  OrDefault(string?, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a default value if string is null or empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? OrDefault(this string? input, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to check.</p>
+</dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The default value to return if the input is null or empty.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The original string if it is not null or empty; otherwise, the specified default value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_RemoveSpecialCharacters_" data-uid="Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_RemoveSpecialCharacters_System_String_" data-uid="Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters(System.String)">
+  RemoveSpecialCharacters(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all special characters except spaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RemoveSpecialCharacters(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to sanitize.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing only alphanumeric characters and spaces from the input; otherwise, returns the
+original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_RemoveWhitespace_" data-uid="Snipster.Library.Extensions.StringEx.RemoveWhitespace*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_RemoveWhitespace_System_String_" data-uid="Snipster.Library.Extensions.StringEx.RemoveWhitespace(System.String)">
+  RemoveWhitespace(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all whitespace (spaces, tabs, newlines) from the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RemoveWhitespace(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to process.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string with all whitespace characters removed; otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_SanitizeAlphanumeric_" data-uid="Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_SanitizeAlphanumeric_System_String_" data-uid="Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric(System.String)">
+  SanitizeAlphanumeric(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all non-alphanumeric characters (letters and digits).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SanitizeAlphanumeric(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to sanitize.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing only alphanumeric characters from the input; otherwise, returns the original string if it is
+null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_Slugify_" data-uid="Snipster.Library.Extensions.StringEx.Slugify*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_Slugify_System_String_" data-uid="Snipster.Library.Extensions.StringEx.Slugify(System.String)">
+  Slugify(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Slugifies a string (e.g. &quot;Hello World!&quot; =&gt; &quot;hello-world&quot;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Slugify(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to slugify.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A slugified version of the input string, suitable for use in URLs; otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_StripHtmlTags_" data-uid="Snipster.Library.Extensions.StringEx.StripHtmlTags*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_StripHtmlTags_System_String_" data-uid="Snipster.Library.Extensions.StringEx.StripHtmlTags(System.String)">
+  StripHtmlTags(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes HTML tags from the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StripHtmlTags(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string containing HTML tags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string with all HTML tags removed; otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_ToBase64_" data-uid="Snipster.Library.Extensions.StringEx.ToBase64*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_ToBase64_System_String_" data-uid="Snipster.Library.Extensions.StringEx.ToBase64(System.String)">
+  ToBase64(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a string to Base64.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToBase64(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to encode.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A Base64-encoded string representation of the input; otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_ToCamelCase_" data-uid="Snipster.Library.Extensions.StringEx.ToCamelCase*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_ToCamelCase_System_String_" data-uid="Snipster.Library.Extensions.StringEx.ToCamelCase(System.String)">
+  ToCamelCase(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a string to CamelCase format. e.g. &quot;hello world&quot; becomes &quot;helloWorld&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToCamelCase(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A CamelCase version of the input string, where the first letter is lowercase and subsequent words are capitalized;
+otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_ToCleanQueryString_" data-uid="Snipster.Library.Extensions.StringEx.ToCleanQueryString*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_ToCleanQueryString_System_String_" data-uid="Snipster.Library.Extensions.StringEx.ToCleanQueryString(System.String)">
+  ToCleanQueryString(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Cleans a SQL query string by removing any zero-width characters and BOM.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToCleanQueryString(this string sql)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sql</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SQL query string to clean.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A cleaned SQL query string with zero-width characters and BOM removed; otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_ToKebabCase_" data-uid="Snipster.Library.Extensions.StringEx.ToKebabCase*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_ToKebabCase_System_String_" data-uid="Snipster.Library.Extensions.StringEx.ToKebabCase(System.String)">
+  ToKebabCase(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a string to kebab-case. e.g. &quot;Hello World&quot; becomes &quot;hello-world&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToKebabCase(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A kebab-case version of the input string, where words are lowercase and separated by hyphens;
+otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_ToPascalCase_" data-uid="Snipster.Library.Extensions.StringEx.ToPascalCase*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_ToPascalCase_System_String_" data-uid="Snipster.Library.Extensions.StringEx.ToPascalCase(System.String)">
+  ToPascalCase(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a string to PascalCase. e.g. &quot;hello world&quot; becomes &quot;HelloWorld&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToPascalCase(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A PascalCase version of the input string, where the first letter of each word is capitalized and spaces are removed;
+otherwise, returns the original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_ToTitleCase_" data-uid="Snipster.Library.Extensions.StringEx.ToTitleCase*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_ToTitleCase_System_String_" data-uid="Snipster.Library.Extensions.StringEx.ToTitleCase(System.String)">
+  ToTitleCase(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts string to Title Case.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToTitleCase(this string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string converted to Title Case, where the first letter of each word is capitalized; otherwise, returns the
+original string if it is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Snipster_Library_Extensions_StringEx_Truncate_" data-uid="Snipster.Library.Extensions.StringEx.Truncate*"></a>
+
+  <h3 id="Snipster_Library_Extensions_StringEx_Truncate_System_String_System_Int32_System_String_" data-uid="Snipster.Library.Extensions.StringEx.Truncate(System.String,System.Int32,System.String)">
+  Truncate(string, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Truncates the string to a specified maximum length and optionally appends a suffix (e.g. &quot;...&quot;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Truncate(this string input, int maxLength, string suffix = &quot;...&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The original string to truncate.</p>
+</dd>
+    <dt><code>maxLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum number of characters to retain from the input string.</p>
+</dd>
+    <dt><code>suffix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The optional suffix to append if the string is truncated. Defaults to &quot;...&quot;.
+If null is provided, no suffix will be appended.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A truncated version of the input string if it exceeds the specified maximum length; otherwise, returns the original
+string if it is null, empty, or does not exceed the maximum length.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>© 2025 Snipster • Made with <a href="https://dotnet.github.io/docfx">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1209 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Extensions.StringEx
+  commentId: T:Snipster.Library.Extensions.StringEx
+  id: StringEx
+  parent: Snipster.Library.Extensions
+  children:
+  - Snipster.Library.Extensions.StringEx.CapitalizeFirst(System.String)
+  - Snipster.Library.Extensions.StringEx.FromBase64(System.String)
+  - Snipster.Library.Extensions.StringEx.GetDescription(System.Enum)
+  - Snipster.Library.Extensions.StringEx.NormalizeSpaces(System.String)
+  - Snipster.Library.Extensions.StringEx.OnlyDigits(System.String)
+  - Snipster.Library.Extensions.StringEx.OrDefault(System.String,System.String)
+  - Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters(System.String)
+  - Snipster.Library.Extensions.StringEx.RemoveWhitespace(System.String)
+  - Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric(System.String)
+  - Snipster.Library.Extensions.StringEx.Slugify(System.String)
+  - Snipster.Library.Extensions.StringEx.StripHtmlTags(System.String)
+  - Snipster.Library.Extensions.StringEx.ToBase64(System.String)
+  - Snipster.Library.Extensions.StringEx.ToCamelCase(System.String)
+  - Snipster.Library.Extensions.StringEx.ToCleanQueryString(System.String)
+  - Snipster.Library.Extensions.StringEx.ToKebabCase(System.String)
+  - Snipster.Library.Extensions.StringEx.ToPascalCase(System.String)
+  - Snipster.Library.Extensions.StringEx.ToTitleCase(System.String)
+  - Snipster.Library.Extensions.StringEx.Truncate(System.String,System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: StringEx
+  nameWithType: StringEx
+  fullName: Snipster.Library.Extensions.StringEx
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: StringEx
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 13
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Provides various string manipulation and formatting extension methods.
+  example: []
+  syntax:
+    content: public static class StringEx
+    content.vb: Public Module StringEx
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Snipster.Library.Extensions.StringEx.CapitalizeFirst(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.CapitalizeFirst(System.String)
+  id: CapitalizeFirst(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: CapitalizeFirst(string)
+  nameWithType: StringEx.CapitalizeFirst(string)
+  fullName: Snipster.Library.Extensions.StringEx.CapitalizeFirst(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: CapitalizeFirst
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 22
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Capitalizes the first character of the string, leaving the rest unchanged.
+  example: []
+  syntax:
+    content: public static string CapitalizeFirst(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to modify.
+    return:
+      type: System.String
+      description: A string with the first character converted to uppercase; otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function CapitalizeFirst(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.CapitalizeFirst*
+  nameWithType.vb: StringEx.CapitalizeFirst(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.CapitalizeFirst(String)
+  name.vb: CapitalizeFirst(String)
+- uid: Snipster.Library.Extensions.StringEx.ToTitleCase(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.ToTitleCase(System.String)
+  id: ToTitleCase(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: ToTitleCase(string)
+  nameWithType: StringEx.ToTitleCase(string)
+  fullName: Snipster.Library.Extensions.StringEx.ToTitleCase(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ToTitleCase
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 38
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Converts string to Title Case.
+  example: []
+  syntax:
+    content: public static string ToTitleCase(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to convert.
+    return:
+      type: System.String
+      description: >-
+        A string converted to Title Case, where the first letter of each word is capitalized; otherwise, returns the 
+
+        original string if it is null or empty.
+    content.vb: Public Shared Function ToTitleCase(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.ToTitleCase*
+  nameWithType.vb: StringEx.ToTitleCase(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToTitleCase(String)
+  name.vb: ToTitleCase(String)
+- uid: Snipster.Library.Extensions.StringEx.OnlyDigits(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.OnlyDigits(System.String)
+  id: OnlyDigits(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: OnlyDigits(string)
+  nameWithType: StringEx.OnlyDigits(string)
+  fullName: Snipster.Library.Extensions.StringEx.OnlyDigits(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: OnlyDigits
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 53
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Removes all non-numeric characters.
+  example: []
+  syntax:
+    content: public static string OnlyDigits(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to filter.
+    return:
+      type: System.String
+      description: A string containing only the numeric characters from the input; otherwise, returns the original string  if it is null or empty.
+    content.vb: Public Shared Function OnlyDigits(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.OnlyDigits*
+  nameWithType.vb: StringEx.OnlyDigits(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.OnlyDigits(String)
+  name.vb: OnlyDigits(String)
+- uid: Snipster.Library.Extensions.StringEx.Truncate(System.String,System.Int32,System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.Truncate(System.String,System.Int32,System.String)
+  id: Truncate(System.String,System.Int32,System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: Truncate(string, int, string)
+  nameWithType: StringEx.Truncate(string, int, string)
+  fullName: Snipster.Library.Extensions.StringEx.Truncate(string, int, string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Truncate
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 74
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Truncates the string to a specified maximum length and optionally appends a suffix (e.g. "...").
+  example: []
+  syntax:
+    content: public static string Truncate(this string input, int maxLength, string suffix = "...")
+    parameters:
+    - id: input
+      type: System.String
+      description: The original string to truncate.
+    - id: maxLength
+      type: System.Int32
+      description: The maximum number of characters to retain from the input string.
+    - id: suffix
+      type: System.String
+      description: >-
+        The optional suffix to append if the string is truncated. Defaults to "...".
+
+        If null is provided, no suffix will be appended.
+    return:
+      type: System.String
+      description: >-
+        A truncated version of the input string if it exceeds the specified maximum length; otherwise, returns the original 
+
+        string if it is null, empty, or does not exceed the maximum length.
+    content.vb: Public Shared Function Truncate(input As String, maxLength As Integer, suffix As String = "...") As String
+  overload: Snipster.Library.Extensions.StringEx.Truncate*
+  nameWithType.vb: StringEx.Truncate(String, Integer, String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.Truncate(String, Integer, String)
+  name.vb: Truncate(String, Integer, String)
+- uid: Snipster.Library.Extensions.StringEx.Slugify(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.Slugify(System.String)
+  id: Slugify(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: Slugify(string)
+  nameWithType: StringEx.Slugify(string)
+  fullName: Snipster.Library.Extensions.StringEx.Slugify(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Slugify
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 89
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Slugifies a string (e.g. "Hello World!" =&gt; "hello-world").
+  example: []
+  syntax:
+    content: public static string Slugify(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to slugify.
+    return:
+      type: System.String
+      description: A slugified version of the input string, suitable for use in URLs; otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function Slugify(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.Slugify*
+  nameWithType.vb: StringEx.Slugify(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.Slugify(String)
+  name.vb: Slugify(String)
+- uid: Snipster.Library.Extensions.StringEx.ToBase64(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.ToBase64(System.String)
+  id: ToBase64(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: ToBase64(string)
+  nameWithType: StringEx.ToBase64(string)
+  fullName: Snipster.Library.Extensions.StringEx.ToBase64(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ToBase64
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 113
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Converts a string to Base64.
+  example: []
+  syntax:
+    content: public static string ToBase64(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to encode.
+    return:
+      type: System.String
+      description: A Base64-encoded string representation of the input; otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function ToBase64(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.ToBase64*
+  nameWithType.vb: StringEx.ToBase64(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToBase64(String)
+  name.vb: ToBase64(String)
+- uid: Snipster.Library.Extensions.StringEx.FromBase64(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.FromBase64(System.String)
+  id: FromBase64(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: FromBase64(string)
+  nameWithType: StringEx.FromBase64(string)
+  fullName: Snipster.Library.Extensions.StringEx.FromBase64(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: FromBase64
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 128
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Decodes a Base64-encoded string.
+  example: []
+  syntax:
+    content: public static string FromBase64(this string base64)
+    parameters:
+    - id: base64
+      type: System.String
+      description: The Base64-encoded string to decode.
+    return:
+      type: System.String
+      description: A decoded string from the Base64 input; otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function FromBase64(base64 As String) As String
+  overload: Snipster.Library.Extensions.StringEx.FromBase64*
+  nameWithType.vb: StringEx.FromBase64(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.FromBase64(String)
+  name.vb: FromBase64(String)
+- uid: Snipster.Library.Extensions.StringEx.OrDefault(System.String,System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.OrDefault(System.String,System.String)
+  id: OrDefault(System.String,System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: OrDefault(string?, string)
+  nameWithType: StringEx.OrDefault(string?, string)
+  fullName: Snipster.Library.Extensions.StringEx.OrDefault(string?, string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: OrDefault
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 144
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Returns a default value if string is null or empty.
+  example: []
+  syntax:
+    content: public static string? OrDefault(this string? input, string defaultValue)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to check.
+    - id: defaultValue
+      type: System.String
+      description: The default value to return if the input is null or empty.
+    return:
+      type: System.String
+      description: The original string if it is not null or empty; otherwise, the specified default value.
+    content.vb: Public Shared Function OrDefault(input As String, defaultValue As String) As String
+  overload: Snipster.Library.Extensions.StringEx.OrDefault*
+  nameWithType.vb: StringEx.OrDefault(String, String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.OrDefault(String, String)
+  name.vb: OrDefault(String, String)
+- uid: Snipster.Library.Extensions.StringEx.StripHtmlTags(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.StripHtmlTags(System.String)
+  id: StripHtmlTags(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: StripHtmlTags(string)
+  nameWithType: StringEx.StripHtmlTags(string)
+  fullName: Snipster.Library.Extensions.StringEx.StripHtmlTags(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: StripHtmlTags
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 156
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Removes HTML tags from the string.
+  example: []
+  syntax:
+    content: public static string StripHtmlTags(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string containing HTML tags.
+    return:
+      type: System.String
+      description: A string with all HTML tags removed; otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function StripHtmlTags(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.StripHtmlTags*
+  nameWithType.vb: StringEx.StripHtmlTags(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.StripHtmlTags(String)
+  name.vb: StripHtmlTags(String)
+- uid: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric(System.String)
+  id: SanitizeAlphanumeric(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: SanitizeAlphanumeric(string)
+  nameWithType: StringEx.SanitizeAlphanumeric(string)
+  fullName: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SanitizeAlphanumeric
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 172
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Removes all non-alphanumeric characters (letters and digits).
+  example: []
+  syntax:
+    content: public static string SanitizeAlphanumeric(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to sanitize.
+    return:
+      type: System.String
+      description: >-
+        A string containing only alphanumeric characters from the input; otherwise, returns the original string if it is 
+
+        null or empty.
+    content.vb: Public Shared Function SanitizeAlphanumeric(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric*
+  nameWithType.vb: StringEx.SanitizeAlphanumeric(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric(String)
+  name.vb: SanitizeAlphanumeric(String)
+- uid: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters(System.String)
+  id: RemoveSpecialCharacters(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: RemoveSpecialCharacters(string)
+  nameWithType: StringEx.RemoveSpecialCharacters(string)
+  fullName: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: RemoveSpecialCharacters
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 188
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Removes all special characters except spaces.
+  example: []
+  syntax:
+    content: public static string RemoveSpecialCharacters(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to sanitize.
+    return:
+      type: System.String
+      description: >-
+        A string containing only alphanumeric characters and spaces from the input; otherwise, returns the 
+
+        original string if it is null or empty.
+    content.vb: Public Shared Function RemoveSpecialCharacters(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters*
+  nameWithType.vb: StringEx.RemoveSpecialCharacters(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters(String)
+  name.vb: RemoveSpecialCharacters(String)
+- uid: Snipster.Library.Extensions.StringEx.ToCamelCase(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.ToCamelCase(System.String)
+  id: ToCamelCase(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: ToCamelCase(string)
+  nameWithType: StringEx.ToCamelCase(string)
+  fullName: Snipster.Library.Extensions.StringEx.ToCamelCase(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ToCamelCase
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 204
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Converts a string to CamelCase format. e.g. "hello world" becomes "helloWorld".
+  example: []
+  syntax:
+    content: public static string ToCamelCase(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to convert.
+    return:
+      type: System.String
+      description: >-
+        A CamelCase version of the input string, where the first letter is lowercase and subsequent words are capitalized; 
+
+        otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function ToCamelCase(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.ToCamelCase*
+  nameWithType.vb: StringEx.ToCamelCase(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToCamelCase(String)
+  name.vb: ToCamelCase(String)
+- uid: Snipster.Library.Extensions.StringEx.ToPascalCase(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.ToPascalCase(System.String)
+  id: ToPascalCase(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: ToPascalCase(string)
+  nameWithType: StringEx.ToPascalCase(string)
+  fullName: Snipster.Library.Extensions.StringEx.ToPascalCase(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ToPascalCase
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 222
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Converts a string to PascalCase. e.g. "hello world" becomes "HelloWorld".
+  example: []
+  syntax:
+    content: public static string ToPascalCase(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to convert.
+    return:
+      type: System.String
+      description: >-
+        A PascalCase version of the input string, where the first letter of each word is capitalized and spaces are removed; 
+
+        otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function ToPascalCase(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.ToPascalCase*
+  nameWithType.vb: StringEx.ToPascalCase(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToPascalCase(String)
+  name.vb: ToPascalCase(String)
+- uid: Snipster.Library.Extensions.StringEx.ToKebabCase(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.ToKebabCase(System.String)
+  id: ToKebabCase(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: ToKebabCase(string)
+  nameWithType: StringEx.ToKebabCase(string)
+  fullName: Snipster.Library.Extensions.StringEx.ToKebabCase(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ToKebabCase
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 239
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Converts a string to kebab-case. e.g. "Hello World" becomes "hello-world".
+  example: []
+  syntax:
+    content: public static string ToKebabCase(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to convert.
+    return:
+      type: System.String
+      description: >-
+        A kebab-case version of the input string, where words are lowercase and separated by hyphens; 
+
+        otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function ToKebabCase(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.ToKebabCase*
+  nameWithType.vb: StringEx.ToKebabCase(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToKebabCase(String)
+  name.vb: ToKebabCase(String)
+- uid: Snipster.Library.Extensions.StringEx.RemoveWhitespace(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.RemoveWhitespace(System.String)
+  id: RemoveWhitespace(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: RemoveWhitespace(string)
+  nameWithType: StringEx.RemoveWhitespace(string)
+  fullName: Snipster.Library.Extensions.StringEx.RemoveWhitespace(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: RemoveWhitespace
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 258
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Removes all whitespace (spaces, tabs, newlines) from the string.
+  example: []
+  syntax:
+    content: public static string RemoveWhitespace(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to process.
+    return:
+      type: System.String
+      description: A string with all whitespace characters removed; otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function RemoveWhitespace(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.RemoveWhitespace*
+  nameWithType.vb: StringEx.RemoveWhitespace(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.RemoveWhitespace(String)
+  name.vb: RemoveWhitespace(String)
+- uid: Snipster.Library.Extensions.StringEx.NormalizeSpaces(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.NormalizeSpaces(System.String)
+  id: NormalizeSpaces(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: NormalizeSpaces(string)
+  nameWithType: StringEx.NormalizeSpaces(string)
+  fullName: Snipster.Library.Extensions.StringEx.NormalizeSpaces(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: NormalizeSpaces
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 274
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Normalizes spaces — trims and replaces multiple spaces with a single space. e.g. "  Hello   World  " becomes "Hello World".
+  example: []
+  syntax:
+    content: public static string NormalizeSpaces(this string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to normalize.
+    return:
+      type: System.String
+      description: >-
+        A string with leading/trailing spaces removed and multiple spaces replaced by a single space;
+
+        otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function NormalizeSpaces(input As String) As String
+  overload: Snipster.Library.Extensions.StringEx.NormalizeSpaces*
+  nameWithType.vb: StringEx.NormalizeSpaces(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.NormalizeSpaces(String)
+  name.vb: NormalizeSpaces(String)
+- uid: Snipster.Library.Extensions.StringEx.GetDescription(System.Enum)
+  commentId: M:Snipster.Library.Extensions.StringEx.GetDescription(System.Enum)
+  id: GetDescription(System.Enum)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: GetDescription(Enum)
+  nameWithType: StringEx.GetDescription(Enum)
+  fullName: Snipster.Library.Extensions.StringEx.GetDescription(System.Enum)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: GetDescription
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 290
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: >-
+    Retrieves the value of the <xref href="System.ComponentModel.DescriptionAttribute" data-throw-if-not-resolved="false"></xref> applied to an enum value.
+
+    If no description is found, it returns the enum's name as a fallback.
+  example: []
+  syntax:
+    content: public static string GetDescription(this Enum value)
+    parameters:
+    - id: value
+      type: System.Enum
+      description: The <xref href="System.Enum" data-throw-if-not-resolved="false"></xref> value.
+    return:
+      type: System.String
+      description: The description string or enum name if no description is present.
+    content.vb: Public Shared Function GetDescription(value As [Enum]) As String
+  overload: Snipster.Library.Extensions.StringEx.GetDescription*
+- uid: Snipster.Library.Extensions.StringEx.ToCleanQueryString(System.String)
+  commentId: M:Snipster.Library.Extensions.StringEx.ToCleanQueryString(System.String)
+  id: ToCleanQueryString(System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.StringEx
+  langs:
+  - csharp
+  - vb
+  name: ToCleanQueryString(string)
+  nameWithType: StringEx.ToCleanQueryString(string)
+  fullName: Snipster.Library.Extensions.StringEx.ToCleanQueryString(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/StringEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ToCleanQueryString
+    path: ../Snipster.Library/Extensions/StringEx.cs
+    startLine: 317
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Cleans a SQL query string by removing any zero-width characters and BOM.
+  example: []
+  syntax:
+    content: public static string ToCleanQueryString(this string sql)
+    parameters:
+    - id: sql
+      type: System.String
+      description: The SQL query string to clean.
+    return:
+      type: System.String
+      description: A cleaned SQL query string with zero-width characters and BOM removed; otherwise, returns the original string if it is null or empty.
+    content.vb: Public Shared Function ToCleanQueryString(sql As String) As String
+  overload: Snipster.Library.Extensions.StringEx.ToCleanQueryString*
+  nameWithType.vb: StringEx.ToCleanQueryString(String)
+  fullName.vb: Snipster.Library.Extensions.StringEx.ToCleanQueryString(String)
+  name.vb: ToCleanQueryString(String)
+references:
+- uid: Snipster.Library.Extensions
+  commentId: N:Snipster.Library.Extensions
+  href: Snipster.html
+  name: Snipster.Library.Extensions
+  nameWithType: Snipster.Library.Extensions
+  fullName: Snipster.Library.Extensions
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Snipster.Library.Extensions.StringEx.CapitalizeFirst*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.CapitalizeFirst
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_CapitalizeFirst_System_String_
+  name: CapitalizeFirst
+  nameWithType: StringEx.CapitalizeFirst
+  fullName: Snipster.Library.Extensions.StringEx.CapitalizeFirst
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Snipster.Library.Extensions.StringEx.ToTitleCase*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToTitleCase
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToTitleCase_System_String_
+  name: ToTitleCase
+  nameWithType: StringEx.ToTitleCase
+  fullName: Snipster.Library.Extensions.StringEx.ToTitleCase
+- uid: Snipster.Library.Extensions.StringEx.OnlyDigits*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.OnlyDigits
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_OnlyDigits_System_String_
+  name: OnlyDigits
+  nameWithType: StringEx.OnlyDigits
+  fullName: Snipster.Library.Extensions.StringEx.OnlyDigits
+- uid: Snipster.Library.Extensions.StringEx.Truncate*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.Truncate
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_Truncate_System_String_System_Int32_System_String_
+  name: Truncate
+  nameWithType: StringEx.Truncate
+  fullName: Snipster.Library.Extensions.StringEx.Truncate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Snipster.Library.Extensions.StringEx.Slugify*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.Slugify
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_Slugify_System_String_
+  name: Slugify
+  nameWithType: StringEx.Slugify
+  fullName: Snipster.Library.Extensions.StringEx.Slugify
+- uid: Snipster.Library.Extensions.StringEx.ToBase64*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToBase64
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToBase64_System_String_
+  name: ToBase64
+  nameWithType: StringEx.ToBase64
+  fullName: Snipster.Library.Extensions.StringEx.ToBase64
+- uid: Snipster.Library.Extensions.StringEx.FromBase64*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.FromBase64
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_FromBase64_System_String_
+  name: FromBase64
+  nameWithType: StringEx.FromBase64
+  fullName: Snipster.Library.Extensions.StringEx.FromBase64
+- uid: Snipster.Library.Extensions.StringEx.OrDefault*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.OrDefault
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_OrDefault_System_String_System_String_
+  name: OrDefault
+  nameWithType: StringEx.OrDefault
+  fullName: Snipster.Library.Extensions.StringEx.OrDefault
+- uid: Snipster.Library.Extensions.StringEx.StripHtmlTags*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.StripHtmlTags
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_StripHtmlTags_System_String_
+  name: StripHtmlTags
+  nameWithType: StringEx.StripHtmlTags
+  fullName: Snipster.Library.Extensions.StringEx.StripHtmlTags
+- uid: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_SanitizeAlphanumeric_System_String_
+  name: SanitizeAlphanumeric
+  nameWithType: StringEx.SanitizeAlphanumeric
+  fullName: Snipster.Library.Extensions.StringEx.SanitizeAlphanumeric
+- uid: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_RemoveSpecialCharacters_System_String_
+  name: RemoveSpecialCharacters
+  nameWithType: StringEx.RemoveSpecialCharacters
+  fullName: Snipster.Library.Extensions.StringEx.RemoveSpecialCharacters
+- uid: Snipster.Library.Extensions.StringEx.ToCamelCase*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToCamelCase
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToCamelCase_System_String_
+  name: ToCamelCase
+  nameWithType: StringEx.ToCamelCase
+  fullName: Snipster.Library.Extensions.StringEx.ToCamelCase
+- uid: Snipster.Library.Extensions.StringEx.ToPascalCase*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToPascalCase
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToPascalCase_System_String_
+  name: ToPascalCase
+  nameWithType: StringEx.ToPascalCase
+  fullName: Snipster.Library.Extensions.StringEx.ToPascalCase
+- uid: Snipster.Library.Extensions.StringEx.ToKebabCase*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToKebabCase
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToKebabCase_System_String_
+  name: ToKebabCase
+  nameWithType: StringEx.ToKebabCase
+  fullName: Snipster.Library.Extensions.StringEx.ToKebabCase
+- uid: Snipster.Library.Extensions.StringEx.RemoveWhitespace*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.RemoveWhitespace
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_RemoveWhitespace_System_String_
+  name: RemoveWhitespace
+  nameWithType: StringEx.RemoveWhitespace
+  fullName: Snipster.Library.Extensions.StringEx.RemoveWhitespace
+- uid: Snipster.Library.Extensions.StringEx.NormalizeSpaces*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.NormalizeSpaces
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_NormalizeSpaces_System_String_
+  name: NormalizeSpaces
+  nameWithType: StringEx.NormalizeSpaces
+  fullName: Snipster.Library.Extensions.StringEx.NormalizeSpaces
+- uid: System.ComponentModel.DescriptionAttribute
+  commentId: T:System.ComponentModel.DescriptionAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.descriptionattribute
+  name: DescriptionAttribute
+  nameWithType: DescriptionAttribute
+  fullName: System.ComponentModel.DescriptionAttribute
+- uid: System.Enum
+  commentId: T:System.Enum
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.enum
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: Snipster.Library.Extensions.StringEx.GetDescription*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.GetDescription
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_GetDescription_System_Enum_
+  name: GetDescription
+  nameWithType: StringEx.GetDescription
+  fullName: Snipster.Library.Extensions.StringEx.GetDescription
+- uid: Snipster.Library.Extensions.StringEx.ToCleanQueryString*
+  commentId: Overload:Snipster.Library.Extensions.StringEx.ToCleanQueryString
+  href: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_ToCleanQueryString_System_String_
+  name: ToCleanQueryString
+  nameWithType: StringEx.ToCleanQueryString
+  fullName: Snipster.Library.Extensions.StringEx.ToCleanQueryString

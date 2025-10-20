@@ -1,0 +1,199 @@
+- name: Get started
+- href: introduction.md
+- href: ../index.md
+
+- name: Validation Extensions
+- name: CollectionValEx
+  items:
+  - href: val-ex/collection-val-ex/hasduplicates.md
+  - href: val-ex/collection-val-ex/isnullorempty.md
+
+- name: CreditCardValEx
+  items:
+  - href: val-ex/creditcard-val-ex/isvalidcreditcard.md
+
+- name: DateTimeValEx
+  items:
+  - href: val-ex/datetime-val-ex/isfuture.md
+  - href: val-ex/datetime-val-ex/ispast.md
+  - href: val-ex/datetime-val-ex/istoday.md
+  - href: val-ex/datetime-val-ex/isweekday.md
+  - href: val-ex/datetime-val-ex/isweekend.md
+  - href: val-ex/datetime-val-ex/isvaliddate.md
+
+- name: JsonValEx
+  items:
+  - href: val-ex/json-val-ex/isvalidjson.md
+
+- name: SecurityValEx
+  items:
+  - href: val-ex/security-val-ex/isvalidemail.md
+  - href: val-ex/security-val-ex/isstrongpassword.md
+
+- name: StringValEx
+  items:
+  - href: val-ex/string-val-ex/isalphabetic.md
+  - href: val-ex/string-val-ex/isalphanumeric.md
+  - href: val-ex/string-val-ex/iscontainsignorecase.md
+  - href: val-ex/string-val-ex/isnumeric.md
+  - href: val-ex/string-val-ex/isvalidinternationalphone.md
+  - href: val-ex/string-val-ex/isvalidsrilankanphone.md
+
+- name: NetworkValEx
+  items:
+  - href: val-ex/network-val-ex/isvalidipv4.md
+  - href: val-ex/network-val-ex/isvalidipv6.md
+  - href: val-ex/network-val-ex/isvalidwebaddress.md
+
+- name: ObjectValEx
+  items:
+  - href: val-ex/object-val-ex/hasproperty.md
+  - href: val-ex/object-val-ex/isdefaultvalue.md
+
+- name: Helper Extensions
+- name: CollectionEx
+  items:
+  - href: ex/collection-ex/chunkby.md
+  - href: ex/collection-ex/exceptsafe.md
+  - href: ex/collection-ex/foreach.md
+  - href: ex/collection-ex/leastcommon.md
+  - href: ex/collection-ex/mostcommon.md
+  - href: ex/collection-ex/randomitem.md
+  - href: ex/collection-ex/shuffle.md
+  - href: ex/collection-ex/tosafedictionary.md
+
+- name: CreditCardEx
+  items:
+  - href: ex/creditcard-ex/getcreditcardtype.md
+
+- name: DateTimeEx
+  items:
+  - href: ex/datetime-ex/endofday.md
+  - href: ex/datetime-ex/fromtimezone.md
+  - href: ex/datetime-ex/fromunixtimestamp.md
+  - href: ex/datetime-ex/tounixtimestamp.md
+  - href: ex/datetime-ex/getweekenddate.md
+  - href: ex/datetime-ex/getweekofyear.md
+  - href: ex/datetime-ex/getweekstartdate.md
+  - href: ex/datetime-ex/startofday.md
+  - href: ex/datetime-ex/toage.md
+  - href: ex/datetime-ex/todatestring.md
+  - href: ex/datetime-ex/tofulldatetimestring.md
+  - href: ex/datetime-ex/totimeago.md
+  - href: ex/datetime-ex/totimestring.md
+  - href: ex/datetime-ex/totimezone.md
+
+- name: JsonEx
+  items:
+  - href: ex/json-ex/fromjson.md
+  - href: ex/json-ex/tojson.md
+
+- name: SecurityEx
+  items:
+  - href: ex/security-ex/tosha256.md
+
+- name: StringValEx
+  items:
+  - href: ex/string-ex/capitalizefirst.md
+  - href: ex/string-ex/frombase64.md
+  - href: ex/string-ex/getdescription.md
+  - href: ex/string-ex/normalizespaces.md
+  - href: ex/string-ex/onlydigits.md
+  - href: ex/string-ex/ordefault.md
+  - href: ex/string-ex/removespecialcharacters.md
+  - href: ex/string-ex/removewhitespace.md
+  - href: ex/string-ex/sanitizealphanumeric.md
+  - href: ex/string-ex/slugify.md
+  - href: ex/string-ex/striphtmltags.md
+  - href: ex/string-ex/tobase64.md
+  - href: ex/string-ex/tocamelcase.md
+  - href: ex/string-ex/tocleanquerystring.md
+  - href: ex/string-ex/tokebabcase.md
+  - href: ex/string-ex/topascalcase.md
+  - href: ex/string-ex/totitlecase.md
+  - href: ex/string-ex/truncate.md
+
+- name: NumberEx
+  items:
+  - href: ex/number-ex/todoublesafe.md
+  - href: ex/number-ex/tointsafe.md
+  - href: ex/number-ex/toordinal.md
+
+- name: ObjectEx
+  items:
+  - href: ex/object-ex/getpropertyvalue.md
+  - href: ex/object-ex/setpropertyvalue.md
+
+- name: Helpers
+- name: JsonFx
+  items:
+  - href: help-fx/json-fx/minify.md
+  - href: help-fx/json-fx/prettify.md
+
+- name: SecurityFx
+  items:
+  - href: help-fx/security-fx/generatesecuretoken.md
+  - href: help-fx/security-fx/passwordhash.md
+  - href: help-fx/security-fx/randomstring.md
+  - href: help-fx/security-fx/verifypassword.md
+
+- name: StringFx
+  items:
+  - href: help-fx/string-fx/formatbytes.md
+  - href: help-fx/string-fx/generateguid.md
+  - href: help-fx/string-fx/generateuniqueusername.md
+
+- name: NetworkFx
+  items:
+  - href: help-fx/network-fx/buildurl.md
+  - href: help-fx/network-fx/hasinternetconnectionasync.md
+  - href: help-fx/network-fx/ishostavailableasync.md
+
+- name: FileFx
+  items:
+  - href: help-fx/file-fx/createtempfile.md
+  - href: help-fx/file-fx/getdirectorysize.md
+  - href: help-fx/file-fx/safereadbytes.md
+  - href: help-fx/file-fx/safereadtext.md
+  - href: help-fx/file-fx/safewritebytes.md
+  - href: help-fx/file-fx/safewritetext.md
+  - href: help-fx/file-fx/sanitizefilename.md
+
+- name: ExcelFx
+  items:
+  - href: help-fx/excel-fx/writetoexcel.md
+  - href: help-fx/excel-fx/writetomemory.md
+
+- name: ObjectFx
+  items:
+  - href: help-fx/object-fx/deepclone.md
+
+- name: Design Patterns
+- name: Generic Repository
+  items:
+  - href: gen-repo/setup.md
+  - href: gen-repo/addasync.md
+  - href: gen-repo/addrangeasync.md
+  - href: gen-repo/update.md
+  - href: gen-repo/updaterange.md
+  - href: gen-repo/remove.md
+  - href: gen-repo/removeasync.md
+  - href: gen-repo/getallasync.md
+  - href: gen-repo/getallbyconditionasync.md
+  - href: gen-repo/getbyconditionasync.md
+  - href: gen-repo/getselectedcolumnsasync.md
+  - href: gen-repo/isexistasync.md
+
+- name: Unit of Work
+  items:
+  - href: unit-of-work/setup.md
+  - href: unit-of-work/example.md
+
+- name: Cache
+- name: Cache Service
+  items:
+  - href: cache/setup.md
+  - href: cache/setcacheasync.md
+  - href: cache/setcacheasyncext.md
+  - href: cache/setlongcacheasync.md
+  - href: cache/removecache.md

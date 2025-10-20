@@ -1,0 +1,628 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx
+  commentId: T:Snipster.Library.Extensions.Validations.DateTimeValEx
+  id: DateTimeValEx
+  parent: Snipster.Library.Extensions.Validations
+  children:
+  - Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(System.DateTime)
+  - Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(System.DateTime)
+  - Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(System.DateTime)
+  - Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate(System.String,System.String)
+  - Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(System.DateTime)
+  - Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(System.DateTime)
+  langs:
+  - csharp
+  - vb
+  name: DateTimeValEx
+  nameWithType: DateTimeValEx
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: DateTimeValEx
+    path: ../Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+    startLine: 8
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions.Validations
+  summary: Provides various extensions for validating DateTime values.
+  example: []
+  syntax:
+    content: public static class DateTimeValEx
+    content.vb: Public Module DateTimeValEx
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(System.DateTime)
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(System.DateTime)
+  id: IsToday(System.DateTime)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.Validations.DateTimeValEx
+  langs:
+  - csharp
+  - vb
+  name: IsToday(DateTime)
+  nameWithType: DateTimeValEx.IsToday(DateTime)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: IsToday
+    path: ../Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+    startLine: 17
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions.Validations
+  summary: Returns true if the date is today.
+  example: []
+  syntax:
+    content: public static bool IsToday(this DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+      description: The date to check.
+    return:
+      type: System.Boolean
+      description: True if the date is today; otherwise, false.
+    content.vb: Public Shared Function IsToday([date] As Date) As Boolean
+  overload: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday*
+  nameWithType.vb: DateTimeValEx.IsToday(Date)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(Date)
+  name.vb: IsToday(Date)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(System.DateTime)
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(System.DateTime)
+  id: IsFuture(System.DateTime)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.Validations.DateTimeValEx
+  langs:
+  - csharp
+  - vb
+  name: IsFuture(DateTime)
+  nameWithType: DateTimeValEx.IsFuture(DateTime)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: IsFuture
+    path: ../Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+    startLine: 29
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions.Validations
+  summary: Returns true if the date is in the future.
+  example: []
+  syntax:
+    content: public static bool IsFuture(this DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+      description: The date to check.
+    return:
+      type: System.Boolean
+      description: True if the date is in the future; otherwise, false.
+    content.vb: Public Shared Function IsFuture([date] As Date) As Boolean
+  overload: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture*
+  nameWithType.vb: DateTimeValEx.IsFuture(Date)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(Date)
+  name.vb: IsFuture(Date)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(System.DateTime)
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(System.DateTime)
+  id: IsPast(System.DateTime)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.Validations.DateTimeValEx
+  langs:
+  - csharp
+  - vb
+  name: IsPast(DateTime)
+  nameWithType: DateTimeValEx.IsPast(DateTime)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: IsPast
+    path: ../Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+    startLine: 41
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions.Validations
+  summary: Returns true if the date is in the past.
+  example: []
+  syntax:
+    content: public static bool IsPast(this DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+      description: The date to check.
+    return:
+      type: System.Boolean
+      description: True if the date is in the past; otherwise, false.
+    content.vb: Public Shared Function IsPast([date] As Date) As Boolean
+  overload: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast*
+  nameWithType.vb: DateTimeValEx.IsPast(Date)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(Date)
+  name.vb: IsPast(Date)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(System.DateTime)
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(System.DateTime)
+  id: IsWeekend(System.DateTime)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.Validations.DateTimeValEx
+  langs:
+  - csharp
+  - vb
+  name: IsWeekend(DateTime)
+  nameWithType: DateTimeValEx.IsWeekend(DateTime)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: IsWeekend
+    path: ../Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+    startLine: 53
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions.Validations
+  summary: Returns true if the date is a weekend (Saturday or Sunday).
+  example: []
+  syntax:
+    content: public static bool IsWeekend(this DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+      description: The date to check.
+    return:
+      type: System.Boolean
+      description: True if the date is a weekend; otherwise, false.
+    content.vb: Public Shared Function IsWeekend([date] As Date) As Boolean
+  overload: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend*
+  nameWithType.vb: DateTimeValEx.IsWeekend(Date)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(Date)
+  name.vb: IsWeekend(Date)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(System.DateTime)
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(System.DateTime)
+  id: IsWeekday(System.DateTime)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.Validations.DateTimeValEx
+  langs:
+  - csharp
+  - vb
+  name: IsWeekday(DateTime)
+  nameWithType: DateTimeValEx.IsWeekday(DateTime)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: IsWeekday
+    path: ../Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+    startLine: 65
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions.Validations
+  summary: Returns true if the date is a weekday (Monday–Friday).
+  example: []
+  syntax:
+    content: public static bool IsWeekday(this DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+      description: The date to check.
+    return:
+      type: System.Boolean
+      description: True if the date is a weekday; otherwise, false.
+    content.vb: Public Shared Function IsWeekday([date] As Date) As Boolean
+  overload: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday*
+  nameWithType.vb: DateTimeValEx.IsWeekday(Date)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(Date)
+  name.vb: IsWeekday(Date)
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate(System.String,System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate(System.String,System.String)
+  id: IsValidDate(System.String,System.String)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.Validations.DateTimeValEx
+  langs:
+  - csharp
+  - vb
+  name: IsValidDate(string, string)
+  nameWithType: DateTimeValEx.IsValidDate(string, string)
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate(string, string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: IsValidDate
+    path: ../Snipster.Library/Extensions/Validations/DateTimeValEx.cs
+    startLine: 78
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions.Validations
+  summary: Validates if a given string is a valid date in a specific format.
+  example: []
+  syntax:
+    content: public static bool IsValidDate(this string input, string format = "yyyy-MM-dd")
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string to validate.
+    - id: format
+      type: System.String
+      description: The date format to validate against (default is "yyyy-MM-dd").
+    return:
+      type: System.Boolean
+      description: True if the string is a valid date in the specified format; otherwise, false.
+    content.vb: Public Shared Function IsValidDate(input As String, format As String = "yyyy-MM-dd") As Boolean
+  overload: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate*
+  nameWithType.vb: DateTimeValEx.IsValidDate(String, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate(String, String)
+  name.vb: IsValidDate(String, String)
+references:
+- uid: Snipster.Library.Extensions.Validations
+  commentId: N:Snipster.Library.Extensions.Validations
+  href: Snipster.html
+  name: Snipster.Library.Extensions.Validations
+  nameWithType: Snipster.Library.Extensions.Validations
+  fullName: Snipster.Library.Extensions.Validations
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday*
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday
+  href: Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsToday_System_DateTime_
+  name: IsToday
+  nameWithType: DateTimeValEx.IsToday
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture*
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture
+  href: Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsFuture_System_DateTime_
+  name: IsFuture
+  nameWithType: DateTimeValEx.IsFuture
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast*
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast
+  href: Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsPast_System_DateTime_
+  name: IsPast
+  nameWithType: DateTimeValEx.IsPast
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend*
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend
+  href: Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsWeekend_System_DateTime_
+  name: IsWeekend
+  nameWithType: DateTimeValEx.IsWeekend
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday*
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday
+  href: Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsWeekday_System_DateTime_
+  name: IsWeekday
+  nameWithType: DateTimeValEx.IsWeekday
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday
+- uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate*
+  commentId: Overload:Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate
+  href: Snipster.Library.Extensions.Validations.DateTimeValEx.html#Snipster_Library_Extensions_Validations_DateTimeValEx_IsValidDate_System_String_System_String_
+  name: IsValidDate
+  nameWithType: DateTimeValEx.IsValidDate
+  fullName: Snipster.Library.Extensions.Validations.DateTimeValEx.IsValidDate
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,4 @@
+/* Hide the default DocFX "D" logo */
+.navbar .navbar-brand #logo {
+    display: none !important;
+}

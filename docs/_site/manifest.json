@@ -1,0 +1,1797 @@
+{
+  "sitemap": {
+    "baseUrl": "https://darwijesinghe.github.io/snipster/",
+    "changefreq": "daily",
+    "priority": 0.5
+  },
+  "source_base_path": "D:/repo/Snipster/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Cache.CacheService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Cache.CacheService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Cache.CacheService",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Cache.CacheService.yml\" sourcestartlinenumber=\"1\">Provides an implementation of <xref href=\"Snipster.Library.Cache.ICacheService\" data-throw-if-not-resolved=\"false\"></xref> that handles in-memory caching functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Cache.ICacheService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Cache.ICacheService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Cache.ICacheService",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Cache.ICacheService.yml\" sourcestartlinenumber=\"1\">Defines a contract for a caching service that provides methods to store, retrieve, and manage cached data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Cache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Cache.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Cache",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Enums.ExcelAlignment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Enums.ExcelAlignment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Enums.ExcelAlignment",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Enums.ExcelAlignment.yml\" sourcestartlinenumber=\"1\">Specifies the alignment options for Excel cells.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.CollectionEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.CollectionEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.CollectionEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.CollectionEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with collections.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.CreditCardEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.CreditCardEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.CreditCardEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.CreditCardEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with credit card information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.DateTimeEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.DateTimeEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.DateTimeEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.DateTimeEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with DateTime objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.JsonEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.JsonEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.JsonEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.JsonEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with JSON data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.NumberEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.NumberEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.NumberEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.NumberEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.ObjectEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.ObjectEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.ObjectEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.ObjectEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.SecurityEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.SecurityEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.SecurityEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.SecurityEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with security-related operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.StringEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.StringEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.StringEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.StringEx.yml\" sourcestartlinenumber=\"1\">Provides various string manipulation and formatting extension methods.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.Validations.CollectionValEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.Validations.CollectionValEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.Validations.CollectionValEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.CollectionValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating collections.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.Validations.CreditCardValEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.Validations.CreditCardValEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.Validations.CreditCardValEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.CreditCardValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating credit card information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.Validations.DateTimeValEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.Validations.DateTimeValEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.Validations.DateTimeValEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.DateTimeValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating DateTime values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.Validations.JsonValEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.Validations.JsonValEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.Validations.JsonValEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.JsonValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating JSON values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.Validations.NetworkValEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.Validations.NetworkValEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.Validations.NetworkValEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.NetworkValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating network-related values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.Validations.ObjectValEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.Validations.ObjectValEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.Validations.ObjectValEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.ObjectValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.Validations.SecurityValEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.Validations.SecurityValEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.Validations.SecurityValEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.SecurityValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating security-related values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.Validations.StringValEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.Validations.StringValEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.Validations.StringValEx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.StringValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating strings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.Validations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.Validations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions.Validations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Helpers.ExcelFx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Helpers.ExcelFx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Helpers.ExcelFx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.ExcelFx.yml\" sourcestartlinenumber=\"1\">A class that provides Excel files related utility functions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Helpers.FileFx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Helpers.FileFx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Helpers.FileFx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.FileFx.yml\" sourcestartlinenumber=\"1\">A class that provides file-related utility functions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Helpers.JsonFx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Helpers.JsonFx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Helpers.JsonFx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.JsonFx.yml\" sourcestartlinenumber=\"1\">Provides methods for manipulating JSON strings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Helpers.NetworkFx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Helpers.NetworkFx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Helpers.NetworkFx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.NetworkFx.yml\" sourcestartlinenumber=\"1\">A class that provides network-related functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Helpers.ObjectFx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Helpers.ObjectFx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Helpers.ObjectFx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.ObjectFx.yml\" sourcestartlinenumber=\"1\">A class that provides object-related utility functions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Helpers.SecurityFx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Helpers.SecurityFx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Helpers.SecurityFx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.SecurityFx.yml\" sourcestartlinenumber=\"1\">Provides various security-related helper methods and functionalities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Helpers.StringFx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Helpers.StringFx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Helpers.StringFx",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.StringFx.yml\" sourcestartlinenumber=\"1\">Provides various string manipulation and validation methods.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Models.ExcelColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Models.ExcelColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Models.ExcelColumn",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Models.ExcelColumn.yml\" sourcestartlinenumber=\"1\">Defines the properties and formatting options for a column in an Excel export.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Models.ExcelExportOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Models.ExcelExportOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Models.ExcelExportOptions",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Models.ExcelExportOptions.yml\" sourcestartlinenumber=\"1\">Defines options for exporting data to an Excel file, including formatting and layout preferences.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Models.ExcelFormats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Models.ExcelFormats.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Models.ExcelFormats",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Models.ExcelFormats.yml\" sourcestartlinenumber=\"1\">Provides commonly used Excel number, date, and text format strings.\nUse these constants when defining <xref href=\"Snipster.Library.Models.ExcelColumn.Format\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Repository.GenericRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Repository.GenericRepository-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Repository.GenericRepository<TEntity>",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Repository.GenericRepository-1.yml\" sourcestartlinenumber=\"1\">Provides a generic implementation of <xref href=\"Snipster.Library.Repository.IGenericRepository%601\" data-throw-if-not-resolved=\"false\"></xref>\nfor performing CRUD operations with a shared <xref href=\"Microsoft.EntityFrameworkCore.DbContext\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Repository.IGenericRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Repository.IGenericRepository-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Repository.IGenericRepository<TEntity>",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.Repository.IGenericRepository-1.yml\" sourcestartlinenumber=\"1\">Defines the contract for basic CRUD operations on entities of type <code class=\"typeparamref\">TEntity</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.Repository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Repository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.Repository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.UOW.IUnitOfWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.UOW.IUnitOfWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.UOW.IUnitOfWork",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.UOW.IUnitOfWork.yml\" sourcestartlinenumber=\"1\">Defines the contract for the Unit of Work pattern, which coordinates changes across multiple repositories\nand manages database transactions.</p>\n<p><b>Warning:</b> Do not implement this interface yourself. \nIt uses the default <xref href=\"Snipster.Library.Repository.IGenericRepository%601\" data-throw-if-not-resolved=\"false\"></xref> provided by this package.\nUse the provided implementation from the package instead.</p>\n<p><b>Note:</b> You may implement your own <xref href=\"Snipster.Library.Repository.IGenericRepository%601\" data-throw-if-not-resolved=\"false\"></xref> if you want custom repository behavior.\nThe <xref href=\"Snipster.Library.UOW.UnitOfWork\" data-throw-if-not-resolved=\"false\"></xref> can work with your custom repository implementation as long as it implements <xref href=\"Snipster.Library.Repository.IGenericRepository%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.UOW.UnitOfWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.UOW.UnitOfWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.UOW.UnitOfWork",
+      "Summary": "<p sourcefile=\"api/Snipster.Library.UOW.UnitOfWork.yml\" sourcestartlinenumber=\"1\">Provides an implementation of the Unit of Work pattern, managing database transactions and repositories.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snipster.Library.UOW.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.UOW.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Snipster.Library.UOW",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/cache/removecache.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/cache/removecache.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/cache/setcacheasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/cache/setcacheasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/cache/setcacheasyncext.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/cache/setcacheasyncext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/cache/setlongcacheasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/cache/setlongcacheasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/cache/setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/cache/setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/collection-ex/chunkby.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/collection-ex/chunkby.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/collection-ex/exceptsafe.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/collection-ex/exceptsafe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/collection-ex/foreach.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/collection-ex/foreach.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/collection-ex/leastcommon.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/collection-ex/leastcommon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/collection-ex/mostcommon.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/collection-ex/mostcommon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/collection-ex/randomitem.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/collection-ex/randomitem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/collection-ex/shuffle.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/collection-ex/shuffle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/collection-ex/tosafedictionary.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/collection-ex/tosafedictionary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/creditcard-ex/getcreditcardtype.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/creditcard-ex/getcreditcardtype.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/endofday.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/endofday.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/fromtimezone.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/fromtimezone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/fromunixtimestamp.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/fromunixtimestamp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/getweekenddate.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/getweekenddate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/getweekofyear.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/getweekofyear.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/getweekstartdate.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/getweekstartdate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/startofday.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/startofday.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/toage.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/toage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/todatestring.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/todatestring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/tofulldatetimestring.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/tofulldatetimestring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/totimeago.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/totimeago.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/totimestring.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/totimestring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/totimezone.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/totimezone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/datetime-ex/tounixtimestamp.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/datetime-ex/tounixtimestamp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/json-ex/fromjson.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/json-ex/fromjson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/json-ex/tojson.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/json-ex/tojson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/number-ex/todoublesafe.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/number-ex/todoublesafe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/number-ex/tointsafe.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/number-ex/tointsafe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/number-ex/toordinal.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/number-ex/toordinal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/object-ex/getpropertyvalue.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/object-ex/getpropertyvalue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/object-ex/setpropertyvalue.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/object-ex/setpropertyvalue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/security-ex/tosha256.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/security-ex/tosha256.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/capitalizefirst.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/capitalizefirst.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/frombase64.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/frombase64.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/getdescription.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/getdescription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/normalizespaces.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/normalizespaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/onlydigits.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/onlydigits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/ordefault.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/ordefault.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/removespecialcharacters.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/removespecialcharacters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/removewhitespace.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/removewhitespace.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/sanitizealphanumeric.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/sanitizealphanumeric.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/slugify.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/slugify.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/striphtmltags.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/striphtmltags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/tobase64.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/tobase64.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/tocamelcase.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/tocamelcase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/tocleanquerystring.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/tocleanquerystring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/tokebabcase.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/tokebabcase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/topascalcase.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/topascalcase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/totitlecase.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/totitlecase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ex/string-ex/truncate.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ex/string-ex/truncate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/addasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/addasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/addrangeasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/addrangeasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/getallasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/getallasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/getallbyconditionasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/getallbyconditionasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/getbyconditionasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/getbyconditionasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/getselectedcolumnsasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/getselectedcolumnsasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/isexistasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/isexistasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/remove.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/remove.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/removeasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/removeasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/update.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/update.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/gen-repo/updaterange.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/gen-repo/updaterange.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/excel-fx/writetoexcel.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/excel-fx/writetoexcel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/excel-fx/writetomemory.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/excel-fx/writetomemory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/file-fx/createtempfile.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/file-fx/createtempfile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/file-fx/getdirectorysize.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/file-fx/getdirectorysize.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/file-fx/safereadbytes.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/file-fx/safereadbytes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/file-fx/safereadtext.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/file-fx/safereadtext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/file-fx/safewritebytes.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/file-fx/safewritebytes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/file-fx/safewritetext.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/file-fx/safewritetext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/file-fx/sanitizefilename.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/file-fx/sanitizefilename.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/json-fx/minify.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/json-fx/minify.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/json-fx/prettify.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/json-fx/prettify.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/network-fx/buildurl.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/network-fx/buildurl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/network-fx/hasinternetconnectionasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/network-fx/hasinternetconnectionasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/network-fx/ishostavailableasync.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/network-fx/ishostavailableasync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/object-fx/deepclone.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/object-fx/deepclone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/security-fx/generatesecuretoken.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/security-fx/generatesecuretoken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/security-fx/passwordhash.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/security-fx/passwordhash.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/security-fx/randomstring.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/security-fx/randomstring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/security-fx/verifypassword.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/security-fx/verifypassword.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/string-fx/formatbytes.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/string-fx/formatbytes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/string-fx/generateguid.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/string-fx/generateguid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/help-fx/string-fx/generateuniqueusername.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/help-fx/string-fx/generateuniqueusername.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/unit-of-work/example.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/unit-of-work/example.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/unit-of-work/setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/unit-of-work/setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/collection-val-ex/hasduplicates.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/collection-val-ex/hasduplicates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/collection-val-ex/isnullorempty.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/collection-val-ex/isnullorempty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/creditcard-val-ex/isvalidcreditcard.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/creditcard-val-ex/isvalidcreditcard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/datetime-val-ex/isfuture.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/datetime-val-ex/isfuture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/datetime-val-ex/ispast.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/datetime-val-ex/ispast.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/datetime-val-ex/istoday.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/datetime-val-ex/istoday.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/datetime-val-ex/isvaliddate.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/datetime-val-ex/isvaliddate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/datetime-val-ex/isweekday.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/datetime-val-ex/isweekday.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/datetime-val-ex/isweekend.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/datetime-val-ex/isweekend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/json-val-ex/isvalidjson.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/json-val-ex/isvalidjson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/network-val-ex/isvalidipv4.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/network-val-ex/isvalidipv4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/network-val-ex/isvalidipv6.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/network-val-ex/isvalidipv6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/network-val-ex/isvalidwebaddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/network-val-ex/isvalidwebaddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/object-val-ex/hasproperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/object-val-ex/hasproperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/object-val-ex/isdefaultvalue.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/object-val-ex/isdefaultvalue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/security-val-ex/isstrongpassword.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/security-val-ex/isstrongpassword.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/security-val-ex/isvalidemail.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/security-val-ex/isvalidemail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/string-val-ex/isalphabetic.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/string-val-ex/isalphabetic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/string-val-ex/isalphanumeric.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/string-val-ex/isalphanumeric.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/string-val-ex/iscontainsignorecase.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/string-val-ex/iscontainsignorecase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/string-val-ex/isnumeric.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/string-val-ex/isnumeric.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/string-val-ex/isvalidinternationalphone.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/string-val-ex/isvalidinternationalphone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/val-ex/string-val-ex/isvalidsrilankanphone.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/val-ex/string-val-ex/isvalidsrilankanphone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

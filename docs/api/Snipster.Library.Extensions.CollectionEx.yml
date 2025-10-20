@@ -1,0 +1,1177 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Extensions.CollectionEx
+  commentId: T:Snipster.Library.Extensions.CollectionEx
+  id: CollectionEx
+  parent: Snipster.Library.Extensions
+  children:
+  - Snipster.Library.Extensions.CollectionEx.ChunkBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  - Snipster.Library.Extensions.CollectionEx.ExceptSafe``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
+  - Snipster.Library.Extensions.CollectionEx.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  - Snipster.Library.Extensions.CollectionEx.LeastCommon``1(System.Collections.Generic.IEnumerable{``0})
+  - Snipster.Library.Extensions.CollectionEx.MostCommon``1(System.Collections.Generic.IEnumerable{``0})
+  - Snipster.Library.Extensions.CollectionEx.RandomItem``1(System.Collections.Generic.IEnumerable{``0})
+  - Snipster.Library.Extensions.CollectionEx.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - Snipster.Library.Extensions.CollectionEx.ToSafeDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})
+  langs:
+  - csharp
+  - vb
+  name: CollectionEx
+  nameWithType: CollectionEx
+  fullName: Snipster.Library.Extensions.CollectionEx
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/Extensions/CollectionEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: CollectionEx
+    path: ../Snipster.Library/Extensions/CollectionEx.cs
+    startLine: 9
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Provides various extensions for working with collections.
+  example: []
+  syntax:
+    content: public static class CollectionEx
+    content.vb: Public Module CollectionEx
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Snipster.Library.Extensions.CollectionEx.ChunkBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  commentId: M:Snipster.Library.Extensions.CollectionEx.ChunkBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  id: ChunkBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.CollectionEx
+  langs:
+  - csharp
+  - vb
+  name: ChunkBy<T>(IEnumerable<T>, int)
+  nameWithType: CollectionEx.ChunkBy<T>(IEnumerable<T>, int)
+  fullName: Snipster.Library.Extensions.CollectionEx.ChunkBy<T>(System.Collections.Generic.IEnumerable<T>, int)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/CollectionEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ChunkBy
+    path: ../Snipster.Library/Extensions/CollectionEx.cs
+    startLine: 23
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Splits a collection into chunks of the specified size.
+  example: []
+  syntax:
+    content: public static IEnumerable<IEnumerable<T>> ChunkBy<T>(this IEnumerable<T> source, int size)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to split.
+    - id: size
+      type: System.Int32
+      description: The size of each chunk.
+    typeParameters:
+    - id: T
+      description: The type of elements in the collection.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{{T}}}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of chunks, where each chunk is an <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing elements from the original collection.
+    content.vb: Public Shared Function ChunkBy(Of T)(source As IEnumerable(Of T), size As Integer) As IEnumerable(Of IEnumerable(Of T))
+  overload: Snipster.Library.Extensions.CollectionEx.ChunkBy*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the <code class="paramref">source</code> collection is null or <code class="paramref">size</code> is less than or equal to zero.
+  nameWithType.vb: CollectionEx.ChunkBy(Of T)(IEnumerable(Of T), Integer)
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.ChunkBy(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer)
+  name.vb: ChunkBy(Of T)(IEnumerable(Of T), Integer)
+- uid: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})
+  commentId: M:Snipster.Library.Extensions.CollectionEx.ToSafeDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})
+  id: ToSafeDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.CollectionEx
+  langs:
+  - csharp
+  - vb
+  name: ToSafeDictionary<TSource, TKey, TValue>(IEnumerable<TSource>, Func<TSource, TKey>, Func<TSource, TValue>)
+  nameWithType: CollectionEx.ToSafeDictionary<TSource, TKey, TValue>(IEnumerable<TSource>, Func<TSource, TKey>, Func<TSource, TValue>)
+  fullName: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary<TSource, TKey, TValue>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TKey>, System.Func<TSource, TValue>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/CollectionEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ToSafeDictionary
+    path: ../Snipster.Library/Extensions/CollectionEx.cs
+    startLine: 68
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Returns a dictionary from a list safely (skips duplicate keys).
+  example: []
+  syntax:
+    content: 'public static Dictionary<TKey, TValue> ToSafeDictionary<TSource, TKey, TValue>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TValue> valueSelector) where TKey : notnull'
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{TSource}}
+      description: The collection to convert.
+    - id: keySelector
+      type: System.Func{{TSource},{TKey}}
+      description: A function to extract the key from each element.
+    - id: valueSelector
+      type: System.Func{{TSource},{TValue}}
+      description: A function to extract the value from each element.
+    typeParameters:
+    - id: TSource
+      description: The type of elements in the source collection.
+    - id: TKey
+      description: The type of the key used for the dictionary.
+    - id: TValue
+      description: The type of the value used for the dictionary.
+    return:
+      type: System.Collections.Generic.Dictionary{{TKey},{TValue}}
+      description: A <xref href="System.Collections.Generic.Dictionary%602" data-throw-if-not-resolved="false"></xref> containing elements from the collection, where duplicate keys are skipped.
+    content.vb: Public Shared Function ToSafeDictionary(Of TSource, TKey, TValue)(source As IEnumerable(Of TSource), keySelector As Func(Of TSource, TKey), valueSelector As Func(Of TSource, TValue)) As Dictionary(Of TKey, TValue)
+  overload: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the <code class="paramref">source</code>, <code class="paramref">keySelector</code>, or <code class="paramref">valueSelector</code> is null.
+  nameWithType.vb: CollectionEx.ToSafeDictionary(Of TSource, TKey, TValue)(IEnumerable(Of TSource), Func(Of TSource, TKey), Func(Of TSource, TValue))
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary(Of TSource, TKey, TValue)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, TKey), System.Func(Of TSource, TValue))
+  name.vb: ToSafeDictionary(Of TSource, TKey, TValue)(IEnumerable(Of TSource), Func(Of TSource, TKey), Func(Of TSource, TValue))
+- uid: Snipster.Library.Extensions.CollectionEx.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  commentId: M:Snipster.Library.Extensions.CollectionEx.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  id: ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.CollectionEx
+  langs:
+  - csharp
+  - vb
+  name: ForEach<T>(IEnumerable<T>, Action<T>)
+  nameWithType: CollectionEx.ForEach<T>(IEnumerable<T>, Action<T>)
+  fullName: Snipster.Library.Extensions.CollectionEx.ForEach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/CollectionEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ForEach
+    path: ../Snipster.Library/Extensions/CollectionEx.cs
+    startLine: 100
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Executes an action for each element in the collection.
+  example: []
+  syntax:
+    content: public static void ForEach<T>(this IEnumerable<T> source, Action<T> action)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to iterate over.
+    - id: action
+      type: System.Action{{T}}
+      description: The action to execute for each element.
+    typeParameters:
+    - id: T
+      description: The type of elements in the collection.
+    content.vb: Public Shared Sub ForEach(Of T)(source As IEnumerable(Of T), action As Action(Of T))
+  overload: Snipster.Library.Extensions.CollectionEx.ForEach*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the <code class="paramref">source</code> or <code class="paramref">action</code> is null.
+  nameWithType.vb: CollectionEx.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  name.vb: ForEach(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.RandomItem``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Snipster.Library.Extensions.CollectionEx.RandomItem``1(System.Collections.Generic.IEnumerable{``0})
+  id: RandomItem``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.CollectionEx
+  langs:
+  - csharp
+  - vb
+  name: RandomItem<T>(IEnumerable<T>)
+  nameWithType: CollectionEx.RandomItem<T>(IEnumerable<T>)
+  fullName: Snipster.Library.Extensions.CollectionEx.RandomItem<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/CollectionEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: RandomItem
+    path: ../Snipster.Library/Extensions/CollectionEx.cs
+    startLine: 122
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Returns a random element from a collection.
+  example: []
+  syntax:
+    content: public static T RandomItem<T>(this IEnumerable<T> source)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to select from.
+    typeParameters:
+    - id: T
+      description: The type of elements in the collection.
+    return:
+      type: '{T}'
+      description: A random element from the collection.
+    content.vb: Public Shared Function RandomItem(Of T)(source As IEnumerable(Of T)) As T
+  overload: Snipster.Library.Extensions.CollectionEx.RandomItem*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the <code class="paramref">source</code> is null.
+  nameWithType.vb: CollectionEx.RandomItem(Of T)(IEnumerable(Of T))
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.RandomItem(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: RandomItem(Of T)(IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.MostCommon``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Snipster.Library.Extensions.CollectionEx.MostCommon``1(System.Collections.Generic.IEnumerable{``0})
+  id: MostCommon``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.CollectionEx
+  langs:
+  - csharp
+  - vb
+  name: MostCommon<T>(IEnumerable<T>)
+  nameWithType: CollectionEx.MostCommon<T>(IEnumerable<T>)
+  fullName: Snipster.Library.Extensions.CollectionEx.MostCommon<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/CollectionEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: MostCommon
+    path: ../Snipster.Library/Extensions/CollectionEx.cs
+    startLine: 148
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Returns the most frequent item in the collection.
+  example: []
+  syntax:
+    content: public static T MostCommon<T>(this IEnumerable<T> source)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to analyze.
+    typeParameters:
+    - id: T
+      description: The type of elements in the collection.
+    return:
+      type: '{T}'
+      description: The most common item in the collection.
+    content.vb: Public Shared Function MostCommon(Of T)(source As IEnumerable(Of T)) As T
+  overload: Snipster.Library.Extensions.CollectionEx.MostCommon*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the <code class="paramref">source</code> is null.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the <code class="paramref">source</code> contains no elements.
+  nameWithType.vb: CollectionEx.MostCommon(Of T)(IEnumerable(Of T))
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.MostCommon(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: MostCommon(Of T)(IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.LeastCommon``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Snipster.Library.Extensions.CollectionEx.LeastCommon``1(System.Collections.Generic.IEnumerable{``0})
+  id: LeastCommon``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.CollectionEx
+  langs:
+  - csharp
+  - vb
+  name: LeastCommon<T>(IEnumerable<T>)
+  nameWithType: CollectionEx.LeastCommon<T>(IEnumerable<T>)
+  fullName: Snipster.Library.Extensions.CollectionEx.LeastCommon<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/CollectionEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: LeastCommon
+    path: ../Snipster.Library/Extensions/CollectionEx.cs
+    startLine: 177
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Returns the least frequent item in the collection.
+  example: []
+  syntax:
+    content: public static T LeastCommon<T>(this IEnumerable<T> source)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to analyze.
+    typeParameters:
+    - id: T
+      description: The type of elements in the collection.
+    return:
+      type: '{T}'
+      description: The least common item in the collection.
+    content.vb: Public Shared Function LeastCommon(Of T)(source As IEnumerable(Of T)) As T
+  overload: Snipster.Library.Extensions.CollectionEx.LeastCommon*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the <code class="paramref">source</code> is null.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the <code class="paramref">source</code> contains no elements.
+  nameWithType.vb: CollectionEx.LeastCommon(Of T)(IEnumerable(Of T))
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.LeastCommon(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: LeastCommon(Of T)(IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.ExceptSafe``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Snipster.Library.Extensions.CollectionEx.ExceptSafe``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
+  id: ExceptSafe``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.CollectionEx
+  langs:
+  - csharp
+  - vb
+  name: ExceptSafe<T>(IEnumerable<T>, IEnumerable<T>)
+  nameWithType: CollectionEx.ExceptSafe<T>(IEnumerable<T>, IEnumerable<T>)
+  fullName: Snipster.Library.Extensions.CollectionEx.ExceptSafe<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/CollectionEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: ExceptSafe
+    path: ../Snipster.Library/Extensions/CollectionEx.cs
+    startLine: 201
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Compares two collections and returns elements only in the first.
+  example: []
+  syntax:
+    content: public static IEnumerable<T> ExceptSafe<T>(this IEnumerable<T> source, IEnumerable<T> other)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The first collection to compare.
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The second collection to compare against.
+    typeParameters:
+    - id: T
+      description: The type of elements in the collections.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing elements that are in the first collection but not in the second.
+    content.vb: Public Shared Function ExceptSafe(Of T)(source As IEnumerable(Of T), other As IEnumerable(Of T)) As IEnumerable(Of T)
+  overload: Snipster.Library.Extensions.CollectionEx.ExceptSafe*
+  nameWithType.vb: CollectionEx.ExceptSafe(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.ExceptSafe(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ExceptSafe(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+- uid: Snipster.Library.Extensions.CollectionEx.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Snipster.Library.Extensions.CollectionEx.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  id: Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Snipster.Library.Extensions.CollectionEx
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<T>(IEnumerable<T>)
+  nameWithType: CollectionEx.Shuffle<T>(IEnumerable<T>)
+  fullName: Snipster.Library.Extensions.CollectionEx.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Extensions/CollectionEx.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: Shuffle
+    path: ../Snipster.Library/Extensions/CollectionEx.cs
+    startLine: 214
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Extensions
+  summary: Shuffles the collection randomly.
+  example: []
+  syntax:
+    content: public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to shuffle.
+    typeParameters:
+    - id: T
+      description: The type of elements in the collection.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing the elements of the original collection in random order.
+    content.vb: Public Shared Function Shuffle(Of T)(source As IEnumerable(Of T)) As IEnumerable(Of T)
+  overload: Snipster.Library.Extensions.CollectionEx.Shuffle*
+  nameWithType.vb: CollectionEx.Shuffle(Of T)(IEnumerable(Of T))
+  fullName.vb: Snipster.Library.Extensions.CollectionEx.Shuffle(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Shuffle(Of T)(IEnumerable(Of T))
+references:
+- uid: Snipster.Library.Extensions
+  commentId: N:Snipster.Library.Extensions
+  href: Snipster.html
+  name: Snipster.Library.Extensions
+  nameWithType: Snipster.Library.Extensions
+  fullName: Snipster.Library.Extensions
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Snipster.Library.Extensions.CollectionEx.ChunkBy*
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.ChunkBy
+  href: Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ChunkBy__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  name: ChunkBy
+  nameWithType: CollectionEx.ChunkBy
+  fullName: Snipster.Library.Extensions.CollectionEx.ChunkBy
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{{T}}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEnumerable<T>>
+  nameWithType: IEnumerable<IEnumerable<T>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<T>>
+  nameWithType.vb: IEnumerable(Of IEnumerable(Of T))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IEnumerable(Of IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary*
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.ToSafeDictionary
+  href: Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ToSafeDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__
+  name: ToSafeDictionary
+  nameWithType: CollectionEx.ToSafeDictionary
+  fullName: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary
+- uid: System.Collections.Generic.IEnumerable{{TSource}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TSource>
+  nameWithType: IEnumerable<TSource>
+  fullName: System.Collections.Generic.IEnumerable<TSource>
+  nameWithType.vb: IEnumerable(Of TSource)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TSource)
+  name.vb: IEnumerable(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TSource
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+- uid: System.Func{{TSource},{TKey}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TSource, TKey>
+  nameWithType: Func<TSource, TKey>
+  fullName: System.Func<TSource, TKey>
+  nameWithType.vb: Func(Of TSource, TKey)
+  fullName.vb: System.Func(Of TSource, TKey)
+  name.vb: Func(Of TSource, TKey)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: )
+- uid: System.Func{{TSource},{TValue}}
+  commentId: T:System.Func{``0,``2}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TSource, TValue>
+  nameWithType: Func<TSource, TValue>
+  fullName: System.Func<TSource, TValue>
+  nameWithType.vb: Func(Of TSource, TValue)
+  fullName.vb: System.Func(Of TSource, TValue)
+  name.vb: Func(Of TSource, TValue)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.Dictionary{{TKey},{TValue}}
+  commentId: T:System.Collections.Generic.Dictionary{``1,``2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Snipster.Library.Extensions.CollectionEx.ForEach*
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.ForEach
+  href: Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  name: ForEach
+  nameWithType: CollectionEx.ForEach
+  fullName: Snipster.Library.Extensions.CollectionEx.ForEach
+- uid: System.Action{{T}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Snipster.Library.Extensions.CollectionEx.RandomItem*
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.RandomItem
+  href: Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_RandomItem__1_System_Collections_Generic_IEnumerable___0__
+  name: RandomItem
+  nameWithType: CollectionEx.RandomItem
+  fullName: Snipster.Library.Extensions.CollectionEx.RandomItem
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Snipster.Library.Extensions.CollectionEx.MostCommon*
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.MostCommon
+  href: Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_MostCommon__1_System_Collections_Generic_IEnumerable___0__
+  name: MostCommon
+  nameWithType: CollectionEx.MostCommon
+  fullName: Snipster.Library.Extensions.CollectionEx.MostCommon
+- uid: Snipster.Library.Extensions.CollectionEx.LeastCommon*
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.LeastCommon
+  href: Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_LeastCommon__1_System_Collections_Generic_IEnumerable___0__
+  name: LeastCommon
+  nameWithType: CollectionEx.LeastCommon
+  fullName: Snipster.Library.Extensions.CollectionEx.LeastCommon
+- uid: Snipster.Library.Extensions.CollectionEx.ExceptSafe*
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.ExceptSafe
+  href: Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_ExceptSafe__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__
+  name: ExceptSafe
+  nameWithType: CollectionEx.ExceptSafe
+  fullName: Snipster.Library.Extensions.CollectionEx.ExceptSafe
+- uid: Snipster.Library.Extensions.CollectionEx.Shuffle*
+  commentId: Overload:Snipster.Library.Extensions.CollectionEx.Shuffle
+  href: Snipster.Library.Extensions.CollectionEx.html#Snipster_Library_Extensions_CollectionEx_Shuffle__1_System_Collections_Generic_IEnumerable___0__
+  name: Shuffle
+  nameWithType: CollectionEx.Shuffle
+  fullName: Snipster.Library.Extensions.CollectionEx.Shuffle

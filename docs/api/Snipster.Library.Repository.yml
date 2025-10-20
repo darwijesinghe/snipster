@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Repository
+  commentId: N:Snipster.Library.Repository
+  id: Snipster.Library.Repository
+  children:
+  - Snipster.Library.Repository.GenericRepository`1
+  - Snipster.Library.Repository.IGenericRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Snipster.Library.Repository
+  nameWithType: Snipster.Library.Repository
+  fullName: Snipster.Library.Repository
+  type: Namespace
+  assemblies:
+  - Snipster.Library
+references:
+- uid: Snipster.Library.Repository.GenericRepository`1
+  commentId: T:Snipster.Library.Repository.GenericRepository`1
+  href: Snipster.Library.Repository.GenericRepository-1.html
+  name: GenericRepository<TEntity>
+  nameWithType: GenericRepository<TEntity>
+  fullName: Snipster.Library.Repository.GenericRepository<TEntity>
+  nameWithType.vb: GenericRepository(Of TEntity)
+  fullName.vb: Snipster.Library.Repository.GenericRepository(Of TEntity)
+  name.vb: GenericRepository(Of TEntity)
+  spec.csharp:
+  - uid: Snipster.Library.Repository.GenericRepository`1
+    name: GenericRepository
+    href: Snipster.Library.Repository.GenericRepository-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Snipster.Library.Repository.GenericRepository`1
+    name: GenericRepository
+    href: Snipster.Library.Repository.GenericRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Snipster.Library.Repository.IGenericRepository`1
+  commentId: T:Snipster.Library.Repository.IGenericRepository`1
+  href: Snipster.Library.Repository.IGenericRepository-1.html
+  name: IGenericRepository<TEntity>
+  nameWithType: IGenericRepository<TEntity>
+  fullName: Snipster.Library.Repository.IGenericRepository<TEntity>
+  nameWithType.vb: IGenericRepository(Of TEntity)
+  fullName.vb: Snipster.Library.Repository.IGenericRepository(Of TEntity)
+  name.vb: IGenericRepository(Of TEntity)
+  spec.csharp:
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Snipster.Library.Repository.IGenericRepository`1
+    name: IGenericRepository
+    href: Snipster.Library.Repository.IGenericRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )

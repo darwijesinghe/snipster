@@ -63,7 +63,7 @@ namespace Snipster.Library.Helpers
         }
 
         /// <summary>
-        /// Exports a collection of data to an Excel file written to the provided memory stream, using the specified column definitions and export options.
+        /// Exports a collection of data to a provided memory stream as an Excel file, using the specified column definitions and export options.
         /// </summary>
         /// <param name="data">The collection of data to export.</param>
         /// <param name="columns">The list of column definitions specifying how to map and format the data.</param>

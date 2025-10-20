@@ -1,0 +1,2030 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snipster.Library.Cache.CacheService
+  commentId: T:Snipster.Library.Cache.CacheService
+  id: CacheService
+  parent: Snipster.Library.Cache
+  children:
+  - Snipster.Library.Cache.CacheService.#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Logging.ILogger{Snipster.Library.Cache.CacheService})
+  - Snipster.Library.Cache.CacheService.RemoveCache(System.String)
+  - Snipster.Library.Cache.CacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  - Snipster.Library.Cache.CacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  - Snipster.Library.Cache.CacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  langs:
+  - csharp
+  - vb
+  name: CacheService
+  nameWithType: CacheService
+  fullName: Snipster.Library.Cache.CacheService
+  type: Class
+  source:
+    remote:
+      path: Snipster.Library/Cache/CacheService.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: CacheService
+    path: ../Snipster.Library/Cache/CacheService.cs
+    startLine: 10
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Cache
+  summary: Provides an implementation of <xref href="Snipster.Library.Cache.ICacheService" data-throw-if-not-resolved="false"></xref> that handles in-memory caching functionality.
+  example: []
+  syntax:
+    content: 'public sealed class CacheService : ICacheService'
+    content.vb: Public NotInheritable Class CacheService Implements ICacheService
+  inheritance:
+  - System.Object
+  implements:
+  - Snipster.Library.Cache.ICacheService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Snipster.Library.Cache.CacheService.Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1
+  - Snipster.Library.Cache.CacheService.Snipster.Library.Helpers.ObjectFx.DeepClone``1
+  - System.Object.Snipster.Library.Extensions.JsonEx.ToJson(Newtonsoft.Json.Formatting)
+  - System.Object.Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.String)
+  - System.Object.Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.String,System.Object)
+  - System.Object.Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.String)
+- uid: Snipster.Library.Cache.CacheService.#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Logging.ILogger{Snipster.Library.Cache.CacheService})
+  commentId: M:Snipster.Library.Cache.CacheService.#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Logging.ILogger{Snipster.Library.Cache.CacheService})
+  id: '#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Logging.ILogger{Snipster.Library.Cache.CacheService})'
+  parent: Snipster.Library.Cache.CacheService
+  langs:
+  - csharp
+  - vb
+  name: CacheService(IMemoryCache, ILogger<CacheService>)
+  nameWithType: CacheService.CacheService(IMemoryCache, ILogger<CacheService>)
+  fullName: Snipster.Library.Cache.CacheService.CacheService(Microsoft.Extensions.Caching.Memory.IMemoryCache, Microsoft.Extensions.Logging.ILogger<Snipster.Library.Cache.CacheService>)
+  type: Constructor
+  source:
+    remote:
+      path: Snipster.Library/Cache/CacheService.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: .ctor
+    path: ../Snipster.Library/Cache/CacheService.cs
+    startLine: 23
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Cache
+  summary: Initializes a new instance of the <xref href="Snipster.Library.Cache.CacheService" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public CacheService(IMemoryCache cache, ILogger<CacheService> logger)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Memory.IMemoryCache
+      description: The in-memory cache instance.
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Snipster.Library.Cache.CacheService}
+      description: The logger instance for logging cache operations.
+    content.vb: Public Sub New(cache As IMemoryCache, logger As ILogger(Of CacheService))
+  overload: Snipster.Library.Cache.CacheService.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the logger is null.
+  nameWithType.vb: CacheService.New(IMemoryCache, ILogger(Of CacheService))
+  fullName.vb: Snipster.Library.Cache.CacheService.New(Microsoft.Extensions.Caching.Memory.IMemoryCache, Microsoft.Extensions.Logging.ILogger(Of Snipster.Library.Cache.CacheService))
+  name.vb: New(IMemoryCache, ILogger(Of CacheService))
+- uid: Snipster.Library.Cache.CacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  commentId: M:Snipster.Library.Cache.CacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  id: SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  parent: Snipster.Library.Cache.CacheService
+  langs:
+  - csharp
+  - vb
+  name: SetCacheAsync<T>(string, Func<Task<T>>)
+  nameWithType: CacheService.SetCacheAsync<T>(string, Func<Task<T>>)
+  fullName: Snipster.Library.Cache.CacheService.SetCacheAsync<T>(string, System.Func<System.Threading.Tasks.Task<T>>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Cache/CacheService.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SetCacheAsync
+    path: ../Snipster.Library/Cache/CacheService.cs
+    startLine: 30
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Cache
+  summary: >-
+    Retrieves data from the cache or loads it using the provided function if not cached.
+
+    Data is cached for 5 minutes.
+  example: []
+  syntax:
+    content: 'public Task<T?> SetCacheAsync<T>(string key, Func<Task<T>> create) where T : class'
+    parameters:
+    - id: key
+      type: System.String
+      description: The cache key.
+    - id: create
+      type: System.Func{System.Threading.Tasks.Task{{T}}}
+      description: An asynchronous function to fetch data if not in cache.
+    typeParameters:
+    - id: T
+      description: The type of data to cache.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: The cached or newly fetched data; null on failure.
+    content.vb: Public Function SetCacheAsync(Of T As Class)(key As String, create As Func(Of Task(Of T))) As Task(Of T)
+  overload: Snipster.Library.Cache.CacheService.SetCacheAsync*
+  implements:
+  - Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{{T}}})
+  nameWithType.vb: CacheService.SetCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  fullName.vb: Snipster.Library.Cache.CacheService.SetCacheAsync(Of T)(String, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  name.vb: SetCacheAsync(Of T)(String, Func(Of Task(Of T)))
+- uid: Snipster.Library.Cache.CacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  commentId: M:Snipster.Library.Cache.CacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  id: SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  parent: Snipster.Library.Cache.CacheService
+  langs:
+  - csharp
+  - vb
+  name: SetLongCacheAsync<T>(string, Func<Task<T>>)
+  nameWithType: CacheService.SetLongCacheAsync<T>(string, Func<Task<T>>)
+  fullName: Snipster.Library.Cache.CacheService.SetLongCacheAsync<T>(string, System.Func<System.Threading.Tasks.Task<T>>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Cache/CacheService.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SetLongCacheAsync
+    path: ../Snipster.Library/Cache/CacheService.cs
+    startLine: 36
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Cache
+  summary: >-
+    Retrieves data from the cache or loads it using the provided function if not cached.
+
+    Data is cached for 60 minutes.
+  example: []
+  syntax:
+    content: 'public Task<T?> SetLongCacheAsync<T>(string key, Func<Task<T>> create) where T : class'
+    parameters:
+    - id: key
+      type: System.String
+      description: The cache key.
+    - id: create
+      type: System.Func{System.Threading.Tasks.Task{{T}}}
+      description: An asynchronous function to fetch data if not in cache.
+    typeParameters:
+    - id: T
+      description: The type of data to cache.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: The cached or newly fetched data; null on failure.
+    content.vb: Public Function SetLongCacheAsync(Of T As Class)(key As String, create As Func(Of Task(Of T))) As Task(Of T)
+  overload: Snipster.Library.Cache.CacheService.SetLongCacheAsync*
+  implements:
+  - Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{{T}}})
+  nameWithType.vb: CacheService.SetLongCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  fullName.vb: Snipster.Library.Cache.CacheService.SetLongCacheAsync(Of T)(String, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  name.vb: SetLongCacheAsync(Of T)(String, Func(Of Task(Of T)))
+- uid: Snipster.Library.Cache.CacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  commentId: M:Snipster.Library.Cache.CacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  id: SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  parent: Snipster.Library.Cache.CacheService
+  langs:
+  - csharp
+  - vb
+  name: SetCacheAsync<T>(string, double, Func<Task<T>>)
+  nameWithType: CacheService.SetCacheAsync<T>(string, double, Func<Task<T>>)
+  fullName: Snipster.Library.Cache.CacheService.SetCacheAsync<T>(string, double, System.Func<System.Threading.Tasks.Task<T>>)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Cache/CacheService.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: SetCacheAsync
+    path: ../Snipster.Library/Cache/CacheService.cs
+    startLine: 42
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Cache
+  summary: Retrieves data from the cache or loads it using the provided function if not cached.
+  example: []
+  syntax:
+    content: 'public Task<T?> SetCacheAsync<T>(string key, double duration, Func<Task<T>> create) where T : class'
+    parameters:
+    - id: key
+      type: System.String
+      description: The cache key.
+    - id: duration
+      type: System.Double
+      description: Cache duration in minutes.
+    - id: create
+      type: System.Func{System.Threading.Tasks.Task{{T}}}
+      description: An asynchronous function to fetch data if not in cache.
+    typeParameters:
+    - id: T
+      description: The type of data to cache.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: The cached or newly fetched data; null on failure.
+    content.vb: Public Function SetCacheAsync(Of T As Class)(key As String, duration As Double, create As Func(Of Task(Of T))) As Task(Of T)
+  overload: Snipster.Library.Cache.CacheService.SetCacheAsync*
+  implements:
+  - Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{{T}}})
+  nameWithType.vb: CacheService.SetCacheAsync(Of T)(String, Double, Func(Of Task(Of T)))
+  fullName.vb: Snipster.Library.Cache.CacheService.SetCacheAsync(Of T)(String, Double, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  name.vb: SetCacheAsync(Of T)(String, Double, Func(Of Task(Of T)))
+- uid: Snipster.Library.Cache.CacheService.RemoveCache(System.String)
+  commentId: M:Snipster.Library.Cache.CacheService.RemoveCache(System.String)
+  id: RemoveCache(System.String)
+  parent: Snipster.Library.Cache.CacheService
+  langs:
+  - csharp
+  - vb
+  name: RemoveCache(string)
+  nameWithType: CacheService.RemoveCache(string)
+  fullName: Snipster.Library.Cache.CacheService.RemoveCache(string)
+  type: Method
+  source:
+    remote:
+      path: Snipster.Library/Cache/CacheService.cs
+      branch: dev
+      repo: https://github.com/darwijesinghe/Snipster.git
+    id: RemoveCache
+    path: ../Snipster.Library/Cache/CacheService.cs
+    startLine: 48
+  assemblies:
+  - Snipster.Library
+  namespace: Snipster.Library.Cache
+  summary: Removes a specific entry from the cache.
+  example: []
+  syntax:
+    content: public void RemoveCache(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The cache key to remove.
+    content.vb: Public Sub RemoveCache(key As String)
+  overload: Snipster.Library.Cache.CacheService.RemoveCache*
+  implements:
+  - Snipster.Library.Cache.ICacheService.RemoveCache(System.String)
+  nameWithType.vb: CacheService.RemoveCache(String)
+  fullName.vb: Snipster.Library.Cache.CacheService.RemoveCache(String)
+  name.vb: RemoveCache(String)
+references:
+- uid: Snipster.Library.Cache.ICacheService
+  commentId: T:Snipster.Library.Cache.ICacheService
+  parent: Snipster.Library.Cache
+  href: Snipster.Library.Cache.ICacheService.html
+  name: ICacheService
+  nameWithType: ICacheService
+  fullName: Snipster.Library.Cache.ICacheService
+- uid: Snipster.Library.Cache
+  commentId: N:Snipster.Library.Cache
+  href: Snipster.html
+  name: Snipster.Library.Cache
+  nameWithType: Snipster.Library.Cache
+  fullName: Snipster.Library.Cache
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Cache
+    name: Cache
+    href: Snipster.Library.Cache.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Cache
+    name: Cache
+    href: Snipster.Library.Cache.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Snipster.Library.Cache.CacheService.Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  parent: Snipster.Library.Extensions.Validations.ObjectValEx
+  definition: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  name: IsDefaultValue<CacheService>(CacheService)
+  nameWithType: ObjectValEx.IsDefaultValue<CacheService>(CacheService)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<Snipster.Library.Cache.CacheService>(Snipster.Library.Cache.CacheService)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of CacheService)(CacheService)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of Snipster.Library.Cache.CacheService)(Snipster.Library.Cache.CacheService)
+  name.vb: IsDefaultValue(Of CacheService)(CacheService)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(Snipster.Library.Cache.CacheService)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: <
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    href: Snipster.Library.Cache.CacheService.html
+  - name: '>'
+  - name: (
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    href: Snipster.Library.Cache.CacheService.html
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(Snipster.Library.Cache.CacheService)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    href: Snipster.Library.Cache.CacheService.html
+  - name: )
+  - name: (
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    href: Snipster.Library.Cache.CacheService.html
+  - name: )
+- uid: Snipster.Library.Cache.CacheService.Snipster.Library.Helpers.ObjectFx.DeepClone``1
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  parent: Snipster.Library.Helpers.ObjectFx
+  definition: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  name: DeepClone<CacheService>(CacheService)
+  nameWithType: ObjectFx.DeepClone<CacheService>(CacheService)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<Snipster.Library.Cache.CacheService>(Snipster.Library.Cache.CacheService)
+  nameWithType.vb: ObjectFx.DeepClone(Of CacheService)(CacheService)
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of Snipster.Library.Cache.CacheService)(Snipster.Library.Cache.CacheService)
+  name.vb: DeepClone(Of CacheService)(CacheService)
+  spec.csharp:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(Snipster.Library.Cache.CacheService)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: <
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    href: Snipster.Library.Cache.CacheService.html
+  - name: '>'
+  - name: (
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    href: Snipster.Library.Cache.CacheService.html
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(Snipster.Library.Cache.CacheService)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    href: Snipster.Library.Cache.CacheService.html
+  - name: )
+  - name: (
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    href: Snipster.Library.Cache.CacheService.html
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.JsonEx.ToJson(Newtonsoft.Json.Formatting)
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  parent: Snipster.Library.Extensions.JsonEx
+  definition: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  name: ToJson(object, Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.String)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  parent: Snipster.Library.Extensions.ObjectEx
+  definition: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  name: GetPropertyValue(object, string)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  name.vb: GetPropertyValue(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.String,System.Object)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  parent: Snipster.Library.Extensions.ObjectEx
+  definition: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  name: SetPropertyValue(object, string, object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  parent: Snipster.Library.Extensions.Validations.ObjectValEx
+  definition: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  name: HasProperty(object, string)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  name.vb: HasProperty(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  name: IsDefaultValue<T>(T)
+  nameWithType: ObjectValEx.IsDefaultValue<T>(T)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue<T>(T)
+  nameWithType.vb: ObjectValEx.IsDefaultValue(Of T)(T)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue(Of T)(T)
+  name.vb: IsDefaultValue(Of T)(T)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.IsDefaultValue``1(``0)
+    name: IsDefaultValue
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx
+  commentId: T:Snipster.Library.Extensions.Validations.ObjectValEx
+  parent: Snipster.Library.Extensions.Validations
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html
+  name: ObjectValEx
+  nameWithType: ObjectValEx
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx
+- uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  commentId: M:Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+  href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  name: DeepClone<T>(T)
+  nameWithType: ObjectFx.DeepClone<T>(T)
+  fullName: Snipster.Library.Helpers.ObjectFx.DeepClone<T>(T)
+  nameWithType.vb: ObjectFx.DeepClone(Of T)(T)
+  fullName.vb: Snipster.Library.Helpers.ObjectFx.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+  spec.csharp:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Helpers.ObjectFx.DeepClone``1(``0)
+    name: DeepClone
+    href: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Snipster.Library.Helpers.ObjectFx
+  commentId: T:Snipster.Library.Helpers.ObjectFx
+  parent: Snipster.Library.Helpers
+  href: Snipster.Library.Helpers.ObjectFx.html
+  name: ObjectFx
+  nameWithType: ObjectFx
+  fullName: Snipster.Library.Helpers.ObjectFx
+- uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  commentId: M:Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+  isExternal: true
+  href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  name: ToJson(object, Formatting)
+  nameWithType: JsonEx.ToJson(object, Formatting)
+  fullName: Snipster.Library.Extensions.JsonEx.ToJson(object, Newtonsoft.Json.Formatting)
+  nameWithType.vb: JsonEx.ToJson(Object, Formatting)
+  fullName.vb: Snipster.Library.Extensions.JsonEx.ToJson(Object, Newtonsoft.Json.Formatting)
+  name.vb: ToJson(Object, Formatting)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.JsonEx.ToJson(System.Object,Newtonsoft.Json.Formatting)
+    name: ToJson
+    href: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Newtonsoft.Json.Formatting
+    name: Formatting
+    isExternal: true
+  - name: )
+- uid: Snipster.Library.Extensions.JsonEx
+  commentId: T:Snipster.Library.Extensions.JsonEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.JsonEx.html
+  name: JsonEx
+  nameWithType: JsonEx
+  fullName: Snipster.Library.Extensions.JsonEx
+- uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+  isExternal: true
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  name: GetPropertyValue(object, string)
+  nameWithType: ObjectEx.GetPropertyValue(object, string)
+  fullName: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(object, string)
+  nameWithType.vb: ObjectEx.GetPropertyValue(Object, String)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(Object, String)
+  name.vb: GetPropertyValue(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.GetPropertyValue(System.Object,System.String)
+    name: GetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.ObjectEx
+  commentId: T:Snipster.Library.Extensions.ObjectEx
+  parent: Snipster.Library.Extensions
+  href: Snipster.Library.Extensions.ObjectEx.html
+  name: ObjectEx
+  nameWithType: ObjectEx
+  fullName: Snipster.Library.Extensions.ObjectEx
+- uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  commentId: M:Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+  isExternal: true
+  href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  name: SetPropertyValue(object, string, object)
+  nameWithType: ObjectEx.SetPropertyValue(object, string, object)
+  fullName: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(object, string, object)
+  nameWithType.vb: ObjectEx.SetPropertyValue(Object, String, Object)
+  fullName.vb: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(Object, String, Object)
+  name.vb: SetPropertyValue(Object, String, Object)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.ObjectEx.SetPropertyValue(System.Object,System.String,System.Object)
+    name: SetPropertyValue
+    href: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  commentId: M:Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+  isExternal: true
+  href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  name: HasProperty(object, string)
+  nameWithType: ObjectValEx.HasProperty(object, string)
+  fullName: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(object, string)
+  nameWithType.vb: ObjectValEx.HasProperty(Object, String)
+  fullName.vb: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(Object, String)
+  name.vb: HasProperty(Object, String)
+  spec.csharp:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Extensions.Validations.ObjectValEx.HasProperty(System.Object,System.String)
+    name: HasProperty
+    href: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Snipster.Library.Extensions.Validations
+  commentId: N:Snipster.Library.Extensions.Validations
+  href: Snipster.html
+  name: Snipster.Library.Extensions.Validations
+  nameWithType: Snipster.Library.Extensions.Validations
+  fullName: Snipster.Library.Extensions.Validations
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  - name: .
+  - uid: Snipster.Library.Extensions.Validations
+    name: Validations
+    href: Snipster.Library.Extensions.Validations.html
+- uid: Snipster.Library.Helpers
+  commentId: N:Snipster.Library.Helpers
+  href: Snipster.html
+  name: Snipster.Library.Helpers
+  nameWithType: Snipster.Library.Helpers
+  fullName: Snipster.Library.Helpers
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Helpers
+    name: Helpers
+    href: Snipster.Library.Helpers.html
+- uid: Snipster.Library.Extensions
+  commentId: N:Snipster.Library.Extensions
+  href: Snipster.html
+  name: Snipster.Library.Extensions
+  nameWithType: Snipster.Library.Extensions
+  fullName: Snipster.Library.Extensions
+  spec.csharp:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+  spec.vb:
+  - uid: Snipster
+    name: Snipster
+    href: Snipster.html
+  - name: .
+  - uid: Snipster.Library
+    name: Library
+    href: Snipster.Library.html
+  - name: .
+  - uid: Snipster.Library.Extensions
+    name: Extensions
+    href: Snipster.Library.Extensions.html
+- uid: Snipster.Library.Cache.CacheService
+  commentId: T:Snipster.Library.Cache.CacheService
+  href: Snipster.Library.Cache.CacheService.html
+  name: CacheService
+  nameWithType: CacheService
+  fullName: Snipster.Library.Cache.CacheService
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Snipster.Library.Cache.CacheService.#ctor*
+  commentId: Overload:Snipster.Library.Cache.CacheService.#ctor
+  href: Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService__ctor_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_Extensions_Logging_ILogger_Snipster_Library_Cache_CacheService__
+  name: CacheService
+  nameWithType: CacheService.CacheService
+  fullName: Snipster.Library.Cache.CacheService.CacheService
+  nameWithType.vb: CacheService.New
+  fullName.vb: Snipster.Library.Cache.CacheService.New
+  name.vb: New
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  commentId: T:Microsoft.Extensions.Caching.Memory.IMemoryCache
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  name: IMemoryCache
+  nameWithType: IMemoryCache
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache
+- uid: Microsoft.Extensions.Logging.ILogger{Snipster.Library.Cache.CacheService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Snipster.Library.Cache.CacheService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<CacheService>
+  nameWithType: ILogger<CacheService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Snipster.Library.Cache.CacheService>
+  nameWithType.vb: ILogger(Of CacheService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Snipster.Library.Cache.CacheService)
+  name.vb: ILogger(Of CacheService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    href: Snipster.Library.Cache.CacheService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Snipster.Library.Cache.CacheService
+    name: CacheService
+    href: Snipster.Library.Cache.CacheService.html
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory
+  commentId: N:Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Memory
+  nameWithType: Microsoft.Extensions.Caching.Memory
+  fullName: Microsoft.Extensions.Caching.Memory
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Snipster.Library.Cache.CacheService.SetCacheAsync*
+  commentId: Overload:Snipster.Library.Cache.CacheService.SetCacheAsync
+  href: Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  name: SetCacheAsync
+  nameWithType: CacheService.SetCacheAsync
+  fullName: Snipster.Library.Cache.CacheService.SetCacheAsync
+- uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{{T}}})
+  commentId: M:Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  parent: Snipster.Library.Cache.ICacheService
+  definition: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  name: SetCacheAsync<T>(string, Func<Task<T>>)
+  nameWithType: ICacheService.SetCacheAsync<T>(string, Func<Task<T>>)
+  fullName: Snipster.Library.Cache.ICacheService.SetCacheAsync<T>(string, System.Func<System.Threading.Tasks.Task<T>>)
+  nameWithType.vb: ICacheService.SetCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  fullName.vb: Snipster.Library.Cache.ICacheService.SetCacheAsync(Of T)(String, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  name.vb: SetCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  spec.csharp:
+  - uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Func{System.Threading.Tasks.Task{{T}}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{``0}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Task<T>>
+  nameWithType: Func<Task<T>>
+  fullName: System.Func<System.Threading.Tasks.Task<T>>
+  nameWithType.vb: Func(Of Task(Of T))
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task(Of T))
+  name.vb: Func(Of Task(Of T))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  commentId: M:Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  isExternal: true
+  href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  name: SetCacheAsync<T>(string, Func<Task<T>>)
+  nameWithType: ICacheService.SetCacheAsync<T>(string, Func<Task<T>>)
+  fullName: Snipster.Library.Cache.ICacheService.SetCacheAsync<T>(string, System.Func<System.Threading.Tasks.Task<T>>)
+  nameWithType.vb: ICacheService.SetCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  fullName.vb: Snipster.Library.Cache.ICacheService.SetCacheAsync(Of T)(String, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  name.vb: SetCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  spec.csharp:
+  - uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Snipster.Library.Cache.CacheService.SetLongCacheAsync*
+  commentId: Overload:Snipster.Library.Cache.CacheService.SetLongCacheAsync
+  href: Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  name: SetLongCacheAsync
+  nameWithType: CacheService.SetLongCacheAsync
+  fullName: Snipster.Library.Cache.CacheService.SetLongCacheAsync
+- uid: Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{{T}}})
+  commentId: M:Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  parent: Snipster.Library.Cache.ICacheService
+  definition: Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  name: SetLongCacheAsync<T>(string, Func<Task<T>>)
+  nameWithType: ICacheService.SetLongCacheAsync<T>(string, Func<Task<T>>)
+  fullName: Snipster.Library.Cache.ICacheService.SetLongCacheAsync<T>(string, System.Func<System.Threading.Tasks.Task<T>>)
+  nameWithType.vb: ICacheService.SetLongCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  fullName.vb: Snipster.Library.Cache.ICacheService.SetLongCacheAsync(Of T)(String, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  name.vb: SetLongCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  spec.csharp:
+  - uid: Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetLongCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetLongCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: )
+- uid: Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  commentId: M:Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+  isExternal: true
+  href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  name: SetLongCacheAsync<T>(string, Func<Task<T>>)
+  nameWithType: ICacheService.SetLongCacheAsync<T>(string, Func<Task<T>>)
+  fullName: Snipster.Library.Cache.ICacheService.SetLongCacheAsync<T>(string, System.Func<System.Threading.Tasks.Task<T>>)
+  nameWithType.vb: ICacheService.SetLongCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  fullName.vb: Snipster.Library.Cache.ICacheService.SetLongCacheAsync(Of T)(String, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  name.vb: SetLongCacheAsync(Of T)(String, Func(Of Task(Of T)))
+  spec.csharp:
+  - uid: Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetLongCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetLongCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: )
+- uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{{T}}})
+  commentId: M:Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  parent: Snipster.Library.Cache.ICacheService
+  definition: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Double_System_Func_System_Threading_Tasks_Task___0___
+  name: SetCacheAsync<T>(string, double, Func<Task<T>>)
+  nameWithType: ICacheService.SetCacheAsync<T>(string, double, Func<Task<T>>)
+  fullName: Snipster.Library.Cache.ICacheService.SetCacheAsync<T>(string, double, System.Func<System.Threading.Tasks.Task<T>>)
+  nameWithType.vb: ICacheService.SetCacheAsync(Of T)(String, Double, Func(Of Task(Of T)))
+  fullName.vb: Snipster.Library.Cache.ICacheService.SetCacheAsync(Of T)(String, Double, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  name.vb: SetCacheAsync(Of T)(String, Double, Func(Of Task(Of T)))
+  spec.csharp:
+  - uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Double_System_Func_System_Threading_Tasks_Task___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Double_System_Func_System_Threading_Tasks_Task___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  commentId: M:Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+  isExternal: true
+  href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Double_System_Func_System_Threading_Tasks_Task___0___
+  name: SetCacheAsync<T>(string, double, Func<Task<T>>)
+  nameWithType: ICacheService.SetCacheAsync<T>(string, double, Func<Task<T>>)
+  fullName: Snipster.Library.Cache.ICacheService.SetCacheAsync<T>(string, double, System.Func<System.Threading.Tasks.Task<T>>)
+  nameWithType.vb: ICacheService.SetCacheAsync(Of T)(String, Double, Func(Of Task(Of T)))
+  fullName.vb: Snipster.Library.Cache.ICacheService.SetCacheAsync(Of T)(String, Double, System.Func(Of System.Threading.Tasks.Task(Of T)))
+  name.vb: SetCacheAsync(Of T)(String, Double, Func(Of Task(Of T)))
+  spec.csharp:
+  - uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Double_System_Func_System_Threading_Tasks_Task___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})
+    name: SetCacheAsync
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Double_System_Func_System_Threading_Tasks_Task___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: )
+- uid: Snipster.Library.Cache.CacheService.RemoveCache*
+  commentId: Overload:Snipster.Library.Cache.CacheService.RemoveCache
+  href: Snipster.Library.Cache.CacheService.html#Snipster_Library_Cache_CacheService_RemoveCache_System_String_
+  name: RemoveCache
+  nameWithType: CacheService.RemoveCache
+  fullName: Snipster.Library.Cache.CacheService.RemoveCache
+- uid: Snipster.Library.Cache.ICacheService.RemoveCache(System.String)
+  commentId: M:Snipster.Library.Cache.ICacheService.RemoveCache(System.String)
+  parent: Snipster.Library.Cache.ICacheService
+  isExternal: true
+  href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_RemoveCache_System_String_
+  name: RemoveCache(string)
+  nameWithType: ICacheService.RemoveCache(string)
+  fullName: Snipster.Library.Cache.ICacheService.RemoveCache(string)
+  nameWithType.vb: ICacheService.RemoveCache(String)
+  fullName.vb: Snipster.Library.Cache.ICacheService.RemoveCache(String)
+  name.vb: RemoveCache(String)
+  spec.csharp:
+  - uid: Snipster.Library.Cache.ICacheService.RemoveCache(System.String)
+    name: RemoveCache
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_RemoveCache_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Snipster.Library.Cache.ICacheService.RemoveCache(System.String)
+    name: RemoveCache
+    href: Snipster.Library.Cache.ICacheService.html#Snipster_Library_Cache_ICacheService_RemoveCache_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

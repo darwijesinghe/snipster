@@ -1,7 +1,7 @@
 ﻿name: Build & Publish DocFX to GitHub Pages
 
 on:
-  pull_request:
+  push:
     branches: [ main ]
 
 permissions:

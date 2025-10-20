@@ -19,8 +19,8 @@ We welcome:
 1. **Fork** the repository
 2. **Clone** your fork
    ```bash
-   git clone https://github.com/your-username/Snipster.git
-   cd Snipster
+   git clone https://github.com/darwijesinghe/snipster.git
+   cd snipster
    ```
 3. **Create a new branch** for your changes
    ```bash
@@ -69,6 +69,6 @@ Please be respectful and inclusive in all interactions.
 
 ## Questions?
 
-Reach out via [dar.dev.mail@gmail.com](mailto:dar.dev.mail@gmail.com) or [GitHub Discussions](https://github.com/darwijesinghe/Snipster/discussions).
+Reach out via [dar.dev.mail@gmail.com](mailto:dar.dev.mail@gmail.com) or [GitHub Discussions](https://github.com/darwijesinghe/snipster/discussions).
 
 Happy contributing!

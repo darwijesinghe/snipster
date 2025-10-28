@@ -56,3 +56,26 @@ enhanced network helpers, and fixed typo issues.
     - `HasInternetConnectionAsync()`
 - Object helpers
     - `DeepClone<T>(T)`
+
+## [v1.0.5] - 2025-10-27
+### Summary
+The `IsValidEmail` method now handles a wider range of valid email formats, including internationalized domain names.
+The `IsStrongPassword` method has been enhanced to recognize Unicode scripts and provide more comprehensive strength validation.
+
+### Changed
+- `IsValidEmail`
+
+    - Added support for internationalized (Unicode) email addresses.
+    - Improved regex validation to reject invalid formats (e.g. consecutive dots, invalid characters).
+    - Retains built-in MailAddress parsing for RFC compliance.
+
+- `IsStrongPassword`
+
+    - Added full Unicode support, including non-Latin scripts such as Japanese and Chinese.
+    - Enhanced strength criteria to handle both cased (A–Z/a–z) and uncased scripts correctly.
+    - Improved regex detection for digits, symbols, and punctuation characters.
+
+- Other
+
+    - Improved test coverage for edge cases and Unicode-based inputs.
+    - Minor documentation refinements for DocFX and IntelliSense clarity.

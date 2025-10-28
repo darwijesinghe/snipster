@@ -57,7 +57,7 @@ enhanced network helpers, and fixed typo issues.
 - Object helpers
     - `DeepClone<T>(T)`
 
-## [v1.0.5] - 2025-10-27
+## [v1.0.5] - 2025-10-28
 ### Summary
 The `IsValidEmail` method now handles a wider range of valid email formats, including internationalized domain names.
 The `IsStrongPassword` method has been enhanced to recognize Unicode scripts and provide more comprehensive strength validation.
@@ -72,7 +72,7 @@ The `IsStrongPassword` method has been enhanced to recognize Unicode scripts and
 - `IsStrongPassword`
 
     - Added full Unicode support, including non-Latin scripts such as Japanese and Chinese.
-    - Enhanced strength criteria to handle both cased (A–Z/a–z) and uncased scripts correctly.
+    - Enhanced strength criteria to handle both cased (Aâ€“Z/aâ€“z) and uncased scripts correctly.
     - Improved regex detection for digits, symbols, and punctuation characters.
 
 - Other

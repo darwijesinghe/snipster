@@ -45,16 +45,16 @@ Explore detailed API references, usage guides, and practical examples in the off
 
 ### Validation Extensions
 
-| Category            | Method Highlights                                                                                    | Description                                           |
-|---------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| **CollectionValEx** | `IsNullOrEmpty<T>()` `HasDuplicates<T>()`                                                            | Check if a collection is null/empty or has duplicates |
-| **CreditCardValEx** | `IsValidCreditCard()`                                                                                | Validates if a string is a valid card number          |
-| **DateTimeValEx**   | `IsToday()` `IsFuture()` `IsPast()` `IsWeekend()` `IsWeekday()` `IsValidDate(format)`                | Various date validation helpers                       |
-| **JsonValEx**       | `IsValidJson()`                                                                                      | Checks if a string is valid JSON                      |
-| **SecurityValEx**   | `IsValidEmail()` `IsStrongPassword(minLength)`                                                       | Email, password validations                           |
-| **StringValEx**     | `IsContainsIgnoreCase()` `IsValidatePhoneNumber()` `IsNumeric()` `IsAlphabetic()` `IsAlphanumeric()` | String-related validations                            |
-| **NetworkValEx**    | `IsValidIPv4()` `IsValidIPv6()` `IsValidWebAddress()`                                                | Network-related validations                           |
-| **ObjectValEx**     | `IsDefaultValue()` `HasProperty()`                                                                   | Object-related validations                            |
+| Category            | Method Highlights                                                                                 | Description                                           |
+|---------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| **CollectionValEx** | `IsNullOrEmpty<T>()` `HasDuplicates<T>()`                                                         | Check if a collection is null/empty or has duplicates |
+| **CreditCardValEx** | `IsValidCreditCard()`                                                                             | Validates if a string is a valid card number          |
+| **DateTimeValEx**   | `IsToday()` `IsFuture()` `IsPast()` `IsWeekend()` `IsWeekday()` `IsValidDate(format)`             | Various date validation helpers                       |
+| **JsonValEx**       | `IsValidJson()`                                                                                   | Checks if a string is valid JSON                      |
+| **SecurityValEx**   | `IsValidEmail()` `IsStrongPassword(minLength)`                                                    | Email, password validations                           |
+| **StringValEx**     | `IsContainsIgnoreCase()` `IsValidPhoneNumber()` `IsNumeric()` `IsAlphabetic()` `IsAlphanumeric()` | String-related validations                            |
+| **NetworkValEx**    | `IsValidIPv4()` `IsValidIPv6()` `IsValidWebAddress()`                                             | Network-related validations                           |
+| **ObjectValEx**     | `IsDefaultValue()` `HasProperty()`                                                                | Object-related validations                            |
 
 ---
 

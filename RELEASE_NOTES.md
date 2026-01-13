@@ -79,3 +79,36 @@ The `IsStrongPassword` method has been enhanced to recognize Unicode scripts and
 
     - Improved test coverage for edge cases and Unicode-based inputs.
     - Minor documentation refinements for DocFX and IntelliSense clarity.
+
+## [v1.0.6] - 2026-01-13
+### Summary
+The `IsValidPhoneNumber` method now accepts raw user input, validates it against regional rules, and normalizes it to E.164 format. The `IsNumeric` method has been restricted to recognize only ASCII digits. The `IsAlphabetic` method has been restricted to recognize only English alphabetic characters. The `IsAlphanumeric` method has been restricted to recognize only English letters and digits.
+
+### Changed
+- `IsValidPhoneNumber`
+
+    - Accepts raw user input (e.g., "+94 70 229 3007", "0702293007").
+    - Parses common formatting characters (handles spaces, (), -, etc.).
+    - Validates numbers using regional rules.
+    - Requires an ISO region code (e.g., "LK", "US") when the number does not include a + prefix.
+    - Outputs the normalized phone number in E.164 format for database storage and SMS usage.
+
+- `IsNumeric`
+
+    - Allows only ASCII digits (0–9).
+    - Does not allow whitespace, signs (+, -), decimals, or Unicode digits.
+
+- `IsAlphabetic`
+
+    - Allows only English alphabetic letters (A–Z, a–z).
+    - Does not allow accents (e.g., é, ü), spaces, or Unicode letters.
+
+- `IsAlphanumeric`
+
+    - Allows only English letters and digits (A–Z, a–z, 0–9).
+    - Does not allow underscores, hyphens, spaces, Unicode characters, or symbols.
+
+- Other
+
+    - Improved test coverage for edge cases.
+    - Minor documentation refinements for DocFX and IntelliSense clarity.

@@ -147,7 +147,7 @@ namespace Snipster.Library.Helpers
             }
             catch (Exception)
             {
-                // handle exceptions as needed, e.g., log them
+                // handle exceptions as needed, e.g. log them
             }
 
             return size;

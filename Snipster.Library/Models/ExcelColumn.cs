@@ -22,7 +22,7 @@ namespace Snipster.Library.Models
         public string HeaderText               { get; set; }
 
         /// <summary>
-        /// Gets or sets the data type of the column (e.g., typeof(int), typeof(string), typeof(DateTime)).
+        /// Gets or sets the data type of the column (e.g. typeof(int), typeof(string), typeof(DateTime)).
         /// </summary>
         public Type DataType                   { get; set; }
 
@@ -32,7 +32,7 @@ namespace Snipster.Library.Models
         public double Width                    { get; set; }
 
         /// <summary>
-        /// Gets or sets the Excel format string to apply to the column (e.g., "#,##0.00" for numbers, "yyyy-MM-dd" for dates).
+        /// Gets or sets the Excel format string to apply to the column (e.g. "#,##0.00" for numbers, "yyyy-MM-dd" for dates).
         /// </summary>
         public string Format                   { get; set; }
 

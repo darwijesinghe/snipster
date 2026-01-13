@@ -3,7 +3,7 @@
 [![NuGet version](https://img.shields.io/nuget/v/Snipster.svg)](https://www.nuget.org/packages/Snipster/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/Snipster.svg)](https://www.nuget.org/packages/Snipster/)
 [![GitHub license](https://img.shields.io/github/license/darwijesinghe/snipster.svg)](https://opensource.org/licenses/MIT)
-[![Maintenance](https://img.shields.io/maintenance/yes/2025.svg)](https://github.com/darwijesinghe/snipster/commits/main)
+[![Maintenance](https://img.shields.io/maintenance/yes/2026.svg)](https://github.com/darwijesinghe/snipster/commits/main)
 
 Snipster is a lightweight, open-source .NET utility library that provides a comprehensive collection of helper and extension methods for everyday development tasks — including validation, data formatting, parsing, security, and more. It also includes a generic repository interface with an optional EF Core-based implementation, as well as a flexible cache service for in-memory caching with configurable expiration and validation support.
 

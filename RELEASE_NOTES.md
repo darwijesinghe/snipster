@@ -87,10 +87,10 @@ The `IsValidPhoneNumber` method now accepts raw user input, validates it against
 ### Changed
 - `IsValidPhoneNumber`
 
-    - Accepts raw user input (e.g., "+94 70 229 3007", "0702293007").
+    - Accepts raw user input (e.g. "+94 70 229 3007", "0702293007").
     - Parses common formatting characters (handles spaces, (), -, etc.).
     - Validates numbers using regional rules.
-    - Requires an ISO region code (e.g., "LK", "US") when the number does not include a + prefix.
+    - Requires an ISO region code (e.g. "LK", "US") when the number does not include a + prefix.
     - Outputs the normalized phone number in E.164 format for database storage and SMS usage.
 
 - `IsNumeric`
@@ -101,7 +101,7 @@ The `IsValidPhoneNumber` method now accepts raw user input, validates it against
 - `IsAlphabetic`
 
     - Allows only English alphabetic letters (A–Z, a–z).
-    - Does not allow accents (e.g., é, ü), spaces, or Unicode letters.
+    - Does not allow accents (e.g. é, ü), spaces, or Unicode letters.
 
 - `IsAlphanumeric`
 

@@ -44,7 +44,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <returns>
         /// True if the phone number is valid; otherwise, false.
         /// </returns>
-        public static bool IsValidatePhoneNumber(this string input, string? region, out string? formattedNumber)
+        public static bool IsValidPhoneNumber(this string input, string? region, out string? formattedNumber)
         {
             formattedNumber = null;
 

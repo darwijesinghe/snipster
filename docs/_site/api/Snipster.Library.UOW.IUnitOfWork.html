@@ -6,7 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IUnitOfWork | Snipster ">
       
-      <meta name="description" content="Defines the contract for the Unit of Work pattern, which coordinates changes across multiple repositories and manages database transactions. Warning: Do not implement this interface yourself.  It uses the default  provided by this package. Use the provided implementation from the package instead. Note: You may implement your own  if you want custom repository behavior. The  can work with your custom repository implementation as long as it implements .">
+      <meta name="description" content="Defines the contract for the Unit of Work pattern, which coordinates changes across multiple repositories
+and manages database transactions.
+Warning: Do not implement this interface yourself. 
+It uses the default  provided by this package.
+Use the provided implementation from the package instead.
+Note: You may implement your own  if you want custom repository behavior.
+The  can work with your custom repository implementation as long as it implements .">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +22,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/darwijesinghe/Snipster/new/dev/apiSpec/new?filename=Snipster_Library_UOW_IUnitOfWork.md&amp;value=---%0Auid%3A%20Snipster.Library.UOW.IUnitOfWork%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +45,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ApiPage">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,250 +90,88 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Snipster.Library.UOW.IUnitOfWork">
-
-
-
-  <h1 id="Snipster_Library_UOW_IUnitOfWork" data-uid="Snipster.Library.UOW.IUnitOfWork" class="text-break">
-Interface IUnitOfWork  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs/#L16"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Snipster.html">Snipster</a>.<a class="xref" href="Snipster.Library.html">Library</a>.<a class="xref" href="Snipster.Library.UOW.html">UOW</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Snipster.Library.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Defines the contract for the Unit of Work pattern, which coordinates changes across multiple repositories
+        <article data-uid="">
+<h1 class='section api' data-uid='Snipster.Library.UOW.IUnitOfWork' data-commentid='T:Snipster.Library.UOW.IUnitOfWork' id='Snipster_Library_UOW_IUnitOfWork'>Interface IUnitOfWork    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs#L16'><i class='bi bi-code-slash'></i></a></h1>
+ <div class="facts text-secondary">
+<dl><dt>Namespace</dt><dd><a href='Snipster.Library.UOW.html'>Snipster.Library.UOW</a></dd></dl><dl><dt>Assembly</dt><dd>Snipster.Library.dll</dd></dl>
+</div><p>Defines the contract for the Unit of Work pattern, which coordinates changes across multiple repositories
 and manages database transactions.</p>
 <p><b>Warning:</b> Do not implement this interface yourself. 
-It uses the default <a class="xref" href="Snipster.Library.Repository.IGenericRepository-1.html">IGenericRepository&lt;TEntity&gt;</a> provided by this package.
+It uses the default <span class="xref">Snipster.Library.Repository.IGenericRepository`1</span> provided by this package.
 Use the provided implementation from the package instead.</p>
-<p><b>Note:</b> You may implement your own <a class="xref" href="Snipster.Library.Repository.IGenericRepository-1.html">IGenericRepository&lt;TEntity&gt;</a> if you want custom repository behavior.
-The <a class="xref" href="Snipster.Library.UOW.UnitOfWork.html">UnitOfWork</a> can work with your custom repository implementation as long as it implements <a class="xref" href="Snipster.Library.Repository.IGenericRepository-1.html">IGenericRepository&lt;TEntity&gt;</a>.</p>
+<p><b>Note:</b> You may implement your own <span class="xref">Snipster.Library.Repository.IGenericRepository`1</span> if you want custom repository behavior.
+The <span class="xref">Snipster.Library.UOW.UnitOfWork</span> can work with your custom repository implementation as long as it implements <span class="xref">Snipster.Library.Repository.IGenericRepository`1</span>.</p>
+<pre><code class='lang-csharp'>public interface IUnitOfWork : IDisposable</code></pre><h4 class='section'>Implements</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.idisposable'>IDisposable</a>
 </div>
-  <div class="markdown conceptual"></div>
 
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IUnitOfWork : IDisposable</code></pre>
-  </div>
-
-
-
-
-
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
-    </div>
-  </dd></dl>
-
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
-  <div>
-      <a class="xref" href="Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_">ObjectValEx.IsDefaultValue&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_">ObjectFx.DeepClone&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_">JsonEx.ToJson(object, Formatting)</a>
-  </div>
-  <div>
-      <a class="xref" href="Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_">ObjectEx.GetPropertyValue(object, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_">ObjectEx.SetPropertyValue(object, string, object?)</a>
-  </div>
-  <div>
-      <a class="xref" href="Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_">ObjectValEx.HasProperty(object, string)</a>
-  </div>
-  </dd></dl>
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Snipster_Library_UOW_IUnitOfWork_BeginTransactionAsync_" data-uid="Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync*"></a>
-
-  <h3 id="Snipster_Library_UOW_IUnitOfWork_BeginTransactionAsync" data-uid="Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync">
-  BeginTransactionAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs/#L30"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Asynchronously begins a new database transaction.</p>
+</dd></dl><h4 class='section'>Extension Methods</h4><dl class="typelist"><dd>
+<div>
+<a href='Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_'>ObjectFx.DeepClone&lt;IUnitOfWork&gt;(IUnitOfWork)</a>
 </div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task BeginTransactionAsync()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Snipster_Library_UOW_IUnitOfWork_CommitAsync_" data-uid="Snipster.Library.UOW.IUnitOfWork.CommitAsync*"></a>
-
-  <h3 id="Snipster_Library_UOW_IUnitOfWork_CommitAsync" data-uid="Snipster.Library.UOW.IUnitOfWork.CommitAsync">
-  CommitAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs/#L35"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Asynchronously commits the current transaction, saving all changes to the database.</p>
+<div>
+<a href='Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_'>ObjectEx.GetPropertyValue(object, string)</a>
 </div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task CommitAsync()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Snipster_Library_UOW_IUnitOfWork_Repository_" data-uid="Snipster.Library.UOW.IUnitOfWork.Repository*"></a>
-
-  <h3 id="Snipster_Library_UOW_IUnitOfWork_Repository__1" data-uid="Snipster.Library.UOW.IUnitOfWork.Repository``1">
-  Repository&lt;TEntity&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs/#L25"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets the repository instance for the specified entity type.</p>
+<div>
+<a href='Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_'>ObjectValEx.HasProperty(object, string)</a>
 </div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IGenericRepository&lt;TEntity&gt; Repository&lt;TEntity&gt;() where TEntity : class</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Snipster.Library.Repository.IGenericRepository-1.html">IGenericRepository</a>&lt;TEntity&gt;</dt>
-    <dd><p>An <a class="xref" href="Snipster.Library.Repository.IGenericRepository-1.html">IGenericRepository&lt;TEntity&gt;</a> instance for the given entity type.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TEntity</code></dt>
-    <dd><p>The type of the entity.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Snipster_Library_UOW_IUnitOfWork_RollbackAsync_" data-uid="Snipster.Library.UOW.IUnitOfWork.RollbackAsync*"></a>
-
-  <h3 id="Snipster_Library_UOW_IUnitOfWork_RollbackAsync" data-uid="Snipster.Library.UOW.IUnitOfWork.RollbackAsync">
-  RollbackAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs/#L40"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Asynchronously rolls back the current transaction, discarding all changes that were made during the transaction.</p>
+<div>
+<a href='Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_'>ObjectValEx.IsDefaultValue&lt;IUnitOfWork&gt;(IUnitOfWork)</a>
 </div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task RollbackAsync()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Snipster_Library_UOW_IUnitOfWork_SaveChangesAsync_" data-uid="Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync*"></a>
-
-  <h3 id="Snipster_Library_UOW_IUnitOfWork_SaveChangesAsync" data-uid="Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync">
-  SaveChangesAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Saves all changes made to the database.</p>
+<div>
+<a href='Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_'>ObjectEx.SetPropertyValue(object, string, object?)</a>
 </div>
-  <div class="markdown level1 conceptual"></div>
+<div>
+<a href='Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_'>JsonEx.ToJson(object, Formatting)</a>
+</div>
 
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; SaveChangesAsync()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
-  </dl>
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync' data-commentid='M:Snipster.Library.UOW.IUnitOfWork.BeginTransactionAsync' id='Snipster_Library_UOW_IUnitOfWork_BeginTransactionAsync'>BeginTransactionAsync()    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs#L30'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Asynchronously begins a new database transaction.</p>
+<pre><code class='lang-csharp'>Task BeginTransactionAsync()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.threading.tasks.task'>Task</a>  </dt>
+<dd>
 
 
 
+</dd></dl><h3 class='section api' data-uid='Snipster.Library.UOW.IUnitOfWork.CommitAsync' data-commentid='M:Snipster.Library.UOW.IUnitOfWork.CommitAsync' id='Snipster_Library_UOW_IUnitOfWork_CommitAsync'>CommitAsync()    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs#L35'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Asynchronously commits the current transaction, saving all changes to the database.</p>
+<pre><code class='lang-csharp'>Task CommitAsync()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.threading.tasks.task'>Task</a>  </dt>
+<dd>
 
 
 
+</dd></dl><h3 class='section api' data-uid='Snipster.Library.UOW.IUnitOfWork.Repository``1' data-commentid='M:Snipster.Library.UOW.IUnitOfWork.Repository``1' id='Snipster_Library_UOW_IUnitOfWork_Repository__1'>Repository&lt;TEntity&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs#L25'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the repository instance for the specified entity type.</p>
+<pre><code class='lang-csharp'>IGenericRepository&lt;TEntity&gt; Repository&lt;TEntity&gt;() where TEntity : class</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Snipster.Library.Repository.IGenericRepository-1.html'>IGenericRepository</a>&lt;TEntity&gt;  </dt>
+<dd>
+
+
+<p>An <span class="xref">Snipster.Library.Repository.IGenericRepository`1</span> instance for the given entity type.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>TEntity</code>   </dt>
+<dd>
+
+
+<p>The type of the entity.</p>
+
+</dd></dl><h3 class='section api' data-uid='Snipster.Library.UOW.IUnitOfWork.RollbackAsync' data-commentid='M:Snipster.Library.UOW.IUnitOfWork.RollbackAsync' id='Snipster_Library_UOW_IUnitOfWork_RollbackAsync'>RollbackAsync()    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs#L40'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Asynchronously rolls back the current transaction, discarding all changes that were made during the transaction.</p>
+<pre><code class='lang-csharp'>Task RollbackAsync()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.threading.tasks.task'>Task</a>  </dt>
+<dd>
 
 
 
+</dd></dl><h3 class='section api' data-uid='Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync' data-commentid='M:Snipster.Library.UOW.IUnitOfWork.SaveChangesAsync' id='Snipster_Library_UOW_IUnitOfWork_SaveChangesAsync'>SaveChangesAsync()    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs#L45'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Saves all changes made to the database.</p>
+<pre><code class='lang-csharp'>Task&lt;bool&gt; SaveChangesAsync()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1'>Task</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>&gt;  </dt>
+<dd>
 
 
 
+</dd></dl>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/UOW/IUnitOfWork.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -21,7 +21,7 @@ namespace Snipster.Library.Helpers
         /// <param name="data">The collection of data to export.</param>
         /// <param name="columns">The list of column definitions specifying how to map and format the data.</param>
         /// <param name="filePath">The file path where the Excel file will be saved.</param>
-        /// <param name="fileName">The name of the Excel file to create (e.g., "output.xlsx").</param>
+        /// <param name="fileName">The name of the Excel file to create (e.g. "output.xlsx").</param>
         /// <param name="configureOptions">An optional action to configure additional export options.</param>
         /// <exception cref="ArgumentException">
         /// Thrown if the file path or file name is null or empty.

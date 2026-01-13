@@ -9,118 +9,151 @@ namespace Snipster.Test.Extensions.Validations
     public class StringValExTest
     {
         /// <summary>
-        /// Test ContainsIgnoreCase method to ensure it correctly identifies substrings in a case-insensitive manner.
+        /// Test IsContainsIgnoreCase method to ensure it correctly identifies substrings in a case-insensitive manner.
         /// </summary>
-        [TestMethod]
-        public void IsContainsIgnoreCase_ShouldIdentifySubstring_In_CaseSensitiveManner()
-        {
-            // Arrange
-            string mainString       = "Hello World";
-            string validSubstring   = "world";
-            string invalidSubstring = "planet";
+        [DataTestMethod]
 
+        // Valid cases
+        [DataRow("Hello World", "world", true)]
+        [DataRow("Hello World", "WORLD", true)]
+        [DataRow("Hello World", "hello", true)]
+        [DataRow("Hello World", "test", false)]
+        [DataRow("Hello World", "", true)]
+        [DataRow("", "", true)]
+
+        // Invalid cases
+        [DataRow("", "a", false)]
+        [DataRow(null, "test", false)]
+        [DataRow("Test", null, false)]
+        public void IsContainsIgnoreCase_ShouldWorkCorrectly(string source, string toCheck, bool expected)
+        {
             // Act
-            bool containsValidSubstring   = mainString.IsContainsIgnoreCase(validSubstring);
-            bool containsInvalidSubstring = mainString.IsContainsIgnoreCase(invalidSubstring);
+            var result = source.IsContainsIgnoreCase(toCheck);
 
             // Assert
-            Assert.IsTrue(containsValidSubstring);
-            Assert.IsFalse(containsInvalidSubstring);
+            Assert.AreEqual(expected, result, $"Failed for: {source}");
         }
 
         /// <summary>
-        /// Test IsValidSriLankanPhone method to ensure it correctly identifies valid and invalid Sri Lankan phone numbers.
+        /// Test IsValidatePhoneNumber method to ensure it correctly identifies valid and invalid phone numbers.
         /// </summary>
-        [TestMethod]
-        public void IsValidSriLankanPhone_ShouldIdentifyValidAndInvalidNumber()
-        {
-            // Arrange
-            string validPhone   = "0712345678";
-            string invalidPhone = "123456";
+        [DataTestMethod]
 
+        // Valid cases
+        [DataRow("+94702293007", null, true, "+94702293007")]
+        [DataRow("+94 70 229 3007", null, true, "+94702293007")]
+        [DataRow("0702293007", "LK", true, "+94702293007")]
+        [DataRow("702293007", "LK", true, "+94702293007")]
+
+        [DataRow("+12025550125", null, true, "+12025550125")]
+        [DataRow("+1 202 555 0125", null, true, "+12025550125")]
+        [DataRow("(202) 555-0125", "US", true, "+12025550125")]
+        [DataRow("2025550125", "US", true, "+12025550125")]
+
+        [DataRow("+447911123456", null, true, "+447911123456")]
+        [DataRow("07911 123456", "GB", true, "+447911123456")]
+        [DataRow("7911123456", "GB", true, "+447911123456")]
+
+        // Invalid cases
+        [DataRow("+123", null, false, null)]
+        [DataRow("abcdef", "US", false, null)]
+        [DataRow("", "US", false, null)]
+        [DataRow(null, "US", false, null)]
+        [DataRow("+9999999999999999", null, false, null)] // invalid country code
+        [DataRow("0791112345", "GB", false, null)]
+        [DataRow("202555012", "US", false, null)]
+        [DataRow("0702293007", null, false, null)]
+        public void IsValidatePhoneNumber_ShouldHandleAllCases(string input, string region, bool expectedResult, string expectedFormatted)
+        {
             // Act
-            bool isValidPhoneResult   = validPhone.IsValidSriLankanPhone();
-            bool isInvalidPhoneResult = invalidPhone.IsValidSriLankanPhone();
+            var result = input.IsValidatePhoneNumber(region, out var formatted);
 
             // Assert
-            Assert.IsTrue(isValidPhoneResult);
-            Assert.IsFalse(isInvalidPhoneResult);
-        }
-
-        /// <summary>
-        /// Test IsValidInternationalPhone method to ensure it correctly identifies valid and invalid international phone numbers.
-        /// </summary>
-        [TestMethod]
-        public void IsValidInternationalPhone_ShouldIdentifyValidAndInvalidNumbers()
-        {
-            // Arrange
-            string validPhone   = "+941234567890";
-            string invalidPhone = "12345";
-
-            // Act
-            bool isValidPhoneResult   = validPhone.IsValidInternationalPhone();
-            bool isInvalidPhoneResult = invalidPhone.IsValidInternationalPhone();
-
-            // Assert
-            Assert.IsTrue(isValidPhoneResult);
-            Assert.IsFalse(isInvalidPhoneResult);
+            Assert.AreEqual(expectedResult, result, $"Failed for: {input}");
+            Assert.AreEqual(expectedFormatted, formatted, $"Failed for: {input}");
         }
 
         /// <summary>
         /// Test IsNumeric method to ensure it correctly identifies numeric strings.
         /// </summary>
-        [TestMethod]
-        public void IsNumeric_ShouldIdentifyNumericStrings()
-        {
-            // Arrange
-            string validNumeric   = "123456";
-            string invalidNumeric = "123abc";
+        [DataTestMethod]
 
+        // Valid cases
+        [DataRow("123456", true)]
+        [DataRow("0", true)]
+        [DataRow("00123", true)]
+
+        // Invalid cases
+        [DataRow("", false)]
+        [DataRow(null, false)]
+        [DataRow("123a", false)]
+        [DataRow("12 34", false)]
+        [DataRow("12.34", false)]
+        [DataRow("+123", false)]
+        [DataRow("１２３", false)] // Unicode digits
+        public void IsNumeric_ShouldValidate_ASCII_DigitsOnly(string input, bool expected)
+        {
             // Act
-            bool isValidNumericResult   = validNumeric.IsNumeric();
-            bool isInvalidNumericResult = invalidNumeric.IsNumeric();
+            var result = input.IsNumeric();
 
             // Assert
-            Assert.IsTrue(isValidNumericResult);
-            Assert.IsFalse(isInvalidNumericResult);
+            Assert.AreEqual(expected, result, $"Failed for: {input}");
         }
 
         /// <summary>
         /// Test IsAlphabetic method to ensure it correctly identifies alphabetic strings.
         /// </summary>
-        [TestMethod]
-        public void IsAlphabetic_ShouldIdentifyAlphabeticStrings()
-        {
-            // Arrange
-            string validAlphabetic   = "Hello";
-            string invalidAlphabetic = "Hello123";
+        [DataTestMethod]
 
+        // Valid cases
+        [DataRow("abc", true)]
+        [DataRow("ABC", true)]
+        [DataRow("AbCdEf", true)]
+
+        // Invalid cases
+        [DataRow("", false)]
+        [DataRow(null, false)]
+        [DataRow("abc123", false)]
+        [DataRow("abc def", false)]
+        [DataRow("éclair", false)]
+        [DataRow("über", false)]
+        [DataRow("abc!", false)]
+        public void IsAlphabetic_ShouldAllowEnglishLettersOnly(string input, bool expected)
+        {
             // Act
-            bool isValidAlphabeticResult   = validAlphabetic.IsAlphabetic();
-            bool isInvalidAlphabeticResult = invalidAlphabetic.IsAlphabetic();
+            var result = input.IsAlphabetic();
 
             // Assert
-            Assert.IsTrue(isValidAlphabeticResult);
-            Assert.IsFalse(isInvalidAlphabeticResult);
+            Assert.AreEqual(expected, result, $"Failed for: {input}");
         }
 
         /// <summary>
         /// Test IsAlphanumeric method to ensure it correctly identifies alphanumeric strings.
         /// </summary>
-        [TestMethod]
-        public void IsAlphanumeric_ShouldIdentifyAlphanumericStrings()
-        {
-            // Arrange
-            string validAlphanumeric   = "Hello123";
-            string invalidAlphanumeric = "Hello@123";
+        [DataTestMethod]
 
+        // Valid cases
+        [DataRow("abc123", true)]
+        [DataRow("ABC123", true)]
+        [DataRow("a1B2c3", true)]
+        [DataRow("123", true)]
+        [DataRow("abc", true)]
+
+        // Invalid cases
+        [DataRow("", false)]
+        [DataRow(null, false)]
+        [DataRow("abc_123", false)]
+        [DataRow("abc-123", false)]
+        [DataRow("abc 123", false)]
+        [DataRow("abc!", false)]
+        [DataRow("ümlaut1", false)]
+        public void IsAlphanumeric_ShouldAllowEnglishLetters_And_DigitsOnly(string input, bool expected)
+        {
             // Act
-            bool isValidAlphanumericResult   = validAlphanumeric.IsAlphanumeric();
-            bool isInvalidAlphanumericResult = invalidAlphanumeric.IsAlphanumeric();
+            var result = input.IsAlphanumeric();
 
             // Assert
-            Assert.IsTrue(isValidAlphanumericResult);
-            Assert.IsFalse(isInvalidAlphanumericResult);
+            Assert.AreEqual(expected, result, $"Failed for: {input}");
         }
     }
 }

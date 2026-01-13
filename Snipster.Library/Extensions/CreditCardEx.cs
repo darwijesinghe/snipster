@@ -13,7 +13,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="number">The credit card number as a string.</param>
         /// <returns>
-        /// A string representing the type of credit card (e.g., "Visa", "MasterCard", etc.).
+        /// A string representing the type of credit card (e.g. "Visa", "MasterCard", etc.).
         /// "Unknown" if the type cannot be determined or if the input is invalid, empty or non-numeric input.
         /// </returns>
         public static string GetCreditCardType(this string number)

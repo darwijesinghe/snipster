@@ -45,7 +45,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToOrdinal method to ensure it converts an integer to its ordinal representation as a string (e.g., "1st", "2nd", "3rd", "4th", etc.).
+        /// Tests the ToOrdinal method to ensure it converts an integer to its ordinal representation as a string (e.g. "1st", "2nd", "3rd", "4th", etc.).
         /// </summary>
         [TestMethod]
         public void ToOrdinal_ShouldReturnOrdinalRepresentation()

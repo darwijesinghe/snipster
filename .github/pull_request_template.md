@@ -23,7 +23,7 @@ Fixes # (issue)
 
 **Related issues**
 
-List any related issues (e.g., `Fixes #123`, `Closes #456`)
+List any related issues (e.g. `Fixes #123`, `Closes #456`)
 
 **Type of change**
 - [ ] Bug fix (non-breaking change)

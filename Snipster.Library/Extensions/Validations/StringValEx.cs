@@ -1,5 +1,6 @@
-﻿using System;
-using System.Text.RegularExpressions;
+﻿using PhoneNumbers;
+using System;
+using System.Linq;
 
 namespace Snipster.Library.Extensions.Validations
 {
@@ -8,6 +9,15 @@ namespace Snipster.Library.Extensions.Validations
     /// </summary>
     public static class StringValEx
     {
+        // PhoneNumberUtil is thread-safe and expensive to create.
+        // Reusing a single instance is recommended by libphonenumber.
+        private static readonly PhoneNumberUtil _phoneUtil;
+
+        static StringValEx()
+        {
+            _phoneUtil = PhoneNumberUtil.GetInstance();
+        }
+
         /// <summary>
         /// Checks if the string contains another string with case-insensitive comparison.
         /// </summary>
@@ -18,73 +28,89 @@ namespace Snipster.Library.Extensions.Validations
         /// </returns>
         public static bool IsContainsIgnoreCase(this string source, string toCheck)
         {
+            if (source is null || toCheck is null)
+                return false;
+
             return source?.IndexOf(toCheck, StringComparison.OrdinalIgnoreCase) >= 0;
         }
 
         /// <summary>
-        /// Validates whether the string is a valid Sri Lankan phone number (starting with 07, 10 digits).
+        /// Validates a phone number and returns it in E.164 format. Accepts common user input and applies 
+        /// region-specific rules when needed.
         /// </summary>
-        /// <param name="input">The input string to validate.</param>
+        /// <param name="input">Raw phone number provided by the user. (e.g. "+94 70 229 3007", "0702293007").</param>
+        /// <param name="region">ISO country code required for numbers without a leading + prefix.</param>
+        /// <param name="formattedNumber">When valid, contains the normalized E.164 phone number; otherwise, null.</param>
         /// <returns>
-        /// True if the string is a valid Sri Lankan phone number; otherwise, false.
+        /// True if the phone number is valid; otherwise, false.
         /// </returns>
-        public static bool IsValidSriLankanPhone(this string input)
+        public static bool IsValidatePhoneNumber(this string input, string? region, out string? formattedNumber)
         {
+            formattedNumber = null;
+
             if (string.IsNullOrWhiteSpace(input))
                 return false;
 
-            return Regex.IsMatch(input, @"^(?:\+94|0)?7\d{8}$");
-        }
+            try
+            {
+                // parses common formatting characters (handles spaces, (), -, etc.)
+                var phoneNumber = _phoneUtil.Parse(input, region);
 
-        /// <summary>
-        /// Checks if the string is a valid international phone number (starts with + and contains 10–15 digits).
-        /// </summary>
-        /// <param name="input">The input string to validate.</param>
-        /// <returns>
-        /// True if the string is a valid international phone number; otherwise, false.
-        /// </returns>
-        public static bool IsValidInternationalPhone(this string input)
-        {
-            if (string.IsNullOrWhiteSpace(input))
+                // validate according to libphonenumber's rules
+                if (!_phoneUtil.IsValidNumber(phoneNumber))
+                    return false;
+
+                // format the number into a consistent, globally recognized format
+                formattedNumber = _phoneUtil.Format(phoneNumber, PhoneNumberFormat.E164);
+                return true;
+            }
+            catch (NumberParseException)
+            {
+                // parsing failed due to invalid format or unknown region
                 return false;
-
-            return Regex.IsMatch(input, @"^\+?\d{10,15}$");
+            }
         }
 
         /// <summary>
-        /// Validates that a string contains only digits.
+        /// Determines whether the string contains only ASCII numeric digits (0–9). Does not allow 
+        /// whitespace, signs (+, -), decimals, or Unicode digits.
         /// </summary>
-        /// <param name="input">The input string to validate.</param>
+        /// <param name="input">The string to validate.</param>
         /// <returns>
-        /// True if the string contains only digits; otherwise, false.
+        /// True if the string contains only ASCII digits; otherwise, false.
         /// </returns>
         public static bool IsNumeric(this string input)
         {
-            return !string.IsNullOrEmpty(input) && Regex.IsMatch(input, @"^\d+$");
+            return !string.IsNullOrWhiteSpace(input) && input.All(c => c >= '0' && c <= '9');
         }
 
         /// <summary>
-        /// Validates that a string contains only letters (no digits or symbols).
+        /// Determines whether the string contains only English alphabetic characters (A–Z, a–z). Does not allow 
+        /// spaces, accents (é, ü), or Unicode letters.
         /// </summary>
-        /// <param name="input">The input string to validate.</param>
+        /// <param name="input">The string to validate.</param>
         /// <returns>
-        /// True if the string contains only letters; otherwise, false.
+        /// True if the string contains only English letters (A–Z, a–z); otherwise, false.
         /// </returns>
         public static bool IsAlphabetic(this string input)
         {
-            return !string.IsNullOrEmpty(input) && Regex.IsMatch(input, @"^[a-zA-Z]+$");
+            return !string.IsNullOrWhiteSpace(input) 
+                && input.All(c => (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
         }
 
         /// <summary>
-        /// Validates that a string contains only letters or numbers.
+        /// Determines whether the string contains only English letters and ASCII digits (A–Z, a–z, 0-9). Does not allow 
+        /// underscores, hyphens, spaces, symbols, or Unicode characters.
         /// </summary>
-        /// <param name="input">The input string to validate.</param>
+        /// <param name="input">The string to validate.</param>
         /// <returns>
-        /// True if the string contains only letters or numbers; otherwise, false.
+        /// True if the string contains only English letters (A–Z, a–z)
+        /// and digits (0–9); otherwise, false.
         /// </returns>
         public static bool IsAlphanumeric(this string input)
         {
-            return !string.IsNullOrEmpty(input) && Regex.IsMatch(input, @"^[a-zA-Z0-9]+$");
+            return !string.IsNullOrWhiteSpace(input)
+                && input.All(c => (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9'));
         }
     }
 }

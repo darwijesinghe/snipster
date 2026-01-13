@@ -36,8 +36,7 @@
   - href: val-ex/string-val-ex/isalphanumeric.md
   - href: val-ex/string-val-ex/iscontainsignorecase.md
   - href: val-ex/string-val-ex/isnumeric.md
-  - href: val-ex/string-val-ex/isvalidinternationalphone.md
-  - href: val-ex/string-val-ex/isvalidsrilankanphone.md
+  - href: val-ex/string-val-ex/isvalidphonenumber.md
 
 - name: NetworkValEx
   items:

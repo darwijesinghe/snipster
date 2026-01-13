@@ -3,7 +3,7 @@ title: IsAlphabetic()
 ---
 
 ## Description
-Validates that a string contains only letters (no `digits` or `symbols`).
+Validates that a string contains only English alphabetic characters (A–Z, a–z). Does not allow spaces, accents (é, ü), or Unicode letters.
 
 ### Method Signature
 
@@ -22,6 +22,7 @@ public class Example
     {
         "Hello".IsAlphabetic();    // True
         "Hello123".IsAlphabetic(); // False
+        "über".IsAlphabetic();     // False
     }
 }
 ```

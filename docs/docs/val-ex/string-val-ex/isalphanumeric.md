@@ -3,7 +3,7 @@ title: IsAlphanumeric()
 ---
 
 ## Description
-Validates that a string contains only letters or numbers. Determines whether a string contains only alphabetic and numeric characters (A–Z, a–z, 0–9).
+Validates that a string contains only English letters and ASCII digits (A–Z, a–z, 0-9). Does not allow underscores, hyphens, spaces, symbols, or Unicode characters.
 
 ### Method Signature
 

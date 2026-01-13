@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/darwijesinghe/Snipster/new/dev/apiSpec/new?filename=Snipster_Library_Cache_ICacheService.md&amp;value=---%0Auid%3A%20Snipster.Library.Cache.ICacheService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ApiPage">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,252 +84,129 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Snipster.Library.Cache.ICacheService">
-
-
-
-  <h1 id="Snipster_Library_Cache_ICacheService" data-uid="Snipster.Library.Cache.ICacheService" class="text-break">
-Interface ICacheService  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs/#L9"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Snipster.html">Snipster</a>.<a class="xref" href="Snipster.Library.html">Library</a>.<a class="xref" href="Snipster.Library.Cache.html">Cache</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Snipster.Library.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Defines a contract for a caching service that provides methods to store, retrieve, and manage cached data.</p>
+        <article data-uid="">
+<h1 class='section api' data-uid='Snipster.Library.Cache.ICacheService' data-commentid='T:Snipster.Library.Cache.ICacheService' id='Snipster_Library_Cache_ICacheService'>Interface ICacheService    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs#L9'><i class='bi bi-code-slash'></i></a></h1>
+ <div class="facts text-secondary">
+<dl><dt>Namespace</dt><dd><a href='Snipster.Library.Cache.html'>Snipster.Library.Cache</a></dd></dl><dl><dt>Assembly</dt><dd>Snipster.Library.dll</dd></dl>
+</div><p>Defines a contract for a caching service that provides methods to store, retrieve, and manage cached data.</p>
+<pre><code class='lang-csharp'>public interface ICacheService</code></pre><h4 class='section'>Extension Methods</h4><dl class="typelist"><dd>
+<div>
+<a href='Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_'>ObjectFx.DeepClone&lt;ICacheService&gt;(ICacheService)</a>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ICacheService</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
-  <div>
-      <a class="xref" href="Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_">ObjectValEx.IsDefaultValue&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_">ObjectFx.DeepClone&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_">JsonEx.ToJson(object, Formatting)</a>
-  </div>
-  <div>
-      <a class="xref" href="Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_">ObjectEx.GetPropertyValue(object, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_">ObjectEx.SetPropertyValue(object, string, object?)</a>
-  </div>
-  <div>
-      <a class="xref" href="Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_">ObjectValEx.HasProperty(object, string)</a>
-  </div>
-  </dd></dl>
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Snipster_Library_Cache_ICacheService_RemoveCache_" data-uid="Snipster.Library.Cache.ICacheService.RemoveCache*"></a>
-
-  <h3 id="Snipster_Library_Cache_ICacheService_RemoveCache_System_String_" data-uid="Snipster.Library.Cache.ICacheService.RemoveCache(System.String)">
-  RemoveCache(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs/#L51"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Removes a specific entry from the cache.</p>
+<div>
+<a href='Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_'>ObjectEx.GetPropertyValue(object, string)</a>
 </div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RemoveCache(string key)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The cache key to remove.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Snipster_Library_Cache_ICacheService_SetCacheAsync_" data-uid="Snipster.Library.Cache.ICacheService.SetCacheAsync*"></a>
-
-  <h3 id="Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Double_System_Func_System_Threading_Tasks_Task___0___" data-uid="Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})">
-  SetCacheAsync&lt;T&gt;(string, double, Func&lt;Task&lt;T&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Retrieves data from the cache or loads it using the provided function if not cached.</p>
+<div>
+<a href='Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_'>ObjectValEx.HasProperty(object, string)</a>
 </div>
-  <div class="markdown level1 conceptual"></div>
+<div>
+<a href='Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_'>ObjectValEx.IsDefaultValue&lt;ICacheService&gt;(ICacheService)</a>
+</div>
+<div>
+<a href='Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_'>ObjectEx.SetPropertyValue(object, string, object?)</a>
+</div>
+<div>
+<a href='Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_'>JsonEx.ToJson(object, Formatting)</a>
+</div>
 
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;T?&gt; SetCacheAsync&lt;T&gt;(string key, double duration, Func&lt;Task&lt;T&gt;&gt; create) where T : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The cache key.</p>
-</dd>
-    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd><p>Cache duration in minutes.</p>
-</dd>
-    <dt><code>create</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;&gt;</dt>
-    <dd><p>An asynchronous function to fetch data if not in cache.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
-    <dd><p>The cached or newly fetched data; null on failure.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>The type of data to cache.</p>
-</dd>
-  </dl>
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Snipster.Library.Cache.ICacheService.RemoveCache(System.String)' data-commentid='M:Snipster.Library.Cache.ICacheService.RemoveCache(System.String)' id='Snipster_Library_Cache_ICacheService_RemoveCache_System_String_'>RemoveCache(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs#L51'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a specific entry from the cache.</p>
+<pre><code class='lang-csharp'>void RemoveCache(string key)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>key</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
 
 
+<p>The cache key to remove.</p>
 
-
-
-
-
-
-
-
-  <a id="Snipster_Library_Cache_ICacheService_SetCacheAsync_" data-uid="Snipster.Library.Cache.ICacheService.SetCacheAsync*"></a>
-
-  <h3 id="Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___" data-uid="Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})">
-  SetCacheAsync&lt;T&gt;(string, Func&lt;Task&lt;T&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs/#L21"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Retrieves data from the cache or loads it using the provided function if not cached.
+</dd></dl><h3 class='section api' data-uid='Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})' data-commentid='M:Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})' id='Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___'>SetCacheAsync&lt;T&gt;(string, Func&lt;Task&lt;T&gt;&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs#L21'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Retrieves data from the cache or loads it using the provided function if not cached.
 Data is cached for 5 minutes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;T?&gt; SetCacheAsync&lt;T&gt;(string key, Func&lt;Task&lt;T&gt;&gt; create) where T : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The cache key.</p>
-</dd>
-    <dt><code>create</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;&gt;</dt>
-    <dd><p>An asynchronous function to fetch data if not in cache.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
-    <dd><p>The cached or newly fetched data; null on failure.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>The type of data to cache.</p>
-</dd>
-  </dl>
+<pre><code class='lang-csharp'>Task&lt;T?&gt; SetCacheAsync&lt;T&gt;(string key, Func&lt;Task&lt;T&gt;&gt; create) where T : class</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>key</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
 
 
+<p>The cache key.</p>
+
+</dd><dt><code>create</code> <a href='https://learn.microsoft.com/dotnet/api/system.func-1'>Func</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1'>Task</a>&lt;T&gt;&gt;  </dt>
+<dd>
 
 
+<p>An asynchronous function to fetch data if not in cache.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1'>Task</a>&lt;T?&gt;  </dt>
+<dd>
 
 
+<p>The cached or newly fetched data; null on failure.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
 
 
+<p>The type of data to cache.</p>
+
+</dd></dl><h3 class='section api' data-uid='Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})' data-commentid='M:Snipster.Library.Cache.ICacheService.SetCacheAsync``1(System.String,System.Double,System.Func{System.Threading.Tasks.Task{``0}})' id='Snipster_Library_Cache_ICacheService_SetCacheAsync__1_System_String_System_Double_System_Func_System_Threading_Tasks_Task___0___'>SetCacheAsync&lt;T&gt;(string, double, Func&lt;Task&lt;T&gt;&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs#L45'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Retrieves data from the cache or loads it using the provided function if not cached.</p>
+<pre><code class='lang-csharp'>Task&lt;T?&gt; SetCacheAsync&lt;T&gt;(string key, double duration, Func&lt;Task&lt;T&gt;&gt; create) where T : class</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>key</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
 
 
-  <a id="Snipster_Library_Cache_ICacheService_SetLongCacheAsync_" data-uid="Snipster.Library.Cache.ICacheService.SetLongCacheAsync*"></a>
+<p>The cache key.</p>
 
-  <h3 id="Snipster_Library_Cache_ICacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___" data-uid="Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})">
-  SetLongCacheAsync&lt;T&gt;(string, Func&lt;Task&lt;T&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs/#L33"><i class="bi bi-code-slash"></i></a>
-  </h3>
+</dd><dt><code>duration</code> <a href='https://learn.microsoft.com/dotnet/api/system.double'>double</a>  </dt>
+<dd>
 
-  <div class="markdown level1 summary"><p>Retrieves data from the cache or loads it using the provided function if not cached.
+
+<p>Cache duration in minutes.</p>
+
+</dd><dt><code>create</code> <a href='https://learn.microsoft.com/dotnet/api/system.func-1'>Func</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1'>Task</a>&lt;T&gt;&gt;  </dt>
+<dd>
+
+
+<p>An asynchronous function to fetch data if not in cache.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1'>Task</a>&lt;T?&gt;  </dt>
+<dd>
+
+
+<p>The cached or newly fetched data; null on failure.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The type of data to cache.</p>
+
+</dd></dl><h3 class='section api' data-uid='Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})' data-commentid='M:Snipster.Library.Cache.ICacheService.SetLongCacheAsync``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})' id='Snipster_Library_Cache_ICacheService_SetLongCacheAsync__1_System_String_System_Func_System_Threading_Tasks_Task___0___'>SetLongCacheAsync&lt;T&gt;(string, Func&lt;Task&lt;T&gt;&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs#L33'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Retrieves data from the cache or loads it using the provided function if not cached.
 Data is cached for 60 minutes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;T?&gt; SetLongCacheAsync&lt;T&gt;(string key, Func&lt;Task&lt;T&gt;&gt; create) where T : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The cache key.</p>
-</dd>
-    <dt><code>create</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;&gt;</dt>
-    <dd><p>An asynchronous function to fetch data if not in cache.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
-    <dd><p>The cached or newly fetched data; null on failure.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>The type of data to cache.</p>
-</dd>
-  </dl>
+<pre><code class='lang-csharp'>Task&lt;T?&gt; SetLongCacheAsync&lt;T&gt;(string key, Func&lt;Task&lt;T&gt;&gt; create) where T : class</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>key</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
 
 
+<p>The cache key.</p>
+
+</dd><dt><code>create</code> <a href='https://learn.microsoft.com/dotnet/api/system.func-1'>Func</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1'>Task</a>&lt;T&gt;&gt;  </dt>
+<dd>
 
 
+<p>An asynchronous function to fetch data if not in cache.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1'>Task</a>&lt;T?&gt;  </dt>
+<dd>
 
 
+<p>The cached or newly fetched data; null on failure.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
 
 
+<p>The type of data to cache.</p>
 
-
-
+</dd></dl>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/darwijesinghe/Snipster/blob/dev/Snipster.Library/Cache/ICacheService.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

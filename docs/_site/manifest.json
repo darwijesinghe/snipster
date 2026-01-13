@@ -16,578 +16,414 @@
       }
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Cache.CacheService.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Cache.CacheService.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Cache.CacheService",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Cache.CacheService.yml\" sourcestartlinenumber=\"1\">Provides an implementation of <xref href=\"Snipster.Library.Cache.ICacheService\" data-throw-if-not-resolved=\"false\"></xref> that handles in-memory caching functionality.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Cache.ICacheService.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Cache.ICacheService.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Cache.ICacheService",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Cache.ICacheService.yml\" sourcestartlinenumber=\"1\">Defines a contract for a caching service that provides methods to store, retrieve, and manage cached data.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Cache.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Cache.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Cache",
-      "Summary": null
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Enums.ExcelAlignment.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Enums.ExcelAlignment.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Enums.ExcelAlignment",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Enums.ExcelAlignment.yml\" sourcestartlinenumber=\"1\">Specifies the alignment options for Excel cells.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Enums.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Enums.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Enums",
-      "Summary": null
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.CollectionEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.CollectionEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.CollectionEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.CollectionEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with collections.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.CreditCardEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.CreditCardEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.CreditCardEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.CreditCardEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with credit card information.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.DateTimeEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.DateTimeEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.DateTimeEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.DateTimeEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with DateTime objects.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.JsonEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.JsonEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.JsonEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.JsonEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with JSON data.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.NumberEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.NumberEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.NumberEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.NumberEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with numbers.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.ObjectEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.ObjectEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.ObjectEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.ObjectEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with objects.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.SecurityEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.SecurityEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.SecurityEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.SecurityEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for working with security-related operations.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.StringEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.StringEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.StringEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.StringEx.yml\" sourcestartlinenumber=\"1\">Provides various string manipulation and formatting extension methods.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.Validations.CollectionValEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.Validations.CollectionValEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.Validations.CollectionValEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.CollectionValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating collections.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.Validations.CreditCardValEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.Validations.CreditCardValEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.Validations.CreditCardValEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.CreditCardValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating credit card information.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.Validations.DateTimeValEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.Validations.DateTimeValEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.Validations.DateTimeValEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.DateTimeValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating DateTime values.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.Validations.JsonValEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.Validations.JsonValEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.Validations.JsonValEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.JsonValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating JSON values.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.Validations.NetworkValEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.Validations.NetworkValEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.Validations.NetworkValEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.NetworkValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating network-related values.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.Validations.ObjectValEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.Validations.ObjectValEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.Validations.ObjectValEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.ObjectValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating objects.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.Validations.SecurityValEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.Validations.SecurityValEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.Validations.SecurityValEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.SecurityValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating security-related values.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.Validations.StringValEx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.Validations.StringValEx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.Validations.StringValEx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Extensions.Validations.StringValEx.yml\" sourcestartlinenumber=\"1\">Provides various extensions for validating strings.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.Validations.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.Validations.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions.Validations",
-      "Summary": null
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Extensions.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Extensions.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Extensions",
-      "Summary": null
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Helpers.ExcelFx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Helpers.ExcelFx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Helpers.ExcelFx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.ExcelFx.yml\" sourcestartlinenumber=\"1\">A class that provides Excel files related utility functions.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Helpers.FileFx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Helpers.FileFx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Helpers.FileFx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.FileFx.yml\" sourcestartlinenumber=\"1\">A class that provides file-related utility functions.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Helpers.JsonFx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Helpers.JsonFx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Helpers.JsonFx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.JsonFx.yml\" sourcestartlinenumber=\"1\">Provides methods for manipulating JSON strings.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Helpers.NetworkFx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Helpers.NetworkFx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Helpers.NetworkFx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.NetworkFx.yml\" sourcestartlinenumber=\"1\">A class that provides network-related functionality.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Helpers.ObjectFx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Helpers.ObjectFx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Helpers.ObjectFx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.ObjectFx.yml\" sourcestartlinenumber=\"1\">A class that provides object-related utility functions.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Helpers.SecurityFx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Helpers.SecurityFx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Helpers.SecurityFx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.SecurityFx.yml\" sourcestartlinenumber=\"1\">Provides various security-related helper methods and functionalities.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Helpers.StringFx.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Helpers.StringFx.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Helpers.StringFx",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Helpers.StringFx.yml\" sourcestartlinenumber=\"1\">Provides various string manipulation and validation methods.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Helpers.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Helpers.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Helpers",
-      "Summary": null
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Models.ExcelColumn.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Models.ExcelColumn.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Models.ExcelColumn",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Models.ExcelColumn.yml\" sourcestartlinenumber=\"1\">Defines the properties and formatting options for a column in an Excel export.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Models.ExcelExportOptions.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Models.ExcelExportOptions.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Models.ExcelExportOptions",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Models.ExcelExportOptions.yml\" sourcestartlinenumber=\"1\">Defines options for exporting data to an Excel file, including formatting and layout preferences.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Models.ExcelFormats.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Models.ExcelFormats.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Models.ExcelFormats",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Models.ExcelFormats.yml\" sourcestartlinenumber=\"1\">Provides commonly used Excel number, date, and text format strings.\nUse these constants when defining <xref href=\"Snipster.Library.Models.ExcelColumn.Format\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Models.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Models.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Models",
-      "Summary": null
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Repository.GenericRepository-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Repository.GenericRepository-1.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Repository.GenericRepository<TEntity>",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Repository.GenericRepository-1.yml\" sourcestartlinenumber=\"1\">Provides a generic implementation of <xref href=\"Snipster.Library.Repository.IGenericRepository%601\" data-throw-if-not-resolved=\"false\"></xref>\nfor performing CRUD operations with a shared <xref href=\"Microsoft.EntityFrameworkCore.DbContext\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Repository.IGenericRepository-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Repository.IGenericRepository-1.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Repository.IGenericRepository<TEntity>",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.Repository.IGenericRepository-1.yml\" sourcestartlinenumber=\"1\">Defines the contract for basic CRUD operations on entities of type <code class=\"typeparamref\">TEntity</code>.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Repository.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.Repository.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.Repository",
-      "Summary": null
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.UOW.IUnitOfWork.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.UOW.IUnitOfWork.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.UOW.IUnitOfWork",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.UOW.IUnitOfWork.yml\" sourcestartlinenumber=\"1\">Defines the contract for the Unit of Work pattern, which coordinates changes across multiple repositories\nand manages database transactions.</p>\n<p><b>Warning:</b> Do not implement this interface yourself. \nIt uses the default <xref href=\"Snipster.Library.Repository.IGenericRepository%601\" data-throw-if-not-resolved=\"false\"></xref> provided by this package.\nUse the provided implementation from the package instead.</p>\n<p><b>Note:</b> You may implement your own <xref href=\"Snipster.Library.Repository.IGenericRepository%601\" data-throw-if-not-resolved=\"false\"></xref> if you want custom repository behavior.\nThe <xref href=\"Snipster.Library.UOW.UnitOfWork\" data-throw-if-not-resolved=\"false\"></xref> can work with your custom repository implementation as long as it implements <xref href=\"Snipster.Library.Repository.IGenericRepository%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.UOW.UnitOfWork.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.UOW.UnitOfWork.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.UOW.UnitOfWork",
-      "Summary": "<p sourcefile=\"api/Snipster.Library.UOW.UnitOfWork.yml\" sourcestartlinenumber=\"1\">Provides an implementation of the Unit of Work pattern, managing database transactions and repositories.</p>\n"
+      "version": ""
     },
     {
-      "type": "ManagedReference",
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.UOW.yml",
       "output": {
         ".html": {
           "relative_path": "api/Snipster.Library.UOW.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Snipster.Library.UOW",
-      "Summary": null
+      "version": ""
     },
     {
       "type": "Toc",
@@ -1737,20 +1573,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/val-ex/string-val-ex/isvalidinternationalphone.md",
+      "source_relative_path": "docs/val-ex/string-val-ex/isvalidphonenumber.md",
       "output": {
         ".html": {
-          "relative_path": "docs/val-ex/string-val-ex/isvalidinternationalphone.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/val-ex/string-val-ex/isvalidsrilankanphone.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/val-ex/string-val-ex/isvalidsrilankanphone.html"
+          "relative_path": "docs/val-ex/string-val-ex/isvalidphonenumber.html"
         }
       },
       "version": ""

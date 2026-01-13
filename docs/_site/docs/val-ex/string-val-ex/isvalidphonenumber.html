@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>FromBase64() | Snipster </title>
+      <title>IsValidPhoneNumber() | Snipster </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="FromBase64() | Snipster ">
+      <meta name="title" content="IsValidPhoneNumber() | Snipster ">
       
       
       <link rel="icon" href="../../../images/favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/darwijesinghe/snipster/blob/dev/docs/docs/ex/string-ex/frombase64.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/darwijesinghe/snipster/blob/dev/docs/docs/val-ex/string-val-ex/isvalidphonenumber.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -87,27 +87,74 @@
         <article data-uid="">
 
 <h2 id="description">Description</h2>
-<p>Decodes a Base64-encoded string.</p>
+<p>Validates a phone number and returns it in E.164 format. Accepts common user input and applies
+region-specific rules when needed.</p>
 <h3 id="method-signature">Method Signature</h3>
-<pre><code class="lang-csharp">string FromBase64(this string base64)
+<pre><code class="lang-csharp">bool IsValidPhoneNumber(this string input, string? region, out string? formattedNumber)
 </code></pre>
 <h3 id="examples">Examples</h3>
-<pre><code class="lang-csharp">using Snipster.Library.Extensions;
+<pre><code class="lang-csharp">using Snipster.Library.Extensions.Validations;
 
 public class Example
-{
+{  
     public static void Main()
     {
-        &quot;SGVsbG8gd29ybGQgZnJvbSBtZQ==&quot;.FromBase64();
-        // Output: &quot;Hello world from me&quot;
+        // 🇱🇰 Sri Lanka — International format
+        var isValidLk1 = &quot;+94 70 229 3007&quot;
+            .IsValidatePhoneNumber(null, out var lkFormatted1);
+        // isValidLk1 == true
+        // lkFormatted1 == &quot;+94702293007&quot;
+
+        // 🇱🇰 Sri Lanka — National format
+        var isValidLk2 = &quot;0702293007&quot;
+            .IsValidatePhoneNumber(&quot;LK&quot;, out var lkFormatted2);
+        // isValidLk2 == true
+        // lkFormatted2 == &quot;+94702293007&quot;
+
+        // 🇺🇸 United States — International format
+        var isValidUs1 = &quot;+1 202 555 0125&quot;
+            .IsValidatePhoneNumber(null, out var usFormatted1);
+        // isValidUs1 == true
+        // usFormatted1 == &quot;+12025550125&quot;
+
+        // 🇺🇸 United States — National format
+        var isValidUs2 = &quot;(202) 555-0125&quot;
+            .IsValidatePhoneNumber(&quot;US&quot;, out var usFormatted2);
+        // isValidUs2 == true
+        // usFormatted2 == &quot;+12025550125&quot;
+
+        // 🇬🇧 United Kingdom — International format
+        var isValidUk1 = &quot;+44 7911 123456&quot;
+            .IsValidatePhoneNumber(null, out var ukFormatted1);
+        // isValidUk1 == true
+        // ukFormatted1 == &quot;+447911123456&quot;
+
+        // 🇬🇧 United Kingdom — National format
+        var isValidUk2 = &quot;07911 123456&quot;
+            .IsValidatePhoneNumber(&quot;GB&quot;, out var ukFormatted2);
+        // isValidUk2 == true
+        // ukFormatted2 == &quot;+447911123456&quot;
+
+        // Invalid number
+        var isValidInvalid = &quot;12345&quot;
+            .IsValidatePhoneNumber(&quot;LK&quot;, out var invalidFormatted);
+        // isValidInvalid == false
+        // invalidFormatted == null
     }
 }
 </code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<ul>
+<li>Formatting characters are handled internally by Google's libphonenumber.</li>
+<li>Consumers can pass raw user input without pre-cleaning.</li>
+</ul>
+</div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/darwijesinghe/snipster/blob/dev/docs/docs/ex/string-ex/frombase64.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/darwijesinghe/snipster/blob/dev/docs/docs/val-ex/string-val-ex/isvalidphonenumber.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

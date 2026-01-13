@@ -1,61 +1,34 @@
-### YamlMime:ManagedReference
-items:
-- uid: Snipster.Library.UOW
-  commentId: N:Snipster.Library.UOW
-  id: Snipster.Library.UOW
-  children:
-  - Snipster.Library.UOW.IUnitOfWork
-  - Snipster.Library.UOW.UnitOfWork
-  langs:
-  - csharp
-  - vb
-  name: Snipster.Library.UOW
-  nameWithType: Snipster.Library.UOW
-  fullName: Snipster.Library.UOW
-  type: Namespace
-  assemblies:
-  - Snipster.Library
-references:
-- uid: Snipster.Library.UOW.IUnitOfWork
-  commentId: T:Snipster.Library.UOW.IUnitOfWork
-  parent: Snipster.Library.UOW
-  href: Snipster.Library.UOW.IUnitOfWork.html
-  name: IUnitOfWork
-  nameWithType: IUnitOfWork
-  fullName: Snipster.Library.UOW.IUnitOfWork
-- uid: Snipster.Library.UOW.UnitOfWork
-  commentId: T:Snipster.Library.UOW.UnitOfWork
-  href: Snipster.Library.UOW.UnitOfWork.html
-  name: UnitOfWork
-  nameWithType: UnitOfWork
-  fullName: Snipster.Library.UOW.UnitOfWork
-- uid: Snipster.Library.UOW
-  commentId: N:Snipster.Library.UOW
-  href: Snipster.html
-  name: Snipster.Library.UOW
-  nameWithType: Snipster.Library.UOW
-  fullName: Snipster.Library.UOW
-  spec.csharp:
-  - uid: Snipster
-    name: Snipster
-    href: Snipster.html
-  - name: .
-  - uid: Snipster.Library
-    name: Library
-    href: Snipster.Library.html
-  - name: .
-  - uid: Snipster.Library.UOW
-    name: UOW
-    href: Snipster.Library.UOW.html
-  spec.vb:
-  - uid: Snipster
-    name: Snipster
-    href: Snipster.html
-  - name: .
-  - uid: Snipster.Library
-    name: Library
-    href: Snipster.Library.html
-  - name: .
-  - uid: Snipster.Library.UOW
-    name: UOW
-    href: Snipster.Library.UOW.html
+### YamlMime:ApiPage
+title: Namespace Snipster.Library.UOW
+body:
+- api1: Namespace Snipster.Library.UOW
+  id: Snipster_Library_UOW
+  metadata:
+    uid: Snipster.Library.UOW
+    commentId: N:Snipster.Library.UOW
+- h3: Classes
+- parameters:
+  - type:
+      text: UnitOfWork
+      url: Snipster.Library.UOW.UnitOfWork.html
+    description: Provides an implementation of the Unit of Work pattern, managing database transactions and repositories.
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IUnitOfWork
+      url: Snipster.Library.UOW.IUnitOfWork.html
+    description: >-
+      Defines the contract for the Unit of Work pattern, which coordinates changes across multiple repositories
+
+      and manages database transactions.
+
+      <p><b>Warning:</b> Do not implement this interface yourself. 
+
+      It uses the default <xref href="Snipster.Library.Repository.IGenericRepository%601" data-throw-if-not-resolved="false"></xref> provided by this package.
+
+      Use the provided implementation from the package instead.</p>
+
+      <p><b>Note:</b> You may implement your own <xref href="Snipster.Library.Repository.IGenericRepository%601" data-throw-if-not-resolved="false"></xref> if you want custom repository behavior.
+
+      The <xref href="Snipster.Library.UOW.UnitOfWork" data-throw-if-not-resolved="false"></xref> can work with your custom repository implementation as long as it implements <xref href="Snipster.Library.Repository.IGenericRepository%601" data-throw-if-not-resolved="false"></xref>.</p>
+languageId: csharp

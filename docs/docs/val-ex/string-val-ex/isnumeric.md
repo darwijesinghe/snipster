@@ -3,7 +3,8 @@ title: IsNumeric()
 ---
 
 ## Description
-Validates that a string contains only digits. Determines whether a given string contains only numeric characters (0–9).
+Validates that a string contains only ASCII numeric digits (0–9). Does not allow 
+whitespace, signs (+, -), decimals, or Unicode digits.
 
 ### Method Signature
 

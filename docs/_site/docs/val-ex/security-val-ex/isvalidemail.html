@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/darwijesinghe/Snipster/blob/dev/docs/docs/val-ex/security-val-ex/isvalidemail.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/darwijesinghe/snipster/blob/dev/docs/docs/val-ex/security-val-ex/isvalidemail.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -87,9 +87,9 @@
         <article data-uid="">
 
 <h2 id="description">Description</h2>
-<p>Validates string type email address. Checks for proper structure (<code>username</code>, <code>domain</code>, and <code>top-level domain</code>).</p>
+<p>Validates standard, and internationalized (Unicode) email addresses.</p>
 <h3 id="method-signature">Method Signature</h3>
-<pre><code class="lang-csharp">bool IsValidEmail(this string email)
+<pre><code class="lang-csharp">bool IsValidEmail(this string email, bool allowUnicode = false)
 </code></pre>
 <h3 id="examples">Examples</h3>
 <pre><code class="lang-csharp">using Snipster.Library.Extensions.Validations;
@@ -98,11 +98,60 @@ public class Example
 {
     public static void Main()
     {
+        // Basic valid email
         string email1 = &quot;test@example.com&quot;;
-        bool result1 = email1.IsValidEmail(); // True
-
-        string email2 = &quot;invalid-email&quot;;
-        bool result2 = email2.IsValidEmail(); // False
+        bool result1 = email1.IsValidEmail();   // True
+        Console.WriteLine($&quot;{email1} → {result1}&quot;);
+        
+        // Valid email with subdomain
+        string email2 = &quot;user@mail.sales.example.com&quot;;
+        bool result2 = email2.IsValidEmail();   // True
+        Console.WriteLine($&quot;{email2} → {result2}&quot;);
+        
+        // Valid email with plus tag (common in Gmail)
+        string email3 = &quot;user+tag@example.com&quot;;
+        bool result3 = email3.IsValidEmail();   // True
+        Console.WriteLine($&quot;{email3} → {result3}&quot;);
+        
+        // Missing '@' symbol
+        string email4 = &quot;invalid-email&quot;;
+        bool result4 = email4.IsValidEmail();   // False
+        Console.WriteLine($&quot;{email4} → {result4}&quot;);
+        
+        // Consecutive dots in local part
+        string email5 = &quot;user..name@example.com&quot;;
+        bool result5 = email5.IsValidEmail();   // False
+        Console.WriteLine($&quot;{email5} → {result5}&quot;);
+        
+        // Starts with special characters
+        string email6 = &quot;!!!@example.com&quot;;
+        bool result6 = email6.IsValidEmail();   // False
+        Console.WriteLine($&quot;{email6} → {result6}&quot;);
+        
+        // Unicode support (local and domain parts)
+        string email7 = &quot;usér@dömäin.com&quot;;
+        bool result7 = email7.IsValidEmail(allowUnicode: true);  // True
+        Console.WriteLine($&quot;{email7} → {result7}&quot;);
+        
+        // Invalid Unicode structure (double dot)
+        string email8 = &quot;usér..name@dömäin.com&quot;;
+        bool result8 = email8.IsValidEmail(allowUnicode: true);  // False
+        Console.WriteLine($&quot;{email8} → {result8}&quot;);
+        
+        // Unicode domain (Greek)
+        string email9 = &quot;δοκιμή@παράδειγμα.ελ&quot;;
+        bool result9 = email9.IsValidEmail(allowUnicode: true);  // True
+        Console.WriteLine($&quot;{email9} → {result9}&quot;);
+        
+        // Unicode domain (Chinese)
+        string email10 = &quot;用户@例子.公司&quot;;
+        bool result10 = email10.IsValidEmail(allowUnicode: true);  // True
+        Console.WriteLine($&quot;{email10} → {result10}&quot;);
+        
+        // Subdomain with Unicode
+        string email11 = &quot;usér@mail.例子.公司&quot;;
+        bool result11 = email11.IsValidEmail(allowUnicode: true);  // True
+        Console.WriteLine($&quot;{email11} → {result11}&quot;);
     }
 }
 </code></pre>
@@ -110,7 +159,7 @@ public class Example
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/darwijesinghe/Snipster/blob/dev/docs/docs/val-ex/security-val-ex/isvalidemail.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/darwijesinghe/snipster/blob/dev/docs/docs/val-ex/security-val-ex/isvalidemail.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

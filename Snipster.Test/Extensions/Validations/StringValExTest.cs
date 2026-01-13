@@ -50,7 +50,7 @@ namespace Snipster.Test.Extensions.Validations
         [DataRow("(202) 555-0125", "US", true, "+12025550125")]
         [DataRow("2025550125", "US", true, "+12025550125")]
 
-        [DataRow("+447911123456", null, true, "+447911123456")]
+        [DataRow("+44 7911 123456", null, true, "+447911123456")]
         [DataRow("07911 123456", "GB", true, "+447911123456")]
         [DataRow("7911123456", "GB", true, "+447911123456")]
 
@@ -63,10 +63,10 @@ namespace Snipster.Test.Extensions.Validations
         [DataRow("0791112345", "GB", false, null)]
         [DataRow("202555012", "US", false, null)]
         [DataRow("0702293007", null, false, null)]
-        public void IsValidatePhoneNumber_ShouldHandleAllCases(string input, string region, bool expectedResult, string expectedFormatted)
+        public void IsValidPhoneNumber_ShouldHandleAllCases(string input, string region, bool expectedResult, string expectedFormatted)
         {
             // Act
-            var result = input.IsValidatePhoneNumber(region, out var formatted);
+            var result = input.IsValidPhoneNumber(region, out var formatted);
 
             // Assert
             Assert.AreEqual(expectedResult, result, $"Failed for: {input}");
@@ -147,6 +147,7 @@ namespace Snipster.Test.Extensions.Validations
         [DataRow("abc 123", false)]
         [DataRow("abc!", false)]
         [DataRow("ümlaut1", false)]
+        [DataRow("Hello@123", false)]
         public void IsAlphanumeric_ShouldAllowEnglishLetters_And_DigitsOnly(string input, bool expected)
         {
             // Act

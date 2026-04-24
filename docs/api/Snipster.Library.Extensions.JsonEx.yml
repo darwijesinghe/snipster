@@ -99,7 +99,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A JSON-formatted string representation of the object; otherwise, returns an empty string if the object is null.
+    description: A JSON-formatted string representation of the object; otherwise, returns an empty string if the object is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
 languageId: csharp
 metadata:
   description: Provides various extensions for working with JSON data.

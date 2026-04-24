@@ -20,10 +20,10 @@ namespace Snipster.Library.Helpers
         /// <param name="host">The host to check.</param>
         /// <param name="timeout">The timeout in milliseconds for the ping request. Defaults to 1000 milliseconds (1 second).</param>
         /// <returns>
-        /// True if the host is available, otherwise false.
+        /// <see langword="true"/> if the host is available, otherwise <see langword="false"/>.
         /// </returns>
         /// <exception cref="ArgumentException">
-        /// Thrown when the host is null or empty.
+        /// Thrown when the host is <see langword="null"/> or empty.
         /// </exception>
         /// <exception cref="ArgumentOutOfRangeException">
         /// Thrown when the timeout is less than or equal to zero.
@@ -47,13 +47,13 @@ namespace Snipster.Library.Helpers
         /// <param name="baseUrl">The base URL to which the parameters will be added.</param>
         /// <param name="parameters">A dictionary containing the query parameters to be added to the URL.</param>
         /// <returns>
-        /// A string representing the complete URL with the query parameters appended.
+        /// A <see cref="string"/> representing the complete URL with the query parameters appended.
         /// </returns>
         /// <exception cref="ArgumentException">
-        /// Thrown when the base URL is null or empty.
+        /// Thrown when the base URL is <see langword="null"/> or empty.
         /// </exception>
         /// <exception cref="ArgumentNullException">
-        /// Thrown when the parameters dictionary is null.
+        /// Thrown when the parameters dictionary is <see langword="null"/>.
         /// </exception>
         public static string BuildUrl(string baseUrl, Dictionary<string, object?> parameters)
         {
@@ -104,7 +104,7 @@ namespace Snipster.Library.Helpers
         /// <param name="testUrl">Optional test URL (default: https://www.google.com)</param>
         /// <param name="timeoutSeconds">Timeout in seconds (default: 5)</param>
         /// <returns>
-        /// True if internet connection is available; otherwise false.
+        /// <see langword="true"/> if internet connection is available; otherwise <see langword="false"/>.
         /// </returns>
         public static async Task<bool> HasInternetConnectionAsync(string testUrl = "http://www.google.com", int timeoutSeconds = 5)
         {

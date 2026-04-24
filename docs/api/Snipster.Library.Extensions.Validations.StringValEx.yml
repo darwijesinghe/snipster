@@ -72,7 +72,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the string contains only English letters (A–Z, a–z); otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string contains only English letters (A–Z, a–z); otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsAlphanumeric(string)
   id: Snipster_Library_Extensions_Validations_StringValEx_IsAlphanumeric_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/StringValEx.cs#L110
@@ -97,9 +97,9 @@ body:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: >-
-      True if the string contains only English letters (A–Z, a–z)
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string contains only English letters (A–Z, a–z)
 
-      and digits (0–9); otherwise, false.
+      and digits (0–9); otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsContainsIgnoreCase(string, string)
   id: Snipster_Library_Extensions_Validations_StringValEx_IsContainsIgnoreCase_System_String_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/StringValEx.cs#L29
@@ -125,7 +125,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the source string contains the specified string, ignoring case; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the source string contains the specified string, ignoring case; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsNumeric(string)
   id: Snipster_Library_Extensions_Validations_StringValEx_IsNumeric_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/StringValEx.cs#L82
@@ -149,7 +149,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the string contains only ASCII digits; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string contains only ASCII digits; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsValidPhoneNumber(string, string?, out string?)
   id: Snipster_Library_Extensions_Validations_StringValEx_IsValidPhoneNumber_System_String_System_String_System_String__
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/StringValEx.cs#L47
@@ -185,7 +185,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the phone number is valid; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the phone number is valid; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 languageId: csharp
 metadata:
   description: Provides various extensions for validating strings.

@@ -3,7 +3,7 @@
 namespace Snipster.Test.Extensions.Validations
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the ObjectValEx class.
+    /// Unit tests to validate the functionality of the <see cref="ObjectValEx"/> class.
     /// </summary>
     [TestClass]
     public class ObjectValExTest
@@ -17,7 +17,15 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the IsDefaultValue method to ensure it returns true for reference types that are null.
+        /// Provides anonymous objects used in dynamic data-driven tests.
+        /// </summary>
+        public static IEnumerable<object[]> AnonymousObjects()
+        {
+            yield return new object[] { new { Id = 1, Name = "Alice" } };
+        }
+
+        /// <summary>
+        /// Tests the <see cref="ObjectValEx.IsDefaultValue"/> method to ensure it returns <see langword="true"/> for reference types that are <see langword="null"/>.
         /// </summary>
         [TestMethod]
         public void IsDefaultValue_ShouldReturnTrue_ForNullReferenceType()
@@ -30,7 +38,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the IsDefaultValue method to ensure it returns true for default value types.
+        /// Tests the <see cref="ObjectValEx.IsDefaultValue"/> method to ensure it returns <see langword="true"/> for default value types.
         /// </summary>
         [TestMethod]
         public void IsDefaultValue_ShouldReturnTrue_ForDefaultValueType()
@@ -43,7 +51,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the IsDefaultValue method to ensure it returns false for non-default value types.
+        /// Tests the <see cref="ObjectValEx.IsDefaultValue"/> method to ensure it returns <see langword="false"/> for non-default value types.
         /// </summary>
         [TestMethod]
         public void IsDefaultValue_ShouldReturnFalse_ForNonDefaultValueType()
@@ -56,7 +64,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the IsDefaultValue method to ensure it returns true for value types that are null.
+        /// Tests the <see cref="ObjectValEx.IsDefaultValue"/> method to ensure it returns <see langword="true"/> for value types that are <see langword="null"/>.
         /// </summary>
         [TestMethod]
         public void IsDefaultValue_ShouldReturnTrue_ForNullableDefault()
@@ -69,7 +77,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the IsDefaultValue method to ensure it returns false for nullable value types that are non-default.
+        /// Tests the <see cref="ObjectValEx.IsDefaultValue"/> method to ensure it returns <see langword="false"/> for nullable value types that are non-default.
         /// </summary>
         [TestMethod]
         public void IsDefaultValue_ShouldReturnFalse_ForNullableNonDefault()
@@ -82,7 +90,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the IsDefaultValue method to ensure it returns true for default structs.
+        /// Tests the <see cref="ObjectValEx.IsDefaultValue"/> method to ensure it returns <see langword="true"/> for default structs.
         /// </summary>
         [TestMethod]
         public void IsDefaultValue_ShouldReturnTrue_ForDefaultStruct()
@@ -95,7 +103,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the IsDefaultValue method to ensure it returns false for non-default structs.
+        /// Tests the <see cref="ObjectValEx.IsDefaultValue"/> method to ensure it returns <see langword="false"/> for non-default structs.
         /// </summary>
         [TestMethod]
         public void IsDefaultValue_ShouldReturnFalse_ForNonDefaultStruct()
@@ -108,7 +116,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the HasProperty method to ensure it returns true when the property exists.
+        /// Tests the <see cref="ObjectValEx.HasProperty"/> method to ensure it returns <see langword="true"/> when the property exists.
         /// </summary>
         [TestMethod]
         public void HasProperty_ShouldReturnTrue_WhenPropertyExists()
@@ -121,7 +129,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the HasProperty method to ensure it returns false when case differs.
+        /// Tests the <see cref="ObjectValEx.HasProperty"/> method to ensure it returns <see langword="false"/> when case differs.
         /// </summary>
         [TestMethod]
         public void HasProperty_ShouldReturnFalse_WhenCaseDiffers()
@@ -134,7 +142,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the HasProperty method to ensure it returns false when the property does not exist.
+        /// Tests the <see cref="ObjectValEx.HasProperty"/> method to ensure it returns <see langword="false"/> when the property does not exist.
         /// </summary>
         [TestMethod]
         public void HasProperty_ShouldReturnFalse_WhenPropertyDoesNotExist()
@@ -147,7 +155,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the HasProperty method to ensure it throws an ArgumentNullException when the object is null.
+        /// Tests the <see cref="ObjectValEx.HasProperty"/> method to ensure it throws an <see cref="ArgumentNullException"/> when the object is <see langword="null"/>.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
@@ -161,7 +169,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the HasProperty method to ensure it throws an ArgumentException when the property name is null.
+        /// Tests the <see cref="ObjectValEx.HasProperty"/> method to ensure it throws an <see cref="ArgumentException"/> when the property name is <see langword="null"/>.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
@@ -175,7 +183,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests the HasProperty method to ensure it throws an ArgumentException when the property name is empty.
+        /// Tests the <see cref="ObjectValEx.HasProperty"/> method to ensure it throws an <see cref="ArgumentException"/> when the property name is empty.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
@@ -186,6 +194,34 @@ namespace Snipster.Test.Extensions.Validations
 
             // Act
             person.HasProperty("");
+        }
+
+        /// <summary>
+        /// Tests that <see cref="ObjectValEx.HasProperty"/> returns false when the property does not exist on an anonymous object.
+        /// </summary>
+        [DataTestMethod]
+        [DynamicData(nameof(AnonymousObjects), DynamicDataSourceType.Method)]
+        public void HasProperty_ShouldReturnFalse_WhenPropertyDoesNotExist(object obj)
+        {
+            // Act
+            var result = obj.HasProperty("Age"); // property does not exist
+
+            // Assert
+            Assert.IsFalse(result);
+        }
+
+        /// <summary>
+        /// Tests <see cref="ObjectValEx.HasProperty"/> with an anonymous object and validates empty property name.
+        /// </summary>
+        [DataTestMethod]
+        [DynamicData(nameof(AnonymousObjects), DynamicDataSourceType.Method)]
+        public void HasProperty_ShouldThrowArgumentException_ForAnonymousObject(object obj)
+        {
+            // Act & Assert
+            Assert.ThrowsException<ArgumentException>(() =>
+            {
+                obj.HasProperty("");
+            });
         }
     }
 }

@@ -1,0 +1,74 @@
+### YamlMime:ApiPage
+title: Enum CardType
+body:
+- api1: Enum CardType
+  id: Snipster_Library_Enums_CardType
+  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Enums/CardType.cs#L6
+  metadata:
+    uid: Snipster.Library.Enums.CardType
+    commentId: T:Snipster.Library.Enums.CardType
+- facts:
+  - name: Namespace
+    value:
+      text: Snipster.Library.Enums
+      url: Snipster.Library.Enums.html
+  - name: Assembly
+    value: Snipster.Library.dll
+- markdown: Defines the various types of credit cards that can be identified based on their number patterns.
+- code: public enum CardType
+- h4: Extension Methods
+- list:
+  - text: ObjectFx.DeepClone<CardType>(CardType)
+    url: Snipster.Library.Helpers.ObjectFx.html#Snipster_Library_Helpers_ObjectFx_DeepClone__1___0_
+  - text: StringEx.GetDescription(Enum)
+    url: Snipster.Library.Extensions.StringEx.html#Snipster_Library_Extensions_StringEx_GetDescription_System_Enum_
+  - text: ObjectEx.GetPropertyValue(object, string)
+    url: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_GetPropertyValue_System_Object_System_String_
+  - text: ObjectValEx.HasProperty(object, string)
+    url: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_HasProperty_System_Object_System_String_
+  - text: ObjectValEx.IsDefaultValue<CardType>(CardType)
+    url: Snipster.Library.Extensions.Validations.ObjectValEx.html#Snipster_Library_Extensions_Validations_ObjectValEx_IsDefaultValue__1___0_
+  - text: ObjectEx.SetPropertyValue(object, string, object?)
+    url: Snipster.Library.Extensions.ObjectEx.html#Snipster_Library_Extensions_ObjectEx_SetPropertyValue_System_Object_System_String_System_Object_
+  - text: JsonEx.ToJson(object, Formatting)
+    url: Snipster.Library.Extensions.JsonEx.html#Snipster_Library_Extensions_JsonEx_ToJson_System_Object_Newtonsoft_Json_Formatting_
+- h2: Fields
+- parameters:
+  - name: AmericanExpress
+    default: "3"
+    description: >+
+      Represents an American Express card.
+
+  - name: DinersClub
+    default: "6"
+    description: >+
+      Represents a Diners Club card.
+
+  - name: Discover
+    default: "4"
+    description: >+
+      Represents a Discover card.
+
+  - name: JCB
+    default: "5"
+    description: >+
+      Represents a JCB card.
+
+  - name: MasterCard
+    default: "2"
+    description: >+
+      Represents a MasterCard card.
+
+  - name: Unknown
+    default: "0"
+    description: >+
+      Represents an unknown or unsupported card type.
+
+  - name: Visa
+    default: "1"
+    description: >+
+      Represents a Visa card.
+
+languageId: csharp
+metadata:
+  description: Defines the various types of credit cards that can be identified based on their number patterns.

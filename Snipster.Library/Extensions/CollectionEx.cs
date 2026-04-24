@@ -20,7 +20,10 @@ namespace Snipster.Library.Extensions
         /// </returns>
         /// <exception cref="ArgumentNullException">
         /// Thrown when the <paramref name="source"/> collection is null or <paramref name="size"/> is less than or equal to zero.
-        /// </exception>"
+        /// </exception>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// Thrown when the <paramref name="size"/> parameter is less than or equal to zero.
+        /// </exception>
         public static IEnumerable<IEnumerable<T>> ChunkBy<T>(this IEnumerable<T> source, int size)
         {
             if (source == null)
@@ -65,7 +68,7 @@ namespace Snipster.Library.Extensions
         /// </returns>
         /// <exception cref="ArgumentNullException">
         /// Thrown when the <paramref name="source"/>, <paramref name="keySelector"/>, or <paramref name="valueSelector"/> is null.
-        /// </exception>"
+        /// </exception>
         public static Dictionary<TKey, TValue> ToSafeDictionary<TSource, TKey, TValue>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TValue> valueSelector) where TKey : notnull
         {
             if (source == null)

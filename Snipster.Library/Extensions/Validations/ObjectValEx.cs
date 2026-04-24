@@ -14,7 +14,7 @@ namespace Snipster.Library.Extensions.Validations
         /// </summary>
         /// <param name="obj">The object to check.</param>
         /// <returns>
-        /// True if the object is equal to its type's default value; otherwise, false.
+        /// <see langword="true"/> if the object is equal to its type's default value; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsDefaultValue<T>(this T obj)
         {
@@ -44,7 +44,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <param name="obj">The object to check.</param>
         /// <param name="propertyName">The name of the property to look for.</param>
         /// <returns>
-        /// True if the object has a property with the specified name; otherwise, false.
+        /// <see langword="true"/> if the object has a property with the specified name; otherwise, <see langword="false"/>.
         /// </returns>
         /// <exception cref="ArgumentNullException">
         /// Thrown when the object is null.

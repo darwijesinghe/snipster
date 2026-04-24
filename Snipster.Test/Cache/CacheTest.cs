@@ -6,7 +6,7 @@ using Snipster.Library.Cache;
 namespace Snipster.Test.Cache
 {
     /// <summary>
-    /// Tests for the Cache class.
+    /// Tests for the <see cref="ICacheService"/>.
     /// </summary>
     [TestClass]
     public class CacheTest
@@ -15,6 +15,9 @@ namespace Snipster.Test.Cache
         private readonly Mock<ILogger<CacheService>> _loggerMock;
         private readonly ICacheService               _cacheService;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CacheTest"/> class.
+        /// </summary>
         public CacheTest()
         {
             // create a mock logger for the CacheService
@@ -28,7 +31,7 @@ namespace Snipster.Test.Cache
         }
 
         /// <summary>
-        /// Tests the SetCacheAsync method of the CacheService to ensure it caches data correctly.
+        /// Tests the <see cref="ICacheService.SetCacheAsync{T}(string, Func{Task{T}})"/> method to ensure it caches data correctly.
         /// </summary>
         [TestMethod]
         public async Task SetCacheAsync_ShouldReturnCachedData()
@@ -46,7 +49,7 @@ namespace Snipster.Test.Cache
         }
 
         /// <summary>
-        /// Tests the SetCacheAsync method of the CacheService to ensure it caches data for a specified duration.
+        /// Tests the <see cref="ICacheService.SetCacheAsync{T}(string, double, Func{Task{T}})"/> method to ensure it caches data for a specified duration.
         /// </summary>
         [TestMethod]
         public async Task SetCacheAsync_ShouldExpireAfterDuration()
@@ -75,7 +78,7 @@ namespace Snipster.Test.Cache
         }
 
         /// <summary>
-        /// Tests the SetLongCacheAsync method of the CacheService to ensure it caches data for a longer duration.
+        /// Tests the <see cref="ICacheService.SetLongCacheAsync"/> method to ensure it caches data for a longer duration.
         /// </summary>
         [TestMethod]
         public async Task SetLongCacheAsync_ShouldReturnCachedData()
@@ -93,7 +96,7 @@ namespace Snipster.Test.Cache
         }
 
         /// <summary>
-        /// Tests the SetCacheAsync method of the CacheService to ensure it returns cached data if it already exists.
+        /// Tests the <see cref="ICacheService.SetCacheAsync{T}(string, Func{Task{T}})"/> method to ensure it returns cached data if it already exists.
         /// </summary>
         /// <returns></returns>
         [TestMethod]
@@ -116,7 +119,7 @@ namespace Snipster.Test.Cache
         }
 
         /// <summary>
-        /// Tests the RemoveCache method of the CacheService to ensure it removes a specific cache entry.
+        /// Tests the <see cref="ICacheService.RemoveCache"/> method to ensure it removes a specific cache entry.
         /// </summary>
         [TestMethod]
         public void RemoveCache_ShouldRemoveCache()

@@ -3,13 +3,13 @@
 namespace Snipster.Test.Extensions.Validations
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the SecurityValEx class.
+    /// Unit tests to validate the functionality of the <see cref="SecurityValEx"/> class.
     /// </summary>
     [TestClass]
     public class SecurityValExTest
     {
         /// <summary>
-        /// Test IsValidEmail method to ensure it correctly identifies valid and invalid email formats.
+        /// Test <see cref="SecurityValEx.IsValidEmail"/> method to ensure it correctly identifies valid and invalid email formats.
         /// </summary>
         [DataTestMethod]
 
@@ -48,7 +48,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsValidEmail method with Unicode support to ensure it correctly identifies valid and invalid email formats.
+        /// Test <see cref="SecurityValEx.IsValidEmail"/> method with Unicode support to ensure it correctly identifies valid and invalid email formats.
         /// </summary>
         [DataTestMethod]
 
@@ -89,7 +89,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsStrongPassword method to ensure it correctly identifies strong and weak passwords.
+        /// Test <see cref="SecurityValEx.IsStrongPassword"/> method to ensure it correctly identifies strong and weak passwords.
         /// </summary>
         [DataTestMethod]
 

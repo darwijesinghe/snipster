@@ -3,7 +3,7 @@ title: Class CreditCardEx
 body:
 - api1: Class CreditCardEx
   id: Snipster_Library_Extensions_CreditCardEx
-  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CreditCardEx.cs#L8
+  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CreditCardEx.cs#L9
   metadata:
     uid: Snipster.Library.Extensions.CreditCardEx
     commentId: T:Snipster.Library.Extensions.CreditCardEx
@@ -59,7 +59,7 @@ body:
     Determines the type of credit card based on its number. Supports various card types 
 
     such as Visa, MasterCard, American Express, Discover, JCB, and Diners Club.
-- code: public static string GetCreditCardType(this string number)
+- code: public static CardType GetCreditCardType(this string number)
 - h4: Parameters
 - parameters:
   - name: number
@@ -70,12 +70,9 @@ body:
 - h4: Returns
 - parameters:
   - type:
-    - text: string
-      url: https://learn.microsoft.com/dotnet/api/system.string
-    description: >-
-      A string representing the type of credit card (e.g. "Visa", "MasterCard", etc.).
-
-      "Unknown" if the type cannot be determined or if the input is invalid, empty or non-numeric input.
+    - text: CardType
+      url: Snipster.Library.Enums.CardType.html
+    description: A type of <xref href="Snipster.Library.Enums.CardType" data-throw-if-not-resolved="false"></xref> representing the identified credit card type. If the card type cannot be determined, it returns <xref href="Snipster.Library.Enums.CardType.Unknown" data-throw-if-not-resolved="false"></xref>.
 languageId: csharp
 metadata:
   description: Provides various extensions for working with credit card information.

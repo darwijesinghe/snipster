@@ -72,7 +72,7 @@ body:
     description: >-
       A SHA256 hash of the input string, represented as a hexadecimal string; otherwise, returns the 
 
-      original string if it is null or empty.
+      original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 languageId: csharp
 metadata:
   description: Provides various extensions for working with security-related operations.

@@ -7,7 +7,7 @@ namespace Snipster.Test.Repository
 #nullable disable
 
     /// <summary>
-    /// Tests for the Repository class.
+    /// Tests for the <see cref="GenericRepository{TEntity}"/> class.
     /// </summary>
     [TestClass]
     public class RepositoryTest
@@ -15,6 +15,9 @@ namespace Snipster.Test.Repository
         private TestAppDbContext               _context;
         private IGenericRepository<TestObject> _repository;
 
+        /// <summary>
+        /// Initializes the in-memory context and repository before each test.
+        /// </summary>
         [TestInitialize]
         public void Setup()
         {
@@ -31,7 +34,7 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the AddAsync method of the repository to ensure it adds an entity correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.AddAsync"/> method to ensure it adds an entity correctly.
         /// </summary>
         [TestMethod]
         public async Task AddAsync_ShouldAddEntity()
@@ -50,7 +53,7 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the AddRangeAsync method of the repository to ensure it adds multiple entities correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.AddRangeAsync"/> method to ensure it adds multiple entities correctly.
         /// </summary>
         [TestMethod]
         public async Task AddRangeAsync_ShouldAddEntities()
@@ -73,7 +76,7 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the UpdateAsync method of the repository to ensure it updates an entity correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.Update"/> method to ensure it updates an entity correctly.
         /// </summary>
         [TestMethod]
         public async Task UpdateAsync_ShouldUpdateEntity()
@@ -95,7 +98,7 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the UpdateRangeAsync method of the repository to ensure it updates multiple entities correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.UpdateRange"/> method to ensure it updates multiple entities correctly.
         /// </summary>
         [TestMethod]
         public async Task UpdateRangeAsync_ShouldUpdateMultipleEntities()
@@ -122,7 +125,7 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the Remove method of the repository to ensure it removes an entity correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.Remove"/> method to ensure it removes an entity correctly.
         /// </summary>
         [TestMethod]
         public async Task Remove_ShouldRemoveEntity()
@@ -142,7 +145,7 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the RemoveAsync method of the repository to ensure it removes an entity by its identifier correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.RemoveAsync"/> method to ensure it removes an entity by its identifier correctly.
         /// </summary>
         [TestMethod]
         public async Task RemoveAsync_ShouldRemoveEntity()
@@ -162,7 +165,7 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the GetAllAsync method of the repository to ensure it retrieves all entities correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.GetAllAsync"/> method to ensure it retrieves all entities correctly.
         /// </summary>
         [TestMethod]
         public async Task GetAllAsync_ShouldReturnAllEntities()
@@ -185,7 +188,7 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the GetByConditionAsync method of the repository to ensure it retrieves an entity by a specific condition correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.GetAllByConditionAsync"/> method to ensure it retrieves all entities by a specific condition correctly.
         /// </summary>
         [TestMethod]
         public async Task GetAllByConditionAsync_ShouldReturnFilteredEntities()
@@ -209,7 +212,7 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the GetByConditionAsync method of the repository to ensure it retrieves a single entity by a specific condition correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.GetByConditionAsync"/> method to ensure it retrieves a single entity by a specific condition correctly.
         /// </summary>
         [TestMethod]
         public async Task GetByConditionAsync_ShouldReturnSingleEntity()
@@ -228,9 +231,8 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the GetSelectedColumnsAsync method of the repository to ensure it retrieves selected columns correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.GetSelectedColumnsAsync"/> method to ensure it retrieves selected columns correctly.
         /// </summary>
-        /// <returns></returns>
         [TestMethod]
         public async Task GetSelectedColumnsAsync_ShouldReturnSelectedColumns()
         {
@@ -254,9 +256,8 @@ namespace Snipster.Test.Repository
         }
 
         /// <summary>
-        /// Tests the IsExistAsync method of the repository to ensure it checks for entity existence correctly.
+        /// Tests the <see cref="IGenericRepository{TEntity}.IsExistAsync"/> method to ensure it checks for entity existence correctly.
         /// </summary>
-        /// <returns></returns>
         [TestMethod]
         public async Task IsExistAsync_ShouldReturnTrueIfEntityExists()
         {

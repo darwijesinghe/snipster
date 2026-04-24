@@ -85,7 +85,7 @@ body:
   metadata:
     uid: Snipster.Library.Helpers.StringFx.GenerateGuid(System.Boolean)
     commentId: M:Snipster.Library.Helpers.StringFx.GenerateGuid(System.Boolean)
-- markdown: Generates a new GUID as a string.
+- markdown: Generates a new GUID as a <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
 - code: public static string GenerateGuid(bool includeDashes)
 - h4: Parameters
 - parameters:
@@ -99,7 +99,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A string representation of a new GUID. If includeDashes is true, the format will be "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
+    description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> representation of a new GUID. If includeDashes is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the format will be "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
 - api3: GenerateUniqueUsername(string, string, Func<string, bool>)
   id: Snipster_Library_Helpers_StringFx_GenerateUniqueUsername_System_String_System_String_System_Func_System_String_System_Boolean__
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Helpers/StringFx.cs#L53
@@ -144,11 +144,11 @@ body:
   - type:
     - text: ArgumentException
       url: https://learn.microsoft.com/dotnet/api/system.argumentexception
-    description: Thrown when first name or last name is null or empty.
+    description: Thrown when first name or last name is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
   - type:
     - text: ArgumentNullException
       url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-    description: Thrown when the username check function is null.
+    description: Thrown when the username check function is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
 languageId: csharp
 metadata:
   description: Provides various string manipulation and validation methods.

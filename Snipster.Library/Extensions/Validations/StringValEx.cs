@@ -24,7 +24,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <param name="source">The source string to search within.</param>
         /// <param name="toCheck">The string to check for within the source string.</param>
         /// <returns>
-        /// True if the source string contains the specified string, ignoring case; otherwise, false.
+        /// <see langword="true"/> if the source string contains the specified string, ignoring case; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsContainsIgnoreCase(this string source, string toCheck)
         {
@@ -42,7 +42,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <param name="region">ISO country code required for numbers without a leading + prefix.</param>
         /// <param name="formattedNumber">When valid, contains the normalized E.164 phone number; otherwise, null.</param>
         /// <returns>
-        /// True if the phone number is valid; otherwise, false.
+        /// <see langword="true"/> if the phone number is valid; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsValidPhoneNumber(this string input, string? region, out string? formattedNumber)
         {
@@ -77,7 +77,7 @@ namespace Snipster.Library.Extensions.Validations
         /// </summary>
         /// <param name="input">The string to validate.</param>
         /// <returns>
-        /// True if the string contains only ASCII digits; otherwise, false.
+        /// <see langword="true"/> if the string contains only ASCII digits; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsNumeric(this string input)
         {
@@ -90,7 +90,7 @@ namespace Snipster.Library.Extensions.Validations
         /// </summary>
         /// <param name="input">The string to validate.</param>
         /// <returns>
-        /// True if the string contains only English letters (A–Z, a–z); otherwise, false.
+        /// <see langword="true"/> if the string contains only English letters (A–Z, a–z); otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsAlphabetic(this string input)
         {
@@ -104,8 +104,8 @@ namespace Snipster.Library.Extensions.Validations
         /// </summary>
         /// <param name="input">The string to validate.</param>
         /// <returns>
-        /// True if the string contains only English letters (A–Z, a–z)
-        /// and digits (0–9); otherwise, false.
+        /// <see langword="true"/> if the string contains only English letters (A–Z, a–z)
+        /// and digits (0–9); otherwise, <see langword="false"/><see langword="false"/>.
         /// </returns>
         public static bool IsAlphanumeric(this string input)
         {

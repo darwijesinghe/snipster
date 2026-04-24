@@ -4,13 +4,13 @@ using Snipster.Library.Helpers;
 namespace Snipster.Test.Helpers
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the JsonFx class.
+    /// Unit tests to validate the functionality of the <see cref="JsonFx"/> class.
     /// </summary>
     [TestClass]
     public class JsonFxTest
     {
         /// <summary>
-        /// Tests the Minify method to ensure it correctly minifies a JSON string.
+        /// Tests the <see cref="JsonFx.Minify"/> method to ensure it correctly minifies a JSON string.
         /// </summary>
         [TestMethod]
         public void Minify_ShouldCorrectlyMinifyJsonString()
@@ -27,7 +27,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the Prettify method to ensure it correctly formats a JSON string for readability.
+        /// Tests the <see cref="JsonFx.Prettify"/> method to ensure it correctly formats a JSON string for readability.
         /// </summary>
         [TestMethod]
         public void Prettify_ShouldCorrectlyPrettifyJsonString()

@@ -12,6 +12,8 @@
   href: Snipster.Library.Enums.yml
   items:
   - name: Enums
+  - name: CardType
+    href: Snipster.Library.Enums.CardType.yml
   - name: ExcelAlignment
     href: Snipster.Library.Enums.ExcelAlignment.yml
 - name: Snipster.Library.Extensions

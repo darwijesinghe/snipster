@@ -13,7 +13,7 @@ namespace Snipster.Library.Extensions
         /// <param name="obj">The object to serialize.</param>
         /// <param name="formatting">Optional formatting for the JSON output (None or Indented). Default is None.</param>
         /// <returns>
-        /// A JSON-formatted string representation of the object; otherwise, returns an empty string if the object is null.
+        /// A JSON-formatted string representation of the object; otherwise, returns an empty string if the object is <see langword="null"/>.
         /// </returns>
         public static string ToJson(this object obj, Formatting formatting = Formatting.None)
         {

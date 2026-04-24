@@ -69,7 +69,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the string is a valid IPv4 address; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string is a valid IPv4 address; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsValidIPv6(string)
   id: Snipster_Library_Extensions_Validations_NetworkValEx_IsValidIPv6_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/NetworkValEx.cs#L33
@@ -90,7 +90,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the string is a valid IPv6 address; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string is a valid IPv6 address; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsValidWebAddress(string)
   id: Snipster_Library_Extensions_Validations_NetworkValEx_IsValidWebAddress_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/NetworkValEx.cs#L48
@@ -111,7 +111,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the string is a valid web address (HTTP or HTTPS); otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string is a valid web address (HTTP or HTTPS); otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 languageId: csharp
 metadata:
   description: Provides various extensions for validating network-related values.

@@ -78,7 +78,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the password is strong; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the password is strong; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - h4: Remarks
 - markdown: >-
     A strong password must be at least the specified minimum length and include:<br />
@@ -108,14 +108,14 @@ body:
     type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: If true, allows Unicode letters and digits (for IDN and internationalized emails). If false, restricts to ASCII only.
+    description: If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, allows Unicode letters and digits (for IDN and internationalized emails). If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, restricts to ASCII only.
     optional: true
 - h4: Returns
 - parameters:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the email address is valid; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the email address is valid; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 languageId: csharp
 metadata:
   description: Provides various extensions for validating security-related values.

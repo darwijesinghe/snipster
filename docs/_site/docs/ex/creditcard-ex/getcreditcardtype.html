@@ -89,50 +89,51 @@
 <h2 id="description">Description</h2>
 <p>Determines the type of credit card based on its number. Supports various card types such as <code>Visa</code>, <code>MasterCard</code>, <code>American Express</code>, <code>Discover</code>, <code>JCB</code>, and <code>Diners Club</code>.</p>
 <h3 id="method-signature">Method Signature</h3>
-<pre><code class="lang-csharp">string GetCreditCardType(this string number)
+<pre><code class="lang-csharp">CardType GetCreditCardType(this string number)
 </code></pre>
 <h3 id="examples">Examples</h3>
-<pre><code class="lang-csharp">using Snipster.Library.Extensions;
+<pre><code class="lang-csharp">using Snipster.Library.Enums;
+using Snipster.Library.Extensions;
 
 public class Example
 {
     public static void Main()
     {
         string visaCard = &quot;4111111111111111&quot;;
-        string result = visaCard.GetCreditCardType();
-        // result -&gt; &quot;Visa&quot;
+        CardType visaResult = visaCard.GetCreditCardType();
+        // visaResult -&gt; CardType.Visa
 
         string masterCard = &quot;5555555555554444&quot;;
-        string result = masterCard.GetCreditCardType();
-        // result -&gt; &quot;MasterCard&quot;
+        CardType masterCardResult = masterCard.GetCreditCardType();
+        // masterCardResult -&gt; CardType.MasterCard
 
         string amex = &quot;378282246310005&quot;;
-        string result = amex.GetCreditCardType();
-        // result -&gt; &quot;American Express&quot;
+        CardType amexResult = amex.GetCreditCardType();
+        // amexResult -&gt; CardType.AmericanExpress
 
         string discover = &quot;6011111111111117&quot;;
-        string result = discover.GetCreditCardType();
-        // result -&gt; &quot;Discover&quot;
+        CardType discoverResult = discover.GetCreditCardType();
+        // discoverResult -&gt; CardType.Discover
 
         string jcb = &quot;3530111333300000&quot;;
-        string result = jcb.GetCreditCardType();
-        // result -&gt; &quot;JCB&quot;
+        CardType jcbResult = jcb.GetCreditCardType();
+        // jcbResult -&gt; CardType.JCB
 
         string diners = &quot;30569309025904&quot;;
-        string result = diners.GetCreditCardType();
-        // result -&gt; &quot;Diners Club&quot;
+        CardType dinersResult = diners.GetCreditCardType();
+        // dinersResult -&gt; CardType.DinersClub
 
         string invalid = &quot;1234567890123456&quot;;
-        string result = invalid.GetCreditCardType();
-        // result -&gt; &quot;Unknown&quot;
+        CardType invalidResult = invalid.GetCreditCardType();
+        // invalidResult -&gt; CardType.Unknown
 
         string empty = &quot;&quot;;
-        string result = empty.GetCreditCardType();
-        // result -&gt; &quot;Unknown&quot;
+        CardType emptyResult = empty.GetCreditCardType();
+        // emptyResult -&gt; CardType.Unknown
 
         string nonNumeric = &quot;abcd1234&quot;;
-        string result = nonNumeric.GetCreditCardType();
-        // result -&gt; &quot;Unknown&quot;
+        CardType nonNumericResult = nonNumeric.GetCreditCardType();
+        // nonNumericResult -&gt; CardType.Unknown
     }
 }
 </code></pre>

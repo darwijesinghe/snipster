@@ -14,13 +14,13 @@ namespace Snipster.Library.Extensions
         /// <param name="obj">The object to retrieve the property value from.</param>
         /// <param name="propertyName">The name of the property.</param>
         /// <returns>
-        /// The value of the property if found; otherwise, null.
+        /// The value of the property if found; otherwise, <see langword="null"/>.
         /// </returns>
         /// <exception cref="ArgumentNullException">
-        /// Thrown when the object is null.
+        /// Thrown when the object is <see langword="null"/>.
         /// </exception>
         /// <exception cref="ArgumentException">
-        /// Thrown when the property name is null or empty.
+        /// Thrown when the property name is <see langword="null"/> or empty.
         /// </exception>
         /// <exception cref="InvalidOperationException">
         /// Thrown when the property is not found or failed to get the value.
@@ -58,10 +58,10 @@ namespace Snipster.Library.Extensions
         /// <param name="propertyName">The name of the property.</param>
         /// <param name="value">The value to set.</param>
         /// <exception cref="ArgumentNullException">
-        /// Thrown when the object is null.
+        /// Thrown when the object is <see langword="null"/>.
         /// </exception>
         /// <exception cref="ArgumentException">
-        /// Thrown when the property name is null or empty.
+        /// Thrown when the property name is <see langword="null"/> or empty.
         /// </exception>
         /// <exception cref="InvalidOperationException">
         /// Thrown when the property is not found or is read-only.

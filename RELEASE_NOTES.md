@@ -37,6 +37,8 @@ Introduced a new helper utility to handle writing data to Excel files and memory
 ### Added
 - Excel file helper utility.
 
+---
+
 ## [v1.0.4] - 2025-10-20
 ### Summary
 Introduces new object manipulation and validation utilities, along with 
@@ -56,6 +58,8 @@ enhanced network helpers, and fixed typo issues.
     - `HasInternetConnectionAsync()`
 - Object helpers
     - `DeepClone<T>(T)`
+
+---
 
 ## [v1.0.5] - 2025-10-28
 ### Summary
@@ -79,6 +83,8 @@ The `IsStrongPassword` method has been enhanced to recognize Unicode scripts and
 
     - Improved test coverage for edge cases and Unicode-based inputs.
     - Minor documentation refinements for DocFX and IntelliSense clarity.
+
+---
 
 ## [v1.0.6] - 2026-01-13
 ### Summary
@@ -112,3 +118,30 @@ The `IsValidPhoneNumber` method now accepts raw user input, validates it against
 
     - Improved test coverage for edge cases.
     - Minor documentation refinements for DocFX and IntelliSense clarity.
+
+---
+
+## [v1.0.7] - 2026-04-08
+### Summary
+This release focuses on documentation quality, XML comment consistency, and stronger typing for credit card type detection. No new methods were introduced.
+
+### Changed
+- `GetCreditCardType`
+
+    - Updated the return type from `string` to `CardType` for stronger typing and clearer consumer usage.
+    - Added and aligned enum-based card type handling using the new `CardType` enum.
+
+- Documentation
+
+    - Refined and standardized XML documentation comments across library and test projects.
+    - Improved summary clarity for IntelliSense and generated documentation output.
+    - Updated docs examples and generated DocFX API pages to reflect the enum return type.
+
+- Tests
+
+    - Expanded and aligned test coverage for existing methods.
+    - Updated validation-focused tests to improve reliability and maintainability.
+
+- Other
+
+    - General cleanup and consistency improvements across package documentation.

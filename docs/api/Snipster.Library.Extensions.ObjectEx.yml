@@ -75,17 +75,17 @@ body:
     - text: object
       url: https://learn.microsoft.com/dotnet/api/system.object
     - '?'
-    description: The value of the property if found; otherwise, null.
+    description: The value of the property if found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
 - h4: Exceptions
 - parameters:
   - type:
     - text: ArgumentNullException
       url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-    description: Thrown when the object is null.
+    description: Thrown when the object is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   - type:
     - text: ArgumentException
       url: https://learn.microsoft.com/dotnet/api/system.argumentexception
-    description: Thrown when the property name is null or empty.
+    description: Thrown when the property name is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
   - type:
     - text: InvalidOperationException
       url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
@@ -121,11 +121,11 @@ body:
   - type:
     - text: ArgumentNullException
       url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-    description: Thrown when the object is null.
+    description: Thrown when the object is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   - type:
     - text: ArgumentException
       url: https://learn.microsoft.com/dotnet/api/system.argumentexception
-    description: Thrown when the property name is null or empty.
+    description: Thrown when the property name is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
   - type:
     - text: InvalidOperationException
       url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception

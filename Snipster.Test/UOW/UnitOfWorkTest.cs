@@ -1,6 +1,5 @@
 ﻿using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Snipster.Library.UOW;
 using Snipster.Test.Models;
 
@@ -9,7 +8,7 @@ namespace Snipster.Test.UOW
 #nullable disable
 
     /// <summary>
-    /// Tests for the UnitOfWork class.
+    /// Tests for the <see cref="UnitOfWork"/> class.
     /// </summary>
     [TestClass]
     public class UnitOfWorkTest
@@ -18,6 +17,9 @@ namespace Snipster.Test.UOW
         private IUnitOfWork      _unitOfWork;
         private SqliteConnection _connection;
 
+        /// <summary>
+        /// Initializes the SQLite in-memory context and unit of work before each test.
+        /// </summary>
         [TestInitialize]
         public void Setup()
         {
@@ -41,6 +43,9 @@ namespace Snipster.Test.UOW
             _unitOfWork = new UnitOfWork(_context);
         }
 
+        /// <summary>
+        /// Cleans up open SQLite resources after each test.
+        /// </summary>
         [TestCleanup]
         public void Cleanup()
         {

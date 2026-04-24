@@ -3,36 +3,72 @@
 namespace Snipster.Test.Extensions
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the ObjectEx class.
+    /// Unit tests to validate the functionality of the <see cref="ObjectEx"/> class.
     /// </summary>
     [TestClass]
     public class ObjectExTest
     {
-        // Test classes
+        /// <summary>
+        /// Represents an address used in object extension tests.
+        /// </summary>
         public class Address
         {
+            /// <summary>
+            /// Gets or sets the city.
+            /// </summary>
             public string City { get; set; } = string.Empty;
         }
 
+        /// <summary>
+        /// Represents user status values for test scenarios.
+        /// </summary>
         public enum Status 
         { 
+            /// <summary>
+            /// Indicates an active user status.
+            /// </summary>
             Active, 
+            /// <summary>
+            /// Indicates an inactive user status.
+            /// </summary>
             Inactive 
         }
 
+        /// <summary>
+        /// Represents a person object used in object extension tests.
+        /// </summary>
         public class Person
         {
+            /// <summary>
+            /// Gets or sets the name.
+            /// </summary>
             public string Name       { get; set; } = string.Empty;
+            /// <summary>
+            /// Gets or sets the age.
+            /// </summary>
             public int Age           { get; set; }
+            /// <summary>
+            /// Gets or sets the address.
+            /// </summary>
             public Address? Address  { get; set; }
+            /// <summary>
+            /// Gets the nickname.
+            /// </summary>
             public string? Nickname  { get; private set; } // read-only property
+            /// <summary>
+            /// Gets or sets the user status.
+            /// </summary>
             public Status UserStatus { get; set; }
 
+            /// <summary>
+            /// Sets the nickname.
+            /// </summary>
+            /// <param name="name">The nickname value.</param>
             public void SetNickname(string name) => Nickname = name;
         }
 
         /// <summary>
-        /// Tests the GetPropertyValue method to ensure it throws an ArgumentNullException when the input object is null.
+        /// Tests the <see cref="ObjectEx.GetPropertyValue"/> method to ensure it throws an <see cref="ArgumentNullException"/> when the input object is null.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
@@ -46,7 +82,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetPropertyValue method to ensure it throws an ArgumentException when the property name is empty.
+        /// Tests the <see cref="ObjectEx.GetPropertyValue"/> method to ensure it throws an <see cref="ArgumentException"/> when the property name is empty.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
@@ -60,7 +96,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetPropertyValue method to ensure it returns value when the property exists.
+        /// Tests the <see cref="ObjectEx.GetPropertyValue"/> method to ensure it returns value when the property exists.
         /// </summary>
         [TestMethod]
         public void GetPropertyValue_ShouldReturn_Value_WhenPropertyExists()
@@ -76,7 +112,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetPropertyValue method to ensure it returns null for nullable properties.
+        /// Tests the <see cref="ObjectEx.GetPropertyValue"/> method to ensure it returns null for nullable properties.
         /// </summary>
         [TestMethod]
         public void GetPropertyValue_ShouldReturn_Null_ForNullableProperty()
@@ -92,7 +128,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetPropertyValue method to ensure it throws an InvalidOperationException when the property does not exist.
+        /// Tests the <see cref="ObjectEx.GetPropertyValue"/> method to ensure it throws an <see cref="InvalidOperationException"/> when the property does not exist.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
@@ -106,7 +142,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetPropertyValue method to ensure it returns object instance for complex type properties.
+        /// Tests the <see cref="ObjectEx.GetPropertyValue"/> method to ensure it returns object instance for complex type properties.
         /// </summary>
         [TestMethod]
         public void GetPropertyValue_ShouldReturn_ObjectInstance_ForComplexType()
@@ -123,7 +159,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetPropertyValue method to ensure it returns null when the complex type property is null.
+        /// Tests the <see cref="ObjectEx.GetPropertyValue"/> method to ensure it returns null when the complex type property is null.
         /// </summary>
         [TestMethod]
         public void GetPropertyValue_ShouldReturn_Null_WhenComplexPropertyIsNull()
@@ -139,7 +175,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetPropertyValue method to ensure it throws an InvalidOperationException when the property name case does not match.
+        /// Tests the <see cref="ObjectEx.GetPropertyValue"/> method to ensure it throws an <see cref="InvalidOperationException"/> when the property name case does not match.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
@@ -153,7 +189,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SetPropertyValue method to ensure it throws an ArgumentNullException when the input object is null.
+        /// Tests the <see cref="ObjectEx.SetPropertyValue"/> method to ensure it throws an <see cref="ArgumentNullException"/> when the input object is null.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
@@ -167,7 +203,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SetPropertyValue method to ensure it throws an ArgumentException when the property name is empty.
+        /// Tests the <see cref="ObjectEx.SetPropertyValue"/> method to ensure it throws an <see cref="ArgumentException"/> when the property name is empty.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
@@ -181,7 +217,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SetPropertyValue method to ensure it throws an InvalidOperationException when the property does not exist.
+        /// Tests the <see cref="ObjectEx.SetPropertyValue"/> method to ensure it throws an <see cref="InvalidOperationException"/> when the property does not exist.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
@@ -195,7 +231,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SetPropertyValue method to ensure it throws an InvalidOperationException when the property is read-only.
+        /// Tests the <see cref="ObjectEx.SetPropertyValue"/> method to ensure it throws an <see cref="InvalidOperationException"/> when the property is read-only.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
@@ -209,7 +245,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SetPropertyValue method to ensure it sets the value when the property exists.
+        /// Tests the <see cref="ObjectEx.SetPropertyValue"/> method to ensure it sets the value when the property exists.
         /// </summary>
         [TestMethod]
         public void SetPropertyValue_ShouldSet_Value_WhenPropertyExists()
@@ -225,7 +261,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SetPropertyValue method to ensure it sets null for nullable properties.
+        /// Tests the <see cref="ObjectEx.SetPropertyValue"/> method to ensure it sets null for nullable properties.
         /// </summary>
         [TestMethod]
         public void SetPropertyValue_ShouldSet_Null_ForNullableProperty()
@@ -241,7 +277,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SetPropertyValue method to ensure it converts the type when possible.
+        /// Tests the <see cref="ObjectEx.SetPropertyValue"/> method to ensure it converts the type when possible.
         /// </summary>
         [TestMethod]
         public void SetPropertyValue_ShouldConvertType_WhenPossible()
@@ -257,7 +293,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SetPropertyValue method to ensure it sets complex type properties.
+        /// Tests the <see cref="ObjectEx.SetPropertyValue"/> method to ensure it sets complex type properties.
         /// </summary>
         [TestMethod]
         public void SetPropertyValue_ShouldSet_ComplexProperty()
@@ -274,7 +310,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SetPropertyValue method to ensure it sets enum properties from string values.
+        /// Tests the <see cref="ObjectEx.SetPropertyValue"/> method to ensure it sets enum properties from string values.
         /// </summary>
         [TestMethod]
         public void SetPropertyValue_ShouldSet_EnumProperty_FromStringValue()
@@ -290,7 +326,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SetPropertyValue method to ensure it sets enum properties from enum values.
+        /// Tests the <see cref="ObjectEx.SetPropertyValue"/> method to ensure it sets enum properties from enum values.
         /// </summary>
         [TestMethod]
         public void SetPropertyValue_ShouldSet_EnumProperty_FromEnumValue()

@@ -18,7 +18,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="input">The input string to modify.</param>
         /// <returns>
-        /// A string with the first character converted to uppercase; otherwise, returns the original string if it is null or empty.
+        /// A <see cref="string"/> with the first character converted to uppercase; otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string CapitalizeFirst(this string input)
         {
@@ -33,8 +33,8 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="input">The input string to convert.</param>
         /// <returns>
-        /// A string converted to Title Case, where the first letter of each word is capitalized; otherwise, returns the 
-        /// original string if it is null or empty.
+        /// A <see cref="string"/> converted to Title Case, where the first letter of each word is capitalized; otherwise, returns the 
+        /// original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string ToTitleCase(this string input)
         {
@@ -49,7 +49,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="input">The input string to filter.</param>
         /// <returns>
-        /// A string containing only the numeric characters from the input; otherwise, returns the original string  if it is null or empty.
+        /// A <see cref="string"/> containing only the numeric characters from the input; otherwise, returns the original string  if it is <see langword="null"/> or empty.
         /// </returns>
         public static string OnlyDigits(this string input)
         {
@@ -66,11 +66,11 @@ namespace Snipster.Library.Extensions
         /// <param name="maxLength">The maximum number of characters to retain from the input string.</param>
         /// <param name="suffix">
         /// The optional suffix to append if the string is truncated. Defaults to "...".
-        /// If null is provided, no suffix will be appended.
+        /// If <see langword="null"/> is provided, no suffix will be appended.
         /// </param>
         /// <returns>
         /// A truncated version of the input string if it exceeds the specified maximum length; otherwise, returns the original 
-        /// string if it is null, empty, or does not exceed the maximum length.
+        /// string if it is <see langword="null"/>, empty, or does not exceed the maximum length.
         /// </returns>
         public static string Truncate(this string input, int maxLength, string suffix = "...")
         {
@@ -85,7 +85,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="input">The input string to slugify.</param>
         /// <returns>
-        /// A slugified version of the input string, suitable for use in URLs; otherwise, returns the original string if it is null or empty.
+        /// A slugified version of the input string, suitable for use in URLs; otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string Slugify(this string input)
         {
@@ -109,7 +109,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="input">The input string to encode.</param>
         /// <returns>
-        /// A Base64-encoded string representation of the input; otherwise, returns the original string if it is null or empty.
+        /// A Base64-encoded string representation of the input; otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string ToBase64(this string input)
         {
@@ -124,7 +124,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="base64">The Base64-encoded string to decode.</param>
         /// <returns>
-        /// A decoded string from the Base64 input; otherwise, returns the original string if it is null or empty.
+        /// A decoded string from the Base64 input; otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string FromBase64(this string base64)
         {
@@ -152,7 +152,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="input">The input string containing HTML tags.</param>
         /// <returns>
-        /// A string with all HTML tags removed; otherwise, returns the original string if it is null or empty.
+        /// A <see cref="string"/> with all HTML tags removed; otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string StripHtmlTags(this string input)
         {
@@ -167,8 +167,8 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="input">The input string to sanitize.</param>
         /// <returns>
-        /// A string containing only alphanumeric characters from the input; otherwise, returns the original string if it is 
-        /// null or empty.
+        /// A <see cref="string"/> containing only alphanumeric characters from the input; otherwise, returns the original string if it is 
+        /// <see langword="null"/> or empty.
         /// </returns>
         public static string SanitizeAlphanumeric(this string input)
         {
@@ -183,8 +183,8 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="input">The input string to sanitize.</param>
         /// <returns>
-        /// A string containing only alphanumeric characters and spaces from the input; otherwise, returns the 
-        /// original string if it is null or empty.
+        /// A <see cref="string"/> containing only alphanumeric characters and spaces from the input; otherwise, returns the 
+        /// original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string RemoveSpecialCharacters(this string input)
         {
@@ -200,7 +200,7 @@ namespace Snipster.Library.Extensions
         /// <param name="input">The input string to convert.</param>
         /// <returns>
         /// A CamelCase version of the input string, where the first letter is lowercase and subsequent words are capitalized; 
-        /// otherwise, returns the original string if it is null or empty.
+        /// otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string ToCamelCase(this string input)
         {
@@ -218,7 +218,7 @@ namespace Snipster.Library.Extensions
         /// <param name="input">The input string to convert.</param>
         /// <returns>
         /// A PascalCase version of the input string, where the first letter of each word is capitalized and spaces are removed; 
-        /// otherwise, returns the original string if it is null or empty.
+        /// otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string ToPascalCase(this string input)
         {
@@ -235,7 +235,7 @@ namespace Snipster.Library.Extensions
         /// <param name="input">The input string to convert.</param>
         /// <returns>
         /// A kebab-case version of the input string, where words are lowercase and separated by hyphens; 
-        /// otherwise, returns the original string if it is null or empty.
+        /// otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string ToKebabCase(this string input)
         {
@@ -254,7 +254,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="input">The input string to process.</param>
         /// <returns>
-        /// A string with all whitespace characters removed; otherwise, returns the original string if it is null or empty.
+        /// A <see cref="string"/> with all whitespace characters removed; otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string RemoveWhitespace(this string input)
         {
@@ -269,8 +269,8 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="input">The input string to normalize.</param> 
         /// <returns>
-        /// A string with leading/trailing spaces removed and multiple spaces replaced by a single space;
-        /// otherwise, returns the original string if it is null or empty.
+        /// A <see cref="string"/> with leading/trailing spaces removed and multiple spaces replaced by a single space;
+        /// otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string NormalizeSpaces(this string input)
         {
@@ -313,7 +313,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="sql">The SQL query string to clean.</param>
         /// <returns>
-        /// A cleaned SQL query string with zero-width characters and BOM removed; otherwise, returns the original string if it is null or empty.
+        /// A cleaned SQL query string with zero-width characters and BOM removed; otherwise, returns the original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string ToCleanQueryString(this string sql)
         {

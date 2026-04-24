@@ -14,7 +14,7 @@ namespace Snipster.Library.Extensions
         /// <param name="input">The input string to hash.</param>
         /// <returns>
         /// A SHA256 hash of the input string, represented as a hexadecimal string; otherwise, returns the 
-        /// original string if it is null or empty.
+        /// original string if it is <see langword="null"/> or empty.
         /// </returns>
         public static string ToSha256(this string input)
         {

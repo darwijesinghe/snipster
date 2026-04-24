@@ -4,13 +4,13 @@ using Snipster.Test.Models;
 namespace Snipster.Test.Extensions
 {
     /// <summary>
-    /// Unit tests for the JsonEx class, which provides extensions for working with JSON data.
+    /// Unit tests for the <see cref="JsonEx"/> class, which provides extensions for working with JSON data.
     /// </summary>
     [TestClass]
     public class JsonExTest
     {
         /// <summary>
-        /// Tests the ToJson method to ensure it converts an object to a JSON string correctly.
+        /// Tests the <see cref="JsonEx.ToJson"/> method to ensure it converts an object to a JSON string correctly.
         /// </summary>
         [TestMethod]
         public void ToJson_ShouldConvertObjectToJson()
@@ -27,7 +27,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the FromJson method to ensure it converts a JSON string to an object correctly.
+        /// Tests the <see cref="JsonEx.FromJson{T}"/> method to ensure it converts a JSON string to an object correctly.
         /// </summary>
         [TestMethod]
         public void FromJson_ShouldConvertJsonToObject()
@@ -46,7 +46,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the FromJson method with an invalid JSON string to ensure it returns default value.
+        /// Tests the <see cref="JsonEx.FromJson{T}"/> method with an invalid JSON string to ensure it returns <see langword="default"/> value.
         /// </summary>
         [TestMethod]
         public void FromJson_InvalidJson_ShouldReturnDefault()

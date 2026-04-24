@@ -23,7 +23,7 @@ namespace Snipster.Library.UOW
         /// <param name="context">The database context to be used for the unit of work.</param>
         /// <param name="disposeContext">Whether the UnitOfWork owns the DbContext and should dispose it.</param>
         /// <exception cref="ArgumentNullException">
-        /// Thrown when <paramref name="context"/> is null.
+        /// Thrown when <paramref name="context"/> is <see langword="null"/>.
         /// </exception>
         public UnitOfWork(DbContext context, bool disposeContext = true)
         {

@@ -3,13 +3,13 @@
 namespace Snipster.Test.Extensions
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the SecurityEx class.
+    /// Unit tests to validate the functionality of the <see cref="SecurityEx"/> class.
     /// </summary>
     [TestClass]
     public class SecurityExTest
     {
         /// <summary>
-        /// Tests the ToSha256 method to ensure it generates a SHA256 hash from a string.
+        /// Tests the <see cref="SecurityEx.ToSha256"/> method to ensure it generates a SHA256 hash from a string.
         /// </summary>
         [TestMethod]
         public void ToSha256_ShouldGeneratesSHA256HashFromString()

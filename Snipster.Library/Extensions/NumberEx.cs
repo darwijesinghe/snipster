@@ -10,7 +10,7 @@
         /// </summary>
         /// <param name="number">The number to convert.</param>
         /// <returns>
-        /// A string representing the ordinal form of the number.
+        /// A <see cref="string"/> representing the ordinal form of the number.
         /// </returns>
         public static string ToOrdinal(this int number)
         {
@@ -37,7 +37,7 @@
         /// <param name="input">The input string to convert.</param>
         /// <param name="defaultValue"> The default value to return if the conversion fails (default is 0).</param>
         /// <returns>
-        /// An integer representation of the string if valid; otherwise, the specified default value (default is 0).
+        /// An <see cref="int"/> representation of the string if valid; otherwise, the specified default value (default is 0).
         /// </returns>
         public static int ToIntSafe(this string input, int defaultValue = 0)
         {
@@ -50,7 +50,7 @@
         /// <param name="input">The input string to convert.</param>
         /// <param name="defaultValue"> The default value to return if the conversion fails (default is 0).</param>
         /// <returns>
-        /// A double representation of the string if valid; otherwise, the specified default value (default is 0).
+        /// A <see cref="double"/> representation of the string if valid; otherwise, the specified default value (default is 0).
         /// </returns>
         public static double ToDoubleSafe(this string input, double defaultValue = 0)
         {

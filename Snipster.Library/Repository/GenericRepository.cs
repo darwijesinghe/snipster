@@ -22,7 +22,7 @@ namespace Snipster.Library.Repository
         /// </summary>
         /// <param name="context">The <see cref="DbContext"/> to use for database operations.</param>
         /// <exception cref="ArgumentNullException">
-        /// Thrown when <paramref name="context"/> is null.
+        /// Thrown when <paramref name="context"/> is <see langword="null"/>.
         /// </exception>
         public GenericRepository(DbContext context)
         {

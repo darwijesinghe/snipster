@@ -51,7 +51,7 @@ body:
 - h2: Methods
 - api3: ChunkBy<T>(IEnumerable<T>, int)
   id: Snipster_Library_Extensions_CollectionEx_ChunkBy__1_System_Collections_Generic_IEnumerable___0__System_Int32_
-  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L24
+  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L27
   metadata:
     uid: Snipster.Library.Extensions.CollectionEx.ChunkBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
     commentId: M:Snipster.Library.Extensions.CollectionEx.ChunkBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
@@ -95,9 +95,13 @@ body:
     - text: ArgumentNullException
       url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
     description: Thrown when the <code class="paramref">source</code> collection is null or <code class="paramref">size</code> is less than or equal to zero.
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: Thrown when the <code class="paramref">size</code> parameter is less than or equal to zero.
 - api3: ExceptSafe<T>(IEnumerable<T>, IEnumerable<T>)
   id: Snipster_Library_Extensions_CollectionEx_ExceptSafe__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__
-  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L202
+  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L205
   metadata:
     uid: Snipster.Library.Extensions.CollectionEx.ExceptSafe``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
     commentId: M:Snipster.Library.Extensions.CollectionEx.ExceptSafe``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
@@ -136,7 +140,7 @@ body:
     description: The type of elements in the collections.
 - api3: ForEach<T>(IEnumerable<T>, Action<T>)
   id: Snipster_Library_Extensions_CollectionEx_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
-  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L101
+  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L104
   metadata:
     uid: Snipster.Library.Extensions.CollectionEx.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
     commentId: M:Snipster.Library.Extensions.CollectionEx.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
@@ -172,7 +176,7 @@ body:
     description: Thrown when the <code class="paramref">source</code> or <code class="paramref">action</code> is null.
 - api3: LeastCommon<T>(IEnumerable<T>)
   id: Snipster_Library_Extensions_CollectionEx_LeastCommon__1_System_Collections_Generic_IEnumerable___0__
-  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L178
+  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L181
   metadata:
     uid: Snipster.Library.Extensions.CollectionEx.LeastCommon``1(System.Collections.Generic.IEnumerable{``0})
     commentId: M:Snipster.Library.Extensions.CollectionEx.LeastCommon``1(System.Collections.Generic.IEnumerable{``0})
@@ -209,7 +213,7 @@ body:
     description: Thrown when the <code class="paramref">source</code> contains no elements.
 - api3: MostCommon<T>(IEnumerable<T>)
   id: Snipster_Library_Extensions_CollectionEx_MostCommon__1_System_Collections_Generic_IEnumerable___0__
-  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L149
+  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L152
   metadata:
     uid: Snipster.Library.Extensions.CollectionEx.MostCommon``1(System.Collections.Generic.IEnumerable{``0})
     commentId: M:Snipster.Library.Extensions.CollectionEx.MostCommon``1(System.Collections.Generic.IEnumerable{``0})
@@ -246,7 +250,7 @@ body:
     description: Thrown when the <code class="paramref">source</code> contains no elements.
 - api3: RandomItem<T>(IEnumerable<T>)
   id: Snipster_Library_Extensions_CollectionEx_RandomItem__1_System_Collections_Generic_IEnumerable___0__
-  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L123
+  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L126
   metadata:
     uid: Snipster.Library.Extensions.CollectionEx.RandomItem``1(System.Collections.Generic.IEnumerable{``0})
     commentId: M:Snipster.Library.Extensions.CollectionEx.RandomItem``1(System.Collections.Generic.IEnumerable{``0})
@@ -279,7 +283,7 @@ body:
     description: Thrown when the <code class="paramref">source</code> is null.
 - api3: Shuffle<T>(IEnumerable<T>)
   id: Snipster_Library_Extensions_CollectionEx_Shuffle__1_System_Collections_Generic_IEnumerable___0__
-  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L215
+  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L218
   metadata:
     uid: Snipster.Library.Extensions.CollectionEx.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
     commentId: M:Snipster.Library.Extensions.CollectionEx.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
@@ -310,7 +314,7 @@ body:
     description: The type of elements in the collection.
 - api3: ToSafeDictionary<TSource, TKey, TValue>(IEnumerable<TSource>, Func<TSource, TKey>, Func<TSource, TValue>)
   id: Snipster_Library_Extensions_CollectionEx_ToSafeDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__
-  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L69
+  src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CollectionEx.cs#L72
   metadata:
     uid: Snipster.Library.Extensions.CollectionEx.ToSafeDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})
     commentId: M:Snipster.Library.Extensions.CollectionEx.ToSafeDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})

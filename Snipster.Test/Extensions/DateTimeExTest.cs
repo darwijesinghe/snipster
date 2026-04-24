@@ -3,13 +3,13 @@
 namespace Snipster.Test.Extensions
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the DateTimeEx class.
+    /// Unit tests to validate the functionality of the <see cref="DateTimeEx"/> class.
     /// </summary>
     [TestClass]
     public class DateTimeExTest
     {
         /// <summary>
-        /// Tests the ToUnixTimestamp method to ensure it converts DateTime to Unix timestamp correctly.
+        /// Tests the <see cref="DateTimeEx.ToUnixTimestamp"/> method to ensure it converts DateTime to Unix timestamp correctly.
         /// </summary>
         [TestMethod]
         public void ToUnixTimestamp_ShouldReturnCorrectUnixTimestamp()
@@ -26,7 +26,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the FromUnixTimestamp method to ensure it converts Unix timestamp to DateTime correctly.
+        /// Tests the <see cref="DateTimeEx.FromUnixTimestamp"/> method to ensure it converts Unix timestamp to <see cref="DateTime"/> correctly.
         /// </summary>
         [TestMethod]
         public void FromUnixTimestamp_ShouldReturnCorrectDateTime()
@@ -43,7 +43,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToTimeAgo method to ensure it returns the correct time ago string.
+        /// Tests the <see cref="DateTimeEx.ToTimeAgo"/> method to ensure it returns the correct time ago string.
         /// </summary>
         [TestMethod]
         public void ToTimeAgo_ShouldReturnCorrectTimeAgoString()
@@ -60,7 +60,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the StartOfDay method to ensure it returns the start of the day for a given DateTime.
+        /// Tests the <see cref="DateTimeEx.StartOfDay"/> method to ensure it returns the start of the day for a given <see cref="DateTime"/>.
         /// </summary>
         [TestMethod]
         public void StartOfDay_ShouldReturnStartOfDay()
@@ -77,7 +77,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the EndOfDay method to ensure it returns the end of the day for a given DateTime.
+        /// Tests the <see cref="DateTimeEx.EndOfDay"/> method to ensure it returns the end of the day for a given <see cref="DateTime"/>.
         /// </summary>
         [TestMethod]
         public void EndOfDay_ShouldReturnEndOfDay()
@@ -94,7 +94,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToTimeZone method to ensure it converts a DateTime to a specific time zone correctly.
+        /// Tests the <see cref="DateTimeEx.ToTimeZone"/> method to ensure it converts a <see cref="DateTime"/> to a specific time zone correctly.
         /// </summary>
         [TestMethod]
         public void ToTimeZone_ShouldConvertToSpecificTimeZone()
@@ -112,7 +112,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the FromTimeZone method to ensure it converts a specific time zone to UTC correctly.
+        /// Tests the <see cref="DateTimeEx.FromTimeZone"/> method to ensure it converts a specific time zone to UTC correctly.
         /// </summary>
         [TestMethod]
         public void FromTimeZone_ShouldConvertToCorrectUTC()
@@ -130,7 +130,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToDateString method to ensure it formats a DateTime to a date string correctly.
+        /// Tests the <see cref="DateTimeEx.ToDateString"/> method to ensure it formats a <see cref="DateTime"/> to a date string correctly.
         /// </summary>
         [TestMethod]
         public void ToDateString_ShouldFormatDateCorrectly()
@@ -147,7 +147,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToTimeString method to ensure it formats a DateTime to a time string correctly.
+        /// Tests the <see cref="DateTimeEx.ToTimeString"/> method to ensure it formats a <see cref="DateTime"/> to a time string correctly.
         /// </summary>
         [TestMethod]
         public void ToTimeString_ShouldFormatTimeCorrectly()
@@ -164,7 +164,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToFullDateTimeString method to ensure it formats a DateTime to a full date and time string correctly.
+        /// Tests the <see cref="DateTimeEx.ToFullDateTimeString"/> method to ensure it formats a <see cref="DateTime"/> to a full date and time string correctly.
         /// </summary>
         [TestMethod]
         public void ToFullDateTimeString_ShouldFormatDateTimeCorrectly()
@@ -181,7 +181,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetWeekStartDate method to ensure it returns the correct start date of the week for a given date.
+        /// Tests the <see cref="DateTimeEx.GetWeekStartDate"/> method to ensure it returns the correct start date of the week for a given date.
         /// </summary>
         [TestMethod]
         public void GetWeekStartDate_ShouldReturnCorrectWeekStartDate()
@@ -198,7 +198,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetWeekEndDate method to ensure it returns the correct end date of the week for a given date.
+        /// Tests the <see cref="DateTimeEx.GetWeekEndDate"/> method to ensure it returns the correct end date of the week for a given date.
         /// </summary>
         [TestMethod]
         public void GetWeekEndDate_ShouldReturnCorrectWeekEndDate()
@@ -215,7 +215,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetWeekOfYear method to ensure it returns the correct week number for a given date.
+        /// Tests the <see cref="DateTimeEx.GetWeekOfYear"/> method to ensure it returns the correct week number for a given date.
         /// </summary>
         [TestMethod]
         public void GetWeekOfYear_ShouldReturnCorrectWeekNumber()
@@ -232,7 +232,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToAge method to ensure it calculates the correct age from a birth date.
+        /// Tests the <see cref="DateTimeEx.ToAge"/> method to ensure it calculates the correct age from a birth date.
         /// </summary>
         [TestMethod]
         public void ToAge_ShouldReturnCorrectAge()

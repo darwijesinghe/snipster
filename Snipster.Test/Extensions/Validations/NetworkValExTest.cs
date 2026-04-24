@@ -3,13 +3,13 @@
 namespace Snipster.Test.Extensions.Validations
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the NetworkValEx class.
+    /// Unit tests to validate the functionality of the <see cref="NetworkValEx"/> class.
     /// </summary>
     [TestClass]
     public class NetworkValExTest
     {
         /// <summary>
-        /// Test IsValidIPv4 method to ensure it correctly identifies valid and invalid IPv4 addresses.
+        /// Test <see cref="NetworkValEx.IsValidIPv4"/> method to ensure it correctly identifies valid and invalid IPv4 addresses.
         /// </summary>
         [TestMethod]
         public void IsValidIPv4_ShouldIdentify_ValidAndInvalid_IPv4_Addresses()
@@ -28,7 +28,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsValidIPv6 method to ensure it correctly identifies valid and invalid IPv6 addresses.
+        /// Test <see cref="NetworkValEx.IsValidIPv6"/> method to ensure it correctly identifies valid and invalid IPv6 addresses.
         /// </summary>
         [TestMethod]
         public void IsValidIPv6_ShouldIdentify_ValidAndInvalid_IPv6_Addresses()
@@ -47,22 +47,19 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsValidWebAddress method to ensure it correctly identifies valid and invalid web addresses.
+        /// Test <see cref="NetworkValEx.IsValidWebAddress"/> method to ensure it correctly identifies valid and invalid web addresses.
         /// </summary>
-        [TestMethod]
-        public void IsValidWebAddress_ShouldIdentify_ValidAndInvalid_Web_Addresses()
+        [DataTestMethod]
+        [DataRow("http://www.example.com", true)]
+        [DataRow("https://www.example.com", true)]
+        [DataRow("ftp://www.example.com", false)]
+        public void IsValidWebAddress_ShouldIdentify_ValidAndInvalid_Web_Addresses(string address, bool expected)
         {
-            // Arrange
-            string validWebAddress   = "https://www.example.com";
-            string invalidWebAddress = "ftp://www.example.com";
-
             // Act
-            bool isValidWebAddressResult   = validWebAddress.IsValidWebAddress();
-            bool isInvalidWebAddressResult = invalidWebAddress.IsValidWebAddress();
+            bool result = address.IsValidWebAddress();
 
             // Assert
-            Assert.IsTrue(isValidWebAddressResult);
-            Assert.IsFalse(isInvalidWebAddressResult);
+            Assert.AreEqual(expected, result, $"Failed for: {address}");
         }
     }
 }

@@ -162,7 +162,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: Returns true if the password is valid; otherwise, false.
+    description: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the password is valid; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 languageId: csharp
 metadata:
   description: Provides various security-related helper methods and functionalities.

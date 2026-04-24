@@ -1,15 +1,15 @@
 ﻿using Snipster.Library.Helpers;
 
-namespace Snipster.Test.Helpers
+namespace Snipster.Test
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the FileFx class.
+    /// Unit tests to validate the functionality of the <see cref="FileFx"/> class.
     /// </summary>
     [TestClass]
     public class FileFxTest
     {
         /// <summary>
-        /// Tests the SafeReadText method to ensure it returns null for the invalid path.
+        /// Tests the <see cref="FileFx.SafeReadText"/> method to ensure it returns <see langword="null"/> for the invalid path.
         /// </summary>
         [TestMethod]
         public void SafeReadText_ShouldReturnNullForInvalidPath()
@@ -25,7 +25,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the SafeReadText method to ensure it returns file content for the valid path.
+        /// Tests the <see cref="FileFx.SafeReadText"/> method to ensure it returns file content for the valid path.
         /// </summary>
         [TestMethod]
         public void SafeReadText_ShouldReturnFileContent()
@@ -45,7 +45,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the SafeWriteText method to ensure it writes content to the file.
+        /// Tests the <see cref="FileFx.SafeWriteText"/> method to ensure it writes content to the file.
         /// </summary>
         [TestMethod]
         public void SafeWriteText_ShouldWriteContentToTheFile()
@@ -66,7 +66,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the SafeReadBytes method to ensure it returns null for the invalid path.
+        /// Tests the <see cref="FileFx.SafeReadBytes"/> method to ensure it returns <see langword="null"/> for the invalid path.
         /// </summary>
         [TestMethod]
         public void SafeReadBytes_ShouldReturnNullForInvalidPath()
@@ -82,7 +82,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the SafeReadBytes and SafeWriteBytes methods to ensure they work correctly.
+        /// Tests the <see cref="FileFx.SafeReadBytes"/> and <see cref="FileFx.SafeWriteBytes"/> methods to ensure they work correctly.
         /// </summary>
         [TestMethod]
         public void SafeWriteBytes_And_SafeReadBytes_ShouldWork()
@@ -104,7 +104,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the CreateTempFile method to ensure it creates a file with the given extension.
+        /// Tests the <see cref="FileFx.CreateTempFile"/> method to ensure it creates a file with the given extension.
         /// </summary>
         [TestMethod]
         public void CreateTempFile_ShouldCreateFileWithCorrectExtension()
@@ -120,7 +120,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the GetDirectorySize method to ensure it returns the correct directory size.
+        /// Tests the <see cref="FileFx.GetDirectorySize"/> method to ensure it returns the correct directory size.
         /// </summary>
         [TestMethod]
         public void GetDirectorySize_ShouldReturnCorrectSize()
@@ -144,7 +144,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the SanitizeFileName method to ensure it returns the correct file name by replacing _ with invalid characters.
+        /// Tests the <see cref="FileFx.SanitizeFileName"/> method to ensure it returns the correct file name by replacing _ with invalid characters.
         /// </summary>
         [TestMethod]
         public void SanitizeFileName_ShouldReplaceInvalidCharacters()

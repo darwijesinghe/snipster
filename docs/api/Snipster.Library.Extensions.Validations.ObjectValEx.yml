@@ -74,7 +74,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the object has a property with the specified name; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object has a property with the specified name; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - h4: Exceptions
 - parameters:
   - type:
@@ -104,7 +104,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the object is equal to its type's default value; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object is equal to its type's default value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - h4: Type Parameters
 - parameters:
   - name: T

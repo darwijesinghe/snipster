@@ -47,6 +47,16 @@
     },
     {
       "type": "ApiPage",
+      "source_relative_path": "api/Snipster.Library.Enums.CardType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snipster.Library.Enums.CardType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ApiPage",
       "source_relative_path": "api/Snipster.Library.Enums.ExcelAlignment.yml",
       "output": {
         ".html": {

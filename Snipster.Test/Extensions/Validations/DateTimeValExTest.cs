@@ -3,13 +3,13 @@
 namespace Snipster.Test.Extensions.Validations
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the DateTimeValEx class.
+    /// Unit tests to validate the functionality of the <see cref="DateTimeValEx"/> class.
     /// </summary>
     [TestClass]
     public class DateTimeValExTest
     {
         /// <summary>
-        /// Test IsToday method to ensure it correctly identifies today's date.
+        /// Test <see cref="DateTimeValEx.IsToday"/> method to ensure it correctly identifies today's date.
         /// </summary>
         [TestMethod]
         public void IsToday_ShouldIdentifyTodayDate()
@@ -26,7 +26,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsFuture method to ensure it correctly identifies future dates.
+        /// Test <see cref="DateTimeValEx.IsFuture"/> method to ensure it correctly identifies future dates.
         /// </summary>
         [TestMethod]
         public void IsFuture_ShouldIdentifyFutureDates()
@@ -43,7 +43,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsPast method to ensure it correctly identifies past dates.
+        /// Test <see cref="DateTimeValEx.IsPast"/> method to ensure it correctly identifies past dates.
         /// </summary>
         [TestMethod]
         public void IsPast_ShouldIdentifyPastDates()
@@ -60,7 +60,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsWeekend method to ensure it correctly identifies weekend dates.
+        /// Test <see cref="DateTimeValEx.IsWeekend"/> method to ensure it correctly identifies weekend dates.
         /// </summary>
         [TestMethod]
         public void IsWeekend_ShouldIdentifyWeekendDates()
@@ -77,7 +77,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsWeekday method to ensure it correctly identifies weekday dates.
+        /// Test <see cref="DateTimeValEx.IsWeekday"/> method to ensure it correctly identifies weekday dates.
         /// </summary>
         [TestMethod]
         public void IsWeekday_ShouldIdentifyWeekdayDates()
@@ -94,17 +94,17 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsValidDate method to ensure it correctly identifies valid and invalid date formats.
+        /// Test <see cref="DateTimeValEx.IsValidDate"/> method to ensure it correctly identifies valid and invalid date formats.
         /// </summary>
         [TestMethod]
         public void IsValidDate_ShouldIdentifyValidAndInvalidDateFormats()
         {
             // Arrange
-            string validDate = "2023-10-01";
+            string validDate   = "2023-10-01";
             string invalidDate = "2023-13-01";
 
             // Act
-            bool isValidDateResult = validDate.IsValidDate();
+            bool isValidDateResult   = validDate.IsValidDate();
             bool isInvalidDateResult = invalidDate.IsValidDate();
 
             // Assert

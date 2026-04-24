@@ -22,10 +22,25 @@
 
         // Extra -----------------------------
 
+        /// <summary>
+        /// Gets or sets the age.
+        /// </summary>
         public int Age           { get; set; }
+        /// <summary>
+        /// Gets or sets a value indicating whether the user is a member.
+        /// </summary>
         public bool IsMember     { get; set; }
+        /// <summary>
+        /// Gets or sets the join date.
+        /// </summary>
         public DateTime JoinDate { get; set; }
+        /// <summary>
+        /// Gets or sets the salary.
+        /// </summary>
         public double Salary     { get; set; }
+        /// <summary>
+        /// Gets or sets the commission value.
+        /// </summary>
         public double Commission { get; set; }
     }
 }

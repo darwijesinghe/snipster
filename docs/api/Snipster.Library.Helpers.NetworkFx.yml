@@ -83,17 +83,17 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A string representing the complete URL with the query parameters appended.
+    description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> representing the complete URL with the query parameters appended.
 - h4: Exceptions
 - parameters:
   - type:
     - text: ArgumentException
       url: https://learn.microsoft.com/dotnet/api/system.argumentexception
-    description: Thrown when the base URL is null or empty.
+    description: Thrown when the base URL is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
   - type:
     - text: ArgumentNullException
       url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-    description: Thrown when the parameters dictionary is null.
+    description: Thrown when the parameters dictionary is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
 - api3: HasInternetConnectionAsync(string, int)
   id: Snipster_Library_Helpers_NetworkFx_HasInternetConnectionAsync_System_String_System_Int32_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Helpers/NetworkFx.cs#L109
@@ -128,7 +128,7 @@ body:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     - '>'
-    description: True if internet connection is available; otherwise false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if internet connection is available; otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsHostAvailableAsync(string, int)
   id: Snipster_Library_Helpers_NetworkFx_IsHostAvailableAsync_System_String_System_Int32_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Helpers/NetworkFx.cs#L31
@@ -159,13 +159,13 @@ body:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     - '>'
-    description: True if the host is available, otherwise false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the host is available, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - h4: Exceptions
 - parameters:
   - type:
     - text: ArgumentException
       url: https://learn.microsoft.com/dotnet/api/system.argumentexception
-    description: Thrown when the host is null or empty.
+    description: Thrown when the host is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
   - type:
     - text: ArgumentOutOfRangeException
       url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception

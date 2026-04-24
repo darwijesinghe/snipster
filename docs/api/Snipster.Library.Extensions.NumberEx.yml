@@ -75,7 +75,7 @@ body:
   - type:
     - text: double
       url: https://learn.microsoft.com/dotnet/api/system.double
-    description: A double representation of the string if valid; otherwise, the specified default value (default is 0).
+    description: A <xref href="System.Double" data-throw-if-not-resolved="false"></xref> representation of the string if valid; otherwise, the specified default value (default is 0).
 - api3: ToIntSafe(string, int)
   id: Snipster_Library_Extensions_NumberEx_ToIntSafe_System_String_System_Int32_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/NumberEx.cs#L42
@@ -102,7 +102,7 @@ body:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-    description: An integer representation of the string if valid; otherwise, the specified default value (default is 0).
+    description: An <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> representation of the string if valid; otherwise, the specified default value (default is 0).
 - api3: ToOrdinal(int)
   id: Snipster_Library_Extensions_NumberEx_ToOrdinal_System_Int32_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/NumberEx.cs#L15
@@ -123,7 +123,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A string representing the ordinal form of the number.
+    description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> representing the ordinal form of the number.
 languageId: csharp
 metadata:
   description: Provides various extensions for working with numbers.

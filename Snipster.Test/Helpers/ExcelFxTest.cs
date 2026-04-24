@@ -9,7 +9,7 @@ using System.Globalization;
 namespace Snipster.Test.Helpers
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the ExcelFx class.
+    /// Unit tests to validate the functionality of the <see cref="ExcelFx"/> class.
     /// </summary>
     [TestClass]
     public class ExcelFxTest
@@ -29,6 +29,9 @@ namespace Snipster.Test.Helpers
         /// </summary>
         private string _tempFileName = string.Empty;
 
+        /// <summary>
+        /// Initializes test-scoped values before each test method runs.
+        /// </summary>
         [TestInitialize]
         public void Setup()
         {
@@ -38,7 +41,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it creates a worksheet with the specified name.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it creates a worksheet with the specified name.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldWorksheetExists()
@@ -70,7 +73,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the General format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the General format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyGeneralFormat()
@@ -107,7 +110,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the Text format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the Text format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyTextFormat()
@@ -144,7 +147,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the Integer format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the Integer format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyIntegerFormat()
@@ -181,7 +184,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the Boolean format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the Boolean format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyBooleanFormat()
@@ -218,7 +221,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the default Boolean format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the default Boolean format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyDefaultBooleanFormat()
@@ -254,7 +257,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the Short Date format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the Short Date format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyShortDateFormat()
@@ -291,7 +294,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the Long Date format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the Long Date format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyDateLongFormat()
@@ -331,7 +334,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the DateTime format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the <see cref="DateTime"/> format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyDateTimeFormat()
@@ -371,7 +374,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the Double format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the <see cref="Double"/> format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyDoubleFormat()
@@ -408,7 +411,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the Currency format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the Currency format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyCurrencyFormat()
@@ -448,7 +451,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it applies the Percentage format.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it applies the Percentage format.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldApplyPercentageFormat()
@@ -488,7 +491,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it returns ArgumentException when data is null or empty.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it returns <see cref="ArgumentException"/> when data is <see langword="null"/> or empty.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldReturn_ArgumentException_OnNullOrEmptyData()
@@ -510,7 +513,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it returns ArgumentException when column data is null or empty.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it returns <see cref="ArgumentException"/> when column data is <see langword="null"/> or empty.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldReturn_ArgumentException_OnNullOrEmptyColumnData()
@@ -532,7 +535,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToMemory method to ensure it returns ArgumentNullException when the output stream is null.
+        /// Tests the <see cref="ExcelFx.WriteToMemory"/> method to ensure it returns <see cref="ArgumentNullException"/> when the output stream is <see langword="null"/>.
         /// </summary>
         [TestMethod]
         public void WriteToMemory_ShouldReturn_ArgumentNullException_OnNullStream()
@@ -558,7 +561,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToExcel method to ensure it creates an Excel file in the specified path.
+        /// Tests the <see cref="ExcelFx.WriteToExcel"/> method to ensure it creates an Excel file in the specified path.
         /// </summary>
         [TestMethod]
         public void WriteToExcel_ShouldFileExistsInTempPath()
@@ -583,7 +586,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToExcel method to ensure it returns ArgumentException when the file path is null or empty.
+        /// Tests the <see cref="ExcelFx.WriteToExcel"/> method to ensure it returns <see cref="ArgumentException"/> when the file path is <see langword="null"/> or empty.
         /// </summary>
         [TestMethod]
         public void WriteToExcel_ShouldReturn_ArgumentException_OnNullOrEmptyFilePath()
@@ -614,7 +617,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToExcel method to ensure it returns ArgumentException when the file name is null or empty.
+        /// Tests the <see cref="ExcelFx.WriteToExcel"/> method to ensure it returns <see cref="ArgumentException"/> when the file name is <see langword="null"/> or empty.
         /// </summary>
         [TestMethod]
         public void WriteToExcel_ShouldReturn_ArgumentException_OnNullOrEmptyFileName()
@@ -645,7 +648,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToExcel method to ensure it returns DirectoryNotFoundException when the specified directory does not exist.
+        /// Tests the <see cref="ExcelFx.WriteToExcel"/> method to ensure it returns <see cref="DirectoryNotFoundException"/> when the specified directory does not exist.
         /// </summary>
         [TestMethod]
         public void WriteToExcel_ShouldReturn_DirectoryNotFoundException_WhenTheDirectoryDoesNotExist()
@@ -671,7 +674,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the WriteToExcel method with a full table of diverse data types and formatting options.
+        /// Tests the <see cref="ExcelFx.WriteToExcel"/> method with a full table of diverse data types and formatting options.
         /// </summary>
         [TestMethod]
         public void WriteToExcel_FullTableTest()
@@ -770,6 +773,9 @@ namespace Snipster.Test.Helpers
             opts.SheetName          = _sheetName;
         }
 
+        /// <summary>
+        /// Cleans up temporary test files after each test method runs.
+        /// </summary>
         [TestCleanup]
         public void Cleanup()
         {

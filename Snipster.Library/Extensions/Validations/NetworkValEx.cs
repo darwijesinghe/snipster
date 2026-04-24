@@ -13,7 +13,7 @@ namespace Snipster.Library.Extensions.Validations
         /// </summary>
         /// <param name="input">The input string to validate.</param>
         /// <returns>
-        /// True if the string is a valid IPv4 address; otherwise, false.
+        /// <see langword="true"/> if the string is a valid IPv4 address; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsValidIPv4(this string input)
         {
@@ -28,7 +28,7 @@ namespace Snipster.Library.Extensions.Validations
         /// </summary>
         /// <param name="input">The input string to validate.</param>
         /// <returns>
-        /// True if the string is a valid IPv6 address; otherwise, false.
+        /// <see langword="true"/> if the string is a valid IPv6 address; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsValidIPv6(this string input)
         {
@@ -43,7 +43,7 @@ namespace Snipster.Library.Extensions.Validations
         /// </summary>
         /// <param name="input">The input string to validate.</param>
         /// <returns>
-        /// True if the string is a valid web address (HTTP or HTTPS); otherwise, false.
+        /// <see langword="true"/> if the string is a valid web address (HTTP or HTTPS); otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsValidWebAddress(this string input)
         {

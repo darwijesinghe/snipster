@@ -3,13 +3,13 @@
 namespace Snipster.Test.Extensions.Validations
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the StringValEx class.
+    /// Unit tests to validate the functionality of the <see cref="StringValEx"/> class.
     /// </summary>
     [TestClass]
     public class StringValExTest
     {
         /// <summary>
-        /// Test IsContainsIgnoreCase method to ensure it correctly identifies substrings in a case-insensitive manner.
+        /// Test <see cref="StringValEx.IsContainsIgnoreCase"/> method to ensure it correctly identifies substrings in a case-insensitive manner.
         /// </summary>
         [DataTestMethod]
 
@@ -35,7 +35,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsValidatePhoneNumber method to ensure it correctly identifies valid and invalid phone numbers.
+        /// Test <see cref="StringValEx.IsValidPhoneNumber"/> method to ensure it correctly identifies valid and invalid phone numbers.
         /// </summary>
         [DataTestMethod]
 
@@ -74,7 +74,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsNumeric method to ensure it correctly identifies numeric strings.
+        /// Test <see cref="StringValEx.IsNumeric"/> method to ensure it correctly identifies numeric strings.
         /// </summary>
         [DataTestMethod]
 
@@ -101,7 +101,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsAlphabetic method to ensure it correctly identifies alphabetic strings.
+        /// Test <see cref="StringValEx.IsAlphabetic"/> method to ensure it correctly identifies alphabetic strings.
         /// </summary>
         [DataTestMethod]
 
@@ -128,7 +128,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Test IsAlphanumeric method to ensure it correctly identifies alphanumeric strings.
+        /// Test <see cref="StringValEx.IsAlphanumeric"/> method to ensure it correctly identifies alphanumeric strings.
         /// </summary>
         [DataTestMethod]
 

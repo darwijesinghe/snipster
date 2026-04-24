@@ -14,7 +14,7 @@ namespace Snipster.Library.Extensions.Validations
         /// </summary>
         /// <param name="json">The JSON string to validate.</param>
         /// <returns>
-        /// True if the string is a valid JSON; otherwise, false.
+        /// <see langword="true"/> if the string is a valid JSON; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsValidJson(this string json)
         {

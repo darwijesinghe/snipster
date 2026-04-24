@@ -3,13 +3,13 @@
 namespace Snipster.Test.Extensions
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the NumberEx class.
+    /// Unit tests to validate the functionality of the <see cref="NumberEx"/> class.
     /// </summary>
     [TestClass]
     public class NumberExTest
     {
         /// <summary>
-        /// Tests the ToIntSafe method to ensure it converts a string to an integer or returns a default value if conversion fails.
+        /// Tests the <see cref="NumberEx.ToIntSafe"/> method to ensure it converts a string to an integer or returns a <see langword="default"/> value if conversion fails.
         /// </summary>
         [TestMethod]
         public void ToIntSafe_ShouldConvertToIntOrDefault()
@@ -27,7 +27,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToDoubleSafe method to ensure it converts a string to a double or returns a default value if conversion fails.
+        /// Tests the <see cref="NumberEx.ToDoubleSafe"/> method to ensure it converts a string to a double or returns a default value if conversion fails.
         /// </summary>
         [TestMethod]
         public void ToDoubleSafe_ShouldConvertToDoubleOrDefault()
@@ -45,7 +45,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToOrdinal method to ensure it converts an integer to its ordinal representation as a string (e.g. "1st", "2nd", "3rd", "4th", etc.).
+        /// Tests the <see cref="NumberEx.ToOrdinal"/> method to ensure it converts an integer to its ordinal representation as a string (e.g. "1st", "2nd", "3rd", "4th", etc.).
         /// </summary>
         [TestMethod]
         public void ToOrdinal_ShouldReturnOrdinalRepresentation()

@@ -69,7 +69,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A string with the first character converted to uppercase; otherwise, returns the original string if it is null or empty.
+    description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> with the first character converted to uppercase; otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: FromBase64(string)
   id: Snipster_Library_Extensions_StringEx_FromBase64_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L129
@@ -90,7 +90,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A decoded string from the Base64 input; otherwise, returns the original string if it is null or empty.
+    description: A decoded string from the Base64 input; otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: GetDescription(Enum)
   id: Snipster_Library_Extensions_StringEx_GetDescription_System_Enum_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L291
@@ -136,9 +136,9 @@ body:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
     description: >-
-      A string with leading/trailing spaces removed and multiple spaces replaced by a single space;
+      A <xref href="System.String" data-throw-if-not-resolved="false"></xref> with leading/trailing spaces removed and multiple spaces replaced by a single space;
 
-      otherwise, returns the original string if it is null or empty.
+      otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: OnlyDigits(string)
   id: Snipster_Library_Extensions_StringEx_OnlyDigits_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L54
@@ -159,7 +159,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A string containing only the numeric characters from the input; otherwise, returns the original string  if it is null or empty.
+    description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing only the numeric characters from the input; otherwise, returns the original string  if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: OrDefault(string?, string)
   id: Snipster_Library_Extensions_StringEx_OrDefault_System_String_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L145
@@ -209,9 +209,9 @@ body:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
     description: >-
-      A string containing only alphanumeric characters and spaces from the input; otherwise, returns the 
+      A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing only alphanumeric characters and spaces from the input; otherwise, returns the 
 
-      original string if it is null or empty.
+      original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: RemoveWhitespace(string)
   id: Snipster_Library_Extensions_StringEx_RemoveWhitespace_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L259
@@ -232,7 +232,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A string with all whitespace characters removed; otherwise, returns the original string if it is null or empty.
+    description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> with all whitespace characters removed; otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: SanitizeAlphanumeric(string)
   id: Snipster_Library_Extensions_StringEx_SanitizeAlphanumeric_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L173
@@ -254,9 +254,9 @@ body:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
     description: >-
-      A string containing only alphanumeric characters from the input; otherwise, returns the original string if it is 
+      A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing only alphanumeric characters from the input; otherwise, returns the original string if it is 
 
-      null or empty.
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: Slugify(string)
   id: Snipster_Library_Extensions_StringEx_Slugify_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L90
@@ -277,7 +277,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A slugified version of the input string, suitable for use in URLs; otherwise, returns the original string if it is null or empty.
+    description: A slugified version of the input string, suitable for use in URLs; otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: StripHtmlTags(string)
   id: Snipster_Library_Extensions_StringEx_StripHtmlTags_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L157
@@ -298,7 +298,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A string with all HTML tags removed; otherwise, returns the original string if it is null or empty.
+    description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> with all HTML tags removed; otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: ToBase64(string)
   id: Snipster_Library_Extensions_StringEx_ToBase64_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L114
@@ -319,7 +319,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A Base64-encoded string representation of the input; otherwise, returns the original string if it is null or empty.
+    description: A Base64-encoded string representation of the input; otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: ToCamelCase(string)
   id: Snipster_Library_Extensions_StringEx_ToCamelCase_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L205
@@ -343,7 +343,7 @@ body:
     description: >-
       A CamelCase version of the input string, where the first letter is lowercase and subsequent words are capitalized; 
 
-      otherwise, returns the original string if it is null or empty.
+      otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: ToCleanQueryString(string)
   id: Snipster_Library_Extensions_StringEx_ToCleanQueryString_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L318
@@ -364,7 +364,7 @@ body:
   - type:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
-    description: A cleaned SQL query string with zero-width characters and BOM removed; otherwise, returns the original string if it is null or empty.
+    description: A cleaned SQL query string with zero-width characters and BOM removed; otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: ToKebabCase(string)
   id: Snipster_Library_Extensions_StringEx_ToKebabCase_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L240
@@ -388,7 +388,7 @@ body:
     description: >-
       A kebab-case version of the input string, where words are lowercase and separated by hyphens; 
 
-      otherwise, returns the original string if it is null or empty.
+      otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: ToPascalCase(string)
   id: Snipster_Library_Extensions_StringEx_ToPascalCase_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L223
@@ -412,7 +412,7 @@ body:
     description: >-
       A PascalCase version of the input string, where the first letter of each word is capitalized and spaces are removed; 
 
-      otherwise, returns the original string if it is null or empty.
+      otherwise, returns the original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: ToTitleCase(string)
   id: Snipster_Library_Extensions_StringEx_ToTitleCase_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L39
@@ -434,9 +434,9 @@ body:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
     description: >-
-      A string converted to Title Case, where the first letter of each word is capitalized; otherwise, returns the 
+      A <xref href="System.String" data-throw-if-not-resolved="false"></xref> converted to Title Case, where the first letter of each word is capitalized; otherwise, returns the 
 
-      original string if it is null or empty.
+      original string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
 - api3: Truncate(string, int, string)
   id: Snipster_Library_Extensions_StringEx_Truncate_System_String_System_Int32_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/StringEx.cs#L75
@@ -464,7 +464,7 @@ body:
     description: >-
       The optional suffix to append if the string is truncated. Defaults to "...".
 
-      If null is provided, no suffix will be appended.
+      If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> is provided, no suffix will be appended.
     optional: true
 - h4: Returns
 - parameters:
@@ -474,7 +474,7 @@ body:
     description: >-
       A truncated version of the input string if it exceeds the specified maximum length; otherwise, returns the original 
 
-      string if it is null, empty, or does not exceed the maximum length.
+      string if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, empty, or does not exceed the maximum length.
 languageId: csharp
 metadata:
   description: Provides various string manipulation and formatting extension methods.

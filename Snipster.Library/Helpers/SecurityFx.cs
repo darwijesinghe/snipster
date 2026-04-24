@@ -70,7 +70,7 @@ namespace Snipster.Library.Helpers
         /// <param name="passwordHash">The stored hashed password as a byte array.</param>
         /// <param name="passwordSalt">The salt used to hash the stored password.</param>
         /// <returns>
-        /// Returns true if the password is valid; otherwise, false.
+        /// Returns <see langword="true"/> if the password is valid; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool VerifyPassword(string password, byte[] passwordHash, byte[] passwordSalt)
         {

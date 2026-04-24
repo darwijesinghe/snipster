@@ -69,7 +69,7 @@ body:
   - type:
     - text: DateTime
       url: https://learn.microsoft.com/dotnet/api/system.datetime
-    description: A DateTime representing the end of the day (23:59:59.999) for the given date.
+    description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the end of the day (23:59:59.999) for the given date.
 - api3: FromTimeZone(DateTime, string)
   id: Snipster_Library_Extensions_DateTimeEx_FromTimeZone_System_DateTime_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/DateTimeEx.cs#L141
@@ -101,7 +101,7 @@ body:
   - type:
     - text: ArgumentException
       url: https://learn.microsoft.com/dotnet/api/system.argumentexception
-    description: Thrown when <code class="paramref">timeZoneId</code> is null, empty, not found, or invalid.
+    description: Thrown when <code class="paramref">timeZoneId</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, empty, not found, or invalid.
 - api3: FromUnixTimestamp(long)
   id: Snipster_Library_Extensions_DateTimeEx_FromUnixTimestamp_System_Int64_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/DateTimeEx.cs#L30
@@ -122,7 +122,7 @@ body:
   - type:
     - text: DateTime
       url: https://learn.microsoft.com/dotnet/api/system.datetime
-    description: The DateTime representing the Unix timestamp in UTC.
+    description: The <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the Unix timestamp in UTC.
 - api3: GetWeekEndDate(DateTime)
   id: Snipster_Library_Extensions_DateTimeEx_GetWeekEndDate_System_DateTime_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/DateTimeEx.cs#L218
@@ -206,7 +206,7 @@ body:
   - type:
     - text: DateTime
       url: https://learn.microsoft.com/dotnet/api/system.datetime
-    description: A DateTime representing the start of the day (00:00:00) for the given date.
+    description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the start of the day (00:00:00) for the given date.
 - api3: ToAge(DateTime)
   id: Snipster_Library_Extensions_DateTimeEx_ToAge_System_DateTime_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/DateTimeEx.cs#L245
@@ -346,7 +346,7 @@ body:
   - type:
     - text: ArgumentException
       url: https://learn.microsoft.com/dotnet/api/system.argumentexception
-    description: Thrown when <code class="paramref">timeZoneId</code> is null, empty, not found, or invalid.
+    description: Thrown when <code class="paramref">timeZoneId</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, empty, not found, or invalid.
 - api3: ToUnixTimestamp(DateTime)
   id: Snipster_Library_Extensions_DateTimeEx_ToUnixTimestamp_System_DateTime_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/DateTimeEx.cs#L18

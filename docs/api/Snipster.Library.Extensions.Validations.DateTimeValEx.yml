@@ -55,7 +55,7 @@ body:
   metadata:
     uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(System.DateTime)
     commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsFuture(System.DateTime)
-- markdown: Returns true if the date is in the future.
+- markdown: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the date is in the future.
 - code: public static bool IsFuture(this DateTime date)
 - h4: Parameters
 - parameters:
@@ -69,14 +69,14 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the date is in the future; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the date is in the future; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsPast(DateTime)
   id: Snipster_Library_Extensions_Validations_DateTimeValEx_IsPast_System_DateTime_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/DateTimeValEx.cs#L42
   metadata:
     uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(System.DateTime)
     commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsPast(System.DateTime)
-- markdown: Returns true if the date is in the past.
+- markdown: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the date is in the past.
 - code: public static bool IsPast(this DateTime date)
 - h4: Parameters
 - parameters:
@@ -90,14 +90,14 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the date is in the past; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the date is in the past; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsToday(DateTime)
   id: Snipster_Library_Extensions_Validations_DateTimeValEx_IsToday_System_DateTime_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/DateTimeValEx.cs#L18
   metadata:
     uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(System.DateTime)
     commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsToday(System.DateTime)
-- markdown: Returns true if the date is today.
+- markdown: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the date is today.
 - code: public static bool IsToday(this DateTime date)
 - h4: Parameters
 - parameters:
@@ -111,7 +111,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the date is today; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the date is today; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsValidDate(string, string)
   id: Snipster_Library_Extensions_Validations_DateTimeValEx_IsValidDate_System_String_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/DateTimeValEx.cs#L79
@@ -138,14 +138,14 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the string is a valid date in the specified format; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string is a valid date in the specified format; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsWeekday(DateTime)
   id: Snipster_Library_Extensions_Validations_DateTimeValEx_IsWeekday_System_DateTime_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/DateTimeValEx.cs#L66
   metadata:
     uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(System.DateTime)
     commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekday(System.DateTime)
-- markdown: Returns true if the date is a weekday (Monday–Friday).
+- markdown: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the date is a weekday (Monday–Friday).
 - code: public static bool IsWeekday(this DateTime date)
 - h4: Parameters
 - parameters:
@@ -159,14 +159,14 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the date is a weekday; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the date is a weekday; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: IsWeekend(DateTime)
   id: Snipster_Library_Extensions_Validations_DateTimeValEx_IsWeekend_System_DateTime_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/Validations/DateTimeValEx.cs#L54
   metadata:
     uid: Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(System.DateTime)
     commentId: M:Snipster.Library.Extensions.Validations.DateTimeValEx.IsWeekend(System.DateTime)
-- markdown: Returns true if the date is a weekend (Saturday or Sunday).
+- markdown: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the date is a weekend (Saturday or Sunday).
 - code: public static bool IsWeekend(this DateTime date)
 - h4: Parameters
 - parameters:
@@ -180,7 +180,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the date is a weekend; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the date is a weekend; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 languageId: csharp
 metadata:
   description: Provides various extensions for validating DateTime values.

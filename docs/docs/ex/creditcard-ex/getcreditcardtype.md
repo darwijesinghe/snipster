@@ -8,11 +8,12 @@ Determines the type of credit card based on its number. Supports various card ty
 ### Method Signature
 
 ```csharp
-string GetCreditCardType(this string number)
+CardType GetCreditCardType(this string number)
 ```
 ### Examples
 
 ```csharp
+using Snipster.Library.Enums;
 using Snipster.Library.Extensions;
 
 public class Example
@@ -20,40 +21,40 @@ public class Example
     public static void Main()
     {
         string visaCard = "4111111111111111";
-        string result = visaCard.GetCreditCardType();
-        // result -> "Visa"
+        CardType visaResult = visaCard.GetCreditCardType();
+        // visaResult -> CardType.Visa
 
         string masterCard = "5555555555554444";
-        string result = masterCard.GetCreditCardType();
-        // result -> "MasterCard"
+        CardType masterCardResult = masterCard.GetCreditCardType();
+        // masterCardResult -> CardType.MasterCard
 
         string amex = "378282246310005";
-        string result = amex.GetCreditCardType();
-        // result -> "American Express"
+        CardType amexResult = amex.GetCreditCardType();
+        // amexResult -> CardType.AmericanExpress
 
         string discover = "6011111111111117";
-        string result = discover.GetCreditCardType();
-        // result -> "Discover"
+        CardType discoverResult = discover.GetCreditCardType();
+        // discoverResult -> CardType.Discover
 
         string jcb = "3530111333300000";
-        string result = jcb.GetCreditCardType();
-        // result -> "JCB"
+        CardType jcbResult = jcb.GetCreditCardType();
+        // jcbResult -> CardType.JCB
 
         string diners = "30569309025904";
-        string result = diners.GetCreditCardType();
-        // result -> "Diners Club"
+        CardType dinersResult = diners.GetCreditCardType();
+        // dinersResult -> CardType.DinersClub
 
         string invalid = "1234567890123456";
-        string result = invalid.GetCreditCardType();
-        // result -> "Unknown"
+        CardType invalidResult = invalid.GetCreditCardType();
+        // invalidResult -> CardType.Unknown
 
         string empty = "";
-        string result = empty.GetCreditCardType();
-        // result -> "Unknown"
+        CardType emptyResult = empty.GetCreditCardType();
+        // emptyResult -> CardType.Unknown
 
         string nonNumeric = "abcd1234";
-        string result = nonNumeric.GetCreditCardType();
-        // result -> "Unknown"
+        CardType nonNumericResult = nonNumeric.GetCreditCardType();
+        // nonNumericResult -> CardType.Unknown
     }
 }
 ```

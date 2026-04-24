@@ -75,7 +75,7 @@ body:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
     - '?'
-    description: The path to the created temporary file, or null if an error occurs.
+    description: The path to the created temporary file, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if an error occurs.
 - api3: GetDirectorySize(string)
   id: Snipster_Library_Helpers_FileFx_GetDirectorySize_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Helpers/FileFx.cs#L135
@@ -120,7 +120,7 @@ body:
     - '['
     - ']'
     - '?'
-    description: The content of the file as a byte array, or null if an error occurs.
+    description: The content of the file as a byte array, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if an error occurs.
 - api3: SafeReadText(string, Encoding?)
   id: Snipster_Library_Helpers_FileFx_SafeReadText_System_String_System_Text_Encoding_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Helpers/FileFx.cs#L20
@@ -149,7 +149,7 @@ body:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
     - '?'
-    description: The content of the file as a string, or null if an error occurs.
+    description: The content of the file as a string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if an error occurs.
 - api3: SafeWriteBytes(string, byte[])
   id: Snipster_Library_Helpers_FileFx_SafeWriteBytes_System_String_System_Byte___
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Helpers/FileFx.cs#L81
@@ -177,7 +177,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the write operation was successful; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the write operation was successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: SafeWriteText(string, string, Encoding?)
   id: Snipster_Library_Helpers_FileFx_SafeWriteText_System_String_System_String_System_Text_Encoding_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Helpers/FileFx.cs#L60
@@ -210,7 +210,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the write operation was successful; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the write operation was successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: SanitizeFileName(string, string)
   id: Snipster_Library_Helpers_FileFx_SanitizeFileName_System_String_System_String_
   src: https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Helpers/FileFx.cs#L165
@@ -241,7 +241,7 @@ body:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
     - '?'
-    description: A sanitized file name where invalid characters are replaced, or null if an error occurs.
+    description: A sanitized file name where invalid characters are replaced, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if an error occurs.
 languageId: csharp
 metadata:
   description: A class that provides file-related utility functions.

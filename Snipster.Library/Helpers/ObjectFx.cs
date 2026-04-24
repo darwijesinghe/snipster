@@ -17,7 +17,7 @@ namespace Snipster.Library.Helpers
         /// A deep cloned copy of the source object.
         /// </returns>
         /// <exception cref="ArgumentNullException">
-        /// Thrown if the source object is null.
+        /// Thrown if the source object is <see langword="null"/>.
         /// </exception>
         /// <exception cref="InvalidOperationException">
         /// Thrown if a serialization or reference loop issue occurs or any unexpected error during cloning.

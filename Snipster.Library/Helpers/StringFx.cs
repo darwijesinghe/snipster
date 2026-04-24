@@ -45,10 +45,10 @@ namespace Snipster.Library.Helpers
         /// A unique username generated from the first and last name, ensuring it is not already taken.
         /// </returns>
         /// <exception cref="ArgumentException">
-        /// Thrown when first name or last name is null or empty.
+        /// Thrown when first name or last name is <see langword="null"/> or empty.
         /// </exception>
         /// <exception cref="ArgumentNullException">
-        /// Thrown when the username check function is null.
+        /// Thrown when the username check function is <see langword="null"/>.
         /// </exception>
         public static string GenerateUniqueUsername(string firstName, string lastName, Func<string, bool> isUsernameTaken)
         {
@@ -72,11 +72,11 @@ namespace Snipster.Library.Helpers
         }
 
         /// <summary>
-        /// Generates a new GUID as a string.
+        /// Generates a new GUID as a <see cref="string"/>.
         /// </summary>
         /// <param name="includeDashes">If true, the GUID will include dashes; otherwise, it will be a continuous string without dashes.</param>
         /// <returns>
-        /// A string representation of a new GUID. If includeDashes is true, the format will be "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
+        /// A <see cref="string"/> representation of a new GUID. If includeDashes is <see langword="true"/>, the format will be "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
         /// </returns>
         public static string GenerateGuid(bool includeDashes)
         {

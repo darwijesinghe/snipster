@@ -3,13 +3,13 @@
 namespace Snipster.Test.Helpers
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the StringFx class.
+    /// Unit tests to validate the functionality of the <see cref="StringFx"/> class.
     /// </summary>
     [TestClass]
     public class StringFxTest
     {
         /// <summary>
-        /// Tests the FormatBytes method to ensure it correctly formats byte sizes into human-readable strings.
+        /// Tests the <see cref="StringFx.FormatBytes"/> method to ensure it correctly formats byte sizes into human-readable strings.
         /// </summary>
         [TestMethod]
         public void FormatBytes_ShouldCorrectlyFormatByteSizeToHumanReadableString()
@@ -29,7 +29,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the GenerateUniqueUsername method to ensure it generates a unique username based on first and last names.
+        /// Tests the <see cref="StringFx.GenerateUniqueUsername"/> method to ensure it generates a unique username based on first and last names.
         /// </summary>
         [TestMethod]
         public void GenerateUniqueUsername_ShouldGenerateUniqueUserName()
@@ -56,28 +56,10 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the GenerateGuid method to ensure it generates a new GUID without dashes.
+        /// Tests the <see cref="StringFx.GenerateGuid"/> method to ensure it generates a new GUID with or without dashes.
         /// </summary>
         [TestMethod]
-        public void GenerateGuid_ShouldGenerateNewGuidWithoutDashes()
-        {
-            // Arrange
-            bool includeDashes = false;
-
-            // Act
-            string guid = StringFx.GenerateGuid(includeDashes);
-
-            // Assert
-            Assert.IsNotNull(guid);
-            Assert.AreEqual(32, guid.Length);
-            Assert.IsFalse(guid.Contains("-"));
-        }
-
-        /// <summary>
-        /// Tests the GenerateGuid method to ensure it generates a new GUID with dashes.
-        /// </summary>
-        [TestMethod]
-        public void GenerateGuid_ShouldGenerateNewGuidWithDashes()
+        public void GenerateGuid_ShouldGenerateNewGuidWithOrWithoutDashes()
         {
             // Arrange
             bool includeDashes = true;
@@ -88,10 +70,19 @@ namespace Snipster.Test.Helpers
             // Assert
             Assert.IsNotNull(guid);
 
-            // The GUID format is "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+            // The GUID format is "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" with dashes
             Assert.AreEqual(36, guid.Length); 
 
             Assert.IsTrue(guid.Contains("-"));
+
+            // Act - Generate GUID without dashes
+            includeDashes = false;
+            guid = StringFx.GenerateGuid(includeDashes);
+
+            // Assert - GUID without dashes
+            Assert.IsNotNull(guid);
+            Assert.AreEqual(32, guid.Length);
+            Assert.IsFalse(guid.Contains("-"));
         }
     }
 }

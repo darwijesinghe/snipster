@@ -4,13 +4,13 @@ using Snipster.Test.Models;
 namespace Snipster.Test.Extensions
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the StringEx class.
+    /// Unit tests to validate the functionality of the <see cref="Snipster.Library.Extensions.StringEx"/> class.
     /// </summary>
     [TestClass]
     public class StringExTest
     {
         /// <summary>
-        /// Tests the CapitalizeFirst method to ensure it capitalizes the first letter of a string.
+        /// Tests the <see cref="Library.Extensions.StringEx.CapitalizeFirst"/> method to ensure it capitalizes the first letter of a string.
         /// </summary>
         [TestMethod]
         public void CapitalizeFirst_ShouldCapitalizeFirstLetter()
@@ -27,7 +27,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToTitleCase method to ensure it converts a string to title case.
+        /// Tests the <see cref="Library.Extensions.StringEx.ToTitleCase"/> method to ensure it converts a string to title case.
         /// </summary>
         [TestMethod]
         public void ToTitleCase_ShouldConvertToTitleCase()
@@ -44,7 +44,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the OnlyDigits method to ensure it extracts only numeric characters from a string.
+        /// Tests the <see cref="Library.Extensions.StringEx.OnlyDigits"/> method to ensure it extracts only numeric characters from a string.
         /// </summary>
         [TestMethod]
         public void OnlyDigits_ShouldContainOnlyNumericCharacters()
@@ -61,7 +61,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the Truncate method to ensure it truncates a string to a specified length and appends ellipsis if necessary.
+        /// Tests the <see cref="Library.Extensions.StringEx.Truncate"/> method to ensure it truncates a string to a specified length and appends ellipsis if necessary.
         /// </summary>
         [TestMethod]
         public void Truncate_ShouldTruncateInputToSpecifiedLength()
@@ -79,7 +79,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the Slugify method to ensure it converts a string into a URL-friendly slug format.
+        /// Tests the <see cref="Library.Extensions.StringEx.Slugify"/> method to ensure it converts a string into a URL-friendly slug format.
         /// </summary>
         [TestMethod]
         public void Slugify_ShouldSlugifyTheInput()
@@ -96,7 +96,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToBase64 method to ensure it converts a string to Base64 encoding.
+        /// Tests the <see cref="Library.Extensions.StringEx.ToBase64"/> method to ensure it converts a string to Base64 encoding.
         /// </summary>
         [TestMethod]
         public void ToBase64_ShouldConvertInputToBase64()
@@ -113,7 +113,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the FromBase64 method to ensure it decodes a Base64 encoded string back to its original form.
+        /// Tests the <see cref="Library.Extensions.StringEx.FromBase64"/> method to ensure it decodes a Base64 encoded string back to its original form.
         /// </summary>
         [TestMethod]
         public void FromBase64_ShouldDecodeBase64EncodedString()
@@ -130,7 +130,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the OrDefault method to ensure it returns a default value if the input string is null or empty.
+        /// Tests the <see cref="Library.Extensions.StringEx.OrDefault"/> method to ensure it returns a <see langword="default"/> value if the input string is <see langword="null"/> or empty.
         /// </summary>
         [TestMethod]
         public void OrDefault_ShouldReturnDefaultValueIfInputIsNullOrEmpty()
@@ -148,7 +148,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the StripHtmlTags method to ensure it removes HTML tags from a string.
+        /// Tests the <see cref="Library.Extensions.StringEx.StripHtmlTags"/> method to ensure it removes HTML tags from a string.
         /// </summary>
         [TestMethod]
         public void StripHtmlTags_ShouldStripHtmlTagsFromInput()
@@ -165,7 +165,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the SanitizeAlphanumeric method to ensure it removes non-alphanumeric characters from a string.
+        /// Tests the <see cref="Library.Extensions.StringEx.SanitizeAlphanumeric"/> method to ensure it removes non-alphanumeric characters from a string.
         /// </summary>
         [TestMethod]
         public void SanitizeAlphanumeric_ShouldRemoveNonAlphanumericCharacters()
@@ -182,7 +182,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the RemoveSpecialCharacters method to ensure it removes special characters except spaces from a string.
+        /// Tests the <see cref="Library.Extensions.StringEx.RemoveSpecialCharacters"/> method to ensure it removes special characters except spaces from a string.
         /// </summary>
         [TestMethod]
         public void RemoveSpecialCharacters_ShouldRemoveSpecialCharactersExceptSpaces()
@@ -199,7 +199,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToCamelCase method to ensure it converts a string to camel case format.
+        /// Tests the <see cref="Library.Extensions.StringEx.ToCamelCase"/> method to ensure it converts a string to camel case format.
         /// </summary>
         [TestMethod]
         public void ToCamelCase_ShouldConvertToCamelCase()
@@ -216,7 +216,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToPascalCase method to ensure it converts a string to Pascal case format.
+        /// Tests the <see cref="Library.Extensions.StringEx.ToPascalCase"/> method to ensure it converts a string to Pascal case format.
         /// </summary>
         [TestMethod]
         public void ToPascalCase_ShouldConvertToPascalCase()
@@ -233,7 +233,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the ToKebabCase method to ensure it converts a string to kebab case format.
+        /// Tests the <see cref="Library.Extensions.StringEx.ToKebabCase"/> method to ensure it converts a string to kebab case format.
         /// </summary>
         [TestMethod]
         public void ToKebabCase_ShouldConvertToKebabCase()
@@ -250,7 +250,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the RemoveWhitespace method to ensure it removes all whitespace characters from a string.
+        /// Tests the <see cref="Library.Extensions.StringEx.RemoveWhitespace"/> method to ensure it removes all whitespace characters from a string.
         /// </summary>
         [TestMethod]
         public void RemoveWhitespace_ShouldRemoveAllWhitespace()
@@ -267,7 +267,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the NormalizeSpaces method to ensure it normalizes multiple spaces to a single space.
+        /// Tests the <see cref="Library.Extensions.StringEx.NormalizeSpaces"/> method to ensure it normalizes multiple spaces to a single space.
         /// </summary>
         [TestMethod]
         public void NormalizeSpaces_ShouldNormalizeSpaces()
@@ -284,7 +284,7 @@ namespace Snipster.Test.Extensions
         }
 
         /// <summary>
-        /// Tests the GetDescription method to ensure it retrieves the 
+        /// Tests the <see cref="Library.Extensions.StringEx.GetDescription"/> method to ensure it retrieves the 
         /// description attribute of an enum value. If the enum value does not have a description, it should return the enum name.
         /// </summary>
         [TestMethod]
@@ -305,6 +305,9 @@ namespace Snipster.Test.Extensions
             Assert.AreEqual(expected2, result2);
         }
 
+        /// <summary>
+        /// Tests the <see cref="Library.Extensions.StringEx.ToCleanQueryString"/> method to ensure it removes any leading BOM characters from a SQL query string.
+        /// </summary>
         [TestMethod]
         public void ToCleanQueryString_ShouldReturnCleanQueryString()
         {

@@ -3,13 +3,13 @@
 namespace Snipster.Test.Helpers
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the NetworkFx class.
+    /// Unit tests to validate the functionality of the <see cref="NetworkFx"/> class.
     /// </summary>
     [TestClass]
     public class NetworkFxTest
     {
         /// <summary>
-        /// Tests the IsHostAvailableAsync method to ensure it returns true when the host is available and false when it is not available, as expected.
+        /// Tests the <see cref="NetworkFx.IsHostAvailableAsync"/> method to ensure it returns <see langword="true"/> when the host is available and <see langword="false"/> when it is not available, as expected.
         /// </summary>
         [TestMethod]
         public async Task IsHostAvailableAsync_ValidHostReturns_TrueOrFalse()
@@ -32,7 +32,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the IsHostAvailableAsync method throws an <see cref="ArgumentException"/> when the host is empty.
+        /// Tests the <see cref="NetworkFx.IsHostAvailableAsync"/> method throws an <see cref="ArgumentException"/> when the host is empty.
         /// </summary>
         [TestMethod]
         public async Task IsHostAvailableAsync_EmptyHostThrows_ArgumentException()
@@ -48,7 +48,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the IsHostAvailableAsync method throws an <see cref="ArgumentOutOfRangeException"/> when the timeout parameter is zero.
+        /// Tests the <see cref="NetworkFx.IsHostAvailableAsync"/> method throws an <see cref="ArgumentOutOfRangeException"/> when the timeout parameter is zero.
         /// </summary>
         [TestMethod]
         public async Task IsHostAvailableAsync_TimeoutZeroThrows_ArgumentOutOfRangeException()
@@ -64,7 +64,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the BuildUrl method throws an <see cref="ArgumentException"/> when the base url is empty.
+        /// Tests the <see cref="NetworkFx.BuildUrl"/> method throws an <see cref="ArgumentException"/> when the base url is empty.
         /// </summary>
         [TestMethod]
         public void BuildUrl_ShouldReturn_ArgumentException_On_EmptyUrl()
@@ -85,7 +85,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the BuildUrl method throws an <see cref="ArgumentNullException"/> when the parameters are null.
+        /// Tests the <see cref="NetworkFx.BuildUrl"/> method throws an <see cref="ArgumentNullException"/> when the parameters are <see langword="null"/>.
         /// </summary>
         [TestMethod]
         public void BuildUrl_ShouldReturn_ArgumentNullException_On_NullParameters()
@@ -103,7 +103,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the BuildUrl method returns valid url with the provided query params.
+        /// Tests the <see cref="NetworkFx.BuildUrl"/> method returns valid url with the provided query params.
         /// </summary>
         [TestMethod]
         public void BuildUrl_ShouldReturn_ValidUrlWithQueryParams()
@@ -126,7 +126,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the BuildUrl method returns valid url when query params contains a list.
+        /// Tests the <see cref="NetworkFx.BuildUrl"/> method returns valid url when query params contains a list.
         /// </summary>
         [TestMethod]
         public void BuildUrl_ShouldReturn_ValidUrl_When_QueryParamsContainList()
@@ -150,7 +150,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the BuildUrl method returns a valid url when query parameter values contain special characters.
+        /// Tests the <see cref="NetworkFx.BuildUrl"/> method returns a valid url when query parameter values contain special characters.
         /// </summary>
         [TestMethod]
         public void BuildUrl_ShouldReturn_ValidUrl_When_QueryParamValues_ContainSpecialCharacters()
@@ -174,7 +174,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the HasInternetConnectionAsync method to ensure it returns true when there is an active internet connection.
+        /// Tests the <see cref="NetworkFx.HasInternetConnectionAsync"/> method to ensure it returns true when there is an active internet connection.
         /// </summary>
         [TestMethod]
         public async Task HasInternetConnectionAsync_ShouldValidate_Active_InternetConnection()

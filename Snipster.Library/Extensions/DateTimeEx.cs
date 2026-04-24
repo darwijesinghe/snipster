@@ -25,7 +25,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="timestamp">The Unix timestamp to convert.</param>
         /// <returns>
-        /// The DateTime representing the Unix timestamp in UTC.
+        /// The <see cref="DateTime"/> representing the Unix timestamp in UTC.
         /// </returns>
         public static DateTime FromUnixTimestamp(this long timestamp)
         {
@@ -77,7 +77,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="date">The date to convert.</param>
         /// <returns>
-        /// A DateTime representing the start of the day (00:00:00) for the given date.
+        /// A <see cref="DateTime"/> representing the start of the day (00:00:00) for the given date.
         /// </returns>
         public static DateTime StartOfDay(this DateTime date)
         {
@@ -89,7 +89,7 @@ namespace Snipster.Library.Extensions
         /// </summary>
         /// <param name="date">The date to convert.</param>
         /// <returns>
-        /// A DateTime representing the end of the day (23:59:59.999) for the given date.
+        /// A <see cref="DateTime"/> representing the end of the day (23:59:59.999) for the given date.
         /// </returns>
         public static DateTime EndOfDay(this DateTime date)
         {
@@ -105,7 +105,7 @@ namespace Snipster.Library.Extensions
         /// A <see cref="DateTime"/> representing the time in the specified time zone.
         /// </returns>
         /// <exception cref="ArgumentException">
-        /// Thrown when <paramref name="timeZoneId"/> is null, empty, not found, or invalid.
+        /// Thrown when <paramref name="timeZoneId"/> is <see langword="null"/>, empty, not found, or invalid.
         /// </exception>
         public static DateTime ToTimeZone(this DateTime date, string timeZoneId)
         {
@@ -136,7 +136,7 @@ namespace Snipster.Library.Extensions
         /// A <see cref="DateTime"/> representing the UTC time equivalent of the given local date.
         /// </returns>
         /// <exception cref="ArgumentException">
-        /// Thrown when <paramref name="timeZoneId"/> is null, empty, not found, or invalid.
+        /// Thrown when <paramref name="timeZoneId"/> is <see langword="null"/>, empty, not found, or invalid.
         /// </exception>
         public static DateTime FromTimeZone(this DateTime date, string timeZoneId)
         {

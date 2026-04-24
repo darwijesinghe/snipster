@@ -105,7 +105,7 @@ body:
   - type:
     - text: ArgumentException
       url: https://learn.microsoft.com/dotnet/api/system.argumentexception
-    description: Thrown if the file path or file name is null or empty.
+    description: Thrown if the file path or file name is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
   - type:
     - text: DirectoryNotFoundException
       url: https://learn.microsoft.com/dotnet/api/system.io.directorynotfoundexception
@@ -162,15 +162,15 @@ body:
     - text: ArgumentException
       url: https://learn.microsoft.com/dotnet/api/system.argumentexception
     description: >-
-      Thrown if the <code class="paramref">columns</code> list is null or empty,
+      Thrown if the <code class="paramref">columns</code> list is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty,
 
-      if the <code class="paramref">data</code> collection is null or empty,
+      if the <code class="paramref">data</code> collection is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty,
 
       or if a column definition cannot be matched to a property or if there is a type mismatch in the <code class="paramref">data</code>.
   - type:
     - text: ArgumentNullException
       url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-    description: Thrown if the provided memory stream is null.
+    description: Thrown if the provided memory stream is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
 languageId: csharp
 metadata:
   description: A class that provides Excel files related utility functions.

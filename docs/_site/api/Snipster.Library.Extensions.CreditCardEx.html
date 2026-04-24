@@ -85,7 +85,7 @@
         </div>
 
         <article data-uid="">
-<h1 class='section api' data-uid='Snipster.Library.Extensions.CreditCardEx' data-commentid='T:Snipster.Library.Extensions.CreditCardEx' id='Snipster_Library_Extensions_CreditCardEx'>Class CreditCardEx    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CreditCardEx.cs#L8'><i class='bi bi-code-slash'></i></a></h1>
+<h1 class='section api' data-uid='Snipster.Library.Extensions.CreditCardEx' data-commentid='T:Snipster.Library.Extensions.CreditCardEx' id='Snipster_Library_Extensions_CreditCardEx'>Class CreditCardEx    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CreditCardEx.cs#L9'><i class='bi bi-code-slash'></i></a></h1>
  <div class="facts text-secondary">
 <dl><dt>Namespace</dt><dd><a href='Snipster.Library.Extensions.html'>Snipster.Library.Extensions</a></dd></dl><dl><dt>Assembly</dt><dd>Snipster.Library.dll</dd></dl>
 </div><p>Provides various extensions for working with credit card information.</p>
@@ -137,18 +137,17 @@
 </dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Snipster.Library.Extensions.CreditCardEx.GetCreditCardType(System.String)' data-commentid='M:Snipster.Library.Extensions.CreditCardEx.GetCreditCardType(System.String)' id='Snipster_Library_Extensions_CreditCardEx_GetCreditCardType_System_String_'>GetCreditCardType(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/darwijesinghe/snipster/blob/dev/Snipster.Library/Extensions/CreditCardEx.cs#L19'><i class='bi bi-code-slash'></i></a></h3>
  <p>Determines the type of credit card based on its number. Supports various card types
 such as Visa, MasterCard, American Express, Discover, JCB, and Diners Club.</p>
-<pre><code class='lang-csharp'>public static string GetCreditCardType(this string number)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>number</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<pre><code class='lang-csharp'>public static CardType GetCreditCardType(this string number)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>number</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
 <dd>
 
 
 <p>The credit card number as a string.</p>
 
-</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Snipster.Library.Enums.CardType.html'>CardType</a>  </dt>
 <dd>
 
 
-<p>A string representing the type of credit card (e.g. &quot;Visa&quot;, &quot;MasterCard&quot;, etc.).
-&quot;Unknown&quot; if the type cannot be determined or if the input is invalid, empty or non-numeric input.</p>
+<p>A type of <span class="xref">Snipster.Library.Enums.CardType</span> representing the identified credit card type. If the card type cannot be determined, it returns <span class="xref">Snipster.Library.Enums.CardType.Unknown</span>.</p>
 
 </dd></dl>
 </article>

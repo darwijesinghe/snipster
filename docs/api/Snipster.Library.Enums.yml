@@ -9,6 +9,10 @@ body:
 - h3: Enums
 - parameters:
   - type:
+      text: CardType
+      url: Snipster.Library.Enums.CardType.html
+    description: Defines the various types of credit cards that can be identified based on their number patterns.
+  - type:
       text: ExcelAlignment
       url: Snipster.Library.Enums.ExcelAlignment.html
     description: Specifies the alignment options for Excel cells.

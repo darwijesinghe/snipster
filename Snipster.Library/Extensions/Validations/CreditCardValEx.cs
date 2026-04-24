@@ -12,7 +12,7 @@ namespace Snipster.Library.Extensions.Validations
         /// </summary>
         /// <param name="input"> The credit card number as a string.</param>
         /// <returns>
-        /// True if the string is a valid credit card number; otherwise, false.
+        /// <see langword="true"/> if the string is a valid credit card number; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsValidCreditCard(this string input)
         {

@@ -15,10 +15,10 @@ namespace Snipster.Library.Extensions.Validations
         /// </summary>
         /// <param name="email">The email address string to validate.</param>
         /// <param name="allowUnicode">
-        /// If true, allows Unicode letters and digits (for IDN and internationalized emails). If false, restricts to ASCII only.
+        /// If <see langword="true"/>, allows Unicode letters and digits (for IDN and internationalized emails). If <see langword="false"/>, restricts to ASCII only.
         /// </param>
         /// <returns>
-        /// True if the email address is valid; otherwise, false.
+        /// <see langword="true"/> if the email address is valid; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsValidEmail(this string email, bool allowUnicode = false)
         {
@@ -54,7 +54,7 @@ namespace Snipster.Library.Extensions.Validations
         /// <param name="input">The input string to validate.</param>
         /// <param name="minLength">The minimum number of characters required for a valid password. Defaults to <c>8</c>.</param>
         /// <returns>
-        /// True if the password is strong; otherwise, false.
+        /// <see langword="true"/> if the password is strong; otherwise, <see langword="false"/>.
         /// </returns>
         /// <remarks>
         /// A strong password must be at least the specified minimum length and include:<br/>

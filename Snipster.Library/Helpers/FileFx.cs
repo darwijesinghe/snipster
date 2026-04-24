@@ -15,7 +15,7 @@ namespace Snipster.Library.Helpers
         /// <param name="path">The path to the file.</param>
         /// <param name="encoding">The encoding to use for reading the file. Defaults to UTF8.</param>
         /// <returns>
-        /// The content of the file as a string, or null if an error occurs.
+        /// The content of the file as a string, or <see langword="null"/> if an error occurs.
         /// </returns>
         public static string? SafeReadText(string path, Encoding? encoding = null)
         {
@@ -34,7 +34,7 @@ namespace Snipster.Library.Helpers
         /// </summary>
         /// <param name="path">The path to the file.</param>
         /// <returns>
-        /// The content of the file as a byte array, or null if an error occurs.
+        /// The content of the file as a byte array, or <see langword="null"/> if an error occurs.
         /// </returns>
         public static byte[]? SafeReadBytes(string path)
         {
@@ -55,7 +55,7 @@ namespace Snipster.Library.Helpers
         /// <param name="content">The content to write to the file.</param>
         /// <param name="encoding">The encoding to use for writing the file. Defaults to UTF8.</param>
         /// <returns>
-        /// True if the write operation was successful; otherwise, false.
+        /// <see langword="true"/> if the write operation was successful; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool SafeWriteText(string path, string content, Encoding? encoding = null)
         {
@@ -76,7 +76,7 @@ namespace Snipster.Library.Helpers
         /// <param name="path">The path to the file.</param>
         /// <param name="data">The byte array to write to the file.</param>
         /// <returns>
-        /// True if the write operation was successful; otherwise, false.
+        /// <see langword="true"/> if the write operation was successful; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool SafeWriteBytes(string path, byte[] data)
         {
@@ -96,7 +96,7 @@ namespace Snipster.Library.Helpers
         /// </summary>
         /// <param name="extension">The file extension for the temporary file. Defaults to ".tmp".</param>
         /// <returns>
-        /// The path to the created temporary file, or null if an error occurs.
+        /// The path to the created temporary file, or <see langword="null"/> if an error occurs.
         /// </returns>
         public static string? CreateTempFile(string extension = ".tmp")
         {
@@ -160,7 +160,7 @@ namespace Snipster.Library.Helpers
         /// <param name="fileName">The original file name to sanitize.</param>
         /// <param name="replacement">The string used to replace invalid characters. Defaults to "_".</param>
         /// <returns>
-        /// A sanitized file name where invalid characters are replaced, or null if an error occurs.
+        /// A sanitized file name where invalid characters are replaced, or <see langword="null"/> if an error occurs.
         /// </returns>
         public static string? SanitizeFileName(string fileName, string replacement = "_")
         {

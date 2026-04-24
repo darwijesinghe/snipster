@@ -3,37 +3,69 @@
 namespace Snipster.Test.Helpers
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the ObjectFx class.
+    /// Unit tests to validate the functionality of the <see cref="ObjectFx"/> class.
     /// </summary>
     [TestClass]
     public class ObjectFxTest
     {
-        // Test classes
+        /// <summary>
+        /// Represents an address model used in clone tests.
+        /// </summary>
         public class Address
         {
+            /// <summary>
+            /// Gets or sets the city.
+            /// </summary>
             public string City    { get; set; } = string.Empty;
+            /// <summary>
+            /// Gets or sets the country.
+            /// </summary>
             public string Country { get; set; } = string.Empty;
         }
 
+        /// <summary>
+        /// Represents a person model used in clone tests.
+        /// </summary>
         public class Person
         {
+            /// <summary>
+            /// Gets or sets the name.
+            /// </summary>
             public string Name     { get; set; } = string.Empty;
+            /// <summary>
+            /// Gets or sets the age.
+            /// </summary>
             public int Age         { get; set; }
+            /// <summary>
+            /// Gets or sets the address.
+            /// </summary>
             public Address Address { get; set; } = new Address();
         }
 
+        /// <summary>
+        /// Represents an employee model that inherits from <see cref="Person"/>.
+        /// </summary>
         public class Employee : Person
         {
+            /// <summary>
+            /// Gets or sets the department.
+            /// </summary>
             public string Department { get; set; } = string.Empty;
         }
 
+        /// <summary>
+        /// Represents a self-referencing model for circular reference tests.
+        /// </summary>
         public class Circular
         {
+            /// <summary>
+            /// Gets or sets the self reference.
+            /// </summary>
             public Circular? Self { get; set; }
         }
 
         /// <summary>
-        /// Tests the DeepClone method to ensure it throws an ArgumentNullException when the input object is null.
+        /// Tests the <see cref="ObjectFx.DeepClone{T}(T)"/> method to ensure it throws an <see cref="ArgumentNullException"/> when the input object is <see langword="null"/>.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
@@ -47,7 +79,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the DeepClone method to ensure it correctly clones a simple object.
+        /// Tests the <see cref="ObjectFx.DeepClone{T}(T)"/> method to ensure it correctly clones a simple object.
         /// </summary>
         [TestMethod]
         public void DeepClone_ShouldClone_SimpleObject()
@@ -65,7 +97,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the DeepClone method to ensure it correctly clones a nested object.
+        /// Tests the <see cref="ObjectFx.DeepClone{T}(T)"/> method to ensure it correctly clones a nested object.
         /// </summary>
         [TestMethod]
         public void DeepClone_ShouldClone_NestedObject()
@@ -89,7 +121,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the DeepClone method to ensure it correctly clones a collection of objects.
+        /// Tests the <see cref="ObjectFx.DeepClone{T}(T)"/> method to ensure it correctly clones a collection of objects.
         /// </summary>
         [TestMethod]
         public void DeepClone_ShouldClone_Collections()
@@ -112,7 +144,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the DeepClone method to ensure it correctly clones and preserves derived types.
+        /// Tests the <see cref="ObjectFx.DeepClone{T}(T)"/> method to ensure it correctly clones and preserves derived types.
         /// </summary>
         [TestMethod]
         public void DeepClone_ShouldPreserve_DerivedType()
@@ -137,7 +169,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the DeepClone method to ensure it throws an InvalidOperationException when a circular reference is encountered.
+        /// Tests the <see cref="ObjectFx.DeepClone{T}(T)"/> method to ensure it throws an <see cref="InvalidOperationException"/> when a circular reference is encountered.
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
@@ -152,7 +184,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the DeepClone method to ensure it correctly handles an empty object.
+        /// Tests the <see cref="ObjectFx.DeepClone{T}(T)"/> method to ensure it correctly handles an empty object.
         /// </summary>
         [TestMethod]
         public void DeepClone_ShouldHandle_EmptyObject()
@@ -170,7 +202,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the DeepClone method to ensure it clones anonymous objects correctly.
+        /// Tests the <see cref="ObjectFx.DeepClone{T}(T)"/> method to ensure it clones anonymous objects correctly.
         /// </summary>
         [TestMethod]
         public void DeepClone_ShouldClone_AnonymousObject()
@@ -188,7 +220,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the DeepClone method to ensure it clones nullable value types correctly.
+        /// Tests the <see cref="ObjectFx.DeepClone{T}(T)"/> method to ensure it clones nullable value types correctly.
         /// </summary>
         [TestMethod]
         public void DeepClone_ShouldClone_NullableValues()
@@ -204,7 +236,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the DeepClone method to ensure it clones value types correctly.
+        /// Tests the <see cref="ObjectFx.DeepClone{T}(T)"/> method to ensure it clones value types correctly.
         /// </summary>
         [TestMethod]
         public void DeepClone_ShouldClone_ValueType()

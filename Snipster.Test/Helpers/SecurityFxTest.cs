@@ -3,13 +3,13 @@
 namespace Snipster.Test.Helpers
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the SecurityFx class.
+    /// Unit tests to validate the functionality of the <see cref="SecurityFx"/> class.
     /// </summary>
     [TestClass]
     public class SecurityFxTest
     {
         /// <summary>
-        /// Tests the RandomString method to ensure it generates a random string of the specified length using allowed characters.
+        /// Tests the <see cref="SecurityFx.RandomString"/> method to ensure it generates a random string of the specified length using allowed characters.
         /// </summary>
         [TestMethod]
         public void RandomString_ShouldGenerateRandomString()
@@ -27,7 +27,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the GenerateSecureToken method to ensure it generates a secure random token of the specified length.
+        /// Tests the <see cref="SecurityFx.GenerateSecureToken"/> method to ensure it generates a secure random token of the specified length.
         /// </summary>
         [TestMethod]
         public void GenerateSecureToken_ShouldGenerateSecureToken()
@@ -44,7 +44,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the PasswordHash method to ensure it generates a hashed password and salt correctly.
+        /// Tests the <see cref="SecurityFx.PasswordHash"/> method to ensure it generates a hashed password and salt correctly.
         /// </summary>
         [TestMethod]
         public void PasswordHash_ShouldGenerateHashedPasswordAndSalt()
@@ -65,7 +65,7 @@ namespace Snipster.Test.Helpers
         }
 
         /// <summary>
-        /// Tests the VerifyPassword method to ensure it correctly verifies a password against a stored hash and salt.
+        /// Tests the <see cref="SecurityFx.VerifyPassword"/> method to ensure it correctly verifies a password against a stored hash and salt.
         /// </summary>
         [TestMethod]
         public void VerifyPassword_ShouldVerifyStoredPasswordCorrectly()

@@ -9,12 +9,12 @@ namespace Snipster.Library.Extensions.Validations
     public static class CollectionValEx
     {
         /// <summary>
-        /// Returns true if the collection is null or has no elements.
+        /// Returns <see langword="true"/> if the collection is <see langword="null"/>  or has no elements.
         /// </summary>
         /// <typeparam name="T">The type of elements in the collection.</typeparam>
         /// <param name="source">The collection to check.</param>
         /// <returns>
-        /// True if the collection is null or has no elements; otherwise, false.
+        /// <see langword="true"/> if the collection is <see langword="null"/> or has no elements; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool IsNullOrEmpty<T>(this IEnumerable<T> source)
         {
@@ -22,12 +22,12 @@ namespace Snipster.Library.Extensions.Validations
         }
 
         /// <summary>
-        /// Returns true if the collection contains any duplicates.
+        /// Returns <see langword="true"/>  if the collection contains any duplicates.
         /// </summary>
         /// <typeparam name="T">The type of elements in the collection.</typeparam>
         /// <param name="source">The collection to check for duplicates.</param>
         /// <returns>
-        /// True if the collection contains duplicates; otherwise, false.
+        /// <see langword="true"/> if the collection contains duplicates; otherwise, <see langword="false"/>.
         /// </returns>
         public static bool HasDuplicates<T>(this IEnumerable<T> source)
         {

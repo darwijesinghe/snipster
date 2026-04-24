@@ -24,7 +24,7 @@ namespace Snipster.Library.Helpers
         /// <param name="fileName">The name of the Excel file to create (e.g. "output.xlsx").</param>
         /// <param name="configureOptions">An optional action to configure additional export options.</param>
         /// <exception cref="ArgumentException">
-        /// Thrown if the file path or file name is null or empty.
+        /// Thrown if the file path or file name is <see langword="null"/> or empty.
         /// </exception>
         /// <exception cref="DirectoryNotFoundException">
         /// Thrown if the specified directory does not exist.
@@ -70,12 +70,12 @@ namespace Snipster.Library.Helpers
         /// <param name="stream">The memory stream to which the Excel file will be written.</param>
         /// <param name="configureOptions">An optional action to configure additional export options.</param>
         /// <exception cref="ArgumentException">
-        /// Thrown if the <paramref name="columns"/> list is null or empty,
-        /// if the <paramref name="data"/> collection is null or empty,
+        /// Thrown if the <paramref name="columns"/> list is <see langword="null"/> or empty,
+        /// if the <paramref name="data"/> collection is <see langword="null"/> or empty,
         /// or if a column definition cannot be matched to a property or if there is a type mismatch in the <paramref name="data"/>.
         /// </exception>
         /// <exception cref="ArgumentNullException">
-        /// Thrown if the provided memory stream is null.
+        /// Thrown if the provided memory stream is <see langword="null"/>.
         /// </exception>
         public static void WriteToMemory<T>(IEnumerable<T> data, List<ExcelColumn> columns, MemoryStream stream, 
             Action<ExcelExportOptions>? configureOptions = null)

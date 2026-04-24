@@ -55,7 +55,7 @@ body:
   metadata:
     uid: Snipster.Library.Extensions.Validations.CollectionValEx.HasDuplicates``1(System.Collections.Generic.IEnumerable{``0})
     commentId: M:Snipster.Library.Extensions.Validations.CollectionValEx.HasDuplicates``1(System.Collections.Generic.IEnumerable{``0})
-- markdown: Returns true if the collection contains any duplicates.
+- markdown: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>  if the collection contains any duplicates.
 - code: public static bool HasDuplicates<T>(this IEnumerable<T> source)
 - h4: Parameters
 - parameters:
@@ -72,7 +72,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the collection contains duplicates; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the collection contains duplicates; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - h4: Type Parameters
 - parameters:
   - name: T
@@ -83,7 +83,7 @@ body:
   metadata:
     uid: Snipster.Library.Extensions.Validations.CollectionValEx.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
     commentId: M:Snipster.Library.Extensions.Validations.CollectionValEx.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})
-- markdown: Returns true if the collection is null or has no elements.
+- markdown: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the collection is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>  or has no elements.
 - code: public static bool IsNullOrEmpty<T>(this IEnumerable<T> source)
 - h4: Parameters
 - parameters:
@@ -100,7 +100,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: True if the collection is null or has no elements; otherwise, false.
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the collection is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or has no elements; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - h4: Type Parameters
 - parameters:
   - name: T

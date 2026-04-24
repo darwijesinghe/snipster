@@ -3,13 +3,13 @@
 namespace Snipster.Test.Extensions.Validations
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the JsonValEx class.
+    /// Unit tests to validate the functionality of the <see cref="JsonValEx"/> class.
     /// </summary>
     [TestClass]
     public class JsonValExTest
     {
-        /// <summary>s
-        /// Test IsValidJson method to ensure it correctly identifies valid JSON strings.
+        /// <summary>
+        /// Test <see cref="JsonValEx.IsValidJson"/> method to ensure it correctly identifies valid JSON strings.
         /// </summary>
         [TestMethod]
         public void IsValidJson_ShouldValidateValidJsonStrings()
@@ -24,8 +24,8 @@ namespace Snipster.Test.Extensions.Validations
             Assert.IsTrue(isValidJsonResult);
         }
 
-        /// <summary>s
-        /// Test IsValidJson method to ensure it correctly identifies invalid JSON strings.
+        /// <summary>
+        /// Test <see cref="JsonValEx.IsValidJson"/> method to ensure it correctly identifies invalid JSON strings.
         /// </summary>
         [TestMethod]
         public void IsValidJson_ShouldValidateInvalidJsonStrings()
@@ -40,8 +40,8 @@ namespace Snipster.Test.Extensions.Validations
             Assert.IsFalse(isValidJsonResult);
         }
 
-        /// <summary>s
-        /// Test IsValidJson method to ensure it correctly identifies array JSON strings.
+        /// <summary>
+        /// Test <see cref="JsonValEx.IsValidJson"/> method to ensure it correctly identifies array JSON strings.
         /// </summary>
         [TestMethod]
         public void IsValidJson_ShouldValidateArrayJsonStrings()
@@ -56,8 +56,8 @@ namespace Snipster.Test.Extensions.Validations
             Assert.IsTrue(isValidJsonResult);
         }
 
-        /// <summary>s
-        /// Test IsValidJson method to ensure it correctly identifies the nested JSON strings with arrays.
+        /// <summary>
+        /// Test <see cref="JsonValEx.IsValidJson"/> method to ensure it correctly identifies the nested JSON strings with arrays.
         /// </summary>
         [TestMethod]
         public void IsValidJson_ShouldValidateNestedJsonStringsWithArray()

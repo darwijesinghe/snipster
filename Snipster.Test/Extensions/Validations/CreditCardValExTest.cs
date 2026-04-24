@@ -3,13 +3,13 @@
 namespace Snipster.Test.Extensions.Validations
 {
     /// <summary>
-    /// Unit tests to validate the functionality of the CreditCardValEx class.
+    /// Unit tests to validate the functionality of the <see cref="CreditCardValEx"/> class.
     /// </summary>
     [TestClass]
     public class CreditCardValExTest
     {
         /// <summary>
-        /// Test to validate various credit card numbers.
+        /// Tests <see cref="CreditCardValEx.IsValidCreditCard"/> to validate various credit card numbers.
         /// </summary>
         [TestMethod]
         public void IsValidCreditCard_ShouldValidateVariousCreditCardNumbers()
@@ -34,7 +34,7 @@ namespace Snipster.Test.Extensions.Validations
         }
 
         /// <summary>
-        /// Tests IsValidCreditCard method to ensure it returns false for invalid credit card numbers.
+        /// Tests <see cref="CreditCardValEx.IsValidCreditCard"/> method to ensure it returns <see langword="false"/> for invalid credit card numbers.
         /// </summary>
         [DataTestMethod]
         [DataRow("1234567890123456")]       // Invalid Luhn

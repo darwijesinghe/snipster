@@ -121,7 +121,7 @@ The `IsValidPhoneNumber` method now accepts raw user input, validates it against
 
 ---
 
-## [v1.0.7] - 2026-04-08
+## [v1.0.7] - 2026-04-25
 ### Summary
 This release focuses on documentation quality, XML comment consistency, and stronger typing for credit card type detection. No new methods were introduced.
 
